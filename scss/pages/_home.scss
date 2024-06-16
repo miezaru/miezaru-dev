@@ -1,0 +1,99 @@
+.main {
+    padding-block: 12.8rem;
+    background-color: cl(purple-light-xxx);
+}
+
+%section {
+    padding: 2.4rem;
+    box-shadow: 0 0 0.1rem cl(purple-dark-xxx);
+}
+
+.section-html {
+    @extend %section;
+
+    grid-area: html;
+}
+
+.section-css {
+    @extend %section;
+
+    grid-area: css;
+}
+
+.section-tools {
+    @extend %section;
+
+    grid-area: tools;
+}
+
+.section-sass {
+    @extend %section;
+
+    grid-area: sass;
+}
+
+.section-git {
+    @extend %section;
+
+    grid-area: git;
+}
+
+.section-js {
+    @extend %section;
+
+    grid-area: js;
+}
+
+.section-react {
+    @extend %section;
+
+    grid-area: react;
+}
+
+.section-header {
+    margin-block-end: 4.8rem;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.resources-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+
+    &__item {
+        &:link,
+        &:visited {
+            display: inline-block;
+            padding-block: 1rem;
+            padding-inline: 2rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 1;
+            color: cl(purple-dark-xxx);
+            text-decoration: none;
+            background-color: cl(purple-light-xx);
+            border: 1px solid cl(purple-dark-xxx);
+            border-radius: br(link);
+            transition: tr(small);
+        }
+
+        &:hover {
+            box-shadow: sh(link-hover);
+            transform: translateY(-0.5rem);
+        }
+
+        &:active {
+            box-shadow: sh(link-active);
+            transform: translateY(-0.2rem);
+        }
+    }
+
+    &:not(:last-child) {
+        margin-block-end: 3.2rem;
+    }
+}

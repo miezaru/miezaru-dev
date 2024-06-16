@@ -1,0 +1,6 @@
+@use 'sass:color';
+@use 'colors';
+
+$link-hover: 0 0 1.3rem color.change(colors.$purple-primary, $alpha: 0.7);
+$link-active: 0 0 0.5rem color.change(colors.$purple-primary, $alpha: 0.9);
+$link-home: 0 0 0.1rem color.change(colors.$purple-dark-xxx, $alpha: 0.9);

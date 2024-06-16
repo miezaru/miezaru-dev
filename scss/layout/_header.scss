@@ -1,0 +1,123 @@
+.header {
+    position: relative;
+    block-size: 80vh;
+    padding-block: 2.4rem;
+    text-align: center;
+    background-image: linear-gradient(
+            to right bottom,
+            bcg(purple-primary-50),
+            bcg(purple-primary-50)
+        ),
+        image-set(
+            url('../../img/pilinger-point.webp') type('image/webp'),
+            url('../../img/pilinger-point.avif') type('image/avif'),
+            url('../../img/pilinger-point.jpg')
+        );
+    background-position: center;
+    background-size: cover;
+
+    &__home-container {
+        text-align: center;
+    }
+
+    &__home-link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            padding-block: 0.8rem;
+            padding-inline: 1.6rem;
+            font-weight: 600;
+            color: cl(purple-light-xxx);
+            text-align: center;
+            text-decoration: none;
+            box-shadow: sh(link-home);
+        }
+    }
+
+    &__description {
+        inline-size: 60%;
+        margin-inline: auto;
+        font-size: 1.8rem;
+        line-height: 1.8;
+        color: cl(purple-light-xxx);
+    }
+}
+
+.header-container {
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    display: flex;
+    flex-direction: column;
+    inline-size: 90vw;
+    block-size: 40vh;
+    padding-block: 1.2rem;
+    padding-inline: 2.4rem;
+    background-image: linear-gradient(
+        to right bottom,
+        bcg(purple-primary-30),
+        bcg(purple-primary-30)
+    );
+    border: 2px solid cl(purple-light-xxx);
+    transform: translate(-50%, -50%);
+}
+
+.author-link {
+    &:link,
+    &:visited {
+        color: cl(purple-light-xx);
+        text-decoration: none;
+        border-block-end: 1px solid transparent;
+        transition: tr(small);
+    }
+
+    &:hover,
+    &:active {
+        border-block-end: 1px solid currentcolor;
+    }
+}
+
+.main-nav {
+    &__container {
+        padding-inline: 2.4rem;
+        margin-block-start: auto;
+        color: cl(purple-light-xxx);
+    }
+
+    &__text {
+        display: block;
+        margin-block-end: 2.2rem;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        list-style: none;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            font-weight: 600;
+            color: inherit;
+            text-decoration: none;
+            border-block-end: 1px solid currentcolor;
+            transition: tr(small);
+        }
+
+        &:hover,
+        &:active {
+            color: cl(purple-light-x);
+            border-block-end: 1px solid currentcolor;
+        }
+    }
+}

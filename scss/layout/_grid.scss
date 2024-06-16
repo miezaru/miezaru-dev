@@ -1,0 +1,27 @@
+.grid-inner-home {
+    display: grid;
+    grid-template-areas:
+        '. html html html tools tools tools .'
+        '. css css css tools tools tools .'
+        '. sass sass sass git git git .'
+        '. js js js react react react . ';
+    grid-template-columns: minmax(3.2rem, 1fr) repeat(6, minmax(auto, 20rem)) minmax(3.2rem, 1fr);
+    gap: 6.4rem 4.8rem;
+}
+
+.grid-inner-page {
+    display: grid;
+    grid-template-columns:
+        [full-start] minmax(3.2rem, 1fr) [mid-start] repeat(
+            6,
+            [col-start] minmax(auto, 20rem) [col-end]
+        )
+        [mid-end] minmax(3.2rem, 1fr)
+        [full-end];
+    gap: 6.4rem 4.8rem;
+}
+
+.line {
+    grid-column: full-start / full-end;
+    border-block-end: 1px solid cl(purple-light-xx);
+}

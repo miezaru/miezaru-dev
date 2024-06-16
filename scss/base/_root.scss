@@ -1,0 +1,14 @@
+@use '../abstracts' as abstracts;
+@use 'sass:meta';
+
+@mixin add-css-variables($module) {
+    :root {
+        @each $name, $value in $module {
+            --#{$name}: #{$value};
+        }
+    }
+}
+
+$abstracts: meta.module-variables('abstracts');
+
+@include add-css-variables($abstracts);
