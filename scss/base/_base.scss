@@ -1,18 +1,18 @@
 body {
     &::-webkit-scrollbar {
-        inline-size: 3px;
+        inline-size: 6px;
     }
 
     &::-webkit-scrollbar-track {
-        // background: cl(grey-dark);
+        background: cl(purple-light-x);
     }
 
     &::-webkit-scrollbar-thumb {
-        // background: cl(grey-light);
+        background: cl(purple-primary);
     }
 
     &::-webkit-scrollbar-thumb:hover {
-        // background: cl(accent);
+        background: cl(purple-dark-xxx);
     }
 }
 
@@ -21,4 +21,10 @@ body {
     font-size: 2rem;
     font-weight: 700;
     color: cl(purple-light-xx);
+}
+
+.content-box {
+    &:not(:last-child) {
+        margin-block-end: 2.2rem;
+    }
 }

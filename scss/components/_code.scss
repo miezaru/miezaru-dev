@@ -1,0 +1,30 @@
+.code {
+    display: flex;
+    padding-block: 0.6rem;
+    padding-inline: 1.2rem;
+    overflow: scroll hidden;
+    font-family: 'Dank Mono', monospace;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: cl(purple-light-xx);
+
+    &:not(:last-child) {
+        margin-block-end: 2.2rem;
+    }
+
+    &::-webkit-scrollbar {
+        block-size: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: cl(purple-light-x);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: cl(purple-primary);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: cl(purple-dark-xxx);
+    }
+}

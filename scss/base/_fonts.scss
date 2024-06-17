@@ -1,7 +1,9 @@
-$font-path: '../../fonts';
+$font-path: '../../assets/fonts';
 
 // typography: Rubik
 $rubik-font-path: '#{$font-path}/Rubik' !default;
+// typography: Dank Mono
+$dankmono-font-path: '#{$font-path}/DankMono' !default;
 
 @include font-face(
     'Rubik',
@@ -55,3 +57,5 @@ $rubik-font-path: '#{$font-path}/Rubik' !default;
     italic,
     $exts: woff woff2 ttf eot
 );
+@include font-face('Dank Mono', '#{$dankmono-font-path}/DankMonoRegular', 400, $exts: ttf);
+@include font-face('Dank Mono', '#{$dankmono-font-path}/DankMonoItalic', 400, italic, $exts: ttf);

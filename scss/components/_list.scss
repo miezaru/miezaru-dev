@@ -1,0 +1,22 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-block-end: 3rem;
+    margin-inline-start: 3.2rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    list-style: none;
+
+    &__item {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            inset-block-start: 0;
+            inset-inline-start: -1.5rem;
+            display: inline-block;
+            content: '-';
+        }
+    }
+}
