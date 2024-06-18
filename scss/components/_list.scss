@@ -1,12 +1,15 @@
 .list {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
-    margin-block-end: 3rem;
+    gap: 2.4rem;
     margin-inline-start: 3.2rem;
     font-size: 1.6rem;
     line-height: 1.6;
     list-style: none;
+
+    &:not(:last-child) {
+        margin-block-end: 3rem;
+    }
 
     &__item {
         position: relative;
@@ -17,6 +20,14 @@
             inset-inline-start: -1.5rem;
             display: inline-block;
             content: '-';
+        }
+    }
+
+    .list {
+        margin-block-start: 2rem;
+
+        &:not(:last-child) {
+            margin-block-end: 2rem;
         }
     }
 }

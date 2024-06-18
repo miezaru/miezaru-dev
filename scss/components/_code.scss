@@ -3,9 +3,6 @@
     padding-block: 0.6rem;
     padding-inline: 1.2rem;
     overflow: scroll hidden;
-    font-family: 'Dank Mono', monospace;
-    font-size: 1.6rem;
-    font-weight: 400;
     background-color: cl(purple-light-xx);
 
     &:not(:last-child) {
@@ -27,4 +24,11 @@
     &::-webkit-scrollbar-thumb:hover {
         background: cl(purple-dark-xxx);
     }
+}
+
+.code-el {
+    font-family: 'Dank Mono', monospace;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1;
 }

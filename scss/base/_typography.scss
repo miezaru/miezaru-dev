@@ -48,13 +48,12 @@ strong {
         font-weight: 500;
         color: cl(purple-dark-x);
         text-decoration: none;
-        background-color: cl(purple-light-xx);
-        border-block-end: 1px solid transparent;
+        border-block-end: 1px solid currentcolor;
         transition: tr(small);
     }
 
     &:hover,
     &:active {
-        border-block-end: 1px solid currentcolor;
+        background-color: cl(purple-light-xx);
     }
 }

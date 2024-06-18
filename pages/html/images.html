@@ -165,7 +165,7 @@
                 <header class="section-header">
                     <h2 class="heading-h2">Links</h2>
                 </header>
-                <div class="section-container">
+                <div class="section-container section-container--links">
                     <div class="resources">
                         <h3 class="heading-h3 u-margin-bottom-sm">Performance</h3>
                         <div class="resources-box">
@@ -276,7 +276,7 @@
                     <h2 class="heading-h2">Styleguide</h2>
                 </header>
                 <div class="section-container">
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Use good images</h3>
                         <p class="text">
                             The AOM is like a semantic version of the DOM. Enabled in google
@@ -291,15 +291,13 @@
                             only use relevant images!
                         </p>
                     </div>
-
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Use images well</h3>
                         <p class="text">Try to show real people to trigger user`s emotions</p>
                         <p class="text">If necessary, crop images to fit your message</p>
                         <p class="text">Experiment combining photos, illustrations and patterns</p>
                     </div>
-
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Handling text on images</h3>
                         <p class="text">
                             Darker or brighten image (completely or partially, using a gradient)
@@ -315,36 +313,32 @@
                     <h2 class="heading-h2">Tech</h2>
                 </header>
                 <div class="section-container">
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Technical details</h3>
+                    <h3 class="heading-h3 u-margin-bottom-sm">Technical details</h3>
 
-                        <p class="text">
-                            To account for high-res screens, make image dimensions 2x as big as
-                            their displayed size
-                        </p>
-                        <ul class="list">
-                            <li class="list__item">
-                                If image have website size 300x300, he`s original size need to be
-                                600x600
-                            </li>
-                            <li class="list__item">
-                                Scale factor: Actual pixels the screen contains / Pixels represented
-                                on screen
-                            </li>
-                            <li class="list__item">
-                                On high-res screens, scale factor is 2x or even 3x, on "normal"
-                                screens it`s just 1x (1 physical pixel = 1 design pixel)
-                            </li>
-                        </ul>
-                        <p class="text">
-                            Compress images for a lower file size and better performance
-                        </p>
-                        <p class="text">
-                            When using multiple images side-by-side, make sure they have the exact
-                            same dimensions
-                        </p>
-                        <p class="text">Always declare images size</p>
-                    </div>
+                    <p class="text">
+                        To account for high-res screens, make image dimensions 2x as big as their
+                        displayed size
+                    </p>
+                    <ul class="list">
+                        <li class="list__item">
+                            If image have website size 300x300, he`s original size need to be
+                            600x600
+                        </li>
+                        <li class="list__item">
+                            Scale factor: Actual pixels the screen contains / Pixels represented on
+                            screen
+                        </li>
+                        <li class="list__item">
+                            On high-res screens, scale factor is 2x or even 3x, on "normal" screens
+                            it`s just 1x (1 physical pixel = 1 design pixel)
+                        </li>
+                    </ul>
+                    <p class="text">Compress images for a lower file size and better performance</p>
+                    <p class="text">
+                        When using multiple images side-by-side, make sure they have the exact same
+                        dimensions
+                    </p>
+                    <p class="text">Always declare images size</p>
                 </div>
             </section>
 
@@ -353,7 +347,7 @@
                     <h2 class="heading-h2">Performance</h2>
                 </header>
                 <div class="section-container">
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Fetchpriority</h3>
 
                         <p class="text">
@@ -375,7 +369,7 @@
                         </pre>
                     </div>
 
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Decoding: async or sync.</h3>
 
                         <p class="text">
@@ -395,8 +389,7 @@
                             </code>
                         </pre>
                     </div>
-
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Performance</h3>
 
                         <p class="text">
@@ -434,7 +427,7 @@
                     <h2 class="heading-h2">Usage</h2>
                 </header>
                 <div class="section-container">
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Default styles</h3>
 
                         <pre class="code">
@@ -453,22 +446,21 @@ iframe {
                             </code>
                         </pre>
                     </div>
-
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Picture element</h3>
 
                         <pre class="code">
-                            <code class="code-el">
-&lt;picture&gt;
-    &lt;source srcset="full.jpg" media="(min-width: 75em)" width="1200" height="500"&gt;
-    &lt;source srcset="regular.jpg" media="(min-width: 50em)" width="800" height="400"&gt;
-    &lt;img src="cropped.jpg" alt="A description of the image." width="400" height="400"&gt;
-&lt;/picture&gt;
-                            </code>
-                        </pre>
+                                <code class="code-el">
+    &lt;picture&gt;
+        &lt;source srcset="full.jpg" media="(min-width: 75em)" width="1200" height="500"&gt;
+        &lt;source srcset="regular.jpg" media="(min-width: 50em)" width="800" height="400"&gt;
+        &lt;img src="cropped.jpg" alt="A description of the image." width="400" height="400"&gt;
+    &lt;/picture&gt;
+                                </code>
+                            </pre>
                     </div>
 
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">
                             Multiple image formats with a pixel density descriptor
                         </h3>
@@ -484,7 +476,7 @@ iframe {
                         </pre>
                     </div>
 
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Sizes and srcset</h3>
 
                         <pre class="code">
@@ -496,7 +488,7 @@ iframe {
                         </pre>
                     </div>
 
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Background image-set</h3>
 
                         <pre class="code">
@@ -523,7 +515,7 @@ background-image: image-set(
                     <h2 class="heading-h2">Some useful things</h2>
                 </header>
                 <div class="section-container">
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Aspect-ration</h3>
 
                         <pre class="code">
@@ -537,7 +529,7 @@ img {
                         </pre>
                     </div>
 
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Full card link</h3>
 
                         <pre class="code">
@@ -560,7 +552,7 @@ a::before {
                         </pre>
                     </div>
 
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Full image outline</h3>
                         <pre class="code">
                             <code class="code-el">
@@ -577,7 +569,7 @@ a:focus-visible::before {
                         </pre>
                     </div>
 
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Object-fit</h3>
                         <pre class="code">
                             <code class="code-el">
@@ -591,7 +583,7 @@ img {
                         </pre>
                     </div>
 
-                    <div class="resources">
+                    <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Text with images</h3>
                         <p class="text">
                             <a

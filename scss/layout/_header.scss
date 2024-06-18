@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    block-size: 80vh;
+    block-size: 90vh;
     padding-block: 2.4rem;
     text-align: center;
     background-image: linear-gradient(
@@ -35,7 +35,7 @@
     }
 
     &__description {
-        inline-size: 60%;
+        inline-size: 85%;
         margin-inline: auto;
         font-size: 1.8rem;
         line-height: 1.8;
@@ -49,7 +49,7 @@
     inset-inline-start: 50%;
     display: flex;
     flex-direction: column;
-    inline-size: 90vw;
+    inline-size: 60vw;
     block-size: 40vh;
     padding-block: 1.2rem;
     padding-inline: 2.4rem;
