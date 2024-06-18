@@ -309,8 +309,10 @@ article footer p {}
                             <p class="text">Only 1 on the page</p>
                         </li>
                         <li class="list__item">
-                            Cannot select if it starts with a number, but this can be easily
-                            bypassed using the attribute selector [id="10"]
+                            <p class="text">
+                                Cannot select if it starts with a number, but this can be easily
+                                bypassed using the attribute selector [id="10"]
+                            </p>
                         </li>
                     </ul>
                     <pre class="code">
@@ -429,12 +431,20 @@ img[alt=""] {}
                                 <strong>Inline styles</strong> (style attribute in HTML)
                             </p>
                         </li>
-                        <li class="list__item"><strong>Id</strong></li>
                         <li class="list__item">
-                            <strong>Classes</strong> and <strong>pseudo-classes</strong>
+                            <p class="text"><strong>Id</strong></p>
                         </li>
-                        <li class="list__item"><strong>Element</strong> selector</li>
-                        <li class="list__item"><strong>Universal</strong> selector</li>
+                        <li class="list__item">
+                            <p class="text">
+                                <strong>Classes</strong> and <strong>pseudo-classes</strong>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text"><strong>Element</strong> selector</p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text"><strong>Universal</strong> selector</p>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -538,20 +548,32 @@ img[alt=""] {}
                     <div class="content-box">
                         <h4 class="heading-h4 u-margin-bottom-sm">Block-level elements</h4>
                         <ul class="list">
-                            <li class="list__item">Elements are formatted visually as blocks</li>
                             <li class="list__item">
-                                Elements occupy 100% of parent element`s width, no matter the
-                                content
+                                <p class="text">Elements are formatted visually as blocks</p>
                             </li>
                             <li class="list__item">
-                                Elements are stacked vertically by default, one after another
+                                <p class="text">
+                                    Elements occupy 100% of parent element`s width, no matter the
+                                    content
+                                </p>
                             </li>
-                            <li class="list__item">The box-model applies as showed earlier</li>
                             <li class="list__item">
-                                Default elements: body, main, header, footer, section, nav, aside,
-                                div, h1-h6, p, ul, ol, li, etc.
+                                <p class="text">
+                                    Elements are stacked vertically by default, one after another
+                                </p>
                             </li>
-                            <li class="list__item">With CSS: display: block;</li>
+                            <li class="list__item">
+                                <p class="text">The box-model applies as showed earlier</p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    Default elements: body, main, header, footer, section, nav,
+                                    aside, div, h1-h6, p, ul, ol, li, etc.
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">With CSS: display: block;</p>
+                            </li>
                         </ul>
                     </div>
 
@@ -559,53 +581,87 @@ img[alt=""] {}
                         <h4 class="heading-h4 u-margin-bottom-sm">Inline elements</h4>
                         <ul class="list">
                             <li class="list__item">
-                                Occupies only the space necessary for its content
+                                <p class="text">
+                                    Occupies only the space necessary for its content
+                                </p>
                             </li>
                             <li class="list__item">
-                                Causes no line-breaks after or before the element
+                                <p class="text">
+                                    Causes no line-breaks after or before the element
+                                </p>
                             </li>
                             <li class="list__item">
-                                Box model applies in a different way: height and width do not apply
+                                <p class="text">
+                                    Box model applies in a different way: height and width do not
+                                    apply
+                                </p>
                             </li>
                             <li class="list__item">
-                                Paddings and margins are applied only horizontally (left and right)
+                                <p class="text">
+                                    Paddings and margins are applied only horizontally (left and
+                                    right)
+                                </p>
                             </li>
                             <li class="list__item">
-                                Width and Height are not applies. Paddings and margins only
-                                horizontally
+                                <p class="text">
+                                    Width and Height are not applies. Paddings and margins only
+                                    horizontally
+                                </p>
                             </li>
                             <li class="list__item">
-                                With padding fill area inside elements expanded but not content
-                                around the box
+                                <p class="text">
+                                    With padding fill area inside elements expanded but not content
+                                    around the box
+                                </p>
                             </li>
                             <li class="list__item">
-                                Default elements: a, img, strong, em, button, etc
+                                <p class="text">
+                                    Default elements: a, img, strong, em, button, etc
+                                </p>
                             </li>
-                            <li class="list__item">With CSS: display: inline;</li>
+                            <li class="list__item">
+                                <p class="text">With CSS: display: inline;</p>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="content-box">
                         <h4 class="heading-h4 u-margin-bottom-sm">Inline-block elements</h4>
                         <ul class="list">
-                            <li class="list__item">Images has inline-block behavior</li>
                             <li class="list__item">
-                                Look like inline from the outside, behaves like block-level on
-                                inside
-                            </li>
-                            <li class="list__item">Occupies only content`s space | inline</li>
-                            <li class="list__item">Causes no line-breaks | inline</li>
-                            <li class="list__item">
-                                Box-model applies how it does in a block level boxes | block
+                                <p class="text">Images has inline-block behavior</p>
                             </li>
                             <li class="list__item">
-                                Default elements: img (it`s inline element, but doing like
-                                inline-block)
+                                <p class="text">
+                                    Look like inline from the outside, behaves like block-level on
+                                    inside
+                                </p>
                             </li>
                             <li class="list__item">
-                                Nice to use it with ::after and ::before pseudo-elements
+                                <p class="text">Occupies only content`s space | inline</p>
                             </li>
-                            <li class="list__item">With CSS: display: inline-block;</li>
+                            <li class="list__item">
+                                <p class="text">Causes no line-breaks | inline</p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    Box-model applies how it does in a block level boxes | block
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    Default elements: img (it`s inline element, but doing like
+                                    inline-block)
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    Nice to use it with ::after and ::before pseudo-elements
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">With CSS: display: inline-block;</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -626,8 +682,10 @@ img[alt=""] {}
                                 <p class="text">Element is "in flow"</p>
                             </li>
                             <li class="list__item">
-                                Elements are simply laid out according to their order in the HTML
-                                code
+                                <p class="text">
+                                    Elements are simply laid out according to their order in the
+                                    HTML code
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -758,32 +816,46 @@ img[alt=""] {}
                                 </p>
                                 <ul class="list">
                                     <li class="list__item">
-                                        <strong>User agent base styles</strong>. These are the
-                                        styles that your browser applies to HTML elements by
-                                        default.
+                                        <p class="text">
+                                            <strong>User agent base styles</strong>. These are the
+                                            styles that your browser applies to HTML elements by
+                                            default.
+                                        </p>
                                     </li>
                                     <li class="list__item">
-                                        <strong>Local user styles</strong>. These can come from the
-                                        operating system level, such as a base font size, or a
-                                        preference of reduced motion. They can also come from
-                                        browser extensions, such as a browser extension that allows
-                                        a user to write their own custom CSS for a webpage.
+                                        <p class="text">
+                                            <strong>Local user styles</strong>. These can come from
+                                            the operating system level, such as a base font size, or
+                                            a preference of reduced motion. They can also come from
+                                            browser extensions, such as a browser extension that
+                                            allows a user to write their own custom CSS for a
+                                            webpage.
+                                        </p>
                                     </li>
                                     <li class="list__item">
-                                        <strong>Authored CSS</strong>. The CSS that you author.
+                                        <p class="text">
+                                            <strong>Authored CSS</strong>. The CSS that you author.
+                                        </p>
                                     </li>
                                     <li class="list__item">
-                                        <strong>Authored !important</strong>. Any !important that
-                                        you add to your authored declarations.
+                                        <p class="text">
+                                            <strong>Authored !important</strong>. Any !important
+                                            that you add to your authored declarations.
+                                        </p>
                                     </li>
                                     <li class="list__item">
-                                        <strong>Local user styles !important</strong>. Any
-                                        !important that come from the operating system level, or
-                                        browser extension level CSS.
+                                        <p class="text">
+                                            <strong>Local user styles !important</strong>. Any
+                                            !important that come from the operating system level, or
+                                            browser extension level CSS.
+                                        </p>
                                     </li>
                                     <li class="list__item">
-                                        <strong>User agent !important</strong>. Any !important that
-                                        are defined in the default CSS, provided by the browser.
+                                        <p class="text">
+                                            <strong>User agent !important</strong>. Any !important
+                                            that are defined in the default CSS, provided by the
+                                            browser.
+                                        </p>
                                     </li>
                                 </ul>
                             </li>
@@ -805,15 +877,23 @@ img[alt=""] {}
                         </p>
                         <ul class="list">
                             <li class="list__item">
-                                normal rule type, such as <strong>font-size</strong>,
-                                <strong>background</strong> or <strong>color</strong>
+                                <p class="text">
+                                    normal rule type, such as <strong>font-size</strong>,
+                                    <strong>background</strong> or <strong>color</strong>
+                                </p>
                             </li>
-                            <li class="list__item"><strong>animation</strong> rule type</li>
                             <li class="list__item">
-                                <strong>!important</strong> rule type (following the same order as
-                                origin)
+                                <p class="text"><strong>animation</strong> rule type</p>
                             </li>
-                            <li class="list__item"><strong>transition</strong> rule type</li>
+                            <li class="list__item">
+                                <p class="text">
+                                    <strong>!important</strong> rule type (following the same order
+                                    as origin)
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text"><strong>transition</strong> rule type</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -833,12 +913,14 @@ img[alt=""] {}
                         <h4 class="heading-h4 u-margin-bottom-sm">Inheritance control</h4>
                         <ul class="list">
                             <li class="list__item">
-                                The inherit keyword
+                                <p class="text">The <strong>inherit</strong> keyword</p>
                                 <ul class="list">
                                     <li class="list__item">
-                                        Make any property inherit its parent's computed value with
-                                        the inherit keyword. A useful way to use this keyword is to
-                                        create exceptions.
+                                        <p class="text">
+                                            Make any property inherit its parent's computed value
+                                            with the inherit keyword. A useful way to use this
+                                            keyword is to create exceptions.
+                                        </p>
                                     </li>
                                 </ul>
                                 <pre class="code">
@@ -851,11 +933,13 @@ font-weight: inherit;
                             </li>
 
                             <li class="list__item">
-                                The initial keyword
+                                <p class="text">The <strong>initial</strong> keyword</p>
                                 <ul class="list">
                                     <li class="list__item">
-                                        Inheritance can cause problems with elements and initial
-                                        provides a powerful reset option
+                                        <p class="text">
+                                            Inheritance can cause problems with elements and initial
+                                            provides a powerful reset option
+                                        </p>
                                     </li>
                                 </ul>
                                 <pre class="code">
@@ -868,15 +952,17 @@ font-weight: initial;
                             </li>
 
                             <li class="list__item">
-                                The unset keyword
+                                <p class="text">The <strong>unset</strong> keyword</p>
                                 <ul class="list">
                                     <li class="list__item">
-                                        The unset property behaves differently if a property is
-                                        inheritable or not. If a property is inheritable, the unset
-                                        keyword will be the same as
-                                        <strong>inherit</strong>. If the property is not
-                                        inheritable, the unset keyword is equal to
-                                        <strong>initial</strong>.
+                                        <p class="text">
+                                            The unset property behaves differently if a property is
+                                            inheritable or not. If a property is inheritable, the
+                                            unset keyword will be the same as
+                                            <strong>inherit</strong>. If the property is not
+                                            inheritable, the unset keyword is equal to
+                                            <strong>initial</strong>.
+                                        </p>
                                     </li>
                                 </ul>
                                 <pre class="code">
@@ -1054,24 +1140,30 @@ color: unset;
                             </p>
                             <ul class="list">
                                 <li class="list__item">
-                                    Only works later if the element is literally the first. The best
-                                    use case is when all elements (children) are tightened. Assuming
-                                    as in lists - li.
+                                    <p class="text">
+                                        Only works later if the element is literally the first. The
+                                        best use case is when all elements (children) are tightened.
+                                        Assuming as in lists - li.
+                                    </p>
                                 </li>
                             </ul>
                         </li>
                         <li class="list__item">
-                            <p class="text"><strong>li:nth-child(n/odd/even)</strong>,</p>
+                            <p class="text"><strong>li:nth-child(n/odd/even)</strong></p>
                             <p class="text">n can be used in the following two ways:</p>
                             <ul class="list">
                                 <li class="list__item">
-                                    As an integer, for example :nth-child(2), which will result in
-                                    the selection of the second element
+                                    <p class="text">
+                                        As an integer, for example :nth-child(2), which will result
+                                        in the selection of the second element
+                                    </p>
                                 </li>
                                 <li class="list__item">
-                                    As a numeric expression, e.g. :nth-child(3n+1), so that the
-                                    selection starts with the first element and continues with every
-                                    third element.
+                                    <p class="text">
+                                        As a numeric expression, e.g. :nth-child(3n+1), so that the
+                                        selection starts with the first element and continues with
+                                        every third element.
+                                    </p>
                                 </li>
                             </ul>
                         </li>
@@ -1080,8 +1172,10 @@ color: unset;
                             <p class="text"><strong>:nth-last-child(-n+3)</strong>,</p>
                             <ul class="list">
                                 <li class="list__item">
-                                    Selects the third element from the end, and after that then
-                                    every element after that
+                                    <p class="text">
+                                        Selects the third element from the end, and after that then
+                                        every element after that
+                                    </p>
                                 </li>
                             </ul>
                         </li>
@@ -1090,7 +1184,7 @@ color: unset;
                             <p class="text"><strong>:nth-of-type(n + 4)</strong>,</p>
                             <ul class="list">
                                 <li class="list__item">
-                                    starting with the fourth, each successive
+                                    <p class="text">starting with the fourth, each successive</p>
                                 </li>
                             </ul>
                         </li>
