@@ -24,10 +24,16 @@
     }
 
     .list {
-        margin-block-start: 2rem;
+        gap: 1.2rem;
 
         &:not(:last-child) {
             margin-block-end: 2rem;
+        }
+    }
+
+    .text {
+        &:not(:last-child) {
+            margin-block-end: 1.2rem;
         }
     }
 }

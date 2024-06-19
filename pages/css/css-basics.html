@@ -233,7 +233,7 @@
                         content: properties about font, text, spacing, layout, etc.
                     </p>
 
-                    <picture>
+                    <picture class="u-margin-bottom-md">
                         <source type="image/avif" srcset="../../assets/img/css-syntax.avif">
                         <source type="image/webp" srcset="../../assets/img/css-syntax.webp">
                         <img
@@ -241,9 +241,44 @@
                             alt="CSS syntax"
                             height="180"
                             width="616"
-                            srcset="../../assets/img/rgb-model-wheel.png"
+                            srcset="../../assets/img/css-syntax.png"
                         >
                     </picture>
+
+                    <div class="content-box">
+                        <h3 class="heading-h3 u-margin-bottom-sm">Visual formatting model</h3>
+                        <p class="text">
+                            Visual formatting model - algorithm that calculates boxes and determines
+                            the layout of these boxes, for each element in the render tree, in order
+                            to determine the final layout of the page
+                        </p>
+                        <ul class="list">
+                            <li class="list__item">
+                                <p class="text">
+                                    <strong>Dimensions of boxes</strong> - the box model
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    <strong>Box type</strong> - inline, block and inline-block
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    <strong>Positioning scheme</strong> - floats and positioning
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text"><strong>Stacking contexts</strong></p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">Other elements in the render tree</p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">Viewport size, dimensions of images, etc.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -468,9 +503,38 @@ img[alt=""] {}
                     </picture>
 
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">
+                        <ul class="list">
+                            <li class="list__item">
+                                <p class="text"><strong>Content</strong> - text, images, etc</p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    <strong>Padding</strong> - transparent area around the content,
+                                    inside of the box
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    <strong>Border</strong> - goes around the padding and the
+                                    content
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text"><strong>Margin</strong> - space between boxes</p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    <strong>Fill area</strong> - area that gets filled with
+                                    background color or background image
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-box">
+                        <h3 class="heading-h3 u-margin-bottom-sm">
                             Content-box - default behavior
-                        </h4>
+                        </h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">
@@ -491,7 +555,7 @@ img[alt=""] {}
                     </div>
 
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">Border-box</h4>
+                        <h3 class="heading-h3 u-margin-bottom-sm">Border-box</h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">Final element width: width</p>
@@ -506,7 +570,7 @@ img[alt=""] {}
                     </div>
 
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">User agent stylesheets</h4>
+                        <h3 class="heading-h3 u-margin-bottom-sm">User agent stylesheets</h3>
                         <ul class="list">
                             <li class="list__item">
                                 <a
@@ -546,7 +610,7 @@ img[alt=""] {}
                 </header>
                 <div class="section-container">
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">Block-level elements</h4>
+                        <h3 class="heading-h3 u-margin-bottom-sm">Block-level elements</h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">Elements are formatted visually as blocks</p>
@@ -578,7 +642,7 @@ img[alt=""] {}
                     </div>
 
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">Inline elements</h4>
+                        <h3 class="heading-h3 u-margin-bottom-sm">Inline elements</h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">
@@ -626,7 +690,7 @@ img[alt=""] {}
                     </div>
 
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">Inline-block elements</h4>
+                        <h3 class="heading-h3 u-margin-bottom-sm">Inline-block elements</h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">Images has inline-block behavior</p>
@@ -638,14 +702,17 @@ img[alt=""] {}
                                 </p>
                             </li>
                             <li class="list__item">
-                                <p class="text">Occupies only content`s space | inline</p>
+                                <p class="text">
+                                    Occupies only content`s space | <strong>inline</strong>
+                                </p>
                             </li>
                             <li class="list__item">
-                                <p class="text">Causes no line-breaks | inline</p>
+                                <p class="text">Causes no line-breaks | <strong>inline</strong></p>
                             </li>
                             <li class="list__item">
                                 <p class="text">
-                                    Box-model applies how it does in a block level boxes | block
+                                    Box-model applies how it does in a block level boxes |
+                                    <strong>block</strong>
                                 </p>
                             </li>
                             <li class="list__item">
@@ -673,7 +740,7 @@ img[alt=""] {}
                 </header>
                 <div class="section-container">
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">Normal flow</h4>
+                        <h3 class="heading-h3 u-margin-bottom-sm">Normal flow</h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">Default positioning: position: static</p>
@@ -691,7 +758,7 @@ img[alt=""] {}
                     </div>
 
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">Relative positioning</h4>
+                        <h3 class="heading-h3 u-margin-bottom-sm">Relative positioning</h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">Relative positioning: position: relative;</p>
@@ -710,7 +777,7 @@ img[alt=""] {}
                     </div>
 
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">Absolute positioning</h4>
+                        <h3 class="heading-h3 u-margin-bottom-sm">Absolute positioning</h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">Absolute positioning: position: absolute;</p>
@@ -744,7 +811,7 @@ img[alt=""] {}
                     </div>
 
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">Fixed positioning</h4>
+                        <h3 class="heading-h3 u-margin-bottom-sm">Fixed positioning</h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">Fixed positioning: position: fixed;</p>
@@ -760,7 +827,7 @@ img[alt=""] {}
                     </div>
 
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">Sticky positioning</h4>
+                        <h3 class="heading-h3 u-margin-bottom-sm">Sticky positioning</h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">Sticky positioning: position: sticky;</p>
@@ -785,9 +852,9 @@ img[alt=""] {}
                 </header>
                 <div class="section-container">
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">
+                        <h3 class="heading-h3 u-margin-bottom-sm">
                             The cascade algorithm is split into 4 distinct stages
-                        </h4>
+                        </h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">
@@ -910,7 +977,7 @@ img[alt=""] {}
                     </p>
 
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">Inheritance control</h4>
+                        <h3 class="heading-h3 u-margin-bottom-sm">Inheritance control</h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">The <strong>inherit</strong> keyword</p>
@@ -994,9 +1061,9 @@ color: unset;
                 </header>
                 <div class="section-container">
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">
+                        <h3 class="heading-h3 u-margin-bottom-sm">
                             Numbers can also be used in the following places
-                        </h4>
+                        </h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">
@@ -1022,7 +1089,7 @@ color: unset;
                     </div>
 
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">Percentages</h4>
+                        <h3 class="heading-h3 u-margin-bottom-sm">Percentages</h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">
@@ -1040,7 +1107,7 @@ color: unset;
                     </div>
 
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">Absolute lenghths</h4>
+                        <h3 class="heading-h3 u-margin-bottom-sm">Absolute lenghths</h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">
@@ -1061,7 +1128,7 @@ color: unset;
                     </div>
 
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">Relative lengths</h4>
+                        <h3 class="heading-h3 u-margin-bottom-sm">Relative lengths</h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">
@@ -1096,7 +1163,7 @@ color: unset;
                     </div>
 
                     <div class="content-box">
-                        <h4 class="heading-h4 u-margin-bottom-sm">Miscellaneous units</h4>
+                        <h3 class="heading-h3 u-margin-bottom-sm">Miscellaneous units</h3>
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">

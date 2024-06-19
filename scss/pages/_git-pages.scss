@@ -1,0 +1,54 @@
+.page-git {
+    &__section-links {
+        grid-column: mid-start / mid-end;
+    }
+
+    // commands
+    &__section-how-git-works {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
+    &__section-git-basic-commands {
+        @extend %section;
+
+        grid-column: col-start 4 / col-end 6;
+    }
+
+    &__section-git-remote {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
+    &__section-git-tags {
+        @extend %section;
+
+        grid-column: col-start 4 / col-end 6;
+    }
+
+    &__section-git-branching {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
+    &__section-git-branching-2 {
+        @extend %section;
+
+        grid-column: col-start 4 / col-end 6;
+    }
+
+    &__section-git-alias {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
+    &__section-git-rebase {
+        @extend %section;
+
+        grid-column: col-start 4 / col-end 6;
+    }
+}
