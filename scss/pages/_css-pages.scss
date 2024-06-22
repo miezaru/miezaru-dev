@@ -76,6 +76,43 @@
         grid-column: col-start 4 / col-end 6;
     }
 
+    // how css works
+    &__section-css-load {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
+    &__section-css-about-cascade {
+        @extend %section;
+
+        grid-column: col-start 4 / col-end 6;
+    }
+
+    &__section-css-specificity {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
+    &__section-css-values {
+        @extend %section;
+
+        grid-column: col-start 4 / col-end 6;
+    }
+
+    &__section-css-inheritance-works {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
+    &__section-css-rendering {
+        @extend %section;
+
+        grid-column: col-start 4 / col-end 6;
+    }
+
     // colors
 
     &__section-about-colors {

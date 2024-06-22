@@ -114,24 +114,46 @@
         <meta name="msapplication-TileImage" content="../../assets/img/icons/ms-icon-144x144.png">
         <meta name="theme-color" content="#e2f3f5">
 
+        <link
+            href="../../assets/fonts/Rubik/RubikRegular/RubikRegular.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        >
+        <link
+            href="../../assets/fonts/Rubik/RubikMedium/RubikMedium.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        >
+        <link
+            href="../../assets/fonts/Rubik/RubikBold/RubikBold.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        >
+
         <link href="../../css/min/main-min.css" rel="stylesheet">
     </head>
     <body>
         <header class="header">
-            <div class="header__home-container">
-                <a class="header__home-link" href="../../index.html">Back home</a>
-            </div>
             <div class="header-container">
-                <h1 class="heading-h1 u-margin-bottom-md">
-                    <a class="author-link" href="https://github.com/miezaru">@miezaru</a> resources
-                    <span class="accent-symbol">/</span>
-                    <span>HTML: Accessibility</span>
-                </h1>
-                <p class="header__description">
-                    Accessibility is the practice of making your website as usable by many users as
-                    possible. It helps people with disability and those who use mobile or slow
-                    internet connections.
-                </p>
+                <div class="header-container-inner">
+                    <div class="header-box">
+                        <h1 class="heading-h1">
+                            <a class="author-link" href="https://github.com/miezaru">@miezaru</a>
+                            resources
+                            <span class="accent-symbol">/</span>
+                            <span>HTML: Accessibility</span>
+                        </h1>
+                        <a class="header__home-link" href="../../index.html">Back home</a>
+                    </div>
+                    <p class="header__description">
+                        Accessibility is the practice of making your website as usable by many users
+                        as possible. It helps people with disability and those who use mobile or
+                        slow internet connections.
+                    </p>
+                </div>
                 <div class="main-nav__container">
                     <span class="main-nav__text" id="main-nav-text">jump to:</span>
                     <nav class="main-nav" aria-labelledby="main-nav-text">

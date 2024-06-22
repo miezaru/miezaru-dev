@@ -114,25 +114,53 @@
         <meta name="msapplication-TileImage" content="../../assets/img/icons/ms-icon-144x144.png">
         <meta name="theme-color" content="#e2f3f5">
 
+        <link
+            href="../../assets/fonts/Rubik/RubikRegular/RubikRegular.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        >
+        <link
+            href="../../assets/fonts/Rubik/RubikMedium/RubikMedium.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        >
+        <link
+            href="../../assets/fonts/Rubik/RubikBold/RubikBold.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        >
+        <link
+            href="../../assets/fonts/DankMono/DankMonoRegular.ttf"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        >
+
         <link href="../../css/min/main-min.css" rel="stylesheet">
     </head>
     <body>
         <header class="header">
-            <div class="header__home-container">
-                <a class="header__home-link" href="../../index.html">Back home</a>
-            </div>
             <div class="header-container">
-                <h1 class="heading-h1 u-margin-bottom-md">
-                    <a class="author-link" href="https://github.com/miezaru">@miezaru</a> resources
-                    <span class="accent-symbol">/</span>
-                    <span>HTML: Icons</span>
-                </h1>
-                <p class="header__description">
-                    Icons can be defined as the images or symbols used in any computer interface
-                    refer to an element. It is a graphical representation of a file or program that
-                    helps the user to identify about the type of file quickly. Using the icon
-                    library is the easiest way to add icons to our HTML page.
-                </p>
+                <div class="header-container-inner">
+                    <div class="header-box">
+                        <h1 class="heading-h1">
+                            <a class="author-link" href="https://github.com/miezaru">@miezaru</a>
+                            resources
+                            <span class="accent-symbol">/</span>
+                            <span>HTML: Icons</span>
+                        </h1>
+                        <a class="header__home-link" href="../../index.html">Back home</a>
+                    </div>
+                    <p class="header__description">
+                        Icons can be defined as the images or symbols used in any computer interface
+                        refer to an element. It is a graphical representation of a file or program
+                        that helps the user to identify about the type of file quickly. Using the
+                        icon library is the easiest way to add icons to our HTML page.
+                    </p>
+                </div>
                 <div class="main-nav__container">
                     <span class="main-nav__text" id="main-nav-text">jump to:</span>
                     <nav class="main-nav" aria-labelledby="main-nav-text">

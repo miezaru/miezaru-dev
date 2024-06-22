@@ -9,53 +9,53 @@ $dankmono-font-path: '#{$font-path}/DankMono' !default;
     'Rubik',
     '#{$rubik-font-path}/RubikLight/RubikLight',
     300,
-    $exts: woff woff2 ttf eot
+    $exts: woff2 woff ttf eot
 );
 @include font-face(
     'Rubik',
     '#{$rubik-font-path}/RubikLightItalic/RubikLightItalic',
     300,
     italic,
-    $exts: woff woff2 ttf eot
+    $exts: woff2 woff ttf eot
 );
 @include font-face(
     'Rubik',
     '#{$rubik-font-path}/RubikRegular/RubikRegular',
     400,
-    $exts: woff woff2 ttf eot
+    $exts: woff2 woff ttf eot
 );
 @include font-face(
     'Rubik',
     '#{$rubik-font-path}/ORubikRegularItalic/RubikRegularItalic',
     400,
     italic,
-    $exts: woff woff2 ttf eot
+    $exts: woff2 woff ttf eot
 );
 @include font-face(
     'Rubik',
     '#{$rubik-font-path}/RubikMedium/RubikMedium',
     500,
-    $exts: woff woff2 ttf eot
+    $exts: woff2 woff ttf eot
 );
 @include font-face(
     'Rubik',
     '#{$rubik-font-path}/RubikMediumItalic/RubikMediumItalic',
     500,
     italic,
-    $exts: woff woff2 ttf eot
+    $exts: woff2 woff ttf eot
 );
 @include font-face(
     'Rubik',
     '#{$rubik-font-path}/RubikBold/RubikBold',
     600,
-    $exts: woff woff2 ttf eot
+    $exts: woff2 woff ttf eot
 );
 @include font-face(
     'Rubik',
     '#{$rubik-font-path}/RubikBoldItalic/RubikBoldItalic',
     600,
     italic,
-    $exts: woff woff2 ttf eot
+    $exts: woff2 woff ttf eot
 );
 @include font-face('Dank Mono', '#{$dankmono-font-path}/DankMonoRegular', 400, $exts: ttf);
 @include font-face('Dank Mono', '#{$dankmono-font-path}/DankMonoItalic', 400, italic, $exts: ttf);

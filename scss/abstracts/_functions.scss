@@ -21,3 +21,15 @@
 @function bcg($name) {
     @return var(--bcg-#{unquote($name)});
 }
+
+@function dm($name) {
+    @return var(--dm-#{unquote($name)});
+}
+
+@function kf($name) {
+    @return var(--kf-#{unquote($name)});
+}
+
+@function am($name) {
+    @return var(--am-#{unquote($name)});
+}

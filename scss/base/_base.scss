@@ -1,6 +1,6 @@
 body {
     &::-webkit-scrollbar {
-        inline-size: 6px;
+        inline-size: 10px;
     }
 
     &::-webkit-scrollbar-track {
@@ -77,4 +77,5 @@ body {
     font-size: 2rem;
     font-weight: 700;
     color: cl(purple-light-xx);
+    animation: am(pulse-infinite);
 }

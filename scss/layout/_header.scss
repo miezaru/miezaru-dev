@@ -1,42 +1,43 @@
 .header {
     position: relative;
     block-size: 90vh;
-    padding-block: 2.4rem;
-    text-align: center;
     background-image: linear-gradient(
             to right bottom,
             bcg(purple-primary-50),
             bcg(purple-primary-50)
         ),
         image-set(
-            url('../../assets/img/pilinger-point.webp') type('image/webp'),
             url('../../assets/img/pilinger-point.avif') type('image/avif'),
+            url('../../assets/img/pilinger-point.webp') type('image/webp'),
             url('../../assets/img/pilinger-point.jpg')
         );
     background-position: center;
     background-size: cover;
 
-    &__home-container {
-        text-align: center;
-    }
-
     &__home-link {
         &:link,
         &:visited {
             display: inline-block;
-            padding-block: 0.8rem;
-            padding-inline: 1.6rem;
+            padding-block: 1.6rem;
+            padding-inline: 3.2rem;
             font-weight: 600;
             color: cl(purple-light-xxx);
             text-align: center;
             text-decoration: none;
+            border: 1px solid cl(purple-light-x);
+            border-radius: br(link);
             box-shadow: sh(link-home);
+            transition: tr(small);
+        }
+
+        &:hover,
+        &:active {
+            color: cl(purple-dark-xxx);
+            background-color: cl(purple-light-x);
         }
     }
 
     &__description {
-        inline-size: 85%;
-        margin-inline: auto;
         font-size: 1.8rem;
         line-height: 1.8;
         color: cl(purple-light-xxx);
@@ -44,22 +45,35 @@
 }
 
 .header-container {
-    position: absolute;
-    inset-block-start: 50%;
-    inset-inline-start: 50%;
-    display: flex;
-    flex-direction: column;
-    inline-size: 60vw;
-    block-size: 40vh;
-    padding-block: 1.2rem;
-    padding-inline: 2.4rem;
+    display: grid;
+    gap: 6.4rem;
+    block-size: 100%;
+    padding: 2.4rem;
     background-image: linear-gradient(
         to right bottom,
         bcg(purple-primary-30),
         bcg(purple-primary-30)
     );
-    border: 2px solid cl(purple-light-xxx);
-    transform: translate(-50%, -50%);
+    // border: 2px solid cl(purple-light-xxx);
+    box-shadow: 0 0 1rem cl(purple-dark-xxx);
+}
+
+.header-container-inner {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+
+    p {
+        place-self: center center;
+        inline-size: 40%;
+        margin-block-start: 6.4rem;
+        text-align: center;
+    }
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .author-link {
@@ -79,9 +93,11 @@
 
 .main-nav {
     &__container {
+        justify-self: center;
+        inline-size: 50%;
         padding-inline: 2.4rem;
-        margin-block-start: auto;
         color: cl(purple-light-xxx);
+        text-align: center;
     }
 
     &__text {
@@ -99,9 +115,6 @@
         justify-content: center;
         font-size: 1.8rem;
         list-style: none;
-    }
-
-    &__item {
     }
 
     &__link {

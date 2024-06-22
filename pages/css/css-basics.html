@@ -114,24 +114,52 @@
         <meta name="msapplication-TileImage" content="../../assets/img/icons/ms-icon-144x144.png">
         <meta name="theme-color" content="#e2f3f5">
 
+        <link
+            href="../../assets/fonts/Rubik/RubikRegular/RubikRegular.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        >
+        <link
+            href="../../assets/fonts/Rubik/RubikMedium/RubikMedium.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        >
+        <link
+            href="../../assets/fonts/Rubik/RubikBold/RubikBold.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        >
+        <link
+            href="../../assets/fonts/DankMono/DankMonoRegular.ttf"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        >
+
         <link href="../../css/min/main-min.css" rel="stylesheet">
     </head>
     <body>
         <header class="header">
-            <div class="header__home-container">
-                <a class="header__home-link" href="../../index.html">Back home</a>
-            </div>
             <div class="header-container">
-                <h1 class="heading-h1 u-margin-bottom-md">
-                    <a class="author-link" href="https://github.com/miezaru">@miezaru</a> resources
-                    <span class="accent-symbol">/</span>
-                    <span>CSS: Basics</span>
-                </h1>
-                <p class="header__description">
-                    CSS (Cascading Style Sheets) is used to style and layout web pages — for
-                    example, to alter the font, color, size, and spacing of your content, split it
-                    into multiple columns, or add animations and other decorative features.
-                </p>
+                <div class="header-container-inner">
+                    <div class="header-box">
+                        <h1 class="heading-h1">
+                            <a class="author-link" href="https://github.com/miezaru">@miezaru</a>
+                            resources
+                            <span class="accent-symbol">/</span>
+                            <span>CSS: Basics</span>
+                        </h1>
+                        <a class="header__home-link" href="../../index.html">Back home</a>
+                    </div>
+                    <p class="header__description">
+                        CSS (Cascading Style Sheets) is used to style and layout web pages — for
+                        example, to alter the font, color, size, and spacing of your content, split
+                        it into multiple columns, or add animations and other decorative features.
+                    </p>
+                </div>
                 <div class="main-nav__container">
                     <span class="main-nav__text" id="main-nav-text">jump to:</span>
                     <nav class="main-nav" aria-labelledby="main-nav-text">
@@ -252,7 +280,7 @@
                             the layout of these boxes, for each element in the render tree, in order
                             to determine the final layout of the page
                         </p>
-                        <ul class="list">
+                        <ol class="list">
                             <li class="list__item">
                                 <p class="text">
                                     <strong>Dimensions of boxes</strong> - the box model
@@ -277,7 +305,7 @@
                             <li class="list__item">
                                 <p class="text">Viewport size, dimensions of images, etc.</p>
                             </li>
-                        </ul>
+                        </ol>
                     </div>
                 </div>
             </section>
@@ -457,7 +485,7 @@ img[alt=""] {}
                     <h2 class="heading-h2">CSS Selectors priority</h2>
                 </header>
                 <div class="section-container">
-                    <ul class="list">
+                    <ol class="list">
                         <li class="list__item">
                             <p class="text">Declaration marked <strong>!important</strong></p>
                         </li>
@@ -480,7 +508,7 @@ img[alt=""] {}
                         <li class="list__item">
                             <p class="text"><strong>Universal</strong> selector</p>
                         </li>
-                    </ul>
+                    </ol>
                 </div>
             </section>
 
@@ -855,7 +883,7 @@ img[alt=""] {}
                         <h3 class="heading-h3 u-margin-bottom-sm">
                             The cascade algorithm is split into 4 distinct stages
                         </h3>
-                        <ul class="list">
+                        <ol class="list">
                             <li class="list__item">
                                 <p class="text">
                                     Position and order of appearance: the order of which your CSS
@@ -933,7 +961,7 @@ img[alt=""] {}
                                     others, especially with the !important rule type
                                 </p>
                             </li>
-                        </ul>
+                        </ol>
                         <p class="text">
                             Not all CSS rules are calculated the same as each other, or given the
                             same specificity as each other.
@@ -942,7 +970,7 @@ img[alt=""] {}
                             The order of importance, from least important, to most important is as
                             follows:
                         </p>
-                        <ul class="list">
+                        <ol class="list">
                             <li class="list__item">
                                 <p class="text">
                                     normal rule type, such as <strong>font-size</strong>,
@@ -961,7 +989,7 @@ img[alt=""] {}
                             <li class="list__item">
                                 <p class="text"><strong>transition</strong> rule type</p>
                             </li>
-                        </ul>
+                        </ol>
                     </div>
                 </div>
             </section>
