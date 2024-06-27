@@ -1,0 +1,1194 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript - Arrays | Miezaru</title>
+
+        <!--! meta -->
+        <meta name="author" content="Artem 'Miezaru' Usatyi | miezaruexpr@gmail.com" />
+        <meta
+            name="description"
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Arrays."
+        />
+
+        <!--! Open Graph |  -->
+        <!--* Facebook Meta Tags -->
+        <meta content="https://www.miezaru.dev/" property="og:url" />
+        <meta content="website" property="og:type" />
+        <meta content="Miezaru-dev" property="og:title" />
+        <meta
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Arrays."
+            property="og:description"
+        />
+        <meta content="" property="og:image:url" />
+        <meta content="" property="og:image:alt" />
+        <meta content="image/jpeg" property="og:image:type" />
+        <meta content="400" property="og:image:width" />
+        <meta content="300" property="og:image:height" />
+
+        <!--* Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta content="miezaru.dev" property="twitter:domain" />
+        <meta content="https://www.miezaru.dev/" property="twitter:url" />
+        <meta name="twitter:title" content="Welcome | Miezaru.dev" />
+        <meta
+            name="twitter:description"
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Arrays."
+        />
+        <meta name="twitter:image:src" content="" />
+        <meta name="twitter:image:alt" content="" />
+        <meta name="twitter:creator" content="@miezaruexpr" />
+        <!-- <meta name="twitter:site" content="@miezaruexpr"> -->
+
+        <!--! manifest  -->
+        <link href="../../assets/img/icons/manifest.json" rel="manifest" />
+
+        <!--! icons -->
+        <link type="image/x-icon" href="../../assets/img/icons/favicon.ico" rel="shortcut icon" />
+        <link
+            href="../../assets/img/icons/apple-icon-57x57.png"
+            rel="apple-touch-icon"
+            sizes="57x57"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-60x60.png"
+            rel="apple-touch-icon"
+            sizes="60x60"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-72x72.png"
+            rel="apple-touch-icon"
+            sizes="72x72"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-76x76.png"
+            rel="apple-touch-icon"
+            sizes="76x76"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-114x114.png"
+            rel="apple-touch-icon"
+            sizes="114x114"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-120x120.png"
+            rel="apple-touch-icon"
+            sizes="120x120"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-144x144.png"
+            rel="apple-touch-icon"
+            sizes="144x144"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-152x152.png"
+            rel="apple-touch-icon"
+            sizes="152x152"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-180x180.png"
+            rel="apple-touch-icon"
+            sizes="180x180"
+        />
+        <link type="image/png" href=".icons/android-icon-192x192.png" rel="icon" sizes="192x192" />
+        <link
+            type="image/png"
+            href="../../assets/img/icons/favicon-32x32.png"
+            rel="icon"
+            sizes="32x32"
+        />
+        <link
+            type="image/png"
+            href="../../assets/img/icons/favicon-96x96.png"
+            rel="icon"
+            sizes="96x96"
+        />
+        <link
+            type="image/png"
+            href="../../assets/img/icons/favicon-16x16.png"
+            rel="icon"
+            sizes="16x16"
+        />
+        <meta name="msapplication-TileColor" content="#e2f3f5" />
+        <meta name="msapplication-TileImage" content="../../assets/img/icons/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#e2f3f5" />
+
+        <link
+            href="../../assets/fonts/Rubik/RubikRegular/RubikRegular.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+        <link
+            href="../../assets/fonts/Rubik/RubikMedium/RubikMedium.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+        <link
+            href="../../assets/fonts/Rubik/RubikBold/RubikBold.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+        <link
+            href="../../assets/fonts/DankMono/DankMonoRegular.ttf"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+
+        <link href="../../css/min/main-min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <div class="header-container-inner">
+                    <div class="header-box">
+                        <h1 class="heading-h1">
+                            <a class="author-link" href="https://github.com/miezaru">@miezaru</a>
+                            resources
+                            <span class="accent-symbol">/</span>
+                            <span>JavaScript: Arrays</span>
+                        </h1>
+                        <a class="header__home-link" href="../../index.html">Back home</a>
+                    </div>
+                    <p class="header__description">
+                        The Array object, as with arrays in other programming languages, enables
+                        storing a collection of multiple items under a single variable name, and has
+                        members for performing common array operations.
+                    </p>
+                </div>
+                <div class="main-nav__container">
+                    <span class="main-nav__text" id="main-nav-text">jump to:</span>
+                    <nav class="main-nav" aria-labelledby="main-nav-text">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#links">Links</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#basics-and-mutates">Basics</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#methods-add">Add items</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#methods-find-index">Find index</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#methods-find-value">Find value</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#methods-traverse">Traverse</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#methods-other">Other</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main grid-page">
+            <section class="page-html__section-links" id="links">
+                <header class="section-header">
+                    <h2 class="heading-h2">Links</h2>
+                </header>
+                <div class="section-container section-container--links">
+                    <div class="resources">
+                        <h3 class="heading-h3 u-margin-bottom-sm">Wiki</h3>
+                        <div class="resources-box">
+                            <a
+                                class="resources-box__item"
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/"
+                                rel="noopener external"
+                            >
+                                mdn arrays</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="line">&nbsp;</div>
+
+            <section class="page-js__section-basics-and-mutates" id="basics-and-mutates">
+                <header class="section-header">
+                    <h2 class="heading-h2">Basics and mutating methods</h2>
+                </header>
+                <div class="section-container">
+                    <p class="text">
+                        Array is a data structure that stores multiple values in a single variable
+                    </p>
+
+                    <p class="text">2 ways to create an array</p>
+                    <pre class="code">
+                        <code class="code-el">
+const friends = ['Nika', 'Anna', 'Eva']
+const friends = new Array('Nika', 'Anna', 'Eva')
+                        </code>
+                    </pre>
+
+                    <p class="text">Accessing elements in an array</p>
+                    <pre class="code">
+                        <code class="code-el">
+friends[2] // 'Eva'
+                        </code>
+                    </pre>
+
+                    <p class="text">
+                        Array length property gives us the number of elements in the array
+                    </p>
+                    <pre class="code">
+                        <code class="code-el">
+friends.length // 3
+                        </code>
+                    </pre>
+
+                    <p class="text">
+                        Only primitive data types cannot be changed in const variables (number,
+                        string, boolean, null, undefined)
+                    </p>
+
+                    <p class="text">Change/mutate an element in an array</p>
+                    <pre class="code">
+                        <code class="code-el">
+friends[2] = 'Emma'
+                        </code>
+                    </pre>
+
+                    <p class="text">Illegal operation (because erray is const variable)</p>
+                    <pre class="code">
+                        <code class="code-el">
+const friends = ['Nika', 'Anna', 'Eva']
+friends = ['Olga', 'Olivia', 'Sophia']
+                        </code>
+                    </pre>
+
+                    <p class="text">All items in an array is expressions</p>
+                    <pre class="code u-margin-bottom-bg">
+                        <code class="code-el">
+const artem = ['Artem', 'Usatyi', 2024 - 1997, 'programmer', friends]
+                        </code>
+                    </pre>
+
+                    <h3 class="heading-h3 u-margin-bottom-sm">
+                        The following is a list of methods that mutate an array:
+                    </h3>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">
+                                <code>push</code>: adds the specified elements to the end of an
+                                array
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">
+                                <code>pop</code>: removes the last element from an array
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">
+                                <code>unshift</code>: adds the specified elements to the beginning
+                                of an array
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">
+                                <code>shift</code>: removes the first element from an array
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">
+                                <code>fill</code>: changes all elements within a range in an array
+                                to a static value
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">
+                                <code>sort</code>: sorts an array, use <code>toSorted</code> method
+                                w/o mutating
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">
+                                <code>reverse</code>: reverses an array, use
+                                <code>toReversed</code> method w/o mutating
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">
+                                <code>splice</code>: removes or replaces existing elements and/or
+                                adds new elements, use <code>toSpliced</code> method w/o mutating
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">
+                                <code>copyWithin</code>: copies part of the array to another
+                                location in the same array
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="page-js__section-methods-add" id="methods-add">
+                <header class="section-header">
+                    <h2 class="heading-h2">Methods: add items to the array</h2>
+                </header>
+                <div class="section-container">
+                    <h4 class="heading-h4 u-margin-bottom-sm">.push()</h4>
+                    <ul class="list">
+                        <li class="list__item">adds a new element to the end of an array</li>
+                        <li class="list__item"><code>push(element1, element2)</code></li>
+                        <li class="list__item">returns the new length of the array</li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+let newLength = friends.push('Mia') // return new length
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.pop()</h4>
+                    <ul class="list">
+                        <li class="list__item">removes the last element from an array</li>
+                        <li class="list__item"><code>pop()</code></li>
+                        <li class="list__item">returns the removed element</li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const lastElement = friends.pop() // return removed (last) item of the array
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.unshift()</h4>
+                    <ul class="list">
+                        <li class="list__item">adds a new element to the beginning of an array</li>
+                        <li class="list__item"><code>unshift(element1, element2)</code></li>
+                        <li class="list__item">returns the new length of the array</li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const newLength = friends.unshift('Kate') // return new length
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.shift()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            removes the first element from an array and returns it
+                        </li>
+                        <li class="list__item"><code>shift()</code></li>
+                        <li class="list__item">returns the removed element</li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const firstElement = friends.shift() // return removed (first) item of the array
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.fill()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">fills the elements of an array with a static value</p>
+                        </li>
+                        <li class="list__item">
+                            <code>
+                                fill(value) | fill(value, start) | fill(value, start, end (not
+                                icluded))</code
+                            >
+                        </li>
+                        <li class="list__item">returns the modified array</li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// Fill with 0 from position 2 until position 4, because like in copyWithin, end is not included
+console.log(array.fill(0, 2, 4)) // [1, 2, 0, 0]
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <section class="page-js__section-methods-find-index" id="methods-find-index">
+                <header class="section-header">
+                    <h2 class="heading-h2">Methods: find index</h2>
+                </header>
+                <div class="section-container">
+                    <h4 class="heading-h4 u-margin-bottom-sm">.indexOf()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code>indexOf(searchElement), indexOf(searchElement, fromIndex)</code>
+                        </li>
+                        <li class="list__item">
+                            returns the first index at which a given element can be found in the
+                            array, or -1 if not found
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const beasts = ['ant', 'bison', 'camel', 'duck', 'bison']
+beasts.indexOf('bison')    // 1
+beasts.indexOf('bison', 2) // 4
+beasts.indexOf('lion')     // -1;
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.lastIndexOf()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code>
+                                lastIndexOf(searchElement), lastIndexOf(searchElement,
+                                fromIndex)</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns the last index at which a given element can be found in the
+                            array, or -1 if not found
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo']
+animals.lastIndexOf('Dodo') // 3
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.findIndex()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code>
+                                callback function (element, index, array), findIndex(callbackFn,
+                                thisArg)</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns the index of the FIRST element in the array that satisfies the
+                            provided testing function
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array = [5, 12, 8, 130, 44]
+const isLargeNumber = element => element > 11
+array.findIndex(isLargeNumber) // 1
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.findLastIndex()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code>
+                                callback function (element, index, array), findLastIndex(callbackFn,
+                                thisArg)</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns the index of the LAST element in the array that satisfies the
+                            provided testing function
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array = [5, 12, 8, 130, 44]
+const isLargeNumber = element => element > 11
+array.findLastIndex(isLargeNumber) // 4
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.keys()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code>keys()</code>
+                        </li>
+                        <li class="list__item">
+                            returns a new Array Iterator object that contains the keys of an array
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array = ['a', 'b', 'c']
+console.log(array.keys()) // Array Iterator
+
+for (const key of array.keys()) {
+    console.log(key) // 0, 1, 2
+}
+
+const myKeys = [...array.keys()] // convert iterator to array
+console.log(myKeys) // [0, 1, 2]
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.entries()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code>entries()</code>
+                        </li>
+                        <li class="list__item">
+                            returns a new Iterator object that contains the keys for each element
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+let homies = ['Nika', 'Anna', 'Eva', 'Mia']
+console.log(homies.entries()) // array Iterator
+
+const myHomiesEntries = [...homies.entries()] // convert iterator to array
+console.log(myHomiesEntries) // [[0, 'Nika'], [1, 'Anna'], [2, 'Eva'], [3, 'Mia']]
+
+for (const [index, value] of myHomiesEntries) {
+    console.log(index, value)
+}
+
+for (const element of homies.entries()) {
+    console.log(element)
+}
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <section class="page-js__section-methods-find-value" id="methods-find-value">
+                <header class="section-header">
+                    <h2 class="heading-h2">Methods: find value</h2>
+                </header>
+                <div class="section-container">
+                    <h4 class="heading-h4 u-margin-bottom-sm">.values()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code>values()</code>
+                        </li>
+                        <li class="list__item">
+                            returns a new Iterator object that contains the values for each index in
+                            the array
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+array = ['a', 'b', 'c']
+const iterator = array.values()
+iterator.next().value    // 'a'
+iterator.next().value    // 'b'
+iterator.next().value    // 'c'
+iterator.next().value    // undefined
+iterator.next().done     // true
+
+const iterator2 = array.values()
+for (const value of iterator2) {
+  console.log(value)     // a, b, c
+}
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.[@iterator()]</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code> array[Symbol.iterator]()</code>
+                        </li>
+                        <li class="list__item">
+                            returns a new Iterator object that contains the keys for each element
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+let homies = ['Nika', 'Anna', 'Eva', 'Mia']
+for (const homie of homies) {
+    console.log(`array iterator with for...of loop ${homies.indexOf(homie)}`, homie) // 0 'Nika', 1 'Anna', 2 'Eva', 3 'Mia'
+}
+
+const letters = ['a', 'b', 'c', 'd', 'e']
+const iterator1 = letters[Symbol.iterator]()
+
+for (const letter of letters) {
+    console.log(letter)            // a b c d e
+}
+for (const letter of iterator1) {
+    console.log(letter)            // a b c d e
+}
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.at()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code> at(index)</code>
+                        </li>
+                        <li class="list__item">
+                            returns the element at the specified index in the array
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+let homies = ['Nika', 'Anna', 'Eva', 'Mia']
+console.log(homies.at(1))    // Anna;
+console.log(homies.at(-1))   // Mia;
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.includes()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">
+                                determines whether an array includes a certain element
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <code>
+                                includes(searchElement), includes(searchElement, fromIndex)</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns true if the array contains the element, false otherwise
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array = [1, 2, 3, 4, 5]
+console.log(array.includes(3)) // true
+console.log(array.includes(6)) // false
+console.log(array.includes(3, 3)) // false
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.find()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code>
+                                callback function (element, index, array), findLast(callbackFn,
+                                thisArg)</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns the value of the FIRST element in the array that satisfies the
+                            provided testing function
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array = [5, 12, 8, 130, 44]
+const found = array.find(element => element > 10) // 12
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.findLast()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code>
+                                callback function (element, index, array), findLast(callbackFn,
+                                thisArg)</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns the value of the LAST element in the array that satisfies the
+                            provided testing function
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array3 = [5, 12, 8, 130, 44]
+const found2 = array3.findLast(element => element > 45) // 130
+const found3 = array3.findLast(element => element > 10) // 44
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <section class="page-js__section-methods-traverse" id="methods-traverse">
+                <header class="section-header">
+                    <h2 class="heading-h2">Methods: traverse array</h2>
+                </header>
+                <div class="section-container">
+                    <h4 class="heading-h4 u-margin-bottom-sm">.forEach()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">
+                                executes a provided function once for each array element
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <code>
+                                callback function (element, index, array), forEach(callbackFn,
+                                thisArg)</code
+                            >
+                        </li>
+                        <li class="list__item">returns undefined</li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array = ['a', 'b', 'c']
+array.forEach(element => console.log(element)) // a, b, c
+
+const items = ['item1', 'item2', 'item3']
+
+// before
+const copyItems = []
+for (let i = 0; i < items.length; i++) {
+    copyItems.push(items[i])
+}
+console.log(copyItems)
+
+// after
+const copyItems2 = []
+items.forEach(item => {
+    copyItems2.push(item)
+})
+console.log(copyItems2)
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.map()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">
+                                creates a new array with the results of calling a provided function
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <code>
+                                callback function (element, index, array), map(callbackFn,
+                                thisArg)</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns a new array with the results of calling a provided function on
+                            every element in the array
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array = [1, 4, 9, 16]
+// Pass a function to map
+const map1 = array.map(x => x * 2)
+
+// map different from forEach because it returns a new array
+console.log(map1) // [2, 8, 18, 32]
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.flatMap()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code>
+                                callback function (element, index, array), flatMap(callbackFn,
+                                thisArg)</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns a new array with the results of calling a provided function on
+                            every element in the array and flattens the result into a single array
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array = [1, 2, 1, 34, 2, 45]
+const result = array.flatMap(num => (num === 2 ? [2, 2] : 1))
+console.log(result) // [1, 2, 2, 1, 1, 2, 2, 1]
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.filter()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">
+                                creates a new array with all elements that pass the test implemented
+                                by the provided function
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <code>
+                                callback function (element, index, array), filter(callbackFn,
+                                thisArg)</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns a new array with all elements that pass the test
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const words = ['spray', 'elite', 'exuberant', 'destruction', 'present']
+const result = words.filter(word => word.length > 6)
+console.log(result) // ['exuberant', 'destruction', 'present']
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">
+                        .reduce()<br />
+                        .reduceRight()
+                    </h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">
+                                applies a function against an accumulator and each element in the
+                                array (from left to right or from right to left)
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <code>
+                                reduce(accumulator(накопитель), currentValue, currentIndex, array),
+                                reduce(callbackFn, initialValue)</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns the accumulated value after running the reduce function on each
+                            element in the array
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array = [1, 2, 3, 4]
+const initialValue = 3
+const sumWithInitial = array.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue) // 3 + 1 + 2 + 3 + 4 = 13
+
+const array2 = ['o', 'r', 'l', 'd']
+const result1 = array2.reduce((accumulator, currentValue) => accumulator + currentValue, 'w') // 'world'
+
+
+const array3 = [[0, 1], [2, 3], [4, 5]]
+const result2 = array3.reduceRight((accumulator, currentValue) => accumulator.concat(currentValue)) // [4, 5, 2, 3, 0, 1]
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">
+                        .sort()<br />
+                        .toSorted
+                    </h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">sorts the elements of an array in place</p>
+                        </li>
+                        <li class="list__item">
+                            <code>
+                                sort(), sort(compareFunction), toSorted(),
+                                toSorted(compareFunction)</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns the array, change the original array if using
+                            <code>.sort()</code> and not changing if used <code>.toSorted</code>
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array1 = [3, 1, 2, 5, 4]
+array1.sort()          // [1, 2, 3, 4, 5]
+
+const array2 = ['cherry', 'apple', 'banana']
+array2.sort()          // ['apple', 'banana', 'cherry']
+console.log(array2)    // ['apple', 'banana', 'cherry']
+
+const array3 = [3, 1, 2, 5, 4]
+array3.toSorted()      // [1, 2, 3, 4, 5]
+console.log(array3)    // [3, 1, 2, 5, 4]
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.every()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">
+                                tests whether all elements in the array pass the test implemented by
+                                the provided function
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <code>
+                                callback function (element, index, array), every(callbackFn,
+                                thisArg)</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns true if all elements pass the test, false otherwise
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const numbers = [1, 2, 3, 4, 5]
+const isEven = num => num % 2 === 0
+const biggerThenZero = num => num > 0
+
+numbers.every(isEven)            // false
+numbers.every(biggerThenZero)    // true
+
+const isSubset = (array1, array2) => array2.every(element => array1.includes(element))
+isSubset([1, 2, 3, 4, 5, 6, 7], [5, 7, 6]) // true
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.some()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">
+                                tests whether at least one element in the array passes the test
+                                implemented by the provided function
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <code>
+                                callback function (element, index, array), some(callbackFn,
+                                thisArg)</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns true if at least one element in the array passes the test
+                            implemented by the provided function
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array = [1, 2, 3, 4, 5]
+const even = element => element % 2 === 0
+console.log(array.some(even)) // true
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <section class="page-js__section-methods-other" id="methods-other">
+                <header class="section-header">
+                    <h2 class="heading-h2">Methods: other</h2>
+                </header>
+                <div class="section-container">
+                    <h4 class="heading-h4 u-margin-bottom-sm">.concat()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code>concat(), concat(value1), concat(value1, value2)</code>
+                        </li>
+                        <li class="list__item">
+                            returns a new array that is the result of concatenating all the arrays
+                            in the arguments
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+let homies = ['Nika', 'Anna', 'Eva', 'Mia']
+homies = homies.concat(['Ben', 'Tailor']) // ['Nika', 'Anna', 'Eva', 'Mia', 'Ben', 'Tailor']
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.flat()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code>flat(), flat(depth), flat(Infinity)</code>
+                        </li>
+                        <li class="list__item">
+                            returns a new array with all sub-array elements concatenated into it
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array6 = [0, 1, [2, [3, [4, 5]]]]
+console.log(array6.flat())            // [0, 1, 2, Array(2)]
+console.log(array6.flat(2))           // [0, 1, 2, Array(2)]
+console.log(array6.flat(Infinity))    // [0, 1, 2, 3, 4, 5]
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.copyWithin()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">
+                                replaces elements of an array with other array elements or values
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <code>
+                                copyWithin(target, start), copyWithin(target, start, end (not
+                                icluded))</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns the element at the specified index in the array
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+
+// first value is target (where start), second value is what element to put in target, third value is where to end copying (not included)
+const array = ['q', 'w', 'e', 'r', 't', 'y']
+array.copyWithin(0, 3) // ['r', 't', 'y', 'r', 't', 'y']
+
+array.copyWithin(0, 2, 5) // ['y', 'r', 't', 'r', 't', 'y']
+
+// negative indices count from the end of the array
+array.copyWithin(0, 1, -1) // ['r', 't', 'r', 't', 't', 'y']
+
+// this line does not mutate the original array, because it starts at 3 and ends at 3 (what not included)
+array.copyWithin(0, 3, 3)
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.slice()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">
+                                extracts a section of an array and returns a new array
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <code>
+                                slice(beginIndex), slice(beginIndex, endIndex(not included))</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns a new array containing a shallow copy of a portion of the array
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const animals1 = ['ant', 'bison', 'camel', 'duck', 'elephant']
+
+animals1.slice(2)       // ['camel', 'duck', 'elephant']
+animals1.slice(2, 4)    // ['camel', 'duck']
+animals1.slice(-2)      // ['duck', 'elephant']
+animals1.slice()        // ['ant', 'bison', 'camel', 'duck', 'elephant']
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.splice()<br />.toSpliced()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">
+                                changes the contents of an array by removing existing elements
+                                and/or adding new elements
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <code>
+                                splice(startIndex), splice(startIndex, deleteCount),
+                                splice(startIndex, deleteCount, item1, item2, ...)
+                                toSpliced(startIndex), toSpliced(startIndex, deleteCount),
+                                toSpliced(startIndex, deleteCount, item1, item2,...)</code
+                            >
+                        </li>
+                        <li class="list__item">
+                            returns a new array containing the deleted elements,
+                            <code>.splice()</code> changing the original array and
+                            <code>.toSpliced</code> not changing the original array
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const months = ['Jan', 'March', 'April', 'June']
+months.splice(1, 0, 'Feb') // inserts at index 1
+console.log(months) // changed to ["Jan", "Feb", "March", "April", "June"]
+
+months.splice(4, 1, 'May') // replaces 1 element at index 4
+console.log(months) // changed to ["Jan", "Feb", "March", "April", "May"]
+
+const months1 = ['Jan', 'March', 'April', 'June']
+months1.toSpliced(1, 0, 'Feb') // inserts at index 1
+console.log(months1) // not changed
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.with()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">creates a shallow copy of an array</p>
+                        </li>
+                        <li class="list__item">
+                            <code> with(...items), arrayInstance.width(index, value)</code>
+                        </li>
+                        <li class="list__item">
+                            returns a shallow copy of an array with the provided items appended to
+                            it
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array = [1, 2, 3, 4, 5]
+const newArray = array.with(2, 6)    // [1, 2, 6, 4, 5]
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">
+                        .reverse() <br />
+                        .toReversed()
+                    </h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">
+                                creates a new array with the elements of this array in reverse order
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <code>reverse(), toReversed()</code>
+                        </li>
+                        <li class="list__item">
+                            returns the array with its elements in reverse order,
+                            <code>.reverse()</code> changing the original array and
+                            <code>.toReversed()</code> not changing the original array
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array1 = ['one', 'two', 'three']
+array1.reverse()            // ['three', 'two', 'one']
+array                       // ['three', 'two', 'one']
+
+const array2 = [1, 2, 3, 4, 5]
+array2.toReversed()         // [5, 4, 3, 2, 1]
+array2                      // [1, 2, 3, 4, 5]
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.join()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">joins all elements of an array into a string</p>
+                        </li>
+                        <li class="list__item">
+                            <code>join(), join(separator)</code>
+                        </li>
+                        <li class="list__item">
+                            returns a string containing all the elements of the array, separated by
+                            commas and/or a specified separator
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const elements = ['Fire', 'Air', 'Water']
+elements.join()                     // Fire,Air,Water
+elements.join('-')                  // Fire-Air-Water
+elements.join(' ').toLowerCase()    // fire air water
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.toString()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code>toString()</code>
+                        </li>
+                        <li class="list__item">returns a string representation of the array</li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array = [1, 'a', 23, [1, 2, 3], { name: 'John' }]
+array21.toString()    // "1,a,23,1,2,3,[object Object]"
+                        </code>
+                    </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">.toLocaleString()</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <code>toLocaleString(), toLocaleString(locales[, options])</code>
+                        </li>
+                        <li class="list__item">
+                            returns a string representing the elements of the array
+                        </li>
+                    </ul>
+                    <pre class="code u-margin-bottom-md">
+                        <code class="code-el">
+const array = [1, 'a', new Date('21 Dec 1997 14:12:00 UTC')]
+const localeString = array.toLocaleString('en', { timeZone: 'UTC' })
+locateString // "1, a, 12/21/1997, 2:12:00 PM"
+                        </code>
+                    </pre>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

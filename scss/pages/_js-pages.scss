@@ -1,0 +1,41 @@
+.page-js {
+    &__section-links {
+        grid-column: mid-start / mid-end;
+    }
+
+    &__section-basics-and-mutates {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
+    &__section-methods-add {
+        @extend %section;
+
+        grid-column: col-start 4 / col-end 6;
+    }
+
+    &__section-methods-find-index {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
+    &__section-methods-find-value {
+        @extend %section;
+
+        grid-column: col-start 4 / col-end 6;
+    }
+
+    &__section-methods-traverse {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
+    &__section-methods-other {
+        @extend %section;
+
+        grid-column: col-start 4 / col-end 6;
+    }
+}
