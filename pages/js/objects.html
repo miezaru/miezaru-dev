@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript - Objects | Miezaru</title>
+
+        <!--! meta -->
+        <meta name="author" content="Artem 'Miezaru' Usatyi | miezaruexpr@gmail.com" />
+        <meta
+            name="description"
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Objects."
+        />
+
+        <!--! Open Graph |  -->
+        <!--* Facebook Meta Tags -->
+        <meta content="https://www.miezaru.dev/" property="og:url" />
+        <meta content="website" property="og:type" />
+        <meta content="Miezaru-dev" property="og:title" />
+        <meta
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Objects."
+            property="og:description"
+        />
+        <meta content="" property="og:image:url" />
+        <meta content="" property="og:image:alt" />
+        <meta content="image/jpeg" property="og:image:type" />
+        <meta content="400" property="og:image:width" />
+        <meta content="300" property="og:image:height" />
+
+        <!--* Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta content="miezaru.dev" property="twitter:domain" />
+        <meta content="https://www.miezaru.dev/" property="twitter:url" />
+        <meta name="twitter:title" content="Welcome | Miezaru.dev" />
+        <meta
+            name="twitter:description"
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Objects."
+        />
+        <meta name="twitter:image:src" content="" />
+        <meta name="twitter:image:alt" content="" />
+        <meta name="twitter:creator" content="@miezaruexpr" />
+        <!-- <meta name="twitter:site" content="@miezaruexpr"> -->
+
+        <!--! manifest  -->
+        <link href="../../assets/img/icons/manifest.json" rel="manifest" />
+
+        <!--! icons -->
+        <link type="image/x-icon" href="../../assets/img/icons/favicon.ico" rel="shortcut icon" />
+        <link
+            href="../../assets/img/icons/apple-icon-57x57.png"
+            rel="apple-touch-icon"
+            sizes="57x57"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-60x60.png"
+            rel="apple-touch-icon"
+            sizes="60x60"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-72x72.png"
+            rel="apple-touch-icon"
+            sizes="72x72"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-76x76.png"
+            rel="apple-touch-icon"
+            sizes="76x76"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-114x114.png"
+            rel="apple-touch-icon"
+            sizes="114x114"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-120x120.png"
+            rel="apple-touch-icon"
+            sizes="120x120"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-144x144.png"
+            rel="apple-touch-icon"
+            sizes="144x144"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-152x152.png"
+            rel="apple-touch-icon"
+            sizes="152x152"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-180x180.png"
+            rel="apple-touch-icon"
+            sizes="180x180"
+        />
+        <link type="image/png" href=".icons/android-icon-192x192.png" rel="icon" sizes="192x192" />
+        <link
+            type="image/png"
+            href="../../assets/img/icons/favicon-32x32.png"
+            rel="icon"
+            sizes="32x32"
+        />
+        <link
+            type="image/png"
+            href="../../assets/img/icons/favicon-96x96.png"
+            rel="icon"
+            sizes="96x96"
+        />
+        <link
+            type="image/png"
+            href="../../assets/img/icons/favicon-16x16.png"
+            rel="icon"
+            sizes="16x16"
+        />
+        <meta name="msapplication-TileColor" content="#e2f3f5" />
+        <meta name="msapplication-TileImage" content="../../assets/img/icons/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#e2f3f5" />
+
+        <link
+            href="../../assets/fonts/Rubik/RubikRegular/RubikRegular.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+        <link
+            href="../../assets/fonts/Rubik/RubikMedium/RubikMedium.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+        <link
+            href="../../assets/fonts/Rubik/RubikBold/RubikBold.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+        <link
+            href="../../assets/fonts/DankMono/DankMonoRegular.ttf"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+
+        <link href="../../css/min/main-min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <div class="header-container-inner">
+                    <div class="header-box">
+                        <h1 class="heading-h1">
+                            <a class="author-link" href="https://github.com/miezaru">@miezaru</a>
+                            resources
+                            <span class="accent-symbol">/</span>
+                            <span>JavaScript: Objects</span>
+                        </h1>
+                        <a class="header__home-link" href="../../index.html">Back home</a>
+                    </div>
+                    <p class="header__description">
+                        The Object type represents one of JavaScript's data types. It is used to
+                        store various keyed collections and more complex entities. Objects can be
+                        created using the Object() constructor or the object initializer / literal
+                        syntax.
+                    </p>
+                </div>
+                <div class="main-nav__container">
+                    <span class="main-nav__text" id="main-nav-text">jump to:</span>
+                    <nav class="main-nav" aria-labelledby="main-nav-text">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#links">Links</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#basics">Basics</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main grid-page">
+            <section class="page-html__section-links" id="links">
+                <header class="section-header">
+                    <h2 class="heading-h2">Links</h2>
+                </header>
+                <div class="section-container section-container--links">
+                    <div class="resources">
+                        <h3 class="heading-h3 u-margin-bottom-sm">Wiki</h3>
+                        <div class="resources-box">
+                            <a
+                                class="resources-box__item"
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object"
+                                rel="noopener external"
+                            >
+                                mdn objects</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="line">&nbsp;</div>
+
+            <section class="page-js__section-obj-basics" id="basics">
+                <header class="section-header">
+                    <h2 class="heading-h2">Basics</h2>
+                </header>
+                <div class="section-container">
+                    <div class="content-box">
+                        <h3 class="heading-h3 u-margin-bottom-sm">What is Object?</h3>
+                        <p class="text">
+                            Arrays have no names for elements, only accessed by their index
+                        </p>
+                        <p class="text">
+                            Objects literal syntax creates objects with properties and values
+                        </p>
+                        <p class="text">Order not matter in objects</p>
+                        <pre class="code">
+                            <code class="code-el">
+    const artem = {
+        firstName: 'Artem',
+        lastName: 'Usatyi',
+        age: 2024 - 1997,
+        job: 'programmer',
+        friends: ['Nika', 'Anna', 'Eva'],
+    }
+                            </code>
+                        </pre>
+                        <p class="text">
+                            Use arrays for non structured data and objects for structured data
+                        </p>
+                    </div>
+
+                    <div class="content-box">
+                        <h3 class="heading-h3 u-margin-bottom-sm">DOT VS. BRACKET NOTATION</h3>
+                        <h4 class="heading-h4 u-margin-bottom-sm">Dot and Bracket</h4>
+                        <pre class="code">
+                            <code class="code-el">
+artem.firstName         // 'Artem'
+artem.lastName          // 'Usatyi'
+                            </code>
+                        </pre>
+                        <p class="text">
+                            In bracket notation we can use variables or
+                            <strong>expressions</strong> as property names
+                        </p>
+                        <pre class="code">
+                            <code class="code-el">
+artem['age']                // 27
+
+const nameKey = 'Name'
+artem[`first${nameKey}`]    // Artem
+artem[`last${nameKey}`]     // Usatyi
+                            </code>
+                        </pre>
+
+                        <h4 class="heading-h4 u-margin-bottom-sm">Add new properties</h4>
+                        <pre class="code">
+                            <code class="code-el">
+artem.location = 'Ukraine'
+artem['github'] = '@miezaru'
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="content-box">
+                        <h3 class="heading-h3 u-margin-bottom-sm">Object methods</h3>
+                        <p class="text">Object methods are functions attached to objects</p>
+                        <pre class="code">
+                            <code class="code-el">
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    birthYear: 1994,
+    job: 'developer',
+    friends: ['Jane Doe', 'Mike Doe', 'Sarah Doe'],
+    hasDriversLicense: true,
+
+    calcAge1: function (birthYear) {
+        return 2024 - birthYear
+    },
+
+    calcAge2: function () {
+        return 2024 - this.birthYear
+    },
+
+    // better if we use this method multiple times, we can simply store it and not calling function every time
+    calcAge3: function () {
+        this.age = 2024 - this.birthYear
+        return this.age
+    },
+
+    // arrow function does not have its own 'this' keyword, it uses the 'this' of the enclosing scope
+    calcAge3: () => {
+        this.age = 2024 - this.birthYear
+        return this.age
+    }, // NOT WORKED
+
+    getSummary: function () {
+        return `${this.firstName} is ${this.calcAge3()} years old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
+    },
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

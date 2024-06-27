@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript - Loops | Miezaru</title>
+
+        <!--! meta -->
+        <meta name="author" content="Artem 'Miezaru' Usatyi | miezaruexpr@gmail.com" />
+        <meta
+            name="description"
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Loops."
+        />
+
+        <!--! Open Graph |  -->
+        <!--* Facebook Meta Tags -->
+        <meta content="https://www.miezaru.dev/" property="og:url" />
+        <meta content="website" property="og:type" />
+        <meta content="Miezaru-dev" property="og:title" />
+        <meta
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Loops."
+            property="og:description"
+        />
+        <meta content="" property="og:image:url" />
+        <meta content="" property="og:image:alt" />
+        <meta content="image/jpeg" property="og:image:type" />
+        <meta content="400" property="og:image:width" />
+        <meta content="300" property="og:image:height" />
+
+        <!--* Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta content="miezaru.dev" property="twitter:domain" />
+        <meta content="https://www.miezaru.dev/" property="twitter:url" />
+        <meta name="twitter:title" content="Welcome | Miezaru.dev" />
+        <meta
+            name="twitter:description"
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Loops."
+        />
+        <meta name="twitter:image:src" content="" />
+        <meta name="twitter:image:alt" content="" />
+        <meta name="twitter:creator" content="@miezaruexpr" />
+        <!-- <meta name="twitter:site" content="@miezaruexpr"> -->
+
+        <!--! manifest  -->
+        <link href="../../assets/img/icons/manifest.json" rel="manifest" />
+
+        <!--! icons -->
+        <link type="image/x-icon" href="../../assets/img/icons/favicon.ico" rel="shortcut icon" />
+        <link
+            href="../../assets/img/icons/apple-icon-57x57.png"
+            rel="apple-touch-icon"
+            sizes="57x57"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-60x60.png"
+            rel="apple-touch-icon"
+            sizes="60x60"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-72x72.png"
+            rel="apple-touch-icon"
+            sizes="72x72"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-76x76.png"
+            rel="apple-touch-icon"
+            sizes="76x76"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-114x114.png"
+            rel="apple-touch-icon"
+            sizes="114x114"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-120x120.png"
+            rel="apple-touch-icon"
+            sizes="120x120"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-144x144.png"
+            rel="apple-touch-icon"
+            sizes="144x144"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-152x152.png"
+            rel="apple-touch-icon"
+            sizes="152x152"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-180x180.png"
+            rel="apple-touch-icon"
+            sizes="180x180"
+        />
+        <link type="image/png" href=".icons/android-icon-192x192.png" rel="icon" sizes="192x192" />
+        <link
+            type="image/png"
+            href="../../assets/img/icons/favicon-32x32.png"
+            rel="icon"
+            sizes="32x32"
+        />
+        <link
+            type="image/png"
+            href="../../assets/img/icons/favicon-96x96.png"
+            rel="icon"
+            sizes="96x96"
+        />
+        <link
+            type="image/png"
+            href="../../assets/img/icons/favicon-16x16.png"
+            rel="icon"
+            sizes="16x16"
+        />
+        <meta name="msapplication-TileColor" content="#e2f3f5" />
+        <meta name="msapplication-TileImage" content="../../assets/img/icons/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#e2f3f5" />
+
+        <link
+            href="../../assets/fonts/Rubik/RubikRegular/RubikRegular.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+        <link
+            href="../../assets/fonts/Rubik/RubikMedium/RubikMedium.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+        <link
+            href="../../assets/fonts/Rubik/RubikBold/RubikBold.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+        <link
+            href="../../assets/fonts/DankMono/DankMonoRegular.ttf"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+
+        <link href="../../css/min/main-min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <div class="header-container-inner">
+                    <div class="header-box">
+                        <h1 class="heading-h1">
+                            <a class="author-link" href="https://github.com/miezaru">@miezaru</a>
+                            resources
+                            <span class="accent-symbol">/</span>
+                            <span>JavaScript: Loops</span>
+                        </h1>
+                        <a class="header__home-link" href="../../index.html">Back home</a>
+                    </div>
+                    <p class="header__description">
+                        Loops offer a quick and easy way to do something repeatedly.
+                    </p>
+                </div>
+                <div class="main-nav__container">
+                    <span class="main-nav__text" id="main-nav-text">jump to:</span>
+                    <nav class="main-nav" aria-labelledby="main-nav-text">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#links">Links</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#basics">Basics</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main grid-page">
+            <section class="page-html__section-links" id="links">
+                <header class="section-header">
+                    <h2 class="heading-h2">Links</h2>
+                </header>
+                <div class="section-container section-container--links">
+                    <div class="resources">
+                        <h3 class="heading-h3 u-margin-bottom-sm">Wiki</h3>
+                        <div class="resources-box">
+                            <a
+                                class="resources-box__item"
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration"
+                                rel="noopener external"
+                            >
+                                mdn loops</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="line">&nbsp;</div>
+
+            <section class="page-js__section-loop-basics" id="basics">
+                <header class="section-header">
+                    <h2 class="heading-h2">Basics</h2>
+                </header>
+                <div class="section-container">
+                    <div class="content-box">
+                        <h3 class="heading-h3 u-margin-bottom-sm">For loop</h3>
+                        <p class="text">
+                            For loop needs a starting point, an ending point, and an
+                            increment/decrement value
+                        </p>
+                        <p class="text">For loop keeps running as long as the condition is true</p>
+                        <pre class="code">
+                            <code class="code-el">
+for (let rep = 1; rep <= 5; rep++) {
+  console.log(`Lifting weights repetition ${rep}🏋️`)
+}
+                            </code>
+                        </pre>
+
+                        <h4 class="heading-h4 u-margin-bottom-sm">Looping arrays</h4>
+                        <pre class="code">
+                            <code class="code-el">
+const years = [1997, 2000, 2003, 2020]
+const ages = []
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2024 - years[i])
+}
+                            </code>
+                        </pre>
+
+                        <h4 class="heading-h4 u-margin-bottom-sm">Continue and break statements</h4>
+                        <p class="text">
+                            Continue statement skips the current iteration and moves to the next one
+                        </p>
+                        <p class="text">Only strings will be logged:</p>
+                        <pre class="code">
+                            <code class="code-el">
+const artem = ['Artem', 'Usatyi', 2024 - 1997, 'programmer', ['Nika', 'Anna', 'Eva']]
+
+for (let i = 0; i < artem.length; i++) {
+  if (typeof artem[i] !== 'string') continue
+  console.log(artem[i], typeof artem[i])
+}
+                            </code>
+                        </pre>
+
+                        <p class="text">
+                            Break statement stops the loop and exits the loop immediately
+                        </p>
+                        <pre class="code">
+                            <code class="code-el">
+for (let i = 0; i < artem.length; i++) {
+  if (typeof artem[i] === 'number') break
+  console.log(artem[i], typeof artem[i])
+}
+                            </code>
+                        </pre>
+
+                        <h4 class="heading-h4 u-margin-bottom-sm">Looping backwards</h4>
+                        <pre class="code">
+                            <code class="code-el">
+const nika = ['Nika', 'Wells', 2024 - 2004, 'dreamer', ['Artem', 'Anna', 'Eva']]
+
+for (let i = nika.length - 1; i >= 0; i--) {
+  console.log(i, nika[i])
+}
+                            </code>
+                        </pre>
+
+                        <h4 class="heading-h4 u-margin-bottom-sm">Loops in loops</h4>
+                        <pre class="code">
+                            <code class="code-el">
+for (let exercise = 1; exercise <= 3; exercise++) {
+  console.log(`------ Starting exercise ${exercise}`)
+
+  for (let rep = 1; rep <= 5; rep++) {
+  console.log(`Exercise ${exercise}: Lifting weights repetition ${rep}`)
+  }
+}
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="content-box">
+                        <h3 class="heading-h3 u-margin-bottom-sm">While loop</h3>
+                        <p class="text">
+                            While loop different from for loop in that it doesn't require an
+                            increment/decrement value and it continues as long as the condition is
+                            true
+                        </p>
+
+                        <pre class="code">
+                            <code class="code-el">
+let rep = 1
+while (rep <= 10) {
+  console.log(`Lifting weights repetition ${rep}🏋️`)
+  rep++
+}
+                            </code>
+                        </pre>
+
+                        <p class="text">
+                            When we dont know the exact number of iterations, we can use a while
+                            loop
+                        </p>
+                        <pre class="code">
+                            <code class="code-el">
+let dice = Math.trunc(Math.random() * 6 + 1)
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}!`)
+  dice = Math.trunc(Math.random() * 6 + 1)
+  if (dice === 6) console.log('Loop is about to end...')
+}
+                            </code>
+                        </pre>
+
+                        <p class="text">
+                            We can use const variables inside lopps beacuse they are
+                            <strong>not reassigned</strong>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

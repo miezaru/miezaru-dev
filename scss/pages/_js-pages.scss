@@ -3,39 +3,61 @@
         grid-column: mid-start / mid-end;
     }
 
-    &__section-basics-and-mutates {
+    // arrays
+    &__section-arr-basics-and-mutates {
         @extend %section;
 
         grid-column: col-start 1 / col-end 3;
     }
 
-    &__section-methods-add {
+    &__section-arr-methods-add {
         @extend %section;
 
         grid-column: col-start 4 / col-end 6;
     }
 
-    &__section-methods-find-index {
+    &__section-arr-methods-find-index {
         @extend %section;
 
         grid-column: col-start 1 / col-end 3;
     }
 
-    &__section-methods-find-value {
+    &__section-arr-methods-find-value {
         @extend %section;
 
         grid-column: col-start 4 / col-end 6;
     }
 
-    &__section-methods-traverse {
+    &__section-arr-methods-traverse {
         @extend %section;
 
         grid-column: col-start 1 / col-end 3;
     }
 
-    &__section-methods-other {
+    &__section-arr-methods-other {
         @extend %section;
 
         grid-column: col-start 4 / col-end 6;
+    }
+
+    // objects
+    &__section-obj-basics {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
+    // functions
+    &__section-func-basics {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
+    // loops
+    &__section-loop-basics {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
     }
 }
