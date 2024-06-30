@@ -28,6 +28,24 @@
         grid-column: col-start 4 / col-end 6;
     }
 
+    &__section-js-hoisting {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
+    &__section-js-this {
+        @extend %section;
+
+        grid-column: col-start 4 / col-end 6;
+    }
+
+    &__section-js-primitive-vs-reference {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
     // arrays
     &__section-arr-basics-and-mutates {
         @extend %section;
