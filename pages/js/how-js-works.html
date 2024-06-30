@@ -1,0 +1,974 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript - How JavaScript works | Miezaru</title>
+
+        <!--! meta -->
+        <meta name="author" content="Artem 'Miezaru' Usatyi | miezaruexpr@gmail.com" />
+        <meta
+            name="description"
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript 'How JavaScript works'."
+        />
+
+        <!--! Open Graph |  -->
+        <!--* Facebook Meta Tags -->
+        <meta content="https://www.miezaru.dev/" property="og:url" />
+        <meta content="website" property="og:type" />
+        <meta content="Miezaru-dev" property="og:title" />
+        <meta
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript 'How JavaScript works'."
+            property="og:description"
+        />
+        <meta content="" property="og:image:url" />
+        <meta content="" property="og:image:alt" />
+        <meta content="image/jpeg" property="og:image:type" />
+        <meta content="400" property="og:image:width" />
+        <meta content="300" property="og:image:height" />
+
+        <!--* Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta content="miezaru.dev" property="twitter:domain" />
+        <meta content="https://www.miezaru.dev/" property="twitter:url" />
+        <meta name="twitter:title" content="Welcome | Miezaru.dev" />
+        <meta
+            name="twitter:description"
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript 'How JavaScript works'."
+        />
+        <meta name="twitter:image:src" content="" />
+        <meta name="twitter:image:alt" content="" />
+        <meta name="twitter:creator" content="@miezaruexpr" />
+        <!-- <meta name="twitter:site" content="@miezaruexpr"> -->
+
+        <!--! manifest  -->
+        <link href="../../assets/img/icons/manifest.json" rel="manifest" />
+
+        <!--! icons -->
+        <link type="image/x-icon" href="../../assets/img/icons/favicon.ico" rel="shortcut icon" />
+        <link
+            href="../../assets/img/icons/apple-icon-57x57.png"
+            rel="apple-touch-icon"
+            sizes="57x57"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-60x60.png"
+            rel="apple-touch-icon"
+            sizes="60x60"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-72x72.png"
+            rel="apple-touch-icon"
+            sizes="72x72"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-76x76.png"
+            rel="apple-touch-icon"
+            sizes="76x76"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-114x114.png"
+            rel="apple-touch-icon"
+            sizes="114x114"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-120x120.png"
+            rel="apple-touch-icon"
+            sizes="120x120"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-144x144.png"
+            rel="apple-touch-icon"
+            sizes="144x144"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-152x152.png"
+            rel="apple-touch-icon"
+            sizes="152x152"
+        />
+        <link
+            href="../../assets/img/icons/apple-icon-180x180.png"
+            rel="apple-touch-icon"
+            sizes="180x180"
+        />
+        <link type="image/png" href=".icons/android-icon-192x192.png" rel="icon" sizes="192x192" />
+        <link
+            type="image/png"
+            href="../../assets/img/icons/favicon-32x32.png"
+            rel="icon"
+            sizes="32x32"
+        />
+        <link
+            type="image/png"
+            href="../../assets/img/icons/favicon-96x96.png"
+            rel="icon"
+            sizes="96x96"
+        />
+        <link
+            type="image/png"
+            href="../../assets/img/icons/favicon-16x16.png"
+            rel="icon"
+            sizes="16x16"
+        />
+        <meta name="msapplication-TileColor" content="#e2f3f5" />
+        <meta name="msapplication-TileImage" content="../../assets/img/icons/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#e2f3f5" />
+
+        <link
+            href="../../assets/fonts/Rubik/RubikRegular/RubikRegular.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+        <link
+            href="../../assets/fonts/Rubik/RubikMedium/RubikMedium.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+        <link
+            href="../../assets/fonts/Rubik/RubikBold/RubikBold.woff2"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+        <link
+            href="../../assets/fonts/DankMono/DankMonoRegular.ttf"
+            as="font"
+            crossorigin="anonymous"
+            rel="preload"
+        />
+
+        <link href="../../css/min/main-min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <div class="header-container-inner">
+                    <div class="header-box">
+                        <h1 class="heading-h1">
+                            <a class="author-link" href="https://github.com/miezaru">@miezaru</a>
+                            resources
+                            <span class="accent-symbol">/</span>
+                            <span>JavaScript: How JavaScript works</span>
+                        </h1>
+                        <a class="header__home-link" href="../../index.html">Back home</a>
+                    </div>
+                    <p class="header__description">
+                        JavaScipt is a high-level, prototype-based object-oriented, multi-paradigm,
+                        interpreted or just-in-time compiled, dynamic, single-threaded,
+                        garbage-collected programming language with first-class functions and a
+                        non-blocking event loop concurrency model.
+                    </p>
+                </div>
+                <div class="main-nav__container">
+                    <span class="main-nav__text" id="main-nav-text">jump to:</span>
+                    <nav class="main-nav" aria-labelledby="main-nav-text">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#links">Links</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main grid-page">
+            <section class="page-html__section-links" id="links">
+                <header class="section-header">
+                    <h2 class="heading-h2">Links</h2>
+                </header>
+                <div class="section-container section-container--links">
+                    <div class="resources">
+                        <h3 class="heading-h3 u-margin-bottom-sm">Wiki</h3>
+                        <div class="resources-box">
+                            <a
+                                class="resources-box__item"
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                                rel="noopener external"
+                            >
+                                mdn javascript</a
+                            >
+                            <a
+                                class="resources-box__item"
+                                href="https://medium.com/@pratyushatrivedi/javascript-behind-the-scenes-dc1469511ada"
+                                rel="noopener external"
+                            >
+                                javascript: behind the scenes</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="line">&nbsp;</div>
+
+            <section class="page-js__section-js-about" id="about-js">
+                <header class="section-header">
+                    <h2 class="heading-h2">About JavaScript</h2>
+                </header>
+                <div class="section-container">
+                    <h3 class="heading-h3 u-margin-bottom-sm">What is JavaScript?</h3>
+                    <p class="text">
+                        JavaScipt is a high-level, prototype-based object-oriented, multi-paradigm,
+                        interpreted or just-in-time compiled, dynamic, single-threaded,
+                        garbage-collected programming language with first-class functions and a
+                        non-blocking event loop concurrency model.
+                    </p>
+
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">high-level</p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">prototype-based object-oriented</p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">multi-paradigm</p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">interpreted or just in time compiled</p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">dynamic</p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">single-threaded</p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">garbage-collected</p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">first-class functions</p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">non-blocking event loop concurrency model</p>
+                        </li>
+                    </ul>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">High level</h4>
+                    <p class="text">Any computer needs resources, so:</p>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">
+                                low level language C (ask computer for give him memory) - developer
+                                has to manage resources manually
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">
+                                high level language Pyhon or JavaScript - developer does NOT have to
+                                worry, everything happens automatically
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">Garabage collected</h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">remove old/unused objects from the computer memory</p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">cleaning the memory so we don`t have to</p>
+                        </li>
+                    </ul>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">
+                        interpreted or just-in-time compiled
+                    </h4>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">
+                                computer processor only understands 0 and 1 (machine code)
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">
+                                compiling (convert to machine code) happens automatically inside the
+                                JavaScript engine
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">Multi-paradigm</h4>
+                    <p class="text">
+                        Paradigm - an approach and mindset of structuring code, which will direct
+                        your coding style and technique.
+                    </p>
+                    <p class="text">Most popular paradigms</p>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">procedural programming</p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">object-oriented programming</p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">functional programming</p>
+                        </li>
+                    </ul>
+
+                    <p class="text">Paradigms is impertaive or declarative</p>
+                    <p class="text">
+                        <strong> Imperative programming</strong> is a paradigm describing HOW the
+                        program should do something by explicitly specifying each instruction (or
+                        statement) step by step, which mutate the program's state.
+                    </p>
+                    <p class="text">
+                        <strong>Declarative programming</strong> is a paradigm describing WHAT the
+                        program does, without explicitly specifying its control flow.
+                    </p>
+
+                    <p class="text">
+                        <strong>Procedal programming</strong> - is a programming paradigm built
+                        around the idea that programs are sequences of instructions to be executed
+                    </p>
+                    <p class="text">
+                        <strong>Object-oriented programming (OOP)</strong> - is a style of
+                        programming characterized by the identification of classes of objects
+                        closely linked with the methods (functions) with which they are associated.
+                        It also includes ideas of inheritance of attributes and methods.
+                    </p>
+                    <p class="text">
+                        <strong>Functional programming</strong> - is a declarative programming
+                        paradigm style where one applies pure functions in sequence to solve complex
+                        problems. Functions take an input value and produce an output value without
+                        being affected by the program
+                    </p>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">Prototype-based object-oriented</h4>
+                    <p class="text">
+                        Everything in a JavaScript is an object, except for primitive values
+                        (numbers, strings etc.)
+                    </p>
+                    <p class="text">
+                        JavaScript treats strings as objects when executing methods and properties
+                    </p>
+                    <pre class="code">
+                            <code class="code-el">
+const arr = [1, 2, 3]
+arr.push(4) // arr.prototype.push(4)
+                            </code>
+                        </pre>
+                    <p class="text">
+                        Our <code class="code-el">arr</code> inherits methods from the prototype
+                    </p>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">First-class functions</h4>
+                    <p class="text">
+                        In language with first-class functions, functions are simply treated as
+                        <strong>variables</strong>. We can pass them into other functions, and
+                        return them from functions
+                    </p>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">Dynamic</h4>
+                    <p class="text">
+                        Dynamic language means dynamicly <strong>typed</strong> language
+                    </p>
+                    <p class="text">
+                        JavaScript has no data type definitions. Types becomes known at runtime
+                    </p>
+
+                    <pre class="code">
+                            <code class="code-el">
+let y = 27
+y = 'Artem' // data type of variable is automatically changed
+                            </code>
+                        </pre>
+
+                    <h4 class="heading-h4 u-margin-bottom-sm">
+                        Single-threated<br />Non-blocking event loop concurency model
+                    </h4>
+                    <p class="text">
+                        <strong>Concurency model</strong> - how the JavaScript engine handles
+                        multiple tasks happening at the same time
+                    </p>
+
+                    <p class="text"><em class="text-ems">why do we need that?</em></p>
+
+                    <p class="text">
+                        JavaScript runs in one single thread, so it can only do one thing at a time
+                    </p>
+                    <p class="text">
+                        Thread is where our code is actually executed in a machines processor
+                    </p>
+
+                    <p class="text">
+                        <em class="text-ems">so what about long-running tasks?</em>
+                    </p>
+                    <p class="text">
+                        Sounds like it would block the single thread. However, we want non-blocking
+                        behavior
+                    </p>
+
+                    <p class="text"><em class="text-ems">how do we achieve that?</em></p>
+                    <p class="text">
+                        By using an event loop - takes long running tasks, executes them in the
+                        "background", and put them back in the main thread once they are finished
+                    </p>
+                </div>
+            </section>
+
+            <section class="page-js__section-js-engine" id="js-engine">
+                <header class="section-header">
+                    <h2 class="heading-h2">JavaScript engine</h2>
+                </header>
+                <div class="section-container">
+                    <div class="content-box">
+                        <h3 class="heading-h3 u-margin-bottom-sm">What is JavaScript Engine?</h3>
+                        <p class="text">
+                            <strong>JS Engine</strong> - program that executes JavaScript code
+                        </p>
+
+                        <ul class="list">
+                            <li class="list__item">
+                                <p class="text">
+                                    V8 most popular JavaScript engine used in Chrome, Opera, Edge
+                                    and nodejs
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">Every JavaScript engine has call stack and heap</p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    Call stack - is where our code is executed using execution
+                                    context
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">Heap - is where objects are stored</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-box">
+                        <h3 class="heading-h3 u-margin-bottom-sm">How is it compiled?</h3>
+                        <h4 class="heading-h4 u-margin-bottom-sm">Compilation vs Interpretation</h4>
+
+                        <p class="text">
+                            <strong>Compilation</strong> - entire code is converted into machine
+                            code at once, and written to a binary file that can be executed by a
+                            computer
+                        </p>
+                        <ol class="list">
+                            <li class="list__item">
+                                <p class="text">source code</p>
+                                <ul class="list">
+                                    <li class="list__item">
+                                        <p class="text">compilation</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    portable file: machine code (can happen way after compilation)
+                                </p>
+                                <ul class="list">
+                                    <li class="list__item">
+                                        <p class="text">execution</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">program running</p>
+                            </li>
+                        </ol>
+
+                        <p class="text">
+                            <strong>Interpretation</strong> - interpreter runs through the source
+                            code and executes it line by line
+                        </p>
+                        <ol class="list">
+                            <li class="list__item">
+                                <p class="text">source code</p>
+                                <ul class="list">
+                                    <li class="list__item">
+                                        <p class="text">
+                                            execution line by line (code still need to be converted
+                                            to machine code)
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">program running</p>
+                            </li>
+                        </ol>
+
+                        <p class="text">
+                            Code still need to be converted to machine code, but it simply happens
+                            right before it executed and not ahead of time
+                        </p>
+                        <p class="text">JavaScript its purely interpreted language</p>
+                        <p class="text">
+                            Interpreted languages is much, much slower than compiled languages
+                        </p>
+
+                        <p class="text">
+                            <strong>Modern JavaScript</strong> using a <strong>mix</strong> between
+                            compilation and interpretation
+                        </p>
+                        <p class="text">
+                            <strong>Just-in-time (JIT)</strong> compilation - entire code is
+                            converted into machine code at once, then executed immediately
+                        </p>
+
+                        <ol class="list">
+                            <li class="list__item">
+                                <p class="text">source code</p>
+                                <ul class="list">
+                                    <li class="list__item">
+                                        <p class="text">compilation</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">machine code (NOT a portable file)</p>
+                                <ul class="list">
+                                    <li class="list__item">
+                                        <p class="text">execution (happens immediately)</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">program running</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="content-box">
+                        <h3 class="heading-h3 u-margin-bottom-sm">How engine processed scripts?</h3>
+                        <h4 class="heading-h4 u-margin-bottom-sm">1. Parse the code</h4>
+                        <p class="text">
+                            Parsing in data structure called , this works
+                            <a
+                                class="text-link"
+                                href="https://miro.medium.com/v2/resize:fit:640/format:webp/1*uJxlZ2OV7ayn0TygtknM4g.png"
+                                rel="noopener external"
+                            >
+                                AST (Abstract Syntax Tree)</a
+                            >
+                            by first splitting up each line of code into pieces that are meaningful
+                            to the language (const, function) and saving all this pieces into the
+                            tree in a structured way. This step also checks if there are any
+                            SyntaxError-s.
+                        </p>
+                        <p class="text">
+                            Resulting tree later be used to generate the machine code
+                        </p>
+
+                        <h4 class="heading-h4 u-margin-bottom-sm">2. Compilation</h4>
+                        <p class="text">Takes AST and compiles it into machine code</p>
+
+                        <h4 class="heading-h4 u-margin-bottom-sm">3. Execution</h4>
+                        <p class="text">
+                            Executes right away (because modern JavaScript use JIT (Just-In-Type)
+                            compilation)
+                        </p>
+
+                        <p class="text">Execution happens in call stack</p>
+
+                        <h4 class="heading-h4 u-margin-bottom-sm">4. Optimization</h4>
+                        <ul class="list">
+                            <li class="list__item">
+                                <p class="text">
+                                    modern JavaScript engines has some pretty clawer optimization
+                                    strategies
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    create unoptimized version of machine code at the beginning just
+                                    so that can start executing as soon as possible
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    then in a background this code is being optimized and recompiled
+                                    during the already running program execution, and this can be
+                                    done multiple times (that makes modern engines such as V8 so
+                                    fast)
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    all this parsing, compilation and optimization happens in some
+                                    special threads inside the engine that we can not access from
+                                    our code, completely separate from our main thread, that is
+                                    basically runnning in a call stack executing our own code
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    different engines implement this in slightly different ways
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="page-js__section-js-runtime" id="js-runtime">
+                <header class="section-header">
+                    <h2 class="heading-h2">JavaScript runtime</h2>
+                </header>
+                <div class="section-container">
+                    <div class="content-box">
+                        <h3 class="heading-h3 u-margin-bottom-sm">What is JavaScript runtime?</h3>
+                        <p class="text">
+                            <strong>JavaScript runtime</strong> - container including all the things
+                            that we need to use JavaScript (in this case in the browser)
+                        </p>
+
+                        <ul class="list">
+                            <li class="list__item">
+                                <p class="text">JavaScript engine</p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">Web APIs (DOM, Timers, Fetch API)</p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">Callback queue (click, timer, data, etc)</p>
+                            </li>
+                        </ul>
+
+                        <p class="text">
+                            <strong>Web APIs</strong> - functionalities provided to the engine,
+                            accessible on window object
+                        </p>
+                        <p class="text">
+                            <strong>Calback queue example</strong> - callback function from DOM
+                            event listener
+                        </p>
+                        <p class="text">
+                            <strong>Event Loop</strong> - takes functions from the callback queue
+                            and puts them into call stack (if its empty) so they can be executed
+                        </p>
+                        <p class="text">
+                            <strong>Event Loop</strong> - essential for non-blocking concurrency
+                            model
+                        </p>
+
+                        <p class="text">
+                            In <strong>nodejs</strong> we have no access to WEB APIs, but instead we
+                            have C++ Bindings & Thread Pool
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page-js__section-js-ec-callstack" id="js-ec-callstacke">
+                <header class="section-header">
+                    <h2 class="heading-h2">Execution context and the call stack</h2>
+                </header>
+                <div class="section-container">
+                    <div class="content-box">
+                        <h3 class="heading-h3 u-margin-bottom-sm">Exectuion context</h3>
+                        <p class="text">
+                            <strong>Execution context</strong> - (abstract concept) enviroment in
+                            which a piece of JavaScript is executed. Stores all the necessary
+                            information for some code to be executed
+                        </p>
+                        <p class="text">
+                            Exactly <strong>ONE</strong> global execution context (EC) - default
+                            context, created for code that is not inside any function (top level)
+                        </p>
+
+                        <ol class="list">
+                            <li class="list__item">
+                                <p class="text">
+                                    Global execution context is created for top-level code (code not
+                                    inside any function). Functions only executed when we call them.
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">Execution of top-level code (inside global EC)</p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    Execution of functions and waiting for callbacks (click event is
+                                    a callback)
+                                </p>
+                            </li>
+                        </ol>
+
+                        <p class="text">
+                            One execution context per function - for each function call, a new
+                            execution context is created
+                        </p>
+
+                        <p class="text">All these EC-s make the call stack</p>
+
+                        <h4 class="heading-h4 u-margin-bottom-sm">
+                            What inside execution context?
+                        </h4>
+
+                        <ul class="list">
+                            <li class="list__item">
+                                <p class="text">
+                                    <strong>Variable enviroment</strong> - all our variables and
+                                    functions declarations are stored
+                                </p>
+                                <ul class="list">
+                                    <li class="list__item">
+                                        <p class="text">let, const and var declarations</p>
+                                    </li>
+                                    <li class="list__item">
+                                        <p class="text">functions</p>
+                                    </li>
+                                    <li class="list__item">
+                                        <p class="text">arguments object</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    <strong>Scope chain</strong> - basically consists of references
+                                    to variables that located outside of the current function
+                                </p>
+                                <ul class="list">
+                                    <li class="list__item">
+                                        <p class="text">
+                                            to keep truck of the scope chain it is stored in each
+                                            executon context
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    <strong>This keyword</strong> - each EC has a special variable
+                                    this.
+                                </p>
+
+                                <ul class="list">
+                                    <li class="list__item">
+                                        <p class="text">
+                                            EC belonging to <strong>arrow functions</strong> do not
+                                            get their own <strong>arguments object</strong> and
+                                            <strong>this keyword</strong>, instead they can use the
+                                            arguments object and their this keyword from their
+                                            closest regular function <strong>parent</strong>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p class="text">
+                            All of these generated during "creation phase", right before execution
+                        </p>
+                    </div>
+
+                    <div class="content-box">
+                        <h3 class="heading-h3 u-margin-bottom-sm">Call stack</h3>
+                        <p class="text">
+                            <strong>Call stack</strong> - "place" where execution contexts get
+                            stacked on top of each other, to keep track of where we are in the
+                            execution
+                        </p>
+
+                        <p class="text">
+                            Global execution context pop off from the stack when we close the tab or
+                            browser
+                        </p>
+
+                        <h4 class="heading-h4 u-margin-bottom-sm">Scope and the scope chain</h4>
+                        <p class="text">
+                            <strong>Scoping</strong> - controls how our programs variables are
+                            organized and accesed by the JavaScript engine
+                        </p>
+                        <p class="text">
+                            Scoping asking question: where our variables live, where we can access a
+                            certain variable and where not
+                        </p>
+
+                        <p class="text">
+                            <strong>Lexical scoping</strong> - means that the way variables
+                            organized and accessed is entirely controls by the placement of
+                            functions and of blocks in the program scope
+                        </p>
+                        <p class="text">
+                            Lexical scoping: scoping is controlled by placement of functions and
+                            blocks in the code. For example a function that is written inside
+                            another function has access to the variables of the parent function.
+                        </p>
+
+                        <p class="text">
+                            <strong>Scope</strong> - space of enviroment in which a certain variable
+                            is declared (variable enviroment in case of functions). There is global
+                            scope, function scope and block scope.
+                        </p>
+                        <p class="text">
+                            Scope chain and varible enviroment in the case of functions it`s
+                            basically the same
+                        </p>
+
+                        <p class="text">
+                            <strong>Scope of variable</strong> - region of our code where a certain
+                            variable can be accessed
+                        </p>
+
+                        <h4 class="heading-h4 u-margin-bottom-sm">The 3 types of scope</h4>
+                        <ol class="list">
+                            <li class="list__item">
+                                <p class="text"><strong>Global scope</strong></p>
+                                <ul class="list">
+                                    <li class="list__item">
+                                        <p class="text">outside of any function block</p>
+                                    </li>
+                                    <li class="list__item">
+                                        <p class="text">
+                                            variables declared in global scope are accessible
+                                            everywhere
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <p class="text"><strong>Function scope</strong></p>
+                                <ul class="list">
+                                    <li class="list__item">
+                                        <p class="text">
+                                            variables are accessible only inside function, NOT
+                                            outside
+                                        </p>
+                                    </li>
+                                    <li class="list__item">
+                                        <p class="text">also called local scope</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <p class="text"><strong>Block scope (ES6)</strong></p>
+                                <ul class="list">
+                                    <li class="list__item">
+                                        <p class="text">
+                                            variablles are accessible only inside blocks (block
+                                            scoped)
+                                        </p>
+                                    </li>
+                                    <li class="list__item">
+                                        <p class="text">
+                                            HOWEVER, this only applies to let and const variables
+                                        </p>
+                                    </li>
+                                    <li class="list__item">
+                                        <p class="text">
+                                            functions are also block scoped (only in strict mode)
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+
+                        <p class="text">
+                            var, let, const - function scope <br />
+                            let, const - block scope
+                        </p>
+
+                        <p class="text">
+                            Scope has access to variables from all outer scopes but outer scope has
+                            no access to inner scope variables
+                        </p>
+
+                        <h4 class="heading-h4 u-margin-bottom-sm">Scope chain vs call stack</h4>
+
+                        <p class="text">
+                            Scope chain - order in which functions are written and has nothing to do
+                            with order in which functions were called
+                        </p>
+
+                        <pre class="code">
+                            <code class="code-el">
+const a = 'Artem'
+first()
+
+function first() {
+  const b = 'Hello'
+  second()
+
+  function second() {
+    const c = 'World'
+    third() // we have access to this function
+
+    // function third() {
+    //   console.log(a + b + c) // we have access to this variables
+    // }
+  }
+}
+
+function third() {
+  const d = 'Hey'
+  console.log(d + c + b + a) // we have no access to c and b variables | Refference error
+}
+                            </code>
+                        </pre>
+
+                        <h4 class="heading-h4 u-margin-bottom-sm">Summary</h4>
+                        <ul class="list">
+                            <li class="list__item">
+                                <p class="text">
+                                    scoping asks the question "Where do variables live?" or "Where
+                                    can we access a certain variable, and where not?"
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">there are 3 types of scope in JavaScript:</p>
+                                <ul class="list">
+                                    <li class="list__item">
+                                        <p class="text">global scope</p>
+                                    </li>
+                                    <li class="list__item">
+                                        <p class="text">scopes defined by functions</p>
+                                    </li>
+                                    <li class="list__item">
+                                        <p class="text">scopes defined by blocks (ES6)</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    only let and const variables are block-scoped. Variables
+                                    declared with var end up in the closest function scope
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    in JavaScript, we have lexical scoping, so the rules of where we
+                                    can access variables are based on exactly where in the code
+                                    functions and blocks written
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    every scope always has access to all the variables from all its
+                                    outer scopes. This is the scope chain!
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    when a variable is not in the current scope, the engine looks up
+                                    in the scope chain until it finds the variable it`s looking for.
+                                    This is called variable lookup
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    the scope chain is a one-way street - a scope will never, ever
+                                    have access to the variables of an inner scope
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    the scope chain has nothing to do with the order in which
+                                    functions were called. It does not affect the scope chain at
+                                    all!
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

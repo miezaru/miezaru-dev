@@ -3,6 +3,31 @@
         grid-column: mid-start / mid-end;
     }
 
+    // about javascript
+    &__section-js-about {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
+    &__section-js-engine {
+        @extend %section;
+
+        grid-column: col-start 4 / col-end 6;
+    }
+
+    &__section-js-runtime {
+        @extend %section;
+
+        grid-column: col-start 1 / col-end 3;
+    }
+
+    &__section-js-ec-callstack {
+        @extend %section;
+
+        grid-column: col-start 4 / col-end 6;
+    }
+
     // arrays
     &__section-arr-basics-and-mutates {
         @extend %section;
