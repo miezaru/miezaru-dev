@@ -114,25 +114,6 @@
         <meta name="msapplication-TileImage" content="../../assets/img/icons/ms-icon-144x144.png" />
         <meta name="theme-color" content="#e2f3f5" />
 
-        <link
-            href="../../assets/fonts/Rubik/RubikRegular/RubikRegular.woff2"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-        <link
-            href="../../assets/fonts/Rubik/RubikMedium/RubikMedium.woff2"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-        <link
-            href="../../assets/fonts/Rubik/RubikBold/RubikBold.woff2"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-
         <link href="../../css/min/main-min.css" rel="stylesheet" />
     </head>
     <body>
@@ -212,7 +193,8 @@
                             </li>
                             <li class="list__item">
                                 <p class="text">
-                                    <strong>WSL2 Ubuntu</strong> "sudo apt install git"
+                                    <strong>WSL2 Ubuntu</strong>
+                                    <code class="code-el">"sudo apt install git"</code>
                                 </p>
                             </li>
                         </ul>
@@ -222,16 +204,32 @@
                         <h3 class="heading-h3 u-margin-bottom-sm">Configuring Git</h3>
                         <ol class="list">
                             <li class="list__item">
-                                <p class="text">git config --global user.name "User Name"</p>
+                                <p class="text">
+                                    <code class="code-el">
+                                        git config --global user.name "User Name"
+                                    </code>
+                                </p>
                             </li>
                             <li class="list__item">
-                                <p class="text">git config --global user.email mail@gmail.com</p>
+                                <p class="text">
+                                    <code class="code-el">
+                                        git config --global user.email mail@gmail.com
+                                    </code>
+                                </p>
                             </li>
                             <li class="list__item">
-                                <p class="text">git config --global core.editor "code --wait"</p>
+                                <p class="text">
+                                    <code class="code-el">
+                                        git config --global core.editor "code --wait"</code
+                                    >
+                                </p>
                             </li>
                             <li class="list__item">
-                                <p class="text">git config --global credential.helper cache</p>
+                                <p class="text">
+                                    <code class="code-el">
+                                        git config --global credential.helper cache
+                                    </code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -242,7 +240,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git config --list --show-origin</p>
+                                <p class="text">
+                                    <code class="code-el">git config --list --show-origin</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -254,10 +254,12 @@
                             </li>
                             <li class="list__item">
                                 <p class="text">
-                                    git config --global alias.lg1 "log --graph --abbrev-commit
-                                    --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold
-                                    green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)-
-                                    %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+                                    <code class="code-el">
+                                        git config --global alias.lg1 "log --graph --abbrev-commit
+                                        --decorate --format=format:'%C(bold blue)%h%C(reset) -
+                                        %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim
+                                        white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+                                    </code>
                                 </p>
                                 <ul class="list">
                                     <li class="list__item">
@@ -267,11 +269,14 @@
                             </li>
                             <li class="list__item">
                                 <p class="text">
-                                    git config --global alias.lg2 "log --graph --abbrev-commit
-                                    --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold
-                                    cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold
-                                    yellow)%d%C(reset)%n'' %C(white)%s%C(reset) %C(dim white)-
-                                    %an%C(reset)' --all"
+                                    <code class="code-el">
+                                        git config --global alias.lg2 "log --graph --abbrev-commit
+                                        --decorate --format=format:'%C(bold blue)%h%C(reset) -
+                                        %C(bold cyan)%aD%C(reset) %C(bold
+                                        green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''
+                                        %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+                                        --all"</code
+                                    >
                                 </p>
                                 <ul class="list">
                                     <li class="list__item">

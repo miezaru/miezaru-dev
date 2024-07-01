@@ -114,31 +114,6 @@
         <meta name="msapplication-TileImage" content="../../assets/img/icons/ms-icon-144x144.png" />
         <meta name="theme-color" content="#e2f3f5" />
 
-        <link
-            href="../../assets/fonts/Rubik/RubikRegular/RubikRegular.woff2"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-        <link
-            href="../../assets/fonts/Rubik/RubikMedium/RubikMedium.woff2"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-        <link
-            href="../../assets/fonts/Rubik/RubikBold/RubikBold.woff2"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-        <link
-            href="../../assets/fonts/DankMono/DankMonoRegular.ttf"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-
         <link href="../../css/min/main-min.css" rel="stylesheet" />
     </head>
     <body>
@@ -1068,7 +1043,7 @@ function third() {
                                         <p class="text">NO</p>
                                     </td>
                                     <td>
-                                        <p class="text">&lt;uninitialized&gt;, TDZ</p>
+                                        <p class="text">[uninitialized], TDZ</p>
                                     </td>
                                     <td>
                                         <p class="text">Block</p>
@@ -1153,26 +1128,27 @@ function third() {
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">
+                                    <strong>method call</strong> - this = [Object that is calling
+                                    the method]
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
                                     <strong>simple function call</strong> - this = undefined
                                     ('strict mode'), otherwise window (in the browser)
                                 </p>
                             </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    <strong>method call</strong> - this = &lt;Object that is calling
-                                    the method&gt;
-                                </p>
-                            </li>
+
                             <li class="list__item">
                                 <p class="text">
                                     <strong>arrow function (don't get own this)</strong> - this =
-                                    &lt;this of surrounding function (lexical this)&gt;
+                                    [this of surrounding function (lexical this)]
                                 </p>
                             </li>
                             <li class="list__item">
                                 <p class="text">
-                                    <strong>event listener</strong> - this = &lt;DOM element that
-                                    the handler is attached to&gt;
+                                    <strong>event listener</strong> - this = [DOM element that the
+                                    handler is attached to]
                                 </p>
                             </li>
                             <li class="list__item">
@@ -1186,6 +1162,16 @@ function third() {
                         <p class="text">
                             this does <strong>NOT</strong> point to the function itself, and also
                             <strong>NOT</strong> to its variable environment
+                        </p>
+
+                        <p class="text">
+                            Object block is not a block, its object literal. So objects do not
+                            create their own scope. If we using arrow functions in an object,
+                            <code class="code-el">this</code> keyword return for us
+                            <code class="code-el">window</code> object. Never use arrow functions as
+                            a method. But use it if we have method function (expression) and inside
+                            that function we can use arrow function, so we can get access to this
+                            keyword from parent function (which has their own scope).
                         </p>
 
                         <h4 class="heading-h4 u-margin-bottom-sm">
@@ -1288,6 +1274,45 @@ console.log(me.age) // 30
                         <p class="text">
                             Objects are strored in the JavaScript engine <strong>heap</strong>
                         </p>
+
+                        <p class="text">
+                            <a
+                                class="text-link"
+                                href="https://miro.medium.com/v2/resize:fit:1400/1*aNU4kf587WfxUkk9pi5m9w.png"
+                                rel="noopener external"
+                            >
+                                img primitive vs refernece values</a
+                            >
+                        </p>
+
+                        <h4 class="heading-h4 u-margin-bottom-sm">Copying objects</h4>
+                        <p class="text">
+                            Only works on the first level (creates shallow copy, not a deep clone),
+                            because family object is another object in JavaScript enjine heap:
+                        </p>
+                        <pre class="code">
+                            <code class="code-el">
+const jessica2 = {
+  firstName: 'Jessica',
+  lastName: 'Kone',
+  age: 27,
+  family: ['Nina', 'Johan'],
+}
+
+const marriedJessica2 = Object.assign({}, jessica2, { lastName: 'Sein' })
+console.log(jessica2)
+console.log(marriedJessica2)
+
+marriedJessica2.family.push('Mary')
+marriedJessica2.family.push('David')
+
+// family object (array) is deeply nested object (not on the first level)
+console.log(jessica2) // family has 4 members
+console.log(marriedJessica2) // family has 4 members
+                            </code>
+                        </pre>
+
+                        <p class="text">Use lodash for deep clonning</p>
                     </div>
                 </div>
             </section>

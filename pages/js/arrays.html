@@ -114,31 +114,6 @@
         <meta name="msapplication-TileImage" content="../../assets/img/icons/ms-icon-144x144.png" />
         <meta name="theme-color" content="#e2f3f5" />
 
-        <link
-            href="../../assets/fonts/Rubik/RubikRegular/RubikRegular.woff2"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-        <link
-            href="../../assets/fonts/Rubik/RubikMedium/RubikMedium.woff2"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-        <link
-            href="../../assets/fonts/Rubik/RubikBold/RubikBold.woff2"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-        <link
-            href="../../assets/fonts/DankMono/DankMonoRegular.ttf"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-
         <link href="../../css/min/main-min.css" rel="stylesheet" />
     </head>
     <body>
@@ -340,9 +315,15 @@ const artem = ['Artem', 'Usatyi', 2024 - 1997, 'programmer', friends]
                 <div class="section-container">
                     <h4 class="heading-h4 u-margin-bottom-sm">.push()</h4>
                     <ul class="list">
-                        <li class="list__item">adds a new element to the end of an array</li>
-                        <li class="list__item"><code>push(element1, element2)</code></li>
-                        <li class="list__item">returns the new length of the array</li>
+                        <li class="list__item">
+                            <p class="text">adds a new element to the end of an array</p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text"><code>push(element1, element2)</code></p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">returns the new length of the array</p>
+                        </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
                         <code class="code-el">
@@ -352,9 +333,13 @@ let newLength = friends.push('Mia') // return new length
 
                     <h4 class="heading-h4 u-margin-bottom-sm">.pop()</h4>
                     <ul class="list">
-                        <li class="list__item">removes the last element from an array</li>
-                        <li class="list__item"><code>pop()</code></li>
-                        <li class="list__item">returns the removed element</li>
+                        <li class="list__item">
+                            <p class="text">removes the last element from an array</p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text"><code>pop()</code></p>
+                        </li>
+                        <li class="list__item"><p class="text">returns the removed element</p></li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
                         <code class="code-el">
@@ -364,9 +349,15 @@ const lastElement = friends.pop() // return removed (last) item of the array
 
                     <h4 class="heading-h4 u-margin-bottom-sm">.unshift()</h4>
                     <ul class="list">
-                        <li class="list__item">adds a new element to the beginning of an array</li>
-                        <li class="list__item"><code>unshift(element1, element2)</code></li>
-                        <li class="list__item">returns the new length of the array</li>
+                        <li class="list__item">
+                            <p class="text">adds a new element to the beginning of an array</p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text"><code>unshift(element1, element2)</code></p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">returns the new length of the array</p>
+                        </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
                         <code class="code-el">
@@ -377,10 +368,14 @@ const newLength = friends.unshift('Kate') // return new length
                     <h4 class="heading-h4 u-margin-bottom-sm">.shift()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            removes the first element from an array and returns it
+                            <p class="text">
+                                removes the first element from an array and returns it
+                            </p>
                         </li>
-                        <li class="list__item"><code>shift()</code></li>
-                        <li class="list__item">returns the removed element</li>
+                        <li class="list__item">
+                            <p class="text"><code>shift()</code></p>
+                        </li>
+                        <li class="list__item"><p class="text">returns the removed element</p></li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
                         <code class="code-el">
@@ -394,12 +389,14 @@ const firstElement = friends.shift() // return removed (first) item of the array
                             <p class="text">fills the elements of an array with a static value</p>
                         </li>
                         <li class="list__item">
-                            <code>
-                                fill(value) | fill(value, start) | fill(value, start, end (not
-                                icluded))</code
-                            >
+                            <p class="text">
+                                <code>
+                                    fill(value) | fill(value, start) | fill(value, start, end (not
+                                    icluded))</code
+                                >
+                            </p>
                         </li>
-                        <li class="list__item">returns the modified array</li>
+                        <li class="list__item"><p class="text">returns the modified array</p></li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
                         <code class="code-el">
@@ -420,11 +417,17 @@ console.log(array.fill(0, 2, 4)) // [1, 2, 0, 0]
                     <h4 class="heading-h4 u-margin-bottom-sm">.indexOf()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code>indexOf(searchElement), indexOf(searchElement, fromIndex)</code>
+                            <p class="text">
+                                <code>
+                                    indexOf(searchElement), indexOf(searchElement, fromIndex)</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns the first index at which a given element can be found in the
-                            array, or -1 if not found
+                            <p class="text">
+                                returns the first index at which a given element can be found in the
+                                array, or -1 if not found
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -439,14 +442,18 @@ beasts.indexOf('lion')     // -1;
                     <h4 class="heading-h4 u-margin-bottom-sm">.lastIndexOf()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code>
-                                lastIndexOf(searchElement), lastIndexOf(searchElement,
-                                fromIndex)</code
-                            >
+                            <p class="text">
+                                <code>
+                                    lastIndexOf(searchElement), lastIndexOf(searchElement,
+                                    fromIndex)</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns the last index at which a given element can be found in the
-                            array, or -1 if not found
+                            <p class="text">
+                                returns the last index at which a given element can be found in the
+                                array, or -1 if not found
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -459,14 +466,18 @@ animals.lastIndexOf('Dodo') // 3
                     <h4 class="heading-h4 u-margin-bottom-sm">.findIndex()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code>
-                                callback function (element, index, array), findIndex(callbackFn,
-                                thisArg)</code
-                            >
+                            <p class="text">
+                                <code>
+                                    callback function (element, index, array), findIndex(callbackFn,
+                                    thisArg)</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns the index of the FIRST element in the array that satisfies the
-                            provided testing function
+                            <p class="text">
+                                returns the index of the FIRST element in the array that satisfies
+                                the provided testing function
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -480,14 +491,18 @@ array.findIndex(isLargeNumber) // 1
                     <h4 class="heading-h4 u-margin-bottom-sm">.findLastIndex()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code>
-                                callback function (element, index, array), findLastIndex(callbackFn,
-                                thisArg)</code
-                            >
+                            <p class="text">
+                                <code>
+                                    callback function (element, index, array),
+                                    findLastIndex(callbackFn, thisArg)</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns the index of the LAST element in the array that satisfies the
-                            provided testing function
+                            <p class="text">
+                                returns the index of the LAST element in the array that satisfies
+                                the provided testing function
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -501,10 +516,13 @@ array.findLastIndex(isLargeNumber) // 4
                     <h4 class="heading-h4 u-margin-bottom-sm">.keys()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code>keys()</code>
+                            <p class="text"><code>keys()</code></p>
                         </li>
                         <li class="list__item">
-                            returns a new Array Iterator object that contains the keys of an array
+                            <p class="text">
+                                returns a new Array Iterator object that contains the keys of an
+                                array
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -524,10 +542,13 @@ console.log(myKeys) // [0, 1, 2]
                     <h4 class="heading-h4 u-margin-bottom-sm">.entries()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code>entries()</code>
+                            <p class="text"><code>entries()</code></p>
                         </li>
                         <li class="list__item">
-                            returns a new Iterator object that contains the keys for each element
+                            <p class="text">
+                                returns a new Iterator object that contains the keys for each
+                                element
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -558,11 +579,13 @@ for (const element of homies.entries()) {
                     <h4 class="heading-h4 u-margin-bottom-sm">.values()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code>values()</code>
+                            <p class="text"><code>values()</code></p>
                         </li>
                         <li class="list__item">
-                            returns a new Iterator object that contains the values for each index in
-                            the array
+                            <p class="text">
+                                returns a new Iterator object that contains the values for each
+                                index in the array
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -585,10 +608,13 @@ for (const value of iterator2) {
                     <h4 class="heading-h4 u-margin-bottom-sm">.[@iterator()]</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code> array[Symbol.iterator]()</code>
+                            <p class="text"><code> array[Symbol.iterator]()</code></p>
                         </li>
                         <li class="list__item">
-                            returns a new Iterator object that contains the keys for each element
+                            <p class="text">
+                                returns a new Iterator object that contains the keys for each
+                                element
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -613,10 +639,12 @@ for (const letter of iterator1) {
                     <h4 class="heading-h4 u-margin-bottom-sm">.at()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code> at(index)</code>
+                            <p class="text"><code> at(index)</code></p>
                         </li>
                         <li class="list__item">
-                            returns the element at the specified index in the array
+                            <p class="text">
+                                returns the element at the specified index in the array
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -635,12 +663,17 @@ console.log(homies.at(-1))   // Mia;
                             </p>
                         </li>
                         <li class="list__item">
-                            <code>
-                                includes(searchElement), includes(searchElement, fromIndex)</code
-                            >
+                            <p class="text">
+                                <code>
+                                    includes(searchElement), includes(searchElement,
+                                    fromIndex)</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns true if the array contains the element, false otherwise
+                            <p class="text">
+                                returns true if the array contains the element, false otherwise
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -655,14 +688,18 @@ console.log(array.includes(3, 3)) // false
                     <h4 class="heading-h4 u-margin-bottom-sm">.find()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code>
-                                callback function (element, index, array), findLast(callbackFn,
-                                thisArg)</code
-                            >
+                            <p class="text">
+                                <code>
+                                    callback function (element, index, array), findLast(callbackFn,
+                                    thisArg)</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns the value of the FIRST element in the array that satisfies the
-                            provided testing function
+                            <p class="text">
+                                returns the value of the FIRST element in the array that satisfies
+                                the provided testing function
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -675,14 +712,18 @@ const found = array.find(element => element > 10) // 12
                     <h4 class="heading-h4 u-margin-bottom-sm">.findLast()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code>
-                                callback function (element, index, array), findLast(callbackFn,
-                                thisArg)</code
-                            >
+                            <p class="text">
+                                <code>
+                                    callback function (element, index, array), findLast(callbackFn,
+                                    thisArg)</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns the value of the LAST element in the array that satisfies the
-                            provided testing function
+                            <p class="text">
+                                returns the value of the LAST element in the array that satisfies
+                                the provided testing function
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -708,12 +749,14 @@ const found3 = array3.findLast(element => element > 10) // 44
                             </p>
                         </li>
                         <li class="list__item">
-                            <code>
-                                callback function (element, index, array), forEach(callbackFn,
-                                thisArg)</code
-                            >
+                            <p class="text">
+                                <code>
+                                    callback function (element, index, array), forEach(callbackFn,
+                                    thisArg)</code
+                                >
+                            </p>
                         </li>
-                        <li class="list__item">returns undefined</li>
+                        <li class="list__item"><p class="text">returns undefined</p></li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
                         <code class="code-el">
@@ -746,14 +789,18 @@ console.log(copyItems2)
                             </p>
                         </li>
                         <li class="list__item">
-                            <code>
-                                callback function (element, index, array), map(callbackFn,
-                                thisArg)</code
-                            >
+                            <p class="text">
+                                <code>
+                                    callback function (element, index, array), map(callbackFn,
+                                    thisArg)</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns a new array with the results of calling a provided function on
-                            every element in the array
+                            <p class="text">
+                                returns a new array with the results of calling a provided function
+                                on every element in the array
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -770,14 +817,19 @@ console.log(map1) // [2, 8, 18, 32]
                     <h4 class="heading-h4 u-margin-bottom-sm">.flatMap()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code>
-                                callback function (element, index, array), flatMap(callbackFn,
-                                thisArg)</code
-                            >
+                            <p class="text">
+                                <code>
+                                    callback function (element, index, array), flatMap(callbackFn,
+                                    thisArg)</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns a new array with the results of calling a provided function on
-                            every element in the array and flattens the result into a single array
+                            <p class="text">
+                                returns a new array with the results of calling a provided function
+                                on every element in the array and flattens the result into a single
+                                array
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -797,13 +849,17 @@ console.log(result) // [1, 2, 2, 1, 1, 2, 2, 1]
                             </p>
                         </li>
                         <li class="list__item">
-                            <code>
-                                callback function (element, index, array), filter(callbackFn,
-                                thisArg)</code
-                            >
+                            <p class="text">
+                                <code>
+                                    callback function (element, index, array), filter(callbackFn,
+                                    thisArg)</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns a new array with all elements that pass the test
+                            <p class="text">
+                                returns a new array with all elements that pass the test
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -826,14 +882,18 @@ console.log(result) // ['exuberant', 'destruction', 'present']
                             </p>
                         </li>
                         <li class="list__item">
-                            <code>
-                                reduce(accumulator(накопитель), currentValue, currentIndex, array),
-                                reduce(callbackFn, initialValue)</code
-                            >
+                            <p class="text">
+                                <code>
+                                    reduce(accumulator(накопитель), currentValue, currentIndex,
+                                    array), reduce(callbackFn, initialValue)</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns the accumulated value after running the reduce function on each
-                            element in the array
+                            <p class="text">
+                                returns the accumulated value after running the reduce function on
+                                each element in the array
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -860,14 +920,18 @@ const result2 = array3.reduceRight((accumulator, currentValue) => accumulator.co
                             <p class="text">sorts the elements of an array in place</p>
                         </li>
                         <li class="list__item">
-                            <code>
-                                sort(), sort(compareFunction), toSorted(),
-                                toSorted(compareFunction)</code
-                            >
+                            <p class="text">
+                                <code>
+                                    sort(), sort(compareFunction), toSorted(),
+                                    toSorted(compareFunction)</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns the array, change the original array if using
-                            <code>.sort()</code> and not changing if used <code>.toSorted</code>
+                            <p class="text">
+                                returns the array, change the original array if using
+                                <code>.sort()</code> and not changing if used <code>.toSorted</code>
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -894,13 +958,17 @@ console.log(array3)    // [3, 1, 2, 5, 4]
                             </p>
                         </li>
                         <li class="list__item">
-                            <code>
-                                callback function (element, index, array), every(callbackFn,
-                                thisArg)</code
-                            >
+                            <p class="text">
+                                <code>
+                                    callback function (element, index, array), every(callbackFn,
+                                    thisArg)</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns true if all elements pass the test, false otherwise
+                            <p class="text">
+                                returns true if all elements pass the test, false otherwise
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -926,14 +994,18 @@ isSubset([1, 2, 3, 4, 5, 6, 7], [5, 7, 6]) // true
                             </p>
                         </li>
                         <li class="list__item">
-                            <code>
-                                callback function (element, index, array), some(callbackFn,
-                                thisArg)</code
-                            >
+                            <p class="text">
+                                <code>
+                                    callback function (element, index, array), some(callbackFn,
+                                    thisArg)</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns true if at least one element in the array passes the test
-                            implemented by the provided function
+                            <p class="text">
+                                returns true if at least one element in the array passes the test
+                                implemented by the provided function
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -954,11 +1026,15 @@ console.log(array.some(even)) // true
                     <h4 class="heading-h4 u-margin-bottom-sm">.concat()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code>concat(), concat(value1), concat(value1, value2)</code>
+                            <p class="text">
+                                <code>concat(), concat(value1), concat(value1, value2)</code>
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns a new array that is the result of concatenating all the arrays
-                            in the arguments
+                            <p class="text">
+                                returns a new array that is the result of concatenating all the
+                                arrays in the arguments
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -971,10 +1047,12 @@ homies = homies.concat(['Ben', 'Tailor']) // ['Nika', 'Anna', 'Eva', 'Mia', 'Ben
                     <h4 class="heading-h4 u-margin-bottom-sm">.flat()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code>flat(), flat(depth), flat(Infinity)</code>
+                            <p class="text"><code>flat(), flat(depth), flat(Infinity)</code></p>
                         </li>
                         <li class="list__item">
-                            returns a new array with all sub-array elements concatenated into it
+                            <p class="text">
+                                returns a new array with all sub-array elements concatenated into it
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -994,13 +1072,17 @@ console.log(array6.flat(Infinity))    // [0, 1, 2, 3, 4, 5]
                             </p>
                         </li>
                         <li class="list__item">
-                            <code>
-                                copyWithin(target, start), copyWithin(target, start, end (not
-                                icluded))</code
-                            >
+                            <p class="text">
+                                <code>
+                                    copyWithin(target, start), copyWithin(target, start, end (not
+                                    icluded))</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns the element at the specified index in the array
+                            <p class="text">
+                                returns the element at the specified index in the array
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -1028,12 +1110,18 @@ array.copyWithin(0, 3, 3)
                             </p>
                         </li>
                         <li class="list__item">
-                            <code>
-                                slice(beginIndex), slice(beginIndex, endIndex(not included))</code
-                            >
+                            <p class="text">
+                                <code>
+                                    slice(beginIndex), slice(beginIndex, endIndex(not
+                                    included))</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns a new array containing a shallow copy of a portion of the array
+                            <p class="text">
+                                returns a new array containing a shallow copy of a portion of the
+                                array
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -1056,17 +1144,21 @@ animals1.slice()        // ['ant', 'bison', 'camel', 'duck', 'elephant']
                             </p>
                         </li>
                         <li class="list__item">
-                            <code>
-                                splice(startIndex), splice(startIndex, deleteCount),
-                                splice(startIndex, deleteCount, item1, item2, ...)
-                                toSpliced(startIndex), toSpliced(startIndex, deleteCount),
-                                toSpliced(startIndex, deleteCount, item1, item2,...)</code
-                            >
+                            <p class="text">
+                                <code>
+                                    splice(startIndex), splice(startIndex, deleteCount),
+                                    splice(startIndex, deleteCount, item1, item2, ...)
+                                    toSpliced(startIndex), toSpliced(startIndex, deleteCount),
+                                    toSpliced(startIndex, deleteCount, item1, item2,...)</code
+                                >
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns a new array containing the deleted elements,
-                            <code>.splice()</code> changing the original array and
-                            <code>.toSpliced</code> not changing the original array
+                            <p class="text">
+                                returns a new array containing the deleted elements,
+                                <code>.splice()</code> changing the original array and
+                                <code>.toSpliced</code> not changing the original array
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -1090,11 +1182,15 @@ console.log(months1) // not changed
                             <p class="text">creates a shallow copy of an array</p>
                         </li>
                         <li class="list__item">
-                            <code> with(...items), arrayInstance.width(index, value)</code>
+                            <p class="text">
+                                <code> with(...items), arrayInstance.width(index, value)</code>
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns a shallow copy of an array with the provided items appended to
-                            it
+                            <p class="text">
+                                returns a shallow copy of an array with the provided items appended
+                                to it
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -1115,12 +1211,14 @@ const newArray = array.with(2, 6)    // [1, 2, 6, 4, 5]
                             </p>
                         </li>
                         <li class="list__item">
-                            <code>reverse(), toReversed()</code>
+                            <p class="text"><code>reverse(), toReversed()</code></p>
                         </li>
                         <li class="list__item">
-                            returns the array with its elements in reverse order,
-                            <code>.reverse()</code> changing the original array and
-                            <code>.toReversed()</code> not changing the original array
+                            <p class="text">
+                                returns the array with its elements in reverse order,
+                                <code>.reverse()</code> changing the original array and
+                                <code>.toReversed()</code> not changing the original array
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -1141,11 +1239,13 @@ array2                      // [1, 2, 3, 4, 5]
                             <p class="text">joins all elements of an array into a string</p>
                         </li>
                         <li class="list__item">
-                            <code>join(), join(separator)</code>
+                            <p class="text"><code>join(), join(separator)</code></p>
                         </li>
                         <li class="list__item">
-                            returns a string containing all the elements of the array, separated by
-                            commas and/or a specified separator
+                            <p class="text">
+                                returns a string containing all the elements of the array, separated
+                                by commas and/or a specified separator
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
@@ -1160,9 +1260,11 @@ elements.join(' ').toLowerCase()    // fire air water
                     <h4 class="heading-h4 u-margin-bottom-sm">.toString()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code>toString()</code>
+                            <p class="text"><code>toString()</code></p>
                         </li>
-                        <li class="list__item">returns a string representation of the array</li>
+                        <li class="list__item">
+                            <p class="text">returns a string representation of the array</p>
+                        </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">
                         <code class="code-el">
@@ -1174,10 +1276,14 @@ array21.toString()    // "1,a,23,1,2,3,[object Object]"
                     <h4 class="heading-h4 u-margin-bottom-sm">.toLocaleString()</h4>
                     <ul class="list">
                         <li class="list__item">
-                            <code>toLocaleString(), toLocaleString(locales[, options])</code>
+                            <p class="text">
+                                <code>toLocaleString(), toLocaleString(locales[, options])</code>
+                            </p>
                         </li>
                         <li class="list__item">
-                            returns a string representing the elements of the array
+                            <p class="text">
+                                returns a string representing the elements of the array
+                            </p>
                         </li>
                     </ul>
                     <pre class="code u-margin-bottom-md">

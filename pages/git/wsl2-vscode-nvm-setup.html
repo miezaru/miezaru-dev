@@ -114,25 +114,6 @@
         <meta name="msapplication-TileImage" content="../../assets/img/icons/ms-icon-144x144.png" />
         <meta name="theme-color" content="#e2f3f5" />
 
-        <link
-            href="../../assets/fonts/Rubik/RubikRegular/RubikRegular.woff2"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-        <link
-            href="../../assets/fonts/Rubik/RubikMedium/RubikMedium.woff2"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-        <link
-            href="../../assets/fonts/Rubik/RubikBold/RubikBold.woff2"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-
         <link href="../../css/min/main-min.css" rel="stylesheet" />
     </head>
     <body>
@@ -279,25 +260,30 @@
 
                         <ol class="list">
                             <li class="list__item">
-                                <p class="text">Open terminal: wsl --shutdown</p>
+                                <p class="text">
+                                    Open terminal:
+                                    <code class="code-el"> wsl --shutdown </code>
+                                </p>
                             </li>
                             <li class="list__item">
                                 <p class="text">
                                     Go to RegEdit:
-                                    "Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lxss\"
+                                    <code class="code-el">
+                                        "Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lxss\"</code
+                                    >
                                 </p>
                             </li>
                             <li class="list__item">
                                 <p class="text">
-                                    Check 'BasePath' and find your wsl drive, then copy it and put
+                                    Check "BasePath" and find your wsl drive, then copy it and put
                                     where u want
                                 </p>
                             </li>
                             <li class="list__item">
-                                <p class="text">Then change 'BasePath' to a new location</p>
+                                <p class="text">Then change "BasePath" to a new location</p>
                             </li>
                             <li class="list__item">
-                                <p class="text">Change 'DistributionName' if needed</p>
+                                <p class="text">Change "DistributionName" if needed</p>
                             </li>
                         </ol>
                     </div>
@@ -357,12 +343,18 @@
                             <li class="list__item">
                                 <p class="text">
                                     Add Windows drive references to the working WSL2 directory (to
-                                    avoid typing "/mnt/c/...").
+                                    avoid typing "<code class="code-el">/mnt/c/...</code>").
                                 </p>
                                 <ul class="list">
-                                    <li class="list__item"><p class="text">"cd ~"</p></li>
                                     <li class="list__item">
-                                        <p class="text">"ln -s /mnt/c/Users/user win_home"</p>
+                                        <p class="text">"<code class="code-el">cd ~</code>"</p>
+                                    </li>
+                                    <li class="list__item">
+                                        <p class="text">
+                                            "<code class="code-el">
+                                                ln -s /mnt/c/Users/user win_home</code
+                                            >"
+                                        </p>
                                     </li>
                                 </ul>
                             </li>

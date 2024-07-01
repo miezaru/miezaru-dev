@@ -114,25 +114,6 @@
         <meta name="msapplication-TileImage" content="../../assets/img/icons/ms-icon-144x144.png" />
         <meta name="theme-color" content="#e2f3f5" />
 
-        <link
-            href="../../assets/fonts/Rubik/RubikRegular/RubikRegular.woff2"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-        <link
-            href="../../assets/fonts/Rubik/RubikMedium/RubikMedium.woff2"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-        <link
-            href="../../assets/fonts/Rubik/RubikBold/RubikBold.woff2"
-            as="font"
-            crossorigin="anonymous"
-            rel="preload"
-        />
-
         <link href="../../css/min/main-min.css" rel="stylesheet" />
     </head>
     <body>
@@ -330,10 +311,20 @@
                     <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Создание репозитория:</h3>
                         <ul class="list">
-                            <li class="list__item"><p class="text">git init</p></li>
-                            <li class="list__item"><p class="text">git add README.md</p></li>
                             <li class="list__item">
-                                <p class="text">git commit -m "Initial commit"</p>
+                                <p class="text">
+                                    <code class="code-el">git init</code>
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    <code class="code-el">git add README.md</code>
+                                </p>
+                            </li>
+                            <li class="list__item">
+                                <p class="text">
+                                    <code class="code-el">git commit -m "Initial commit"</code>
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -343,12 +334,16 @@
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">
-                                    git clone https://github.com/url [optional: каталог]
+                                    <code class="code-el">
+                                        git clone https://github.com/url [optional: каталог]</code
+                                    >
                                 </p>
                             </li>
                             <li class="list__item">
                                 <p class="text">
-                                    git clone https://github.com/libgit2/libgit2 mylibgit
+                                    <code class="code-el">
+                                        git clone https://github.com/libgit2/libgit2 mylibgit
+                                    </code>
                                 </p>
                             </li>
                         </ul>
@@ -360,7 +355,7 @@
                         </h3>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git status -s</p>
+                                <p class="text"><code class="code-el">git status -s</code></p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">короткий вывод изменений</p>
@@ -368,7 +363,7 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git diff</p>
+                                <p class="text"><code class="code-el">git diff</code></p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -378,7 +373,7 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git diff --staged</p>
+                                <p class="text"><code class="code-el">git diff --staged</code></p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -389,7 +384,7 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git add file.html</p>
+                                <p class="text"><code class="code-el">git add file.html</code></p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">индексация файла file.html</p>
@@ -397,7 +392,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git restore --staged file.html</p>
+                                <p class="text">
+                                    <code class="code-el">git restore --staged file.html</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">убирает файл с проиндексированных</p>
@@ -405,7 +402,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git restore file.html</p>
+                                <p class="text">
+                                    <code class="code-el">git restore file.html</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -416,7 +415,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git checkout -- file.html</p>
+                                <p class="text">
+                                    <code class="code-el">git checkout -- file.html</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -432,7 +433,9 @@
                         <h3 class="heading-h3 u-margin-bottom-sm">Git: Коммиты:</h3>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git commit -m "comment"</p>
+                                <p class="text">
+                                    <code class="code-el">git commit -m "comment"</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">снимок проиндексированных изменений</p>
@@ -441,7 +444,9 @@
                             </li>
 
                             <li class="list__item">
-                                <p class="text">git commit -a -m "comment"</p>
+                                <p class="text">
+                                    <code class="code-el">git commit -a -m "comment"</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -452,7 +457,7 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git commit --amend</p>
+                                <p class="text"><code class="code-el">git commit --amend</code></p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -468,7 +473,7 @@
                         <h3 class="heading-h3 u-margin-bottom-sm">Git: Удаление файлами:</h3>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git rm file.html</p>
+                                <p class="text"><code class="code-el">git rm file.html</code></p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">удаление файла из отслеживаеммых</p>
@@ -477,7 +482,7 @@
                             </li>
 
                             <li class="list__item">
-                                <p class="text">git rm -f file.html</p>
+                                <p class="text"><code class="code-el">git rm -f file.html</code></p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -487,7 +492,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git rm --cached file.html</p>
+                                <p class="text">
+                                    <code class="code-el">git rm --cached file.html</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">удалить файл, но оставить его в каталоге</p>
@@ -495,7 +502,7 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git rm log/\*.log</p>
+                                <p class="text"><code class="code-el">git rm log/\*.log</code></p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -505,7 +512,7 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git rm \*.log</p>
+                                <p class="text"><code class="code-el">git rm \*.log</code></p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">удаление всех файлов с окончание .log</p>
@@ -519,7 +526,9 @@
                         <h3 class="heading-h3 u-margin-bottom-sm">Git: Переименование файлов:</h3>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git mv README.md README</p>
+                                <p class="text">
+                                    <code class="code-el">git mv README.md README</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -528,13 +537,21 @@
                                         </p>
                                         <ul class="list">
                                             <li class="list__item">
-                                                <p class="text">mv README.md README</p>
+                                                <p class="text">
+                                                    <code class="code-el">
+                                                        mv README.md README
+                                                    </code>
+                                                </p>
                                             </li>
                                             <li class="list__item">
-                                                <p class="text">git rm README.md</p>
+                                                <p class="text">
+                                                    <code class="code-el">git rm README.md</code>
+                                                </p>
                                             </li>
                                             <li class="list__item">
-                                                <p class="text">git add README</p>
+                                                <p class="text">
+                                                    <code class="code-el">git add README</code>
+                                                </p>
                                             </li>
                                         </ul>
                                     </li>
@@ -545,7 +562,9 @@
                     <div class="content-box">
                         <h3 class="heading-h3 u-margin-bottom-sm">Просмотр коммитов:</h3>
                         <ul class="list">
-                            <li class="list__item"><p class="text">git log</p></li>
+                            <li class="list__item">
+                                <p class="text"><code class="code-el">git log</code></p>
+                            </li>
                             <ul class="list">
                                 <li class="list__item">
                                     <p class="text">
@@ -561,12 +580,14 @@
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        Подготовленные кастомные команды: [git lg1], [git lg2]
+                                        Подготовленные кастомные команды: [<code class="code-el">
+                                            git lg1</code
+                                        >], [<code class="code-el">git lg2</code>]
                                     </p>
                                     <ul class="list">
                                         <li class="list__item">
                                             <p class="text">
-                                                <code>
+                                                <code class="code-el">
                                                     git config --global alias.lg1 "log --graph
                                                     --abbrev-commit --decorate
                                                     --format=format:'%C(bold blue)%h%C(reset) -
@@ -578,7 +599,7 @@
                                         </li>
                                         <li class="list__item">
                                             <p class="text">
-                                                <code>
+                                                <code class="code-el">
                                                     git config --global alias.lg2 "log --graph
                                                     --abbrev-commit --decorate
                                                     --format=format:'%C(bold blue)%h%C(reset) -
@@ -606,7 +627,9 @@
                         <h3 class="heading-h3 u-margin-bottom-sm">Команды:</h3>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git remote</p>
+                                <p class="text">
+                                    <code class="code-el"> git remote </code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">названия доступных репозиториев</p>
@@ -614,7 +637,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git remote -v</p>
+                                <p class="text">
+                                    <code class="code-el"> git remote -v </code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -625,13 +650,15 @@
                                     <li class="list__item">
                                         <p class="text">
                                             origin - название внешнего git сервера по умолчанию
-                                            командой <strong>git clone</strong>.
+                                            командой <code class="code-el">git clone</code>.
                                         </p>
                                     </li>
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git clone -o server-name</p>
+                                <p class="text">
+                                    <code class="code-el">git clone -o server-name</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -643,7 +670,9 @@
                             </li>
                             <li class="list__item">
                                 <p class="text">
-                                    git remote add john https://github.com/john/our-project
+                                    <code class="code-el">
+                                        git remote add john https://github.com/john/our-project
+                                    </code>
                                 </p>
                                 <ul class="list">
                                     <li class="list__item">
@@ -652,7 +681,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git fetch john</p>
+                                <p class="text">
+                                    <code class="code-el">git fetch john</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -662,19 +693,25 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git pull</p>
+                                <p class="text">
+                                    <code class="code-el">git pull</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
-                                            <strong>git fetch</strong> +
-                                            <strong>git merge</strong> (с сервером на который
-                                            смотритрит репозиторий (origin))
+                                            <code class="code-el">git fetch</code> +
+                                            <code class="code-el">git merge</code> (с сервером на
+                                            который смотрит репозиторий (origin))
                                         </p>
                                     </li>
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git push [remote-name] [branch-name]</p>
+                                <p class="text">
+                                    <code class="code-el">
+                                        git push [remote-name] [branch-name]</code
+                                    >
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -684,19 +721,23 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git push origin master</p>
+                                <p class="text">
+                                    <code class="code-el">git push origin master</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
                                             отправка изменений в удаленный репозиторий (не позволит
-                                            отправить если сервер origin изменился с последнего git
-                                            pull)
+                                            отправить если сервер origin изменился с последнего
+                                            <code class="code-el">git pull</code>)
                                         </p>
                                     </li>
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git remote show origin</p>
+                                <p class="text">
+                                    <code class="code-el">git remote show origin</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -707,7 +748,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git remote rename john jn</p>
+                                <p class="text">
+                                    <code class="code-el">git remote rename john jn</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">переименование удаленного репозиторий</p>
@@ -715,7 +758,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git remote rm john</p>
+                                <p class="text">
+                                    <code class="code-el">git remote rm john</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">удаление удаленного репозитория</p>
@@ -736,7 +781,9 @@
                         <h3 class="heading-h3 u-margin-bottom-sm">Работа с тегами:</h3>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git tag</p>
+                                <p class="text">
+                                    <code class="code-el">git tag</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">список тегов</p>
@@ -744,7 +791,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git tag -l "v1.8.5*"</p>
+                                <p class="text">
+                                    <code class="code-el">git tag -l "v1.8.5*"</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">поиск тегов по шаблону</p>
@@ -752,7 +801,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git tag -a v1.4 -m "my version 1.4"</p>
+                                <p class="text">
+                                    <code class="code-el">git tag -a v1.4 -m "my version 1.4"</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -763,7 +814,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git tag v1.4</p>
+                                <p class="text">
+                                    <code class="code-el">git tag v1.4</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -774,7 +827,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git log --pretty=oneline</p>
+                                <p class="text">
+                                    <code class="code-el">git log --pretty=oneline</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">список пройденных коммитов</p>
@@ -782,7 +837,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git tag -a v1.2 9fceb02</p>
+                                <p class="text">
+                                    <code class="code-el">git tag -a v1.2 9fceb02</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">отложенно задать тег на коммит</p>
@@ -796,7 +853,9 @@
                         <h3 class="heading-h3 u-margin-bottom-sm">Обмен тегами:</h3>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git push origin [tagname]</p>
+                                <p class="text">
+                                    <code class="code-el">git push origin [tagname]</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -807,7 +866,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git push origin --tags</p>
+                                <p class="text">
+                                    <code class="code-el">git push origin --tags</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -817,7 +878,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git push [remote] --follow-tags</p>
+                                <p class="text">
+                                    <code class="code-el">git push [remote] --follow-tags</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">отправить только аннотированные теги</p>
@@ -831,7 +894,9 @@
                         <h3 class="heading-h3 u-margin-bottom-sm">Удаление тегов:</h3>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git tag -d v1.4-lw</p>
+                                <p class="text">
+                                    <code class="code-el">git tag -d v1.4-lw</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">удаляет тег v1.4-lw локально</p>
@@ -839,7 +904,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git push origin --delete v1.4-lw</p>
+                                <p class="text">
+                                    <code class="code-el">git push origin --delete v1.4-lw</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">удаляет тег v1.4-lw на внешнем сервере</p>
@@ -847,7 +914,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git push origin :refs/tags/v1.4-lw</p>
+                                <p class="text">
+                                    <code class="code-el">git push origin :refs/tags/v1.4-lw</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -865,7 +934,9 @@
                         <h3 class="heading-h3 u-margin-bottom-sm">Переход на тег:</h3>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git checkout v2.0.0</p>
+                                <p class="text">
+                                    <code class="code-el">git checkout v2.0.0</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -887,7 +958,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git checkout -b version2 v2.0.0</p>
+                                <p class="text">
+                                    <code class="code-el">git checkout -b version2 v2.0.0</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -917,7 +990,9 @@
                         <h3 class="heading-h3 u-margin-bottom-sm">Ветвление - базовые команды:</h3>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git checkout v2.0.0</p>
+                                <p class="text">
+                                    <code class="code-el">git checkout v2.0.0</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -933,7 +1008,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git log</p>
+                                <p class="text">
+                                    <code class="code-el">git log</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">покажет куда смотрит HEAD</p>
@@ -948,7 +1025,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git log testing</p>
+                                <p class="text">
+                                    <code class="code-el">git log testing</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">явно посмотреть логи ветки testing</p>
@@ -956,7 +1035,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git log --all</p>
+                                <p class="text">
+                                    <code class="code-el">git log --all</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">посмотреть историю по всем веткам</p>
@@ -964,7 +1045,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git checkout testing</p>
+                                <p class="text">
+                                    <code class="code-el">git checkout testing</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -975,7 +1058,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git switch testing</p>
+                                <p class="text">
+                                    <code class="code-el">git switch testing</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -986,7 +1071,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git checkout 18b9746</p>
+                                <p class="text">
+                                    <code class="code-el">git checkout 18b9746</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -997,7 +1084,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git checkout -b [branchname]</p>
+                                <p class="text">
+                                    <code class="code-el">git checkout -b [branchname]</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -1007,7 +1096,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git switch -c/--create [branchname]</p>
+                                <p class="text">
+                                    <code class="code-el">git switch -c/--create [branchname]</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -1017,7 +1108,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git switch -</p>
+                                <p class="text">
+                                    <code class="code-el">git switch -</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">вернуться к предыдущей извлеченной ветке</p>
@@ -1031,7 +1124,9 @@
                         <h3 class="heading-h3 u-margin-bottom-sm">Слияние веток:</h3>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git merge [branchname]</p>
+                                <p class="text">
+                                    <code class="code-el">git merge [branchname]</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -1048,7 +1143,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git branch -d [branchname]</p>
+                                <p class="text">
+                                    <code class="code-el">git branch -d [branchname]</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">удалить ветку branchname</p>
@@ -1064,8 +1161,8 @@
                         <p class="text">
                             После завершения ручных изменений в конфликтах, необходимо просто
                             прописать
-                            <strong>git add [file]</strong> , что-бы обозначить проблему решенной и
-                            закоммитить <strong>git commit</strong>
+                            <code class="code-el">git add [file]</code> , что-бы обозначить проблему
+                            решенной и закоммитить <code class="code-el">git commit</code>.
                         </p>
                     </div>
 
@@ -1073,7 +1170,9 @@
                         <h3 class="heading-h3 u-margin-bottom-sm">Управление ветками:</h3>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git branch</p>
+                                <p class="text">
+                                    <code class="code-el">git branch</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -1084,7 +1183,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git branch -v</p>
+                                <p class="text">
+                                    <code class="code-el">git branch -v</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -1094,7 +1195,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git branch --merged</p>
+                                <p class="text">
+                                    <code class="code-el">git branch --merged</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">список веток слитых в текущую</p>
@@ -1102,7 +1205,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git branch --no-merged</p>
+                                <p class="text">
+                                    <code class="code-el">git branch --no-merged</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">список не слитых веток в текущую</p>
@@ -1110,7 +1215,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git branch --no-merged [branchname]</p>
+                                <p class="text">
+                                    <code class="code-el">git branch --no-merged [branchname]</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -1121,7 +1228,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git branch -D [branchname]</p>
+                                <p class="text">
+                                    <code class="code-el">git branch -D [branchname]</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -1144,7 +1253,9 @@
                         <ul class="list">
                             <li class="list__item">
                                 <p class="text">
-                                    git branch --move old-branch-name new-branch-name
+                                    <code class="code-el">
+                                        git branch --move [old-branch-name] [new-branch-name]</code
+                                    >
                                 </p>
                                 <ul class="list">
                                     <li class="list__item">
@@ -1153,7 +1264,11 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git branch --set-upstream origin new-branch-name</p>
+                                <p class="text">
+                                    <code class="code-el">
+                                        git branch --set-upstream origin [new-branch-name]</code
+                                    >
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -1163,7 +1278,11 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git push origin --delete old-branch-name</p>
+                                <p class="text">
+                                    <code class="code-el">
+                                        git push origin --delete [old-branch-name]</code
+                                    >
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -1226,7 +1345,9 @@
                         </p>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git ls-remote [remote-branch]</p>
+                                <p class="text">
+                                    <code class="code-el">git ls-remote [remote-branch]</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -1236,7 +1357,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git remote show [remote-branch]</p>
+                                <p class="text">
+                                    <code class="code-el">git remote show [remote-branch]</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -1262,7 +1385,9 @@
                         </p>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git fetch [remote-branch]</p>
+                                <p class="text">
+                                    <code class="code-el">git fetch [remote-branch]</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -1276,7 +1401,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git [remote] add</p>
+                                <p class="text">
+                                    <code class="code-el">git [remote] add</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">добавлять внешнюю ветку</p>
@@ -1301,7 +1428,9 @@
                         </p>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git push [remote] [branch]</p>
+                                <p class="text">
+                                    <code class="code-el">git push [remote] [branch]</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -1311,7 +1440,11 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git checkout -b serverfix origin/serverfix</p>
+                                <p class="text">
+                                    <code class="code-el">
+                                        git checkout -b serverfix origin/serverfix</code
+                                    >
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -1342,7 +1475,11 @@
                         </p>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git checkout -b [branch] [branch/remote]</p>
+                                <p class="text">
+                                    <code class="code-el">
+                                        git checkout -b [branch] [branch/remote]
+                                    </code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">новая ветка отслеживает удаленную</p>
@@ -1350,7 +1487,11 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git checkout --track origin/serverfix</p>
+                                <p class="text">
+                                    <code class="code-el">
+                                        git checkout --track origin/serverfix
+                                    </code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">тоже самое</p>
@@ -1358,7 +1499,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git checkout serverfix</p>
+                                <p class="text">
+                                    <code class="code-el">git checkout serverfix</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">тоже самое</p>
@@ -1374,7 +1517,11 @@
 
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git checkout -b sf original/serverfix</p>
+                                <p class="text">
+                                    <code class="code-el">
+                                        git checkout -b sf original/serverfix</code
+                                    >
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">новая ветка с именем sf</p>
@@ -1382,7 +1529,9 @@
                                 </ul>
                             </li>
                             <li class="list__item">
-                                <p class="text">git branch -vv</p>
+                                <p class="text">
+                                    <code class="code-el">git branch -vv</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">
@@ -1407,7 +1556,9 @@
                         </p>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git fetch --all; git branch -vv</p>
+                                <p class="text">
+                                    <code class="code-el">git fetch --all; git branch -vv</code>
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -1438,7 +1589,9 @@
                         </h3>
                         <ul class="list">
                             <li class="list__item">
-                                <p class="text">git push origin --delete serverfix</p>
+                                <p class="text">
+                                    <code class="code-el">git push origin --delete serverfix</code>
+                                </p>
                                 <ul class="list">
                                     <li class="list__item">
                                         <p class="text">удаление удаленной ветки serverfix</p>
