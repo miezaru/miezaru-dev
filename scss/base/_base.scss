@@ -1,105 +1,24 @@
 body {
     position: relative;
+    overflow: hidden scroll;
 
     &::-webkit-scrollbar {
         inline-size: 10px;
     }
 
     &::-webkit-scrollbar-track {
-        background: cl(purple-light-x);
+        background-color: var(--accent-dark);
     }
 
     &::-webkit-scrollbar-thumb {
-        background: cl(purple-primary);
+        background-color: var(--accent-soft);
     }
 
     &::-webkit-scrollbar-thumb:hover {
-        background: cl(purple-dark-xxx);
+        background-color: var(--accent);
     }
 }
 
-.section-header {
-    margin-block-end: 4.8rem;
-}
-
-.section-container {
-    &--links {
-        display: flex;
-        flex-direction: column;
-        gap: 3.2rem;
-    }
-}
-
-.content-box {
-    &:not(:last-child) {
-        margin-block-end: 3.2rem;
-    }
-}
-
-%btn-styles {
-    &:link,
-    &:visited {
-        display: inline-block;
-        color: cl(purple-dark-xxx);
-        text-align: center;
-        text-decoration: none;
-        background-color: cl(purple-light-xx);
-        border: 1px solid cl(purple-dark-xxx);
-        border-radius: br(link);
-        transition: tr(small);
-    }
-
-    &:hover {
-        box-shadow: sh(link-hover);
-        transform: translateY(-0.5rem);
-    }
-
-    &:active {
-        box-shadow: sh(link-active);
-        transform: translateY(-0.2rem);
-    }
-}
-
-.resources-box {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.6rem;
-
-    &__item {
-        @extend %btn-styles;
-
-        &:link,
-        &:visited {
-            padding-block: 1rem;
-            padding-inline: 2rem;
-            font-size: 1.5rem;
-            font-weight: 500;
-            line-height: 1;
-        }
-    }
-
-    &:not(:last-child) {
-        margin-block-end: 3.2rem;
-    }
-}
-
-.accent-symbol {
-    display: inline-block;
-    font-size: 2rem;
-    font-weight: 700;
-    color: cl(purple-light-xx);
-    animation: am(pulse-infinite);
-}
-
-.btn-back-to-top {
-    @extend %btn-styles;
-
-    &:link,
-    &:visited {
-        position: fixed;
-        inset-block-end: 2.4rem;
-        inset-inline-end: 3.2rem;
-        padding-block: 1.2rem;
-        padding-inline: 2.4rem;
-    }
+.main {
+    background-color: var(--accent-grey-light);
 }

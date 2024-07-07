@@ -1,0 +1,6 @@
+@use 'sass:meta';
+@use '../abstract' as abstract;
+
+$abstract: meta.module-variables('abstract');
+
+@include add-css-variables($abstract);

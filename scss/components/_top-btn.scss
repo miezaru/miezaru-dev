@@ -1,0 +1,30 @@
+.top-btn {
+    &:link,
+    &:visited {
+        position: fixed;
+        inset-block-end: 3.2rem;
+        inset-inline-end: 3.2rem;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        inline-size: 3.6rem;
+        block-size: 3.6rem;
+        color: var(--accent-grey-light);
+        text-decoration: none;
+        background-color: var(--accent-dark);
+        border-radius: 50%;
+        box-shadow: 0 0 0.4rem var(--accent-dark);
+        transition: var(--tr-small);
+
+        &:hover {
+            box-shadow: 0 0 0.6rem var(--accent-dark);
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            box-shadow: 0 0 0.5rem var(--accent-dark);
+            transform: translateY(-1px);
+        }
+    }
+}

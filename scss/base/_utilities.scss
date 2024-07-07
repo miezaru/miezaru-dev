@@ -1,5 +1,5 @@
 .u-margin-bottom-smlst {
-    margin-block-end: 1.2rem !important;
+    margin-block-end: 1.8rem !important;
 }
 
 .u-margin-bottom-sm {
@@ -22,7 +22,12 @@
     text-align: center !important;
 }
 
-.image-half {
+.u-image-half {
     inline-size: 50%;
-    margin-inline: auto;
+}
+
+.u-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

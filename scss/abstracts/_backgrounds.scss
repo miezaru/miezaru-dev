@@ -1,5 +1,0 @@
-@use 'sass:color';
-@use 'colors';
-
-$purple-primary-50: color.change(colors.$purple-dark-xxx, $alpha: 0.5);
-$purple-primary-30: color.change(colors.$purple-dark-xxx, $alpha: 0.3);

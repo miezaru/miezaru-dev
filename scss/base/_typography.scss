@@ -4,33 +4,15 @@ html {
 
 body {
     font-family: Rubik, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
     line-height: 1;
-    color: cl(text-dark);
+    color: var(--accent-dark-black);
 }
 
 strong {
     font-weight: 500;
-}
-
-.heading-h1 {
-    font-weight: 600;
-    color: cl(purple-light-xxx);
-}
-
-.heading-h2 {
-    font-size: 3rem;
-    font-weight: 500;
-    letter-spacing: -0.5px;
-}
-
-.heading-h3 {
-    font-size: 2.2rem;
-    font-weight: 500;
-}
-
-.heading-h4 {
-    font-size: 1.8rem;
-    font-weight: 500;
+    color: var(--accent-dark);
 }
 
 .text {
@@ -45,19 +27,42 @@ strong {
 .text-link {
     &:link,
     &:visited {
-        font-weight: 500;
-        color: cl(purple-dark-x);
+        padding-block: 0.2rem;
+        padding-inline: 0.4rem;
+        color: inherit;
+        color: var(--accent-grey-light);
         text-decoration: none;
-        border-block-end: 1px solid currentcolor;
-        transition: tr(small);
+        background-color: var(--accent-dark);
+        border-block-end: 1px solid var(--accent-soft-light);
+        transition: var(--tr-small);
     }
 
     &:hover,
     &:active {
-        background-color: cl(purple-light-xx);
+        background-color: var(--accent-soft);
     }
 }
 
-.text-ems {
+.heading-h3,
+.heading-h4 {
     font-weight: 500;
+    color: var(--accent-darkest);
+}
+
+.heading-h2 {
+    padding-block: 1.2rem;
+    padding-inline: 2.4rem;
+    overflow: hidden;
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: var(--accent-grey-light);
+    background-color: var(--accent-dark);
+}
+
+.heading-h3 {
+    font-size: 2.4rem;
+}
+
+.heading-h4 {
+    font-size: 1.8rem;
 }

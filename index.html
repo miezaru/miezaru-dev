@@ -94,7 +94,7 @@
 
         <!--! preload background -->
         <link
-            href="./assets/img/pilinger-point.avif"
+            href="./assets/img/header/pilinger-point.avif"
             as="image"
             fetchpriority="high"
             rel="preload"
@@ -105,658 +105,676 @@
     </head>
     <body>
         <header class="header">
-            <div class="header-container">
-                <div class="header-container-inner">
-                    <div class="header-box">
-                        <h1 class="heading-h1">
-                            <a class="author-link" href="https://github.com/miezaru">@miezaru</a>
-                            resources
-                            <span class="accent-symbol">/</span>
-                        </h1>
-                        <a class="header__home-link" href="#">Back home</a>
-                    </div>
-                </div>
-                <div class="main-nav__container">
-                    <span class="main-nav__text" id="main-nav-text">jump to:</span>
-                    <nav class="main-nav" aria-labelledby="main-nav-text">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#html">HTML</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css">CSS</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#tools">Tools</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#sass">Sass</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#git">Git</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#js">JavaScript</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#react">React</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <a class="logo" href="#">
+                <picture>
+                    <source srcset="./assets/img/header/header-icon.avif" type="image/avif" />
+                    <source srcset="./assets/img/header/header-icon.webp" type="image/webp" />
+                    <img
+                        class="logo__img"
+                        src="./assets/img/header/header-icon.png"
+                        srcset="./assets/img/header/header-icon.png"
+                        alt="miezaru-dev logo"
+                    />
+                </picture>
+
+                <p class="logo__text">miezaru-dev</p>
+            </a>
         </header>
-        <main class="main grid-home">
-            <section class="section-html" id="html">
-                <header class="section-header">
-                    <h2 class="heading-h2">HTML</h2>
+
+        <section class="section-hero">
+            <nav class="page-nav" aria-labelledby="page-nav-description">
+                <header class="page-nav__header">
+                    <p class="page-nav__description" id="page-nav-description">On this page:</p>
+                    <button class="page-nav__btn" type="button">X</button>
                 </header>
-                <div class="section-container section-container--links">
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Relative</h3>
-                        <div class="resources-box">
-                            <a class="resources-box__item" href="./pages/html/metadata.html">
-                                metadata</a
-                            >
-                            <a class="resources-box__item" href="./pages/html/icons.html">icons</a>
-                            <a class="resources-box__item" href="./pages/html/images.html">
-                                images</a
-                            >
-                            <a class="resources-box__item" href="./pages/html/forms.html">forms</a>
-                            <a class="resources-box__item" href="./pages/html/accessibility.html">
-                                accessibility</a
-                            >
-                        </div>
-                    </div>
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">External</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://css-tricks.com/snippets/html/glyphs/"
-                                rel="noopener external"
-                            >
-                                entities</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="http://entity-lookup.leftlogic.com/"
-                                rel="noopener external"
-                            >
-                                entities search</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
-                                rel="noopener external"
-                            >
-                                global attributes</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/forms"
-                                rel="noopener external"
-                            >
-                                forms</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/design/theming"
-                                rel="noopener external"
-                            >
-                                theaming</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://gsnedders.html5.org/outliner/"
-                                rel="noopener external"
-                            >
-                                html outliner</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://embedresponsively.com/"
-                                rel="noopener external"
-                            >
-                                embed responsively</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://www.digitalyeast.com/embedresponsively/"
-                                rel="noopener external"
-                            >
-                                embed resposively</a
-                            >
-                        </div>
-                    </div>
+                <div class="page-nav__links">
+                    <ul class="page-nav__list">
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#html">HTML</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css">CSS</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#tools">Tools</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#sass">Sass</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#git">Git</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#javascript">JavaScript</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#react">React</a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
+            </nav>
 
-            <section class="section-tools" id="tools">
-                <header class="section-header">
-                    <h2 class="heading-h2">Tools</h2>
-                </header>
-                <div class="section-container section-container--links">
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Icons</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://jakearchibald.github.io/svgomg/"
-                                rel="noopener external"
-                            >
-                                optimize svg</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://realfavicongenerator.net/"
-                                rel="noopener external"
-                            >
-                                favicon generator</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://icomoon.io/app/#/select/library"
-                                rel="noopener external"
-                            >
-                                icomoon app</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://fontastic.me/"
-                                rel="noopener external"
-                            >
-                                fontastic app</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://simpleicons.org/"
-                                rel="noopener external"
-                            >
-                                simpleicons</a
-                            >
+            <h1 class="header-description">
+                A collection of useful links and useful tips and reminders about web technologies.
+                The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these
+                technologies.
+            </h1>
+        </section>
+        <main class="main">
+            <div class="container-home">
+                <section class="section-html" id="html">
+                    <h2 class="heading-h2 u-margin-bottom-sm">HTML</h2>
+                    <div class="container-section">
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Relative</h3>
+                            <div class="resources-box">
+                                <a class="resources-box__item" href="./pages/html/metadata.html">
+                                    metadata</a
+                                >
+                                <a class="resources-box__item" href="./pages/html/icons.html">
+                                    icons</a
+                                >
+                                <a class="resources-box__item" href="./pages/html/images.html">
+                                    images</a
+                                >
+                                <a class="resources-box__item" href="./pages/html/forms.html">
+                                    forms</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="./pages/html/accessibility.html"
+                                >
+                                    accessibility</a
+                                >
+                            </div>
+                        </div>
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">External</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://css-tricks.com/snippets/html/glyphs/"
+                                    rel="noopener external"
+                                >
+                                    entities</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="http://entity-lookup.leftlogic.com/"
+                                    rel="noopener external"
+                                >
+                                    entities search</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
+                                    rel="noopener external"
+                                >
+                                    global attributes</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/forms"
+                                    rel="noopener external"
+                                >
+                                    forms</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/design/theming"
+                                    rel="noopener external"
+                                >
+                                    theaming</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://gsnedders.html5.org/outliner/"
+                                    rel="noopener external"
+                                >
+                                    html outliner</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://embedresponsively.com/"
+                                    rel="noopener external"
+                                >
+                                    embed responsively</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://www.digitalyeast.com/embedresponsively/"
+                                    rel="noopener external"
+                                >
+                                    embed resposively</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-css" id="css">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS</h2>
+                    <div class="container-section">
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Relative</h3>
+                            <div class="resources-box">
+                                <a class="resources-box__item" href="./pages/css/css-basics.html">
+                                    css basics</a
+                                >
+                                <a class="resources-box__item" href="./pages/css/rendering.html">
+                                    css rendering</a
+                                >
+                                <a class="resources-box__item" href="./pages/css/colors.html">
+                                    colors</a
+                                >
+                                <a class="resources-box__item" href="./pages/css/layouts.html">
+                                    layouts</a
+                                >
+                            </div>
+                        </div>
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">External</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://tympanus.net/codrops/css_reference/"
+                                    rel="noopener external"
+                                >
+                                    codrops reference</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://css-challenges.com/quizzes/"
+                                    rel="noopener external"
+                                >
+                                    css challenges</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://webdesign.tutsplus.com/the-30-css-selectors-you-must-memorize--net-16048t"
+                                    rel="noopener external"
+                                >
+                                    selectors</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors"
+                                    rel="noopener external"
+                                >
+                                    mdn selectors</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/css/borders/"
+                                    rel="noopener external"
+                                >
+                                    borders</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/css/shadows/"
+                                    rel="noopener external"
+                                >
+                                    shadows</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/css/focus/"
+                                    rel="noopener external"
+                                >
+                                    focus</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/css/z-index/"
+                                    rel="noopener external"
+                                >
+                                    z-index</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/css/functions/"
+                                    rel="noopener external"
+                                >
+                                    css functions</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/css/gradients/"
+                                    rel="noopener external"
+                                >
+                                    gradients</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/css/animations/"
+                                    rel="noopener external"
+                                >
+                                    animations</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/css/filters/"
+                                    rel="noopener external"
+                                >
+                                    filters</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/css/blend-modes/"
+                                    rel="noopener external"
+                                >
+                                    blend modes</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/css/lists/"
+                                    rel="noopener external"
+                                >
+                                    lists</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/css/transitions/"
+                                    rel="noopener external"
+                                >
+                                    transitions</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/css/overflow/"
+                                    rel="noopener external"
+                                >
+                                    overflow</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/css/backgrounds/"
+                                    rel="noopener external"
+                                >
+                                    backgrounds</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/css/typography/"
+                                    rel="noopener external"
+                                >
+                                    text and typography</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-tools" id="tools">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Tools</h2>
+                    <div class="container-section">
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Icons</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://jakearchibald.github.io/svgomg/"
+                                    rel="noopener external"
+                                >
+                                    optimize svg</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://realfavicongenerator.net/"
+                                    rel="noopener external"
+                                >
+                                    favicon generator</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://icomoon.io/app/#/select/library"
+                                    rel="noopener external"
+                                >
+                                    icomoon app</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://fontastic.me/"
+                                    rel="noopener external"
+                                >
+                                    fontastic app</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://simpleicons.org/"
+                                    rel="noopener external"
+                                >
+                                    simpleicons</a
+                                >
 
-                            <a
-                                class="resources-box__item"
-                                href="https://phosphoricons.com/"
-                                rel="noopener external"
-                            >
-                                phosphoricons</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://ionic.io/ionicons"
-                                rel="noopener external"
-                            >
-                                ionicons</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://icons8.com/"
-                                rel="noopener external"
-                            >
-                                icons8</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://heroicons.com/"
-                                rel="noopener external"
-                            >
-                                heroicons</a
-                            >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://phosphoricons.com/"
+                                    rel="noopener external"
+                                >
+                                    phosphoricons</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://ionic.io/ionicons"
+                                    rel="noopener external"
+                                >
+                                    ionicons</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://icons8.com/"
+                                    rel="noopener external"
+                                >
+                                    icons8</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://heroicons.com/"
+                                    rel="noopener external"
+                                >
+                                    heroicons</a
+                                >
+                            </div>
                         </div>
-                    </div>
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Fonts</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://www.fontsquirrel.com/tools/webfont-generator"
-                                rel="noopener external"
-                            >
-                                webfont generator sq</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://everythingfonts.com/font-face"
-                                rel="noopener external"
-                            >
-                                webfont generator go</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://fonts.google.com/"
-                                rel="noopener external"
-                            >
-                                google fonts</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://www.fontsquirrel.com/"
-                                rel="noopener external"
-                            >
-                                font squirrel</a
-                            >
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Fonts</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://www.fontsquirrel.com/tools/webfont-generator"
+                                    rel="noopener external"
+                                >
+                                    webfont generator sq</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://everythingfonts.com/font-face"
+                                    rel="noopener external"
+                                >
+                                    webfont generator go</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://fonts.google.com/"
+                                    rel="noopener external"
+                                >
+                                    google fonts</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://www.fontsquirrel.com/"
+                                    rel="noopener external"
+                                >
+                                    font squirrel</a
+                                >
+                            </div>
                         </div>
-                    </div>
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Images and Videos</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://unsplash.com/"
-                                rel="noopener external"
-                            >
-                                unsplash</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://www.pexels.com/"
-                                rel="noopener external"
-                            >
-                                pexels</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://icons8.com/photos"
-                                rel="noopener external"
-                            >
-                                icons8 photos</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://coverr.co/"
-                                rel="noopener external"
-                            >
-                                coverr videos</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://stackdiary.com/svg-pattern-generators/"
-                                rel="noopener external"
-                            >
-                                patterns</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://squoosh.app/"
-                                rel="noopener external"
-                            >
-                                squoosh</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://imageoptim.com/versions.html"
-                                rel="noopener external"
-                            >
-                                imageoptim</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://github.com/ausi/respimagelint"
-                                rel="noopener external"
-                            >
-                                imagelint</a
-                            >
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Images and Videos</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://unsplash.com/"
+                                    rel="noopener external"
+                                >
+                                    unsplash</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://www.pexels.com/"
+                                    rel="noopener external"
+                                >
+                                    pexels</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://icons8.com/photos"
+                                    rel="noopener external"
+                                >
+                                    icons8 photos</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://coverr.co/"
+                                    rel="noopener external"
+                                >
+                                    coverr videos</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://stackdiary.com/svg-pattern-generators/"
+                                    rel="noopener external"
+                                >
+                                    patterns</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://squoosh.app/"
+                                    rel="noopener external"
+                                >
+                                    squoosh</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://imageoptim.com/versions.html"
+                                    rel="noopener external"
+                                >
+                                    imageoptim</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://github.com/ausi/respimagelint"
+                                    rel="noopener external"
+                                >
+                                    imagelint</a
+                                >
+                            </div>
                         </div>
-                    </div>
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Illustrations</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://www.drawkit.com/search-results"
-                                rel="noopener external"
-                            >
-                                drawkit</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://undraw.co/illustrations"
-                                rel="noopener external"
-                            >
-                                undraw</a
-                            >
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Illustrations</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://www.drawkit.com/search-results"
+                                    rel="noopener external"
+                                >
+                                    drawkit</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://undraw.co/illustrations"
+                                    rel="noopener external"
+                                >
+                                    undraw</a
+                                >
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Colors</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://yeun.github.io/open-color/"
-                                rel="noopener external"
-                            >
-                                open color</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://tailwindcss.com/docs/customizing-colors"
-                                rel="noopener external"
-                            >
-                                tailwind colors</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://colorhunt.co/"
-                                rel="noopener external"
-                            >
-                                colorhunt</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://maketintsandshades.com/"
-                                rel="noopener external"
-                            >
-                                tints and shades</a
-                            >
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Colors</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://yeun.github.io/open-color/"
+                                    rel="noopener external"
+                                >
+                                    open color</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://tailwindcss.com/docs/customizing-colors"
+                                    rel="noopener external"
+                                >
+                                    tailwind colors</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://colorhunt.co/"
+                                    rel="noopener external"
+                                >
+                                    colorhunt</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://maketintsandshades.com/"
+                                    rel="noopener external"
+                                >
+                                    tints and shades</a
+                                >
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Other</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://caniuse.com/"
-                                rel="noopener external"
-                            >
-                                caniuse</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://bennettfeely.com/clippy/"
-                                rel="noopener external"
-                            >
-                                clippy</a
-                            >
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Other</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://caniuse.com/"
+                                    rel="noopener external"
+                                >
+                                    caniuse</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://bennettfeely.com/clippy/"
+                                    rel="noopener external"
+                                >
+                                    clippy</a
+                                >
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <p>333 1f1f1f1 f74201 windows: da532c</p>
+                <section class="section-sass" id="sass">
+                    <h2 class="heading-h2 u-margin-bottom-sm">SASS</h2>
+                    <div class="container-section">
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">External</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://sass-lang.com/documentation/"
+                                    rel="noopener external"
+                                >
+                                    sass docs</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://ru.bem.info/methodology/"
+                                    rel="noopener external"
+                                >
+                                    bem</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-            <section class="section-css" id="css">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS</h2>
-                </header>
-                <div class="section-container section-container--links">
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Relative</h3>
-                        <div class="resources-box">
-                            <a class="resources-box__item" href="./pages/css/css-basics.html">
-                                css basics</a
-                            >
-                            <a class="resources-box__item" href="./pages/css/rendering.html">
-                                css rendering</a
-                            >
-                            <a class="resources-box__item" href="./pages/css/colors.html">colors</a>
-                            <a class="resources-box__item" href="./pages/css/layouts.html">
-                                layouts</a
-                            >
+                <section class="section-git" id="git">
+                    <header class="section-header">
+                        <h2 class="heading-h2 u-margin-bottom-sm">Git & Env setup</h2>
+                    </header>
+                    <div class="container-section">
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Relative</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="./pages/git/wsl2-vscode-nvm-setup.html"
+                                >
+                                    vscode + wsl2 + nvm</a
+                                >
+                                <a class="resources-box__item" href="./pages/git/git-setup.html">
+                                    git setup</a
+                                >
+                                <a class="resources-box__item" href="./pages/git/commands.html">
+                                    commands</a
+                                >
+                            </div>
                         </div>
-                    </div>
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">External</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://tympanus.net/codrops/css_reference/"
-                                rel="noopener external"
-                            >
-                                codrops reference</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://css-challenges.com/quizzes/"
-                                rel="noopener external"
-                            >
-                                css challenges</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://webdesign.tutsplus.com/the-30-css-selectors-you-must-memorize--net-16048t"
-                                rel="noopener external"
-                            >
-                                selectors</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors"
-                                rel="noopener external"
-                            >
-                                mdn selectors</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/css/borders/"
-                                rel="noopener external"
-                            >
-                                borders</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/css/shadows/"
-                                rel="noopener external"
-                            >
-                                shadows</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/css/focus/"
-                                rel="noopener external"
-                            >
-                                focus</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/css/z-index/"
-                                rel="noopener external"
-                            >
-                                z-index</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/css/functions/"
-                                rel="noopener external"
-                            >
-                                css functions</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/css/gradients/"
-                                rel="noopener external"
-                            >
-                                gradients</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/css/animations/"
-                                rel="noopener external"
-                            >
-                                animations</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/css/filters/"
-                                rel="noopener external"
-                            >
-                                filters</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/css/blend-modes/"
-                                rel="noopener external"
-                            >
-                                blend modes</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/css/lists/"
-                                rel="noopener external"
-                            >
-                                lists</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/css/transitions/"
-                                rel="noopener external"
-                            >
-                                transitions</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/css/overflow/"
-                                rel="noopener external"
-                            >
-                                overflow</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/css/backgrounds/"
-                                rel="noopener external"
-                            >
-                                backgrounds</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/css/typography/"
-                                rel="noopener external"
-                            >
-                                text and typography</a
-                            >
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <section class="section-sass" id="sass">
-                <header class="section-header">
-                    <h2 class="heading-h2">SASS</h2>
-                </header>
-                <div class="section-container section-container--links">
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">External</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://sass-lang.com/documentation/"
-                                rel="noopener external"
-                            >
-                                sass docs</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://ru.bem.info/methodology/"
-                                rel="noopener external"
-                            >
-                                bem</a
-                            >
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">External</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://git-scm.com/"
+                                    rel="noopener external"
+                                >
+                                    git docs</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://gist.github.com/miezaru"
+                                    rel="noopener external"
+                                >
+                                    gist with file settings</a
+                                >
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="section-git" id="git">
-                <header class="section-header">
-                    <h2 class="heading-h2">Git & Env setup</h2>
-                </header>
-                <div class="section-container section-container--links">
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Relative</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="./pages/git/wsl2-vscode-nvm-setup.html"
-                            >
-                                vscode + wsl2 + nvm</a
-                            >
-                            <a class="resources-box__item" href="./pages/git/git-setup.html">
-                                git setup</a
-                            >
-                            <a class="resources-box__item" href="./pages/git/commands.html">
-                                commands</a
-                            >
+                <section class="section-js" id="javascript">
+                    <h2 class="heading-h2 u-margin-bottom-sm">JavaScript</h2>
+                    <div class="container-section">
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Relative</h3>
+                            <div class="resources-box">
+                                <a class="resources-box__item" href="./pages/js/how-js-works.html">
+                                    how js works</a
+                                >
+                                <a class="resources-box__item" href="./pages/js/arrays.html">
+                                    arrays</a
+                                >
+                                <a class="resources-box__item" href="./pages/js/objects.html">
+                                    objects</a
+                                >
+                                <a class="resources-box__item" href="./pages/js/functions.html">
+                                    functions</a
+                                >
+                                <a class="resources-box__item" href="./pages/js/loops.html">
+                                    loops</a
+                                >
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">External</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://git-scm.com/"
-                                rel="noopener external"
-                            >
-                                git docs</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://gist.github.com/miezaru"
-                                rel="noopener external"
-                            >
-                                gist with file settings</a
-                            >
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">External</h3>
+                            <div class="resources-box">
+                                <a class="resources-box__item" href="#" rel="noopener external">
+                                    ?</a
+                                >
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="section-js" id="js">
-                <header class="section-header">
-                    <h2 class="heading-h2">JavaScript</h2>
-                </header>
-                <div class="section-container section-container--links">
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Relative</h3>
-                        <div class="resources-box">
-                            <a class="resources-box__item" href="./pages/js/how-js-works.html">
-                                how js works</a
-                            >
-                            <a class="resources-box__item" href="./pages/js/arrays.html">arrays</a>
-                            <a class="resources-box__item" href="./pages/js/objects.html">
-                                objects</a
-                            >
-                            <a class="resources-box__item" href="./pages/js/functions.html">
-                                functions</a
-                            >
-                            <a class="resources-box__item" href="./pages/js/loops.html"> loops</a>
+                <section class="section-react" id="react">
+                    <h2 class="heading-h2 u-margin-bottom-sm">React</h2>
+                    <div class="container-section">
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Relative</h3>
+                            <div class="resources-box">
+                                <a class="resources-box__item" href="#">?</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">External</h3>
-                        <div class="resources-box">
-                            <a class="resources-box__item" href="#" rel="noopener external"> ?</a>
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">External</h3>
+                            <div class="resources-box">
+                                <a class="resources-box__item" href="#" rel="noopener external">
+                                    ?</a
+                                >
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section class="section-react" id="react">
-                <header class="section-header">
-                    <h2 class="heading-h2">React</h2>
-                </header>
-                <div class="section-container section-container--links">
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Relative</h3>
-                        <div class="resources-box">
-                            <a class="resources-box__item" href="#">?</a>
-                        </div>
-                    </div>
-
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">External</h3>
-                        <div class="resources-box">
-                            <a class="resources-box__item" href="#" rel="noopener external"> ?</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
-        <a class="btn-back-to-top" href="#">&uarr;</a>
-        <script src="./js/index.js"></script>
+        <footer class="footer"></footer>
+
+        <script src="./js/index.js" defer></script>
     </body>
 </html>

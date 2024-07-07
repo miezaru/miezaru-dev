@@ -75,572 +75,593 @@
     </head>
     <body>
         <header class="header">
-            <div class="header-container">
-                <div class="header-container-inner">
-                    <div class="header-box">
-                        <h1 class="heading-h1">
-                            <a class="author-link" href="https://github.com/miezaru">@miezaru</a>
-                            resources
-                            <span class="accent-symbol">/</span>
-                            <span>HTML: Forms</span>
-                        </h1>
-                        <a class="header__home-link" href="../../index.html">Back home</a>
-                    </div>
-                    <p class="header__description">
-                        An HTML form is used to collect user input. The user input is most often
-                        sent to a server for processing.
-                    </p>
-                </div>
-                <div class="main-nav__container">
-                    <span class="main-nav__text" id="main-nav-text">jump to:</span>
-                    <nav class="main-nav" aria-labelledby="main-nav-text">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#links">Links</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#method">Method</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#input-types">Input types</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#re-entering-data">
-                                    Re-entering data</a
-                                >
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#right-data">Right data</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#valid-rules">Vallid rules</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#styling-forms">Styling forms</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#validate-js">Validate-js</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#design">Design forms</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <main class="main grid-page">
-            <section class="page-html__section-links" id="links">
-                <header class="section-header">
-                    <h2 class="heading-h2">Links</h2>
-                </header>
-                <div class="section-container section-container--links">
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Learn resources</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/forms/"
-                                rel="noopener external"
-                            >
-                                webdev forms</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/forms/autofill/"
-                                rel="noopener external"
-                            >
-                                webdev autofill</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
-                                rel="noopener external"
-                            >
-                                mdn forms</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://developer.mozilla.org/docs/Web/HTML/Element/input#input_types"
-                                rel="noopener external"
-                            >
-                                mdn input types</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#browser_compatibility"
-                                rel="noopener external"
-                            >
-                                mdn autocomplete</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html"
-                                rel="noopener external"
-                            >
-                                validate data before storing and sharing</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://developer.mozilla.org/docs/Web/API/Constraint_validation"
-                                rel="noopener external"
-                            >
-                                javascript validation api</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://www.deque.com/blog/anatomy-of-accessible-forms-required-form-fields/"
-                                rel="noopener external"
-                            >
-                                anatomy of accessible forms</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/sign-up-form-best-practices/#checklist"
-                                rel="noopener external"
-                            >
-                                sign in best practices</a
-                            >
-                        </div>
-                    </div>
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Testing</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://pagespeed.web.dev/"
-                                rel="noopener external"
-                            >
-                                pagespeed insights (psi)</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://developer.chrome.com/docs/lighthouse/overview/"
-                                rel="noopener external"
-                            >
-                                lighthouse</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://chrome.google.com/webstore/detail/form-troubleshooter/lpjhcgjbicfdoijennopbjooigfipfjh"
-                                rel="noopener external"
-                            >
-                                troubleshoot extension</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://wave.webaim.org/"
-                                rel="noopener external"
-                            >
-                                wave website tests</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://www.deque.com/axe/"
-                                rel="noopener external"
-                            >
-                                axe website tests</a
-                            >
-                        </div>
-                    </div>
+            <a class="logo" href="../../index.html">
+                <picture>
+                    <source srcset="../../assets/img/header/header-icon.avif" type="image/avif" />
+                    <source srcset="../../assets/img/header/header-icon.webp" type="image/webp" />
+                    <img
+                        class="logo__img"
+                        src="../../assets/img/header/header-icon.png"
+                        srcset="../../assets/img/header/header-icon.png"
+                        alt="miezaru-dev logo"
+                    />
+                </picture>
 
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">JavaScript</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/setCustomValidity"
-                                rel="noopener external"
-                            >
-                                setCustomValidity()</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://codepen.io/web-dot-dev/pen/qBmgPrB"
-                                rel="noopener external"
-                            >
-                                codepen with onblur</a
-                            >
+                <p class="logo__text">miezaru-dev</p>
+            </a>
+        </header>
+
+        <section class="section-hero">
+            <nav class="page-nav" aria-labelledby="page-nav-description">
+                <header class="page-nav__header">
+                    <p class="page-nav__description" id="page-nav-description">On this page:</p>
+                    <button class="page-nav__btn" type="button">X</button>
+                </header>
+                <div class="page-nav__links">
+                    <ul class="page-nav__list">
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#links">Links</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#method">Form method</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#input-types">Input types</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#re-entering-data">Re-entering data</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#right-data">Right data</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#valid-rules">Valid rules</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#styling-forms">Styling forms</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#validate-js">Validate with js</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#design">Design forms</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <h1 class="header-description">
+                An HTML form is used to collect user input. The user input is most often sent to a
+                server for processing.
+            </h1>
+        </section>
+
+        <main class="main container-page">
+            <div class="container-page-links">
+                <section class="section" id="links">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Links</h2>
+                    <div class="container-section">
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Learn resources</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/forms/"
+                                    rel="noopener external"
+                                >
+                                    webdev forms</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/forms/autofill/"
+                                    rel="noopener external"
+                                >
+                                    webdev autofill</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
+                                    rel="noopener external"
+                                >
+                                    mdn forms</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://developer.mozilla.org/docs/Web/HTML/Element/input#input_types"
+                                    rel="noopener external"
+                                >
+                                    mdn input types</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#browser_compatibility"
+                                    rel="noopener external"
+                                >
+                                    mdn autocomplete</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html"
+                                    rel="noopener external"
+                                >
+                                    validate data before storing and sharing</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://developer.mozilla.org/docs/Web/API/Constraint_validation"
+                                    rel="noopener external"
+                                >
+                                    javascript validation api</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://www.deque.com/blog/anatomy-of-accessible-forms-required-form-fields/"
+                                    rel="noopener external"
+                                >
+                                    anatomy of accessible forms</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/sign-up-form-best-practices/#checklist"
+                                    rel="noopener external"
+                                >
+                                    sign in best practices</a
+                                >
+                            </div>
+                        </div>
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Testing</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://pagespeed.web.dev/"
+                                    rel="noopener external"
+                                >
+                                    pagespeed insights (psi)</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://developer.chrome.com/docs/lighthouse/overview/"
+                                    rel="noopener external"
+                                >
+                                    lighthouse</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://chrome.google.com/webstore/detail/form-troubleshooter/lpjhcgjbicfdoijennopbjooigfipfjh"
+                                    rel="noopener external"
+                                >
+                                    troubleshoot extension</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://wave.webaim.org/"
+                                    rel="noopener external"
+                                >
+                                    wave website tests</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://www.deque.com/axe/"
+                                    rel="noopener external"
+                                >
+                                    axe website tests</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">JavaScript</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/setCustomValidity"
+                                    rel="noopener external"
+                                >
+                                    setCustomValidity()</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://codepen.io/web-dot-dev/pen/qBmgPrB"
+                                    rel="noopener external"
+                                >
+                                    codepen with onblur</a
+                                >
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <div class="line">&nbsp;</div>
 
-            <section class="page-html__section-form-method" id="method">
-                <header class="section-header">
-                    <h2 class="heading-h2">Method</h2>
-                </header>
-                <div class="section-container">
-                    <h3 class="heading-h3 u-margin-bottom-sm">Get & Post</h3>
-                    <ul class="list">
-                        <li class="list__item"><p class="text">GET - URL</p></li>
-                        <li class="list__item">
+            <div class="container-page-sections">
+                <section class="section" id="method">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Method</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Get & Post</h3>
+                            <ul class="list">
+                                <li class="list__item"><p class="text">GET - URL</p></li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        POST - data is included in the
+                                        <a
+                                            class="text-link"
+                                            href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST#example"
+                                            rel="noopener external"
+                                        >
+                                            body of the request</a
+                                        >.
+                                    </p>
+                                </li>
+                            </ul>
                             <p class="text">
-                                POST - data is included in the
-                                <a
-                                    class="text-link"
-                                    href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST#example"
-                                    rel="noopener external"
-                                >
-                                    body of the request</a
-                                >.
+                                Based on the element name and the type attribute, browsers show
+                                different user interfaces, use different validation rules, and
+                                provide many other features. Using the appropriate form control
+                                helps you build better forms.
                             </p>
-                        </li>
-                    </ul>
-                    <p class="text">
-                        Based on the element name and the type attribute, browsers show different
-                        user interfaces, use different validation rules, and provide many other
-                        features. Using the appropriate form control helps you build better forms.
-                    </p>
 
-                    <pre class="code">
-                        <code class="code-el">
+                            <pre class="code">
+                                <code class="code-el">
 &lt;label for="color"&gt;What is your favorite color?&lt;/label&gt;
 &lt;input type="text" id="color" name="color"&gt;
-                        </code>
-                    </pre>
+                                </code>
+                            </pre>
 
-                    <p class="text">
-                        The <strong>for</strong> attribute on the label element matches the
-                        <strong>id</strong> attribute on the input.
-                    </p>
-                </div>
-            </section>
-
-            <section class="page-html__section-form-input-types" id="input-types">
-                <header class="section-header">
-                    <h2 class="heading-h2">Input types</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">
-                        There are different types of form controls, all with useful built-in
-                        features that work across different browsers and platforms.
-                    </p>
-
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Default value</h3>
-                        <p class="text">
-                            The <strong>default value</strong> for type is <strong>text</strong>.
-                            This means that if you simply want a text
-                            <strong>&lt;input&gt;</strong>, you can leave out the type attribute.
-                        </p>
-
-                        <pre class="code">
-                            <code class="code-el">
-<input>
-                            </code>
-                        </pre>
+                            <p class="text">
+                                The <strong>for</strong> attribute on the label element matches the
+                                <strong>id</strong> attribute on the input.
+                            </p>
+                        </div>
                     </div>
+                </section>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Multiple lines of text</h3>
-                        <p class="text"></p>
+                <section class="section" id="input-types">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Input types</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                There are different types of form controls, all with useful built-in
+                                features that work across different browsers and platforms.
+                            </p>
+                        </div>
 
-                        <pre class="code">
-                            <code class="code-el">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Default value</h3>
+                            <p class="text">
+                                The <strong>default value</strong> for type is
+                                <strong>text</strong>. This means that if you simply want a text
+                                <strong>&lt;input&gt;</strong>, you can leave out the type
+                                attribute.
+                            </p>
+
+                            <pre class="code">
+                                <code class="code-el">
+<input>
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Multiple lines of text</h3>
+
+                            <pre class="code">
+                                <code class="code-el">
 &lt;label for="comment"&gt;Comment&lt;/label&gt;
 &lt;textarea id="comment" name="comment"&gt;&lt;/textarea&gt;
-                            </code>
-                        </pre>
-                    </div>
+                                </code>
+                            </pre>
+                        </div>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">List of options</h3>
-                        <p class="text"></p>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">List of options</h3>
 
-                        <pre class="code">
-                            <code class="code-el">
+                            <pre class="code">
+                                <code class="code-el">
 &lt;label for="color"&gt;Color&lt;/label&gt;
 &lt;select id="color" name="color"&gt;
-    &lt;option value="orange"&gt;Orange&lt;/option&gt;
-    &lt;option value="pink"&gt;Pink&lt;/option&gt;
+  &lt;option value="orange"&gt;Orange&lt;/option&gt;
+  &lt;option value="pink"&gt;Pink&lt;/option&gt;
 &lt;/select&gt;
-                            </code>
-                        </pre>
-                    </div>
+                                </code>
+                            </pre>
+                        </div>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Grouping form controls</h3>
-                        <p class="text"></p>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Grouping form controls</h3>
 
-                        <pre class="code">
-                            <code class="code-el">
+                            <pre class="code">
+                                <code class="code-el">
 &lt;fieldset&gt;
-    &lt;legend&gt;What is your favorite web technology&lt;/legend&gt;
+  &lt;legend&gt;What is your favorite web technology&lt;/legend&gt;
 
-    &lt;label for="html"&gt;HTML&lt;/label&gt;
-    &lt;input type="radio" name="webfeature" value="html" id="html"&gt;
+  &lt;label for="html"&gt;HTML&lt;/label&gt;
+  &lt;input type="radio" name="webfeature" value="html" id="html"&gt;
 
-    &lt;label for="css"&gt;CSS&lt;/label&gt;
-    &lt;input type="radio" name="webfeature" value="css" id="css"&gt;
+  &lt;label for="css"&gt;CSS&lt;/label&gt;
+  &lt;input type="radio" name="webfeature" value="css" id="css"&gt;
 &lt;/fieldset&gt;
-                            </code>
-                        </pre>
-                    </div>
+                                </code>
+                            </pre>
+                        </div>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Submitting a form</h3>
-                        <p class="text"></p>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Submitting a form</h3>
 
-                        <pre class="code">
-                            <code class="code-el">
+                            <pre class="code">
+                                <code class="code-el">
 &lt;button&gt;Submit&lt;/button&gt;
 &lt;input type="submit" value="Submit"&gt;
-                            </code>
-                        </pre>
+                                </code>
+                            </pre>
 
-                        <p class="text">
-                            Every <strong>&lt;button&gt;</strong> element inside a form works as a
-                            Submit button by default. To disable the default Submit behavior, you
-                            can add <strong>type="button"</strong> to the
-                            <strong>&lt;button&gt;</strong>.
-                        </p>
+                            <p class="text">
+                                Every <strong>&lt;button&gt;</strong> element inside a form works as
+                                a Submit button by default. To disable the default Submit behavior,
+                                you can add <strong>type="button"</strong> to the
+                                <strong>&lt;button&gt;</strong>.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="page-html__section-form-re-entering-data" id="re-entering-data">
-                <header class="section-header">
-                    <h2 class="heading-h2">Help users avoid re-entering data in forms</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">
-                        Make it more convenient for users to fill out forms with
-                        <a
-                            class="text-link"
-                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#browser_compatibility"
-                            rel="noopener external"
-                        >
-                            HTML Autocomplete</a
-                        >.
-                    </p>
+                <section class="section" id="re-entering-data">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Help users avoid re-entering data</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Autocomplete</h3>
+                            <p class="text">
+                                Make it more convenient for users to fill out forms with
+                                <a
+                                    class="text-link"
+                                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#browser_compatibility"
+                                    rel="noopener external"
+                                >
+                                    HTML Autocomplete</a
+                                >.
+                            </p>
 
-                    <p class="text">
-                        Based on this information, browsers can offer the option to autofill a field
-                        with previously entered data of the same type. Browsers can even offer to
-                        autofill an entire form.
-                    </p>
-                    <p class="text">Use sensible attribute values</p>
-                    <p class="text">
-                        Use <strong>email</strong> as a value for the <strong>name</strong>,
-                        <strong>id</strong>, and <strong>type</strong> attribute. Three hints for
-                        the browser that this is an email field.
-                    </p>
+                            <p class="text">
+                                Based on this information, browsers can offer the option to autofill
+                                a field with previously entered data of the same type. Browsers can
+                                even offer to autofill an entire form.
+                            </p>
+                            <p class="text">Use sensible attribute values</p>
+                            <p class="text">
+                                Use <strong>email</strong> as a value for the <strong>name</strong>,
+                                <strong>id</strong>, and <strong>type</strong> attribute. Three
+                                hints for the browser that this is an email field.
+                            </p>
 
-                    <pre class="code">
-                        <code class="code-el">
+                            <pre class="code">
+                                <code class="code-el">
 &lt;label for="email"&gt;Email&lt;/label&gt;
 &lt;input type="email" name="email" id="email"&gt;
-                        </code>
-                    </pre>
+                                </code>
+                            </pre>
 
-                    <p class="text">
-                        The
-                        <a
-                            class="text-link"
-                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete"
-                            rel="noopener external"
-                        >
-                            autocomplete</a
-                        >
-                        attribute
-                    </p>
+                            <p class="text">
+                                The
+                                <a
+                                    class="text-link"
+                                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete"
+                                    rel="noopener external"
+                                >
+                                    autocomplete</a
+                                >
+                                attribute
+                            </p>
 
-                    <pre class="code">
-                        <code class="code-el">
+                            <pre class="code">
+                                <code class="code-el">
 &lt;label for="name"&gt;Name&lt;/label&gt;
 &lt;input type="text" name="name" id="name" autocomplete="name"&gt;
-                        </code>
-                    </pre>
-                </div>
-            </section>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
 
-            <section class="page-html__section-form-right-data" id="right-data">
-                <header class="section-header">
-                    <h2 class="heading-h2">Help users enter the right data in forms</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">
-                        The <strong>required</strong> attribute tells the browser that the field is
-                        mandatory. The browser also tests if the entered data matches the format of
-                        the <strong>type</strong>.
-                    </p>
-                    <pre class="code">
-                        <code class="code-el">
+                <section class="section" id="right-data">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Help users enter the right data</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Required</h3>
+                            <p class="text">
+                                The <strong>required</strong> attribute tells the browser that the
+                                field is mandatory. The browser also tests if the entered data
+                                matches the format of the <strong>type</strong>.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
 &lt;label for="name"&gt;Name (required)&lt;/label&gt;
 &lt;input required type="text" id="name" name="name"&gt;
-                        </code>
-                    </pre>
-
-                    <p class="text">Minlenght</p>
-                    <pre class="code">
-                        <code class="code-el">
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Minlenght</h3>
+                            <pre class="code">
+                                <code class="code-el">
 &lt;label for="password"&gt;Password (required)&lt;/label&gt;
 &lt;input required minlength="8" type="password" id="password" name="password"&gt;
-                        </code>
-                    </pre>
+                                </code>
+                            </pre>
 
-                    <p class="text">
-                        For numerical input types use <strong>min</strong> and
-                        <strong>max</strong> to achieve the same result.
-                    </p>
+                            <p class="text">
+                                For numerical input types use <strong>min</strong> and
+                                <strong>max</strong> to achieve the same result.
+                            </p>
+                        </div>
 
-                    <p class="text">
-                        Sometimes you want to define more advanced validation rules. Use HTML
-                        <strong>pattern attribute</strong>, and you can define a regular expression
-                        as the value.
-                    </p>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Advanced validation rules</h3>
+                            <p class="text">
+                                Sometimes you want to define more advanced validation rules. Use
+                                HTML
+                                <strong>pattern attribute</strong>, and you can define a regular
+                                expression as the value.
+                            </p>
 
-                    <pre class="code">
-                        <code class="code-el">
+                            <pre class="code">
+                                <code class="code-el">
 &lt;label for="animal"&gt;What is your favorite animal? (required)&lt;/label&gt;
 &lt;input required pattern="[a-z]{2,20}" type="text" id="animal" name="animal"&gt;
-                        </code>
-                    </pre>
-                    <p class="text">
-                        Here, only lowercase letters are allowed; the user has to enter at least two
-                        characters, and not more than twenty
-                    </p>
-                </div>
-            </section>
+                                </code>
+                            </pre>
+                            <p class="text">
+                                Here, only lowercase letters are allowed; the user has to enter at
+                                least two characters, and not more than twenty
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
-            <section class="page-html__section-form-valid-rules" id="valid-rules">
-                <header class="section-header">
-                    <h2 class="heading-h2">Communicate your validation rules</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">
-                        Make sure all users understand your validation rules. For this, connect the
-                        form control with an element that explains the rules. To do so, add an
-                        <strong>aria-describedby</strong> attribute to the element with the
-                        <strong>id</strong> of the form.
-                    </p>
-                    <pre class="code">
-                        <code class="code-el">
+                <section class="section" id="valid-rules">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Communicate your validation rules</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                Make sure all users understand your validation rules. For this,
+                                connect the form control with an element that explains the rules. To
+                                do so, add an
+                                <strong>aria-describedby</strong> attribute to the element with the
+                                <strong>id</strong> of the form.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
 &lt;label for="password"&gt;Password (required)&lt;/label&gt;
 &lt;input required minlength="8" type="password" id="password" name="password" aria-describedby="password-minlength"&gt;
 &lt;div id="password-minlength"&gt;Enter at least eight characters&lt;/div&gt;
-                        </code>
-                    </pre>
-                </div>
-            </section>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
 
-            <section class="page-html__section-form-styling" id="styling-forms">
-                <header class="section-header">
-                    <h2 class="heading-h2">Styling web forms</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">
-                        <strong>:invalid</strong> pseudo-class to add styles to invalid form
-                        controls. Also the <strong>:valid</strong> pseudo-class for styling valid
-                        form elements
-                    </p>
-                    <pre class="code">
-                        <code class="code-el">
+                <section class="section" id="styling-forms">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Styling web forms</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                <strong>:invalid</strong> pseudo-class to add styles to invalid form
+                                controls. Also the <strong>:valid</strong> pseudo-class for styling
+                                valid form elements
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
 input:required {}      // required
 input:invalid {}       // invalid
 input:user-invalid {}  // user-invalid
-                        </code>
-                    </pre>
-                    <p class="text">Radio buttons :default (checked) :checked (selected)</p>
+                                </code>
+                            </pre>
+                            <p class="text">
+                                Radio buttons <strong>:default</strong> (checked)
+                                <strong>:checked</strong> (selected)
+                            </p>
 
-                    <p class="text">
-                        Sometimes designers color the invalid state red, using the
-                        <strong>:invalid</strong> pseudo-class. However, to communicate error or
-                        success you should never rely only on color. For people with red-green color
-                        blindness a green and a red border look almost the same. It's impossible for
-                        them to see if there was an error or success. Add text or an icon to make it
-                        obvious.
-                    </p>
+                            <p class="text">
+                                Sometimes designers color the invalid state red, using the
+                                <strong>:invalid</strong> pseudo-class. However, to communicate
+                                error or success you should never rely only on color. For people
+                                with red-green color blindness a green and a red border look almost
+                                the same. It's impossible for them to see if there was an error or
+                                success. Add text or an icon to make it obvious.
+                            </p>
 
-                    <p class="text">
-                        In practice <strong>:invalid</strong> is tricky to work with. Invalid form
-                        fields are already marked as <strong>:invalid</strong> before user
-                        interaction, which may confuse users. The
-                        <strong>:user-invalid</strong> pseudo-class solves this issue, as the styles
-                        are only applied after user interaction.
-                    </p>
-                </div>
-            </section>
+                            <p class="text">
+                                In practice <strong>:invalid</strong> is tricky to work with.
+                                Invalid form fields are already marked as
+                                <strong>:invalid</strong> before user interaction, which may confuse
+                                users. The <strong>:user-invalid</strong> pseudo-class solves this
+                                issue, as the styles are only applied after user interaction.
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
-            <section class="page-html__section-form-validate-js" id="validate-js">
-                <header class="section-header">
-                    <h2 class="heading-h2">Validation with JavaScript</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">Provide meaningful error messages</p>
-                    <p class="text">
-                        Error messages are not identical in every browser. To achieve same message
-                        to everyone, use the setCustomValidity() method of the Constraint Validation
-                        API.
-                    </p>
+                <section class="section" id="validate-js">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Validation with JavaScript</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">Provide meaningful error messages</p>
+                            <p class="text">
+                                Error messages are not identical in every browser. To achieve same
+                                message to everyone, use the setCustomValidity() method of the
+                                Constraint Validation API.
+                            </p>
 
-                    <pre class="code">
-                        <code class="code-el">
+                            <pre class="code">
+                                <code class="code-el">
 const nameInput = document.querySelector('[name="name"]');
 
 nameInput.addEventListener('invalid', () => {
     nameInput.setCustomValidity('Please enter your name.');
 });
-                        </code>
-                    </pre>
-                    <p class="text">
-                        Add real-time validation in JavaScript by listening to the
-                        <a
-                            class="text-link"
-                            href="https://codepen.io/web-dot-dev/pen/qBmgPrB"
-                            rel="noopener external"
-                        >
-                            onblur</a
-                        >
-                        event of a form control, and validate the input immediately when a user
-                        leaves a form field.
-                    </p>
-                </div>
-            </section>
+                                </code>
+                            </pre>
+                            <p class="text">
+                                Add real-time validation in JavaScript by listening to the
+                                <a
+                                    class="text-link"
+                                    href="https://codepen.io/web-dot-dev/pen/qBmgPrB"
+                                    rel="noopener external"
+                                >
+                                    onblur</a
+                                >
+                                event of a form control, and validate the input immediately when a
+                                user leaves a form field.
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
-            <section class="page-html__section-form-design" id="design">
-                <header class="section-header">
-                    <h2 class="heading-h2">Design recommendation</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">Use a label for every form control</p>
-                    <p class="text">Label wording</p>
+                <section class="section" id="design">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Design recommendation</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">Use a label for every form control</p>
+                            <p class="text">Label wording</p>
 
-                    <pre class="code">
-                        <code class="code-el">
+                            <pre class="code">
+                                <code class="code-el">
 &lt;label for="email"&gt;Enter your email address&lt;/label&gt;
 &lt;label for="email"&gt;Email address&lt;/label&gt; // better
-                        </code>
-                    </pre>
-                    <p class="text">Best label position - TOP</p>
-                    <p class="text">
-                        Make forms big enought. The recommended tap target size of a button is at
-                        least 48px.
-                    </p>
-                    <p class="text">Show errors where they happen</p>
+                                </code>
+                            </pre>
+                            <p class="text">Best label position - TOP</p>
+                            <p class="text">
+                                Make forms big enought. The recommended tap target size of a button
+                                is at least 48px.
+                            </p>
+                            <p class="text">Show errors where they happen</p>
 
-                    <p class="text">Make it clear to users what data to enter</p>
-                    <pre class="code">
-                        <code class="code-el">
+                            <p class="text">Make it clear to users what data to enter</p>
+                            <pre class="code">
+                                <code class="code-el">
 &lt;label for="password"&gt;Password (required)&lt;/label&gt;
 &lt;input required minlength="8" type="password" id="password" name="password" aria-describedby="password-minlength"&gt;
 &lt;span id="password-minlength"&gt;Enter at least eight characters&lt;/span&gt;
-                        </code>
-                    </pre>
+                                </code>
+                            </pre>
 
-                    <p class="text">Make it clear to users which fields are required</p>
-                    <pre class="code">
-                        <code class="code-el">
+                            <p class="text">Make it clear to users which fields are required</p>
+                            <pre class="code">
+                                <code class="code-el">
 &lt;label for="name"&gt;Name (required)&lt;/label&gt;
 &lt;input name="name" id="name" required&gt;
-                        </code>
-                    </pre>
-                </div>
-            </section>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
-        <a class="btn-back-to-top" href="#">&uarr;</a>
+
+        <a class="top-btn" href="#">&uarr;</a>
+
+        <script src="../../js/index.js" defer></script>
     </body>
 </html>

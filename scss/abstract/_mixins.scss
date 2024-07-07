@@ -2,6 +2,7 @@
 @use 'sass:map';
 @use 'sass:string';
 
+// change scss variables to css variables
 @mixin add-css-variables($module) {
     :root {
         @each $name, $value in $module {
@@ -10,6 +11,7 @@
     }
 }
 
+// add font-face declarations
 @function str-replace($string, $search, $replace: '') {
     $index: list.index($string, $search);
 

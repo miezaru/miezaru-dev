@@ -77,525 +77,562 @@
     </head>
     <body>
         <header class="header">
-            <div class="header-container">
-                <div class="header-container-inner">
-                    <div class="header-box">
-                        <h1 class="heading-h1">
-                            <a class="author-link" href="https://github.com/miezaru">@miezaru</a>
-                            resources
-                            <span class="accent-symbol">/</span>
-                            <span>CSS: Rendering</span>
-                        </h1>
-                        <a class="header__home-link" href="../../index.html">Back home</a>
-                    </div>
-                    <p class="header__description">
-                        The CSSOM and DOM trees are combined into a render tree, which is then used
-                        to compute the layout of each visible element and serves as an input to the
-                        paint process that renders the pixels to screen. Optimizing each of these
-                        steps is critical to achieving optimal rendering performance.
-                    </p>
-                </div>
-                <div class="main-nav__container">
-                    <span class="main-nav__text" id="main-nav-text">jump to:</span>
-                    <nav class="main-nav" aria-labelledby="main-nav-text">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#links">Links</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-load">CSS Loading</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-about-cascade">Cascade</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-specificity">Specificity</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-values">Values</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-inheritance-works">
-                                    Inheritance</a
-                                >
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-rendering">Rendering</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <a class="logo" href="../../index.html">
+                <picture>
+                    <source srcset="../../assets/img/header/header-icon.avif" type="image/avif" />
+                    <source srcset="../../assets/img/header/header-icon.webp" type="image/webp" />
+                    <img
+                        class="logo__img"
+                        src="../../assets/img/header/header-icon.png"
+                        srcset="../../assets/img/header/header-icon.png"
+                        alt="miezaru-dev logo"
+                    />
+                </picture>
+
+                <p class="logo__text">miezaru-dev</p>
+            </a>
         </header>
-        <main class="main grid-page">
-            <section class="page-html__section-links" id="links">
-                <header class="section-header">
-                    <h2 class="heading-h2">Links</h2>
+
+        <section class="section-hero">
+            <nav class="page-nav" aria-labelledby="page-nav-description">
+                <header class="page-nav__header">
+                    <p class="page-nav__description" id="page-nav-description">On this page:</p>
+                    <button class="page-nav__btn" type="button">X</button>
                 </header>
-                <div class="section-container section-container--links">
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Rendering</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/articles/critical-rendering-path/render-tree-construction"
-                                rel="noopener external"
-                            >
-                                webdev css dom rendering</a
-                            >
+                <div class="page-nav__links">
+                    <ul class="page-nav__list">
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#links">Links</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-load">CSS Loading</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-about-cascade">Cascade</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-specificity">Specificity</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-values">Values</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-inheritance-works">Inheritance</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-specificity">Rendering</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-rendering">Specificity</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <h1 class="header-description">
+                The CSSOM and DOM trees are combined into a render tree, which is then used to
+                compute the layout of each visible element and serves as an input to the paint
+                process that renders the pixels to screen. Optimizing each of these steps is
+                critical to achieving optimal rendering performance.
+            </h1>
+        </section>
+
+        <main class="main container-page">
+            <div class="container-page-links">
+                <section class="section" id="links">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Links</h2>
+                    <div class="container-section">
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Rendering</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/articles/critical-rendering-path/render-tree-construction"
+                                    rel="noopener external"
+                                >
+                                    webdev css dom rendering</a
+                                >
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <div class="line">&nbsp;</div>
 
-            <section class="page-css__section-css-load" id="css-load">
-                <header class="section-header">
-                    <h2 class="heading-h2">What happends to css when we load webpage</h2>
-                </header>
-                <div class="section-container">
-                    <ul class="list">
-                        <li class="list__item">
-                            <p class="text">Load HTML</p>
+            <div class="container-page-sections">
+                <section class="section" id="css-load">
+                    <h2 class="heading-h2 u-margin-bottom-sm">
+                        What happends to css when we load webpage
+                    </h2>
+                    <div class="container-section">
+                        <div class="content-box">
                             <ul class="list">
                                 <li class="list__item">
-                                    <p class="text">Parse HTML</p>
-
+                                    <p class="text">Load HTML</p>
                                     <ul class="list">
                                         <li class="list__item">
-                                            <p class="text">Document Object Model (DOM)</p>
-                                        </li>
-                                    </ul>
-                                    <ul class="list">
-                                        <li class="list__item">
-                                            <p class="text">Load CSS</p>
+                                            <p class="text">Parse HTML</p>
 
                                             <ul class="list">
                                                 <li class="list__item">
-                                                    <p class="text">
-                                                        Resolve conflicting CSS declarations
-                                                        (cascade)
-                                                    </p>
+                                                    <p class="text">Document Object Model (DOM)</p>
                                                 </li>
+                                            </ul>
+                                            <ul class="list">
                                                 <li class="list__item">
-                                                    <p class="text">Process final CSS vallues</p>
+                                                    <p class="text">Load CSS</p>
 
                                                     <ul class="list">
                                                         <li class="list__item">
                                                             <p class="text">
-                                                                CSS Object Model (CSSDOM)
+                                                                Resolve conflicting CSS declarations
+                                                                (cascade)
                                                             </p>
+                                                        </li>
+                                                        <li class="list__item">
+                                                            <p class="text">
+                                                                Process final CSS values
+                                                            </p>
+
+                                                            <ul class="list">
+                                                                <li class="list__item">
+                                                                    <p class="text">
+                                                                        CSS Object Model (CSSDOM)
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
                                                         </li>
                                                     </ul>
                                                 </li>
                                             </ul>
-                                        </li>
-                                    </ul>
 
-                                    <ul class="list">
-                                        <li class="list__item">
-                                            <p class="text">Render tree</p>
-                                        </li>
-                                    </ul>
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <p class="text">Render tree</p>
+                                                </li>
+                                            </ul>
 
-                                    <ul class="list">
-                                        <li class="list__item">
-                                            <p class="text">
-                                                Website rendering: the visual formatting model
-                                            </p>
-                                        </li>
-                                    </ul>
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <p class="text">
+                                                        Website rendering: the visual formatting
+                                                        model
+                                                    </p>
+                                                </li>
+                                            </ul>
 
-                                    <ul class="list">
-                                        <li class="list__item">
-                                            <p class="text">Final rendered website</p>
+                                            <ul class="list">
+                                                <li class="list__item">
+                                                    <p class="text">Final rendered website</p>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="page-css__section-css-about-cascade" id="css-about-cascade">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Cascade</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">
-                        <strong>Cascade</strong> - process of combining different stylesheets and
-                        resolving conflicts between different CSS rules and declarations, when more
-                        than one rule applies to a certain element.
-                    </p>
-
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Cascade order</h3>
-                        <ol class="list">
-                            <li class="list__item">
-                                <p class="text">Importance (weight)</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">Specificity</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">Source order</p>
-                            </li>
-                        </ol>
+                        </div>
                     </div>
+                </section>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Importance</h3>
-                        <ol class="list">
-                            <li class="list__item">
-                                <p class="text"><strong>User</strong> !important declarations.</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text"><strong>Author</strong> !important declarations</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text"><strong>Author</strong> declarations</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text"><strong>User</strong> declarations</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text"><strong>Default</strong> browser declarations</p>
-                            </li>
-                        </ol>
-                    </div>
+                <section class="section" id="css-about-cascade">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Cascade</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                <strong>Cascade</strong> - process of combining different
+                                stylesheets and resolving conflicts between different CSS rules and
+                                declarations, when more than one rule applies to a certain element.
+                            </p>
+                        </div>
 
-                    <p class="text u-text-align-c">Same importance? Check next &darr;</p>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Cascade order</h3>
+                            <ol class="list">
+                                <li class="list__item">
+                                    <p class="text">Importance (weight)</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Specificity</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Source order</p>
+                                </li>
+                            </ol>
+                        </div>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Specificity</h3>
-                        <ol class="list">
-                            <li class="list__item">
-                                <p class="text">Inline styles</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">IDs</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">Classes, pseudo-classes, attribute</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">Elements, pseudo-elements</p>
-                            </li>
-                        </ol>
-                    </div>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Importance</h3>
+                            <ol class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>User</strong> !important declarations.
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Author</strong> !important declarations
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text"><strong>Author</strong> declarations</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text"><strong>User</strong> declarations</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Default</strong> browser declarations
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
 
-                    <p class="text u-text-align-c">Same specificity? Check next &darr;</p>
-
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Source order</h3>
-                        <p class="text">
-                            The last declaration in the code will ovverride all other decllarations
-                            and will be applied
+                        <p class="text u-text-align-c">
+                            Same <strong>importance</strong>? Check next &darr;
                         </p>
-                    </div>
-                </div>
-            </section>
 
-            <section class="page-css__section-css-specificity" id="css-specificity">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Specificity</h2>
-                </header>
-                <div class="section-container">
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">
-                            Specificity - all need to know
-                        </h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">
-                                    CSS declarations with <strong>!important</strong> have the
-                                    highest priority
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    But only use !important as a last resource. It`s better to use
-                                    correct specificities - <strong>more maintainable code</strong>
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Inline styles willl always have priority over styles in external
-                                    stylesheets
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    A selector that contains 1 ID is more specific than one with
-                                    1000 classes
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    A selector that contains 1 class is more specific than one with
-                                    1000 elements
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    The universal selector * has no specificity value (0, 0, 0, 0)
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Rely more on <strong>specificity</strong> than on the
-                                    <strong>order</strong> of selectors
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    But, rely on order when using 3rd-party stylesheets - always put
-                                    your author stylesheet last.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Specificity</h3>
+                            <ol class="list">
+                                <li class="list__item">
+                                    <p class="text">Inline styles</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">IDs</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Classes, pseudo-classes, attribute</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Elements, pseudo-elements</p>
+                                </li>
+                            </ol>
+                        </div>
 
-            <section class="page-css__section-css-values" id="css-values">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Values</h2>
-                </header>
-                <div class="section-container">
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">How CSS values are processed</h3>
-                        <ol class="list">
-                            <li class="list__item">
-                                <p class="text">Declared value (author declarations)</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">Cascaded value (after the cascade)</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Specified value (defaulting, if there is no cascaded value)
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Compucted value (converting relative values to absolute (px))
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">Used value (final calculations, based on layout)</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">Actual size (browser and device restrictions)</p>
-                            </li>
-                        </ol>
-                    </div>
+                        <p class="text u-text-align-c">
+                            Same <strong>specificity</strong>? Check next &darr;
+                        </p>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">
-                            How units are converted from relative to absolute (px)
-                        </h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">%font - x% * parent`s computed font-size</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    %lenght - x * parent`s computed <strong>width</strong>
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    em(font) - x * <strong>parent</strong> computed font-size
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    em(lenghts) - x * <strong>current element</strong> computed
-                                    font-size
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    rem - x * <strong>root</strong> computed font-size
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">vh - x * 1% of vieport height</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">vw - x * 1% of viewport width</p>
-                            </li>
-                        </ul>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Source order</h3>
+                            <p class="text">
+                                The last declaration in the code will ovverride all other
+                                decllarations and will be applied
+                            </p>
+                        </div>
                     </div>
+                </section>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">
-                            CSS value processing - what need to know
-                        </h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">
-                                    Each property has an initial value, used if nothing is declared
-                                    (and if there is no inheritance - specified value = initial
-                                    value (specific to each property))
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Browsers specify <strong>root font-size</strong> for each page
-                                    (usuall 16px)
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Percentages and relative values are always converting to pixels
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Percentages are measured relative to their parent`s
-                                    <strong>font-size</strong>, if used to specify font-size
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Percentages are measured relative to their parent`s
-                                    <strong>width</strong>, if used to specify lenghts
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    em are measured relative to their
-                                    <strong>parent</strong> font-size, if used to specify font-size
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    em are measured relative to their
-                                    <strong>current</strong> font-size, if used to specify lenghts
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    rem are always measured relative to the
-                                    <strong>document`s root</strong> font-size
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    vh and vw are simply percentage measurements of the viewport`s
-                                    height and width
-                                </p>
-                            </li>
-                        </ul>
+                <section class="section" id="css-specificity">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Specificity</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                Specificity - all need to know
+                            </h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        CSS declarations with <strong>!important</strong> have the
+                                        highest priority
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        But only use !important as a last resource. It`s better to
+                                        use correct specificities -
+                                        <strong>more maintainable code</strong>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Inline styles willl always have priority over styles in
+                                        external stylesheets
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        A selector that contains 1 ID is more specific than one with
+                                        1000 classes
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        A selector that contains 1 class is more specific than one
+                                        with 1000 elements
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        The universal selector * has no specificity value (0, 0, 0,
+                                        0)
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Rely more on <strong>specificity</strong> than on the
+                                        <strong>order</strong> of selectors
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        But, rely on order when using 3rd-party stylesheets - always
+                                        put your author stylesheet last.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section class="page-css__section-css-inheritance-works" id="css-inheritance-works">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Inheritance</h2>
-                </header>
-                <div class="section-container">
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">
-                            Inheritance - what need to know
-                        </h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">
-                                    Inheritance passes the values for some specific properties from
-                                    parents to children - <strong>more maintainable code</strong>
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Properties related to text are inheritaed: font-family,
-                                    font-size, color, etc.
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    The compucted value of a property is what gets inherited,
-                                    <strong>nor</strong> the declared value
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Inheritance of a property only works if no one declares a value
-                                    for that property
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    The <strong>inherit</strong> keyword forces importance on a
-                                    certain property
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    The <strong>initial</strong> keyword resets a property to its
-                                    initial value
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    The <strong>unset</strong> keyword resets a property to its
-                                    inherited value if the property naturally inherits from its
-                                    parent, and to its initial value if not.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="page-css__section-css-rendering" id="css-rendering">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Rendering</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">
-                        <strong>Visual formatting model</strong> - algorithm that calcualtes boxes
-                        and determines the layout of these boxes, for each element in render tree,
-                        in order to determine the final layout of the page
-                    </p>
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Visual formatting model</h3>
-                        <ol class="list">
-                            <li class="list__item">
-                                <p class="text">
-                                    <strong>Dimensions of boxes</strong>: the box model
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    <strong>Box type</strong>: inline, block and inline-block
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    <strong>Positioning scheme</strong>: floats and positioning
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    <strong>Stacking contexts</strong>
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">Other elements in the render tree</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">Viewport size, dimensions of images, etc.</p>
-                            </li>
-                        </ol>
+                <section class="section" id="css-values">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Values</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                How CSS values are processed
+                            </h3>
+                            <ol class="list">
+                                <li class="list__item">
+                                    <p class="text">Declared value (author declarations)</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Cascaded value (after the cascade)</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Specified value (defaulting, if there is no cascaded value)
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Compucted value (converting relative values to absolute
+                                        (px))
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Used value (final calculations, based on layout)
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Actual size (browser and device restrictions)
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                How units are converted from relative to absolute (px)
+                            </h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">%font - x% * parent`s computed font-size</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        %lenght - x * parent`s computed <strong>width</strong>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        em(font) - x * <strong>parent</strong> computed font-size
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        em(lenghts) - x * <strong>current element</strong> computed
+                                        font-size
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        rem - x * <strong>root</strong> computed font-size
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">vh - x * 1% of vieport height</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">vw - x * 1% of viewport width</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                CSS value processing - what need to know
+                            </h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        Each property has an initial value, used if nothing is
+                                        declared (and if there is no inheritance - specified value =
+                                        initial value (specific to each property))
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Browsers specify <strong>root font-size</strong> for each
+                                        page (usuall 16px)
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Percentages and relative values are always converting to
+                                        pixels
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Percentages are measured relative to their parent`s
+                                        <strong>font-size</strong>, if used to specify font-size
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Percentages are measured relative to their parent`s
+                                        <strong>width</strong>, if used to specify lenghts
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        em are measured relative to their
+                                        <strong>parent</strong> font-size, if used to specify
+                                        font-size
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        em are measured relative to their
+                                        <strong>current</strong> font-size, if used to specify
+                                        lenghts
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        rem are always measured relative to the
+                                        <strong>document`s root</strong> font-size
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        vh and vw are simply percentage measurements of the
+                                        viewport`s height and width
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+                <section class="section" id="css-inheritance-works">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Inheritance</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                Inheritance - what need to know
+                            </h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        Inheritance passes the values for some specific properties
+                                        from parents to children -
+                                        <strong>more maintainable code</strong>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Properties related to text are inheritaed: font-family,
+                                        font-size, color, etc.
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        The compucted value of a property is what gets inherited,
+                                        <strong>nor</strong> the declared value
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Inheritance of a property only works if no one declares a
+                                        value for that property
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        The <strong>inherit</strong> keyword forces importance on a
+                                        certain property
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        The <strong>initial</strong> keyword resets a property to
+                                        its initial value
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        The <strong>unset</strong> keyword resets a property to its
+                                        inherited value if the property naturally inherits from its
+                                        parent, and to its initial value if not.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="css-rendering">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Rendering</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                <strong>Visual formatting model</strong> - algorithm that calcualtes
+                                boxes and determines the layout of these boxes, for each element in
+                                render tree, in order to determine the final layout of the page
+                            </p>
+                        </div>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Visual formatting model</h3>
+                            <ol class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Dimensions of boxes</strong>: the box model
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Box type</strong>: inline, block and inline-block
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Positioning scheme</strong>: floats and positioning
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Stacking contexts</strong>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Other elements in the render tree</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Viewport size, dimensions of images, etc.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
-        <a class="btn-back-to-top" href="#">&uarr;</a>
+
+        <a class="top-btn" href="#">&uarr;</a>
+
+        <script src="../../js/index.js" defer></script>
     </body>
 </html>

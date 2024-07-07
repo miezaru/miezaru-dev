@@ -1,11 +1,14 @@
 .main {
     padding-block: 12.8rem;
-    background-color: cl(purple-light-xxx);
 }
 
 %section {
-    padding: 2.4rem;
-    box-shadow: 0 0 0.1rem cl(purple-dark-xxx);
+    overflow: hidden;
+    border-radius: var(--br-radius-3);
+    // border-block-end: 2px solid var(--grey-medium);
+    // border-inline-start: 2px solid var(--grey-medium);
+    // border-inline-end: 2px solid var(--grey-medium);
+    box-shadow: inset 0 0 0.2rem var(--accent-dark);
 }
 
 .section-html {
@@ -48,4 +51,8 @@
     @extend %section;
 
     grid-area: react;
+}
+
+.section {
+    @extend %section;
 }

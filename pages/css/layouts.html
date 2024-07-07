@@ -75,439 +75,462 @@
     </head>
     <body>
         <header class="header">
-            <div class="header-container">
-                <div class="header-container-inner">
-                    <div class="header-box">
-                        <h1 class="heading-h1">
-                            <a class="author-link" href="https://github.com/miezaru">@miezaru</a>
-                            resources
-                            <span class="accent-symbol">/</span>
-                            <span>CSS: Layouts</span>
-                        </h1>
-                        <a class="header__home-link" href="../../index.html">Back home</a>
-                    </div>
-                    <p class="header__description">
-                        CSS page layout techniques allow us to take elements contained in a web page
-                        and control where they're positioned relative to the following factors:
-                        their default position in normal layout flow, the other elements around
-                        them, their parent container, and the main viewport/window
-                    </p>
-                </div>
-                <div class="main-nav__container">
-                    <span class="main-nav__text" id="main-nav-text">jump to:</span>
-                    <nav class="main-nav" aria-labelledby="main-nav-text">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#links">Links</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#about-layouts">About layouts</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#float">Float</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#flexbox">Flexbox</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-grid">CSS Grid</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <a class="logo" href="../../index.html">
+                <picture>
+                    <source srcset="../../assets/img/header/header-icon.avif" type="image/avif" />
+                    <source srcset="../../assets/img/header/header-icon.webp" type="image/webp" />
+                    <img
+                        class="logo__img"
+                        src="../../assets/img/header/header-icon.png"
+                        srcset="../../assets/img/header/header-icon.png"
+                        alt="miezaru-dev logo"
+                    />
+                </picture>
+
+                <p class="logo__text">miezaru-dev</p>
+            </a>
         </header>
-        <main class="main grid-page">
-            <section class="page-html__section-links" id="links">
-                <header class="section-header">
-                    <h2 class="heading-h2">Links</h2>
+
+        <section class="section-hero">
+            <nav class="page-nav" aria-labelledby="page-nav-description">
+                <header class="page-nav__header">
+                    <p class="page-nav__description" id="page-nav-description">On this page:</p>
+                    <button class="page-nav__btn" type="button">X</button>
                 </header>
-                <div class="section-container section-container--links">
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Learn layouts</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/patterns/layout"
-                                rel="noopener external"
-                            >
-                                Layout patterns</a
-                            >
+                <div class="page-nav__links">
+                    <ul class="page-nav__list">
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#links">Links</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#about-layouts">About layouts</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#float">Float</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#flexbox">Flexbox</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-grid">CSS Grid</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <h1 class="header-description">
+                CSS page layout techniques allow us to take elements contained in a web page and
+                control where they're positioned relative to the following factors: their default
+                position in normal layout flow, the other elements around them, their parent
+                container, and the main viewport/window.
+            </h1>
+        </section>
+
+        <main class="main container-page">
+            <div class="container-page-links">
+                <section class="section" id="links">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Links</h2>
+                    <div class="container-section">
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Learn layouts</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/patterns/layout"
+                                    rel="noopener external"
+                                >
+                                    Layout patterns</a
+                                >
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <div class="line">&nbsp;</div>
 
-            <section class="page-css__section-about-layouts" id="about-layouts">
-                <header class="section-header">
-                    <h2 class="heading-h2">About layouts</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">
-                        Layout is the way text, images and other content is placed and arranged on a
-                        webpage.
-                    </p>
-                    <p class="text">
-                        Layout gives the page a visual structure, into which we place our content.
-                    </p>
-                    <p class="text">
-                        Building a layout: arranging page elements into a visual structure, instead
-                        of simply having them placed one after another (normal flow)
-                    </p>
+            <div class="container-page-sections">
+                <section class="section" id="about-layouts">
+                    <h2 class="heading-h2 u-margin-bottom-sm">About layouts</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                Layout is the way text, images and other content is placed and
+                                arranged on a webpage.
+                            </p>
+                            <p class="text">
+                                Layout gives the page a visual structure, into which we place our
+                                content.
+                            </p>
+                            <p class="text">
+                                Building a layout: arranging page elements into a visual structure,
+                                instead of simply having them placed one after another (normal flow)
+                            </p>
 
-                    <p class="text">The 3 ways of building layouts with CSS:</p>
-                    <ul class="list">
-                        <li class="list__items">
-                            <p class="text"><strong>Float layouts</strong></p>
+                            <p class="text">The 3 ways of building layouts with CSS:</p>
                             <ul class="list">
-                                <li class="list__item">
-                                    <p class="text">
-                                        The old way of building layouts of all sizes, using the
-                                        float CSS property. Still used, but getting outdated fast
-                                    </p>
+                                <li class="list__items">
+                                    <p class="text"><strong>Float layouts</strong></p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                The old way of building layouts of all sizes, using
+                                                the float CSS property. Still used, but getting
+                                                outdated fast
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list__items">
+                                    <p class="text"><strong>Flexbox</strong></p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                Modern way of laying out elements in a 1-dimensional
+                                                row without using floats
+                                            </p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">Perfect for component layouts</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list__items">
+                                    <p class="text"><strong>CSS Grid</strong></p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                Modern way of laying out elements in a 1-dimensional
+                                                row without using floats
+                                            </p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">
+                                                For laying out elements in a fully-fledged
+                                                2-dimensional grid
+                                            </p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">
+                                                Perfect for page layouts and complex components
+                                            </p>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="list__items">
-                            <p class="text"><strong>Flexbox</strong></p>
-                            <ul class="list">
-                                <li class="list__item">
-                                    <p class="text">
-                                        Modern way of laying out elements in a 1-dimensional row
-                                        without using floats
-                                    </p>
-                                </li>
-                                <li class="list__item">
-                                    <p class="text">Perfect for component layouts</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="list__items">
-                            <p class="text"><strong>CSS Grid</strong></p>
-                            <ul class="list">
-                                <li class="list__item">
-                                    <p class="text">
-                                        Modern way of laying out elements in a 1-dimensional row
-                                        without using floats
-                                    </p>
-                                </li>
-                                <li class="list__item">
-                                    <p class="text">
-                                        For laying out elements in a fully-fledged 2-dimensional
-                                        grid
-                                    </p>
-                                </li>
-                                <li class="list__item">
-                                    <p class="text">
-                                        Perfect for page layouts and complex components
-                                    </p>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                        </div>
+                    </div>
+                </section>
 
-            <section class="page-css__section-float" id="float">
-                <header class="section-header">
-                    <h2 class="heading-h2">Float</h2>
-                </header>
-                <div class="section-container">
-                    <ul class="list">
-                        <li class="list__item">
-                            <p class="text">
-                                Elements is removed from the normal flow: "out of flow" (like
-                                position: absolute;)
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">
-                                Text and inline elements will wrap around the floated element
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">
-                                The container will not adjust its height to the element
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">
-                                Element height are collapsed if all his child elements are floated
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">With CSS: float:left, float:right</p>
-                        </li>
-                    </ul>
-                    <p class="text">Fix collapsed heights by clearing floats:</p>
-                    <pre class="code">
-                        <code class="code-el">
+                <section class="section" id="float">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Float</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        Elements is removed from the normal flow: "out of flow"
+                                        (like position: absolute;)
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Text and inline elements will wrap around the floated
+                                        element
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        The container will not adjust its height to the element
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Element height are collapsed if all his child elements are
+                                        floated
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">With CSS: float:left, float:right</p>
+                                </li>
+                            </ul>
+                            <p class="text">Fix collapsed heights by clearing floats:</p>
+                            <pre class="code">
+                                <code class="code-el">
 
 // new element after the floated elements with declaration:
 el {
-    clear: both;              // bad practice
+  clear: both;               // bad practice
 }
 
 // clearfix hack
 // add clearfix class to the parent element of the floats elements
 
 .clearfix::after {
-    display: block;
-    clear: both;               // better practice
-    content: "";
+  display: block;
+  clear: both;               // better practice
+  content: "";
 }
-                        </code>
-                    </pre>
-                </div>
-            </section>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
 
-            <section class="page-css__section-flexbox" id="flexbox">
-                <header class="section-header">
-                    <h2 class="heading-h2">Flexbox</h2>
-                </header>
-                <div class="section-container">
-                    <ul class="list">
-                        <li class="list__item">
-                            <p class="text">
-                                Flexbox is a set of related CSS properties for building
-                                1-dimensional layouts
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">
-                                The main idea behind flexbox is that empty space inside a container
-                                element can be automatically divided by its child elements
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">
-                                Flexbox makes it easy to automatically align items to one another
-                                inside a parent container, both horizontally and vertically
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">
-                                Flexbox solves common problems such as vertical centering and
-                                creating equal-height columns
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">
-                                Flexbox is perfect for replacing floats, allowing us to write fewer
-                                and cleaner HTML and CSS code
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            gap
+                <section class="section" id="flexbox">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Flexbox</h2>
+                    <div class="container-section">
+                        <div class="content-box">
                             <ul class="list">
                                 <li class="list__item">
                                     <p class="text">
-                                        better then margin, because no need to write margin-right:
-                                        0; to the last element
+                                        Flexbox is a set of related CSS properties for building
+                                        1-dimensional layouts
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        The main idea behind flexbox is that empty space inside a
+                                        container element can be automatically divided by its child
+                                        elements
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Flexbox makes it easy to automatically align items to one
+                                        another inside a parent container, both horizontally and
+                                        vertically
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Flexbox solves common problems such as vertical centering
+                                        and creating equal-height columns
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Flexbox is perfect for replacing floats, allowing us to
+                                        write fewer and cleaner HTML and CSS code
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">gap</p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                better then margin, because no need to write
+                                                margin-right: 0; to the last element
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="css-grid">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Grid</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        CSS Grid is a set of CSS properties for building
+                                        2-dimensional layouts
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        The main idea behind CSS Grid is that we divide a container
+                                        element into rows and columns that can be filled with its
+                                        child elements
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        In two-dimensional contexts, CSS Grid allows us to write
+                                        less nested HTML and easier-to-read CSS
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        CSS Grid is not meant to replace flexbox! Instead, they work
+                                        perfectly together. Need a 1D layout? Use flexbox. Need a 2D
+                                        layout? Use CSS Grid.
                                     </p>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                        </div>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                Important CSS Grid terminology
+                            </h3>
 
-            <section class="page-css__section-css-grid" id="css-grid">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Grid</h2>
-                </header>
-                <div class="section-container">
-                    <ul class="list">
-                        <li class="list__item">
-                            <p class="text">
-                                CSS Grid is a set of CSS properties for building 2-dimensional
-                                layouts
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">
-                                The main idea behind CSS Grid is that we divide a container element
-                                into rows and columns that can be filled with its child elements
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">
-                                In two-dimensional contexts, CSS Grid allows us to write less nested
-                                HTML and easier-to-read CSS
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">
-                                CSS Grid is not meant to replace flexbox! Instead, they work
-                                perfectly together. Need a 1D layout? Use flexbox. Need a 2D layout?
-                                Use CSS Grid.
-                            </p>
-                        </li>
-                    </ul>
+                            <ul class="list">
+                                <li class="list__item"><p class="text">Grid Container</p></li>
+                                <li class="list__item"><p class="text">Grid Item</p></li>
+                                <li class="list__item"><p class="text">Grid Line</p></li>
+                                <li class="list__item"><p class="text">Grid Cell</p></li>
+                                <li class="list__item"><p class="text">Grid Track</p></li>
+                                <li class="list__item"><p class="text">Grid Area</p></li>
+                            </ul>
+                        </div>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">
-                            Important CSS Grid terminology
-                        </h3>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Rows</h3>
 
-                        <ul class="list">
-                            <li class="list__item"><p class="text">Grid Container</p></li>
-                            <li class="list__item"><p class="text">Grid Item</p></li>
-                            <li class="list__item"><p class="text">Grid Line</p></li>
-                            <li class="list__item"><p class="text">Grid Cell</p></li>
-                            <li class="list__item"><p class="text">Grid Track</p></li>
-                            <li class="list__item"><p class="text">Grid Area</p></li>
-                        </ul>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Explicit</strong> (явный) row - row, where we
+                                        defined height
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Implicit</strong> (скрытый) row - row, where we do
+                                        not defined height
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                Properties have no effect on a grid item
+                            </h3>
+
+                            <ul class="list">
+                                <li class="list__item"><p class="text">float</p></li>
+                                <li class="list__item">
+                                    <p class="text">display: inline-block</p>
+                                </li>
+                                <li class="list__item"><p class="text">display: table-cell</p></li>
+                                <li class="list__item"><p class="text">vertical-align</p></li>
+                                <li class="list__item"><p class="text">column-*</p></li>
+                            </ul>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Special Units & Functions</h3>
+
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text"><strong>fr units</strong></p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                grid-template-columns: 1fr 3fr; - Means, loosely,
+                                                25% 75%
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text"><strong>Sizing keywords</strong></p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                <strong>min-content</strong> - the minimum size of
+                                                the content. Imagine a line of text like "E pluribus
+                                                unum", the min-content is likely the width of the
+                                                word "pluribus"
+                                            </p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">
+                                                <strong>max-content</strong> - the maximum size of
+                                                the content. Imagine the sentence above, the
+                                                max-content is the length of the whole sentence
+                                            </p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">
+                                                <strong>auto</strong> - this keyword is a lot like
+                                                fr units, except that they "lose" the fight in
+                                                sizing against fr units when allocating the
+                                                remaining space
+                                            </p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">fractional units - see above</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text"><strong>Sizing functions</strong></p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                <strong>fit-content()</strong> - function uses the
+                                                space available, but never less than min-content and
+                                                never more than max-content
+                                            </p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">
+                                                <strong>minmax()</strong> - function does exactly
+                                                what it seems like: it sets a minimum and maximum
+                                                value for what the length is able to be. This is
+                                                useful for in combination with relative units. Like
+                                                you may want a column to be only able to shrink so
+                                                far. This is extremely useful and probably what u
+                                                want: grid-template-columns: minmax(100px, 1fr) 3fr;
+                                            </p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text"><strong>min()</strong></p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text"><strong>max()</strong></p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text"><strong>Masonry</strong></p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <a
+                                                class="text-link"
+                                                href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-masonry"
+                                            >
+                                                Masonry 1</a
+                                            >
+                                        </li>
+                                        <li class="list__item">
+                                            <a
+                                                class="text-link"
+                                                href="https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout/"
+                                            >
+                                                Masonry 2</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text"><strong>Subgrid</strong></p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <a
+                                                class="text-link"
+                                                href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-subgrid"
+                                            >
+                                                Subgrid</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Rows</h3>
-
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">
-                                    <strong>Explicit</strong> (явный) row - row, where we defined
-                                    height
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    <strong>Implicit</strong> (скрытый) row - row, where we do not
-                                    defined height
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">
-                            Properties have no effect on a grid item
-                        </h3>
-
-                        <ul class="list">
-                            <li class="list__item"><p class="text">float</p></li>
-                            <li class="list__item"><p class="text">display: inline-block</p></li>
-                            <li class="list__item"><p class="text">display: table-cell</p></li>
-                            <li class="list__item"><p class="text">vertical-align</p></li>
-                            <li class="list__item"><p class="text">column-*</p></li>
-                        </ul>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Special Units & Functions</h3>
-
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text"><strong>fr units</strong></p>
-                                <ul class="list">
-                                    <li class="list__item">
-                                        <p class="text">
-                                            grid-template-columns: 1fr 3fr; - Means, loosely, 25%
-                                            75%
-                                        </p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="list__item">
-                                <p class="text"><strong>Sizing keywords</strong></p>
-                                <ul class="list">
-                                    <li class="list__item">
-                                        <p class="text">
-                                            <strong>min-content</strong> - the minimum size of the
-                                            content. Imagine a line of text like "E pluribus unum",
-                                            the min-content is likely the width of the word
-                                            "pluribus"
-                                        </p>
-                                    </li>
-                                    <li class="list__item">
-                                        <p class="text">
-                                            <strong>max-content</strong> - the maximum size of the
-                                            content. Imagine the sentence above, the max-content is
-                                            the length of the whole sentence
-                                        </p>
-                                    </li>
-                                    <li class="list__item">
-                                        <p class="text">
-                                            <strong>auto</strong> - this keyword is a lot like fr
-                                            units, except that they "lose" the fight in sizing
-                                            against fr units when allocating the remaining space
-                                        </p>
-                                    </li>
-                                    <li class="list__item">
-                                        <p class="text">fractional units - see above</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="list__item">
-                                <p class="text"><strong>Sizing functions</strong></p>
-                                <ul class="list">
-                                    <li class="list__item">
-                                        <p class="text">
-                                            <strong>fit-content()</strong> - function uses the space
-                                            available, but never less than min-content and never
-                                            more than max-content
-                                        </p>
-                                    </li>
-                                    <li class="list__item">
-                                        <p class="text">
-                                            <strong>minmax()</strong> - function does exactly what
-                                            it seems like: it sets a minimum and maximum value for
-                                            what the length is able to be. This is useful for in
-                                            combination with relative units. Like you may want a
-                                            column to be only able to shrink so far. This is
-                                            extremely useful and probably what u want:
-                                            grid-template-columns: minmax(100px, 1fr) 3fr;
-                                        </p>
-                                    </li>
-                                    <li class="list__item">
-                                        <p class="text"><strong>min()</strong></p>
-                                    </li>
-                                    <li class="list__item">
-                                        <p class="text"><strong>max()</strong></p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="list__item">
-                                <p class="text"><strong>Masonry</strong></p>
-                                <ul class="list">
-                                    <li class="list__item">
-                                        <a
-                                            class="text-link"
-                                            href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-masonry"
-                                        >
-                                            Masonry 1</a
-                                        >
-                                    </li>
-                                    <li class="list__item">
-                                        <a
-                                            class="text-link"
-                                            href="https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout/"
-                                        >
-                                            Masonry 2</a
-                                        >
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="list__item">
-                                <p class="text"><strong>Subgrid</strong></p>
-                                <ul class="list">
-                                    <li class="list__item">
-                                        <a
-                                            class="text-link"
-                                            href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-subgrid"
-                                        >
-                                            Subgrid</a
-                                        >
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
-        <a class="btn-back-to-top" href="#">&uarr;</a>
+
+        <a class="top-btn" href="#">&uarr;</a>
+
+        <script src="../../js/index.js" defer></script>
     </body>
 </html>

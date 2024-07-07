@@ -74,167 +74,177 @@
     </head>
     <body>
         <header class="header">
-            <div class="header-container">
-                <div class="header-container-inner">
-                    <div class="header-box">
-                        <h1 class="heading-h1">
-                            <a class="author-link" href="https://github.com/miezaru">@miezaru</a>
-                            resources
-                            <span class="accent-symbol">/</span>
-                            <span>JavaScript: Objects</span>
-                        </h1>
-                        <a class="header__home-link" href="../../index.html">Back home</a>
-                    </div>
-                    <p class="header__description">
-                        The Object type represents one of JavaScript's data types. It is used to
-                        store various keyed collections and more complex entities. Objects can be
-                        created using the Object() constructor or the object initializer / literal
-                        syntax.
-                    </p>
-                </div>
-                <div class="main-nav__container">
-                    <span class="main-nav__text" id="main-nav-text">jump to:</span>
-                    <nav class="main-nav" aria-labelledby="main-nav-text">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#links">Links</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#basics">Basics</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <a class="logo" href="../../index.html">
+                <picture>
+                    <source srcset="../../assets/img/header/header-icon.avif" type="image/avif" />
+                    <source srcset="../../assets/img/header/header-icon.webp" type="image/webp" />
+                    <img
+                        class="logo__img"
+                        src="../../assets/img/header/header-icon.png"
+                        srcset="../../assets/img/header/header-icon.png"
+                        alt="miezaru-dev logo"
+                    />
+                </picture>
+
+                <p class="logo__text">miezaru-dev</p>
+            </a>
         </header>
-        <main class="main grid-page">
-            <section class="page-html__section-links" id="links">
-                <header class="section-header">
-                    <h2 class="heading-h2">Links</h2>
+
+        <section class="section-hero">
+            <nav class="page-nav" aria-labelledby="page-nav-description">
+                <header class="page-nav__header">
+                    <p class="page-nav__description" id="page-nav-description">On this page:</p>
+                    <button class="page-nav__btn" type="button">X</button>
                 </header>
-                <div class="section-container section-container--links">
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Wiki</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object"
-                                rel="noopener external"
-                            >
-                                mdn objects</a
-                            >
+                <div class="page-nav__links">
+                    <ul class="page-nav__list">
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#links">Links</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#basics">Basics</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <h1 class="header-description">
+                The Object type represents one of JavaScript's data types. It is used to store
+                various keyed collections and more complex entities. Objects can be created using
+                the Object() constructor or the object initializer / literal syntax.
+            </h1>
+        </section>
+
+        <main class="main container-page">
+            <div class="container-page-links">
+                <section class="section" id="links">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Links</h2>
+                    <div class="container-section">
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Wiki</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object"
+                                    rel="noopener external"
+                                >
+                                    mdn objects</a
+                                >
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <div class="line">&nbsp;</div>
 
-            <section class="page-js__section-obj-basics" id="basics">
-                <header class="section-header">
-                    <h2 class="heading-h2">Basics</h2>
-                </header>
-                <div class="section-container">
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">What is Object?</h3>
-                        <p class="text">
-                            Arrays have no names for elements, only accessed by their index
-                        </p>
-                        <p class="text">
-                            Objects literal syntax creates objects with properties and values
-                        </p>
-                        <p class="text">Order not matter in objects</p>
-                        <pre class="code">
-                            <code class="code-el">
-    const artem = {
-        firstName: 'Artem',
-        lastName: 'Usatyi',
-        age: 2024 - 1997,
-        job: 'programmer',
-        friends: ['Nika', 'Anna', 'Eva'],
-    }
-                            </code>
-                        </pre>
-                        <p class="text">
-                            Use arrays for non structured data and objects for structured data
-                        </p>
-                    </div>
+            <div class="container-page-sections">
+                <section class="section" id="basics">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Basics</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">What is Object?</h3>
+                            <p class="text">
+                                Arrays have no names for elements, only accessed by their index
+                            </p>
+                            <p class="text">
+                                Objects literal syntax creates objects with properties and values
+                            </p>
+                            <p class="text">Order not matter in objects</p>
+                            <pre class="code">
+                                <code class="code-el">
+const artem = {
+  firstName: 'Artem',
+  lastName: 'Usatyi',
+  age: 2024 - 1997,
+  job: 'programmer',
+  friends: ['Nika', 'Anna', 'Eva'],
+}
+                                </code>
+                            </pre>
+                            <p class="text">
+                                Use arrays for non structured data and objects for structured data
+                            </p>
+                        </div>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">DOT VS. BRACKET NOTATION</h3>
-                        <h4 class="heading-h4 u-margin-bottom-sm">Dot and Bracket</h4>
-                        <pre class="code">
-                            <code class="code-el">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Dot vs. Bracket notation</h3>
+                            <h4 class="heading-h4 u-margin-bottom-sm">Dot and Bracket</h4>
+                            <pre class="code">
+                                <code class="code-el">
 artem.firstName         // 'Artem'
 artem.lastName          // 'Usatyi'
-                            </code>
-                        </pre>
-                        <p class="text">
-                            In bracket notation we can use variables or
-                            <strong>expressions</strong> as property names
-                        </p>
-                        <pre class="code">
-                            <code class="code-el">
+                                </code>
+                            </pre>
+                            <p class="text">
+                                In bracket notation we can use variables or
+                                <strong>expressions</strong> as property names
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
 artem['age']                // 27
 
 const nameKey = 'Name'
 artem[`first${nameKey}`]    // Artem
 artem[`last${nameKey}`]     // Usatyi
-                            </code>
-                        </pre>
+                                </code>
+                            </pre>
 
-                        <h4 class="heading-h4 u-margin-bottom-sm">Add new properties</h4>
-                        <pre class="code">
-                            <code class="code-el">
+                            <h4 class="heading-h4 u-margin-bottom-sm">Add new properties</h4>
+                            <pre class="code">
+                                <code class="code-el">
 artem.location = 'Ukraine'
 artem['github'] = '@miezaru'
-                            </code>
-                        </pre>
-                    </div>
+                                </code>
+                            </pre>
+                        </div>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Object methods</h3>
-                        <p class="text">Object methods are functions attached to objects</p>
-                        <pre class="code">
-                            <code class="code-el">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Object methods</h3>
+                            <p class="text">Object methods are functions attached to objects</p>
+                            <pre class="code">
+                                <code class="code-el">
 const person = {
-    firstName: 'John',
-    lastName: 'Doe',
-    birthYear: 1994,
-    job: 'developer',
-    friends: ['Jane Doe', 'Mike Doe', 'Sarah Doe'],
-    hasDriversLicense: true,
+  firstName: 'John',
+  lastName: 'Doe',
+  birthYear: 1994,
+  job: 'developer',
+  friends: ['Jane Doe', 'Mike Doe', 'Sarah Doe'],
+  hasDriversLicense: true,
 
-    calcAge1: function (birthYear) {
-        return 2024 - birthYear
-    },
+  calcAge1: function (birthYear) {
+    return 2024 - birthYear
+  },
 
-    calcAge2: function () {
-        return 2024 - this.birthYear
-    },
+  calcAge2: function () {
+    return 2024 - this.birthYear
+  },
 
-    // better if we use this method multiple times, we can simply store it and not calling function every time
-    calcAge3: function () {
-        this.age = 2024 - this.birthYear
-        return this.age
-    },
+  // better if we use this method multiple times, we can simply store it and not calling function every time
+  calcAge3: function () {
+    this.age = 2024 - this.birthYear
+    return this.age
+  },
 
-    // arrow function does not have its own 'this' keyword, it uses the 'this' of the enclosing scope
-    calcAge3: () => {
-        this.age = 2024 - this.birthYear
-        return this.age
-    }, // NOT WORKED
+  // arrow function does not have its own 'this' keyword, it uses the 'this' of the enclosing scope
+  calcAge3: () => {
+    this.age = 2024 - this.birthYear
+    return this.age
+  }, // NOT WORKED
 
-    getSummary: function () {
-        return `${this.firstName} is ${this.calcAge3()} years old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
-    },
+  getSummary: function () {
+    return `${this.firstName} is ${this.calcAge3()} years old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
+  },
 }
-                            </code>
-                        </pre>
+                                </code>
+                            </pre>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
-        <a class="btn-back-to-top" href="#">&uarr;</a>
+
+        <a class="top-btn" href="#">&uarr;</a>
+        <script src="../../js/index.js" defer></script>
     </body>
 </html>

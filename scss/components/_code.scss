@@ -3,7 +3,8 @@
     padding-block: 0.6rem;
     padding-inline: 1.2rem;
     overflow: scroll hidden;
-    background-color: cl(purple-light-xx);
+    color: var(--accent-grey-light);
+    background-color: var(--accent-darkest);
 
     &:not(:last-child) {
         margin-block-end: 2.2rem;
@@ -14,15 +15,15 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: cl(purple-light-x);
+        background-color: var(--accent-dark);
     }
 
     &::-webkit-scrollbar-thumb {
-        background: cl(purple-primary);
+        background-color: var(--accent-soft);
     }
 
     &::-webkit-scrollbar-thumb:hover {
-        background: cl(purple-dark-xxx);
+        background-color: var(--accent);
     }
 }
 

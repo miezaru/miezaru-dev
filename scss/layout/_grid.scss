@@ -1,24 +1,105 @@
-.grid-home {
-    display: grid;
-    grid-template-areas:
-        '. html html html tools tools tools .'
-        '. css css css tools tools tools .'
-        '. sass sass sass git git git .'
-        '. js js js react react react . ';
-    grid-template-columns: minmax(3.2rem, 1fr) repeat(6, minmax(auto, 20rem)) minmax(3.2rem, 1fr);
-    gap: 6.4rem 4.8rem;
+.container-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5.6rem;
 }
 
-.grid-page {
+.container-home {
+    display: grid;
+    grid-template-areas:
+        '. html  tools  .'
+        '. css tools  .'
+        '. sass  git  .'
+        '. js  react  . ';
+    grid-template-columns: minmax(3.2rem, 1fr) repeat(2, minmax(auto, 69.6rem)) minmax(3.2rem, 1fr);
+    gap: 6.4rem 4.8rem;
+
+    & .container-section {
+        padding: 2.4rem;
+    }
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: [full-start] 2.4rem [center-start] 1fr [center-end] 2.4rem [full-end];
+
+    &:first-child {
+        padding-block-start: 2.4rem;
+    }
+
+    &:last-child {
+        padding-block-end: 2.4rem;
+    }
+
+    & .text,
+    & .list,
+    & .heading-h3,
+    & .heading-h4,
+    & picture,
+    & table {
+        grid-column: center-start / center-end;
+    }
+
+    & .code {
+        grid-column: full-start / full-end;
+    }
+}
+
+.resources-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+
+    &__item {
+        &:link,
+        &:visited {
+            padding-block: 0.8rem;
+            padding-inline: 1.6rem;
+            font-weight: 500;
+            color: inherit;
+            color: var(--accent-dark-black);
+            text-decoration: none;
+            border-radius: var(--br-radius-3);
+            box-shadow: 0 0 0.2rem var(--accent-dark);
+            transition: var(--tr-medium);
+        }
+
+        &:hover {
+            box-shadow: 0 0 0.6rem var(--accent-dark);
+            transform: translateY(-4px);
+        }
+
+        &:active {
+            box-shadow: 0 0 0.3rem var(--accent-dark);
+            transform: translateY(-2px);
+        }
+    }
+}
+
+.container-page {
     display: grid;
     grid-template-columns:
-        [full-start] minmax(3.2rem, 1fr) [mid-start] repeat(
-            6,
-            [col-start] minmax(auto, 20rem) [col-end]
-        )
+        [full-start] minmax(3.2rem, 1fr) [mid-start] minmax(auto, 144rem)
         [mid-end] minmax(3.2rem, 1fr)
         [full-end];
     grid-auto-flow: dense;
+    gap: 6.4rem 4.8rem;
+}
+
+.container-page-links {
+    grid-column: mid-start / mid-end;
+
+    & .container-section {
+        padding: 2.4rem;
+    }
+}
+
+.container-page-sections {
+    display: grid;
+    grid-template-columns:
+        [mid-start] repeat(2, [col-start] minmax(auto, 69.6rem) [col-end])
+        [mid-end];
+    grid-column: mid-start / mid-end;
     gap: 6.4rem 4.8rem;
 }
 

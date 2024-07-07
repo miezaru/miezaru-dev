@@ -78,285 +78,316 @@
     </head>
     <body>
         <header class="header">
-            <div class="header-container">
-                <div class="header-container-inner">
-                    <div class="header-box">
-                        <h1 class="heading-h1">
-                            <a class="author-link" href="https://github.com/miezaru">@miezaru</a>
-                            resources
-                            <span class="accent-symbol">/</span>
-                            <span>CSS: Basics</span>
-                        </h1>
-                        <a class="header__home-link" href="../../index.html">Back home</a>
-                    </div>
-                    <p class="header__description">
-                        CSS (Cascading Style Sheets) is used to style and layout web pages — for
-                        example, to alter the font, color, size, and spacing of your content, split
-                        it into multiple columns, or add animations and other decorative features.
-                    </p>
-                </div>
-                <div class="main-nav__container">
-                    <span class="main-nav__text" id="main-nav-text">jump to:</span>
-                    <nav class="main-nav" aria-labelledby="main-nav-text">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#links">Links</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-basics">Basics</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-types">Types</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-selectors">Selectors</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-selectors-priority">
-                                    Selectors priority</a
-                                >
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-box-model">Box model</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-box-types">Box types</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-elements-flow">
-                                    Elements flow</a
-                                >
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-cascade">Cascade</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-inheritance"> Inheritance</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-sizing-units"> Sizing units</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-pseudo-classes">
-                                    Pseudo-classes</a
-                                >
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#css-pseudo-elements">
-                                    Pseudo-elements</a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <a class="logo" href="../../index.html">
+                <picture>
+                    <source srcset="../../assets/img/header/header-icon.avif" type="image/avif" />
+                    <source srcset="../../assets/img/header/header-icon.webp" type="image/webp" />
+                    <img
+                        class="logo__img"
+                        src="../../assets/img/header/header-icon.png"
+                        srcset="../../assets/img/header/header-icon.png"
+                        alt="miezaru-dev logo"
+                    />
+                </picture>
+
+                <p class="logo__text">miezaru-dev</p>
+            </a>
         </header>
-        <main class="main grid-page">
-            <section class="page-html__section-links" id="links">
-                <header class="section-header">
-                    <h2 class="heading-h2">Links</h2>
+
+        <section class="section-hero">
+            <nav class="page-nav" aria-labelledby="page-nav-description">
+                <header class="page-nav__header">
+                    <p class="page-nav__description" id="page-nav-description">On this page:</p>
+                    <button class="page-nav__btn" type="button">X</button>
                 </header>
-                <div class="section-container section-container--links">
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Learn CSS</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://web.dev/learn/css"
-                                rel="noopener external"
+                <div class="page-nav__links">
+                    <ul class="page-nav__list">
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#links">Links</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-basics">Basics</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-types">Types</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-selectors">Selectors</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-selectors-priority">
+                                Selectors priority</a
                             >
-                                webdev css</a
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-box-model">Box model</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-box-types">Box types</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-elements-flow">Elements flow</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-cascade">Cascade</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-inheritance">Inheritance</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-sizing-units">Sizing units</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-pseudo-classes">Pseudo-classes</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#css-pseudo-elements">
+                                Pseudo-elements</a
                             >
-                            <a
-                                class="resources-box__item"
-                                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-                                rel="noopener external"
-                            >
-                                mdn css</a
-                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <h1 class="header-description">
+                CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to
+                alter the font, color, size, and spacing of your content, split it into multiple
+                columns, or add animations and other decorative features.
+            </h1>
+        </section>
+
+        <main class="main container-page">
+            <div class="container-page-links">
+                <section class="section" id="links">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Links</h2>
+                    <div class="container-section">
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Learn CSS</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://web.dev/learn/css"
+                                    rel="noopener external"
+                                >
+                                    webdev css</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                                    rel="noopener external"
+                                >
+                                    mdn css</a
+                                >
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <div class="line">&nbsp;</div>
 
-            <section class="page-css__section-css-basics" id="css-basics">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS - Cascading Style Sheets</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">
-                        CSS describes the visual style and presentation of the content written in
-                        HTML
-                    </p>
-
-                    <p class="text">
-                        CSS consists of countless properties that developers use to format the
-                        content: properties about font, text, spacing, layout, etc.
-                    </p>
-
-                    <picture class="u-margin-bottom-md">
-                        <source type="image/avif" srcset="../../assets/img/css-syntax.avif" />
-                        <source type="image/webp" srcset="../../assets/img/css-syntax.webp" />
-                        <img
-                            src="../../assets/img/css-syntax.png"
-                            alt="CSS syntax"
-                            height="180"
-                            width="616"
-                            srcset="../../assets/img/css-syntax.png"
-                        />
-                    </picture>
-
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Visual formatting model</h3>
-                        <p class="text">
-                            Visual formatting model - algorithm that calculates boxes and determines
-                            the layout of these boxes, for each element in the render tree, in order
-                            to determine the final layout of the page
-                        </p>
-                        <ol class="list">
-                            <li class="list__item">
-                                <p class="text">
-                                    <strong>Dimensions of boxes</strong> - the box model
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    <strong>Box type</strong> - inline, block and inline-block
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    <strong>Positioning scheme</strong> - floats and positioning
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text"><strong>Stacking contexts</strong></p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">Other elements in the render tree</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">Viewport size, dimensions of images, etc.</p>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </section>
-
-            <section class="page-css__section-css-types" id="css-types">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Types</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">
-                        Inline CSS - inside the element with <strong>style attribute</strong>.
-                    </p>
-
-                    <p class="text">
-                        Internal CSS - write CSS code in <strong>style element</strong> which is
-                        inside <strong>head</strong>
-                        element.
-                    </p>
-
-                    <p class="text">Separation of concerns - разделение интересов</p>
-
-                    <p class="text">
-                        External CSS - write CSS in <strong>external file .css</strong> and
-                        <strong>link it with link</strong>
-                        element.
-                    </p>
-                </div>
-            </section>
-
-            <section class="page-css__section-css-selectors" id="css-selectors">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Selectors</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">
-                        CSS selectors module provides more than 60 selectors and five combinators.
-                    </p>
-
-                    <p class="text">Descendant selector</p>
-
-                    <pre class="code">
-                            <code class="code-el">
-footer p {}
-                            </code>
-                        </pre>
-
-                    <p class="text">Nested descendant selector</p>
-                    <pre class="code">
-                            <code class="code-el">
-article footer p {}
-                            </code>
-                        </pre>
-
-                    <p class="text">AND selector</p>
-                    <pre class="code">
-                            <code class="code-el">
-.item.item--current {}
-                            </code>
-                        </pre>
-
-                    <p class="text">ID selector</p>
-                    <ul class="list">
-                        <li class="list__item">
-                            <p class="text">Only 1 on the page</p>
-                        </li>
-                        <li class="list__item">
+            <div class="container-page-sections">
+                <section class="section" id="css-basics">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS - Cascading Style Sheets</h2>
+                    <div class="container-section">
+                        <div class="content-box">
                             <p class="text">
-                                Cannot select if it starts with a number, but this can be easily
-                                bypassed using the attribute selector [id="10"]
+                                CSS describes the visual style and presentation of the content
+                                written in HTML
                             </p>
-                        </li>
-                    </ul>
-                    <pre class="code">
-                            <code class="code-el">
+
+                            <p class="text">
+                                CSS consists of countless properties that developers use to format
+                                the content: properties about font, text, spacing, layout, etc.
+                            </p>
+
+                            <picture class="u-margin-bottom-md">
+                                <source
+                                    srcset="../../assets/img/css/css-syntax.avif"
+                                    type="image/avif"
+                                />
+                                <source
+                                    srcset="../../assets/img/css/css-syntax.webp"
+                                    type="image/webp"
+                                />
+                                <img
+                                    src="../../assets/img/css/css-syntax.png"
+                                    srcset="../../assets/img/css/css-syntax.png"
+                                    alt="CSS syntax"
+                                    height="180"
+                                    width="616"
+                                />
+                            </picture>
+                        </div>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Visual formatting model</h3>
+                            <p class="text">
+                                Visual formatting model - algorithm that calculates boxes and
+                                determines the layout of these boxes, for each element in the render
+                                tree, in order to determine the final layout of the page
+                            </p>
+                            <ol class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Dimensions of boxes</strong> - the box model
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Box type</strong> - inline, block and inline-block
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Positioning scheme</strong> - floats and positioning
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text"><strong>Stacking contexts</strong></p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Other elements in the render tree</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Viewport size, dimensions of images, etc.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="css-types">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Types</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                Inline CSS - inside the element with
+                                <strong>style attribute</strong>.
+                            </p>
+
+                            <p class="text">
+                                Internal CSS - write CSS code in
+                                <strong>style element</strong> which is inside <strong>head</strong>
+                                element.
+                            </p>
+
+                            <p class="text">Separation of concerns - разделение интересов</p>
+
+                            <p class="text">
+                                External CSS - write CSS in <strong>external file .css</strong> and
+                                <strong>link it with link</strong>
+                                element.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="css-selectors">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Selectors</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                CSS selectors module provides more than 60 selectors and five
+                                combinators.
+                            </p>
+                        </div>
+
+                        <div class="content-box">
+                            <p class="text"><strong>Descendant</strong></p>
+                            <pre class="code">
+                                <code class="code-el">
+footer p {}
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <p class="text"><strong>Nested descendant</strong></p>
+                            <pre class="code">
+                                <code class="code-el">
+article footer p {}
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <p class="text"><strong>AND</strong></p>
+                            <pre class="code">
+                                <code class="code-el">
+.item.item--current {}
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <p class="text"><strong>ID</strong></p>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">Only 1 on the page</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Cannot select if it starts with a number, but this can be
+                                        easily bypassed using the attribute selector [id="10"]
+                                    </p>
+                                </li>
+                            </ul>
+                            <pre class="code">
+                                <code class="code-el">
 #author
-                            </code>
-                        </pre>
+                                </code>
+                            </pre>
+                        </div>
 
-                    <p class="text">Class selector</p>
-                    <pre class="code">
-                            <code class="code-el">
+                        <div class="content-box">
+                            <p class="text"><strong>Class</strong></p>
+                            <pre class="code">
+                                <code class="code-el">
 .author {}
-                            </code>
-                        </pre>
+                                </code>
+                            </pre>
+                        </div>
 
-                    <p class="text">Direct child selector</p>
-                    <pre class="code">
-                            <code class="code-el">
+                        <div class="content-box">
+                            <p class="text"><strong>Direct child</strong></p>
+                            <pre class="code">
+                                <code class="code-el">
 .parent > .child {}
-                            </code>
-                        </pre>
+                                </code>
+                            </pre>
+                        </div>
 
-                    <p class="text">Adjacent sibling</p>
-                    <pre class="code">
-                            <code class="code-el">
+                        <div class="content-box">
+                            <p class="text"><strong>Adjacent</strong></p>
+                            <pre class="code">
+                                <code class="code-el">
 .one + .two {}
-                            </code>
-                        </pre>
+                                </code>
+                            </pre>
+                        </div>
 
-                    <p class="text">General sibling</p>
-                    <pre class="code">
-                            <code class="code-el">
+                        <div class="content-box">
+                            <p class="text"><strong>General sibling</strong></p>
+                            <pre class="code">
+                                <code class="code-el">
 .item:nth-child(3) ~ .item // all adjacent .item elements after the 3
-                            </code>
-                        </pre>
+                                </code>
+                            </pre>
+                        </div>
 
-                    <p class="text">:not() selector</p>
-                    <pre class="code">
-                            <code class="code-el">
+                        <div class="content-box">
+                            <p class="text"><strong>:not()</strong></p>
+                            <pre class="code">
+                                <code class="code-el">
 .item:not(:last-child) {}
-                            </code>
-                        </pre>
+                                </code>
+                            </pre>
+                        </div>
 
-                    <p class="text">Attribute selector</p>
-                    <pre class="code">
-                            <code class="code-el">
+                        <div class="content-box">
+                            <p class="text"><strong>Attribute</strong></p>
+                            <pre class="code">
+                                <code class="code-el">
 img:not([alt]),
 img[alt=""] {}
 
@@ -366,903 +397,935 @@ img[alt=""] {}
 /* i operator - case insensitive */
 
 [data-type='primary' s] {}
-                            </code>
-                        </pre>
+                                </code>
+                            </pre>
 
-                    <p class="text">
-                        Attribute value selector by the substring at the beginning (^ - caret)
-                    </p>
-                    <pre class="code">
-                            <code class="code-el">
+                            <p class="text">
+                                Attribute value selector by the substring at the
+                                <strong>beginning</strong> (^ - caret)
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
 /* A href that starts with https */
 
 [href^='https'] {}
-                            </code>
-                        </pre>
+                                </code>
+                            </pre>
+                        </div>
 
-                    <p class="text">
-                        Attribute value selector based on the substring instance it contains (* -
-                        contains)
-                    </p>
-                    <pre class="code">
-                            <code class="code-el">
+                        <div class="content-box">
+                            <p class="text">
+                                Attribute value selector based on the substring instance it
+                                <strong>contains</strong>
+                                (* - contains)
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
 /* A href that contains "example.com" */
 
 [href*='example.com'] {}
-                            </code>
-                        </pre>
+                                </code>
+                            </pre>
+                        </div>
 
-                    <p class="text">
-                        Attribute value selector by the substring at the end of it ($ - ends with a
-                        substring)
-                    </p>
-                    <pre class="code">
-                            <code class="code-el">
+                        <div class="content-box">
+                            <p class="text">
+                                Attribute value selector by the substring at the
+                                <strong>end</strong> of it ($ - ends with a substring)
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
 /* A href that ends with .com */
 
 [href$='.com'] {}
-                            </code>
-                        </pre>
+                                </code>
+                            </pre>
+                        </div>
 
-                    <p class="text">:empty - detects empty elements and styles them</p>
-                    <pre class="code">
-                            <code class="code-el">
+                        <div class="content-box">
+                            <p class="text">
+                                <strong>:empty</strong> - detects empty elements and styles them
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
 .item:empty {
     display:none
 }
-                            </code>
-                        </pre>
-                </div>
-            </section>
-
-            <section class="page-css__section-css-selectors-priority" id="css-selectors-priority">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Selectors priority</h2>
-                </header>
-                <div class="section-container">
-                    <ol class="list">
-                        <li class="list__item">
-                            <p class="text">Declaration marked <strong>!important</strong></p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">
-                                <strong>Inline styles</strong> (style attribute in HTML)
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text"><strong>Id</strong></p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">
-                                <strong>Classes</strong> and <strong>pseudo-classes</strong>
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text"><strong>Element</strong> selector</p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text"><strong>Universal</strong> selector</p>
-                        </li>
-                    </ol>
-                </div>
-            </section>
-
-            <section class="page-css__section-css-box-model" id="css-box-model">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Box model</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">All elements are boxes.</p>
-                    <picture class="u-margin-bottom-md">
-                        <source type="image/avif" srcset="../../assets/img/box-model.avif" />
-                        <source type="image/webp" srcset="../../assets/img/box-model.webp" />
-                        <img
-                            src="../../assets/img/box-model.png"
-                            alt="RGB model wheel"
-                            height="917"
-                            width="918"
-                            srcset="../../assets/img/box-model.png"
-                        />
-                    </picture>
-
-                    <div class="content-box">
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text"><strong>Content</strong> - text, images, etc</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    <strong>Padding</strong> - transparent area around the content,
-                                    inside of the box
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    <strong>Border</strong> - goes around the padding and the
-                                    content
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text"><strong>Margin</strong> - space between boxes</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    <strong>Fill area</strong> - area that gets filled with
-                                    background color or background image
-                                </p>
-                            </li>
-                        </ul>
+                                </code>
+                            </pre>
+                        </div>
                     </div>
+                </section>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">
-                            Content-box - default behavior
-                        </h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">
-                                    Final element width: left-border + left-padding + width + right
-                                    padding + right border
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Final element height: top-border + top-padding + height +
-                                    bottom-padding + bottom-border
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">With CSS: box-sizing: content-box;</p>
-                            </li>
-                        </ul>
+                <section class="section" id="css-selectors-priority">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Selectors priority</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <ol class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        Declaration marked <strong>!important</strong>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Inline styles</strong> (style attribute in HTML)
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text"><strong>Id</strong></p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Classes</strong> and <strong>pseudo-classes</strong>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text"><strong>Element</strong> selector</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text"><strong>Universal</strong> selector</p>
+                                </li>
+                            </ol>
+                        </div>
                     </div>
+                </section>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Border-box</h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">Final element width: width</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">Final element height: height</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">With CSS: box-sizing: border-box;</p>
-                            </li>
-                        </ul>
-                    </div>
+                <section class="section" id="css-box-model">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Box model</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">All elements are boxes.</p>
+                            <picture class="u-margin-bottom-md">
+                                <source
+                                    srcset="../../assets/img/css/box-model.avif"
+                                    type="image/avif"
+                                />
+                                <source
+                                    srcset="../../assets/img/css/box-model.webp"
+                                    type="image/webp"
+                                />
+                                <img
+                                    src="../../assets/img/css/box-model.png"
+                                    srcset="../../assets/img/css/box-model.png"
+                                    alt="RGB model wheel"
+                                    height="917"
+                                    width="918"
+                                />
+                            </picture>
+                        </div>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">User agent stylesheets</h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <a
-                                    class="text-link"
-                                    href="https://chromium.googlesource.com/chromium/blink/+/master/Source/core/css/html.css"
-                                    rel="noopener external"
-                                >
-                                    Chromium</a
-                                >
-                            </li>
-                            <li class="list__item">
-                                <a
-                                    class="text-link"
-                                    href="https://searchfox.org/mozilla-central/source/layout/style/res/html.css"
-                                    rel="noopener external"
-                                >
-                                    Firefox</a
-                                >
-                            </li>
-                            <li class="list__item">
-                                <a
-                                    class="text-link"
-                                    href="https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css"
-                                    rel="noopener external"
-                                >
-                                    Webkit</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+                        <div class="content-box">
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text"><strong>Content</strong> - text, images, etc</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Padding</strong> - transparent area around the
+                                        content, inside of the box
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Border</strong> - goes around the padding and the
+                                        content
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Margin</strong> - space between boxes
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Fill area</strong> - area that gets filled with
+                                        background color or background image
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
 
-            <section class="page-css__section-css-box-types" id="css-box-types">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Types of boxes</h2>
-                </header>
-                <div class="section-container">
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Block-level elements</h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">Elements are formatted visually as blocks</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Elements occupy 100% of parent element`s width, no matter the
-                                    content
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Elements are stacked vertically by default, one after another
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">The box-model applies as showed earlier</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Default elements: body, main, header, footer, section, nav,
-                                    aside, div, h1-h6, p, ul, ol, li, etc.
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">With CSS: display: block;</p>
-                            </li>
-                        </ul>
-                    </div>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                Content-box - default behavior
+                            </h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        Final element width: left-border + left-padding + width +
+                                        right padding + right border
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Final element height: top-border + top-padding + height +
+                                        bottom-padding + bottom-border
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">With CSS: box-sizing: content-box;</p>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Inline elements</h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">
-                                    Occupies only the space necessary for its content
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Causes no line-breaks after or before the element
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Box model applies in a different way: height and width do not
-                                    apply
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Paddings and margins are applied only horizontally (left and
-                                    right)
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Width and Height are not applies. Paddings and margins only
-                                    horizontally
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    With padding fill area inside elements expanded but not content
-                                    around the box
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Default elements: a, img, strong, em, button, etc
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">With CSS: display: inline;</p>
-                            </li>
-                        </ul>
-                    </div>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Border-box</h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">Final element width: width</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Final element height: height</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">With CSS: box-sizing: border-box;</p>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Inline-block elements</h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">Images has inline-block behavior</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Look like inline from the outside, behaves like block-level on
-                                    inside
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Occupies only content`s space | <strong>inline</strong>
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">Causes no line-breaks | <strong>inline</strong></p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Box-model applies how it does in a block level boxes |
-                                    <strong>block</strong>
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Default elements: img (it`s inline element, but doing like
-                                    inline-block)
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Nice to use it with ::after and ::before pseudo-elements
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">With CSS: display: inline-block;</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="page-css__section-css-elements-flow" id="css-elements-flow">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Elements flow</h2>
-                </header>
-                <div class="section-container">
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Normal flow</h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">Default positioning: position: static</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">Element is "in flow"</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Elements are simply laid out according to their order in the
-                                    HTML code
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Relative positioning</h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">Relative positioning: position: relative;</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    An element with position: relative will maintain its place in
-                                    the document flow, even when you set these values. They will be
-                                    relative to your element's position too.
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">Need for z-index</p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Absolute positioning</h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">Absolute positioning: position: absolute;</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Element is removed from the normal flow: "out of flow"
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Will base the directional values from the relative parent's
-                                    position.
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    No impact on surrounding elements, might overlap them
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    We use top, bottom, left or right to offset the element from its
-                                    relatively positioned container
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">By default relation to viewport</p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Fixed positioning</h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">Fixed positioning: position: fixed;</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    The position: fixed mean fixed to the viewport. We tell it where
-                                    to position itself (top, bottom, right, or left) and it will
-                                    stay there when user scrolling.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Sticky positioning</h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">Sticky positioning: position: sticky;</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    When using position: sticky it won't affect until we define
-                                    offset, like top: 10px. So the element will scroll like others
-                                    until it reaches the offset and then stay on its position. And
-                                    it stay within its parent, once the parent scroll off the page
-                                    it leaves with it.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="page-css__section-css-cascade" id="css-cascade">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Cascade</h2>
-                </header>
-                <div class="section-container">
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">
-                            The cascade algorithm is split into 4 distinct stages
-                        </h3>
-                        <ol class="list">
-                            <li class="list__item">
-                                <p class="text">
-                                    Position and order of appearance: the order of which your CSS
-                                    rules appear
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Specificity: an algorithm which determines which CSS selector
-                                    has the strongest match -
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">User agent stylesheets</h3>
+                            <ul class="list">
+                                <li class="list__item">
                                     <a
                                         class="text-link"
-                                        href="http://specifishity.com/"
+                                        href="https://chromium.googlesource.com/chromium/blink/+/master/Source/core/css/html.css"
                                         rel="noopener external"
                                     >
-                                        specifishity.com</a
+                                        Chromium</a
                                     >
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Origin: the order of when CSS appears and where it comes from,
-                                    whether that is a browser style, CSS from a browser extension,
-                                    or your authored CSS
-                                </p>
-                                <ul class="list">
-                                    <li class="list__item">
-                                        <p class="text">
-                                            <strong>User agent base styles</strong>. These are the
-                                            styles that your browser applies to HTML elements by
-                                            default.
-                                        </p>
-                                    </li>
-                                    <li class="list__item">
-                                        <p class="text">
-                                            <strong>Local user styles</strong>. These can come from
-                                            the operating system level, such as a base font size, or
-                                            a preference of reduced motion. They can also come from
-                                            browser extensions, such as a browser extension that
-                                            allows a user to write their own custom CSS for a
-                                            webpage.
-                                        </p>
-                                    </li>
-                                    <li class="list__item">
-                                        <p class="text">
-                                            <strong>Authored CSS</strong>. The CSS that you author.
-                                        </p>
-                                    </li>
-                                    <li class="list__item">
-                                        <p class="text">
-                                            <strong>Authored !important</strong>. Any !important
-                                            that you add to your authored declarations.
-                                        </p>
-                                    </li>
-                                    <li class="list__item">
-                                        <p class="text">
-                                            <strong>Local user styles !important</strong>. Any
-                                            !important that come from the operating system level, or
-                                            browser extension level CSS.
-                                        </p>
-                                    </li>
-                                    <li class="list__item">
-                                        <p class="text">
-                                            <strong>User agent !important</strong>. Any !important
-                                            that are defined in the default CSS, provided by the
-                                            browser.
-                                        </p>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="list__item">
-                                <p class="text">
-                                    Importance: some CSS rules are weighted more heavily than
-                                    others, especially with the !important rule type
-                                </p>
-                            </li>
-                        </ol>
-                        <p class="text">
-                            Not all CSS rules are calculated the same as each other, or given the
-                            same specificity as each other.
-                        </p>
-                        <p class="text">
-                            The order of importance, from least important, to most important is as
-                            follows:
-                        </p>
-                        <ol class="list">
-                            <li class="list__item">
-                                <p class="text">
-                                    normal rule type, such as <strong>font-size</strong>,
-                                    <strong>background</strong> or <strong>color</strong>
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text"><strong>animation</strong> rule type</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    <strong>!important</strong> rule type (following the same order
-                                    as origin)
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text"><strong>transition</strong> rule type</p>
-                            </li>
-                        </ol>
+                                </li>
+                                <li class="list__item">
+                                    <a
+                                        class="text-link"
+                                        href="https://searchfox.org/mozilla-central/source/layout/style/res/html.css"
+                                        rel="noopener external"
+                                    >
+                                        Firefox</a
+                                    >
+                                </li>
+                                <li class="list__item">
+                                    <a
+                                        class="text-link"
+                                        href="https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css"
+                                        rel="noopener external"
+                                    >
+                                        Webkit</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="page-css__section-css-inheritance" id="css-inheritance">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Inheritance</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">
-                        Properties that can be inherited cascade downwards, and child elements will
-                        get a computed value which represents its parent's value.
-                    </p>
+                <section class="section" id="css-box-types">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Types of boxes</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Block-level elements</h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">Elements are formatted visually as blocks</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Elements occupy 100% of parent element`s width, no matter
+                                        the content
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Elements are stacked vertically by default, one after
+                                        another
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">The box-model applies as showed earlier</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Default elements: body, main, header, footer, section, nav,
+                                        aside, div, h1-h6, p, ul, ol, li, etc.
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">With CSS: display: block;</p>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Inheritance control</h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">The <strong>inherit</strong> keyword</p>
-                                <ul class="list">
-                                    <li class="list__item">
-                                        <p class="text">
-                                            Make any property inherit its parent's computed value
-                                            with the inherit keyword. A useful way to use this
-                                            keyword is to create exceptions.
-                                        </p>
-                                    </li>
-                                </ul>
-                                <pre class="code">
-                                        <code class="code-el">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Inline elements</h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        Occupies only the space necessary for its content
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Causes no line-breaks after or before the element
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Box model applies in a different way: height and width do
+                                        not apply
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Paddings and margins are applied only horizontally (left and
+                                        right)
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Width and Height are not applies. Paddings and margins only
+                                        horizontally
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        With padding fill area inside elements expanded but not
+                                        content around the box
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Default elements: a, img, strong, em, button, etc
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">With CSS: display: inline;</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Inline-block elements</h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">Images has inline-block behavior</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Look like inline from the outside, behaves like block-level
+                                        on inside
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Occupies only content`s space | <strong>inline</strong>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Causes no line-breaks | <strong>inline</strong>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Box-model applies how it does in a block level boxes |
+                                        <strong>block</strong>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Default elements: img (it`s inline element, but doing like
+                                        inline-block)
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Nice to use it with ::after and ::before pseudo-elements
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">With CSS: display: inline-block;</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="css-elements-flow">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Elements flow</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Normal flow</h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">Default positioning: position: static</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Element is "in flow"</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Elements are simply laid out according to their order in the
+                                        HTML code
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Relative positioning</h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">Relative positioning: position: relative;</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        An element with position: relative will maintain its place
+                                        in the document flow, even when you set these values. They
+                                        will be relative to your element's position too.
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Need for z-index</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Absolute positioning</h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">Absolute positioning: position: absolute;</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Element is removed from the normal flow: "out of flow"
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Will base the directional values from the relative parent's
+                                        position.
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        No impact on surrounding elements, might overlap them
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        We use top, bottom, left or right to offset the element from
+                                        its relatively positioned container
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">By default relation to viewport</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Fixed positioning</h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">Fixed positioning: position: fixed;</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        The position: fixed mean fixed to the viewport. We tell it
+                                        where to position itself (top, bottom, right, or left) and
+                                        it will stay there when user scrolling.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Sticky positioning</h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">Sticky positioning: position: sticky;</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        When using position: sticky it won't affect until we define
+                                        offset, like top: 10px. So the element will scroll like
+                                        others until it reaches the offset and then stay on its
+                                        position. And it stay within its parent, once the parent
+                                        scroll off the page it leaves with it.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="css-cascade">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Cascade</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                The cascade algorithm is split into 4 distinct stages
+                            </h3>
+                            <ol class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        Position and order of appearance: the order of which your
+                                        CSS rules appear
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Specificity: an algorithm which determines which CSS
+                                        selector has the strongest match -
+                                        <a
+                                            class="text-link"
+                                            href="http://specifishity.com/"
+                                            rel="noopener external"
+                                        >
+                                            specifishity.com</a
+                                        >
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Origin: the order of when CSS appears and where it comes
+                                        from, whether that is a browser style, CSS from a browser
+                                        extension, or your authored CSS
+                                    </p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                <strong>User agent base styles</strong>. These are
+                                                the styles that your browser applies to HTML
+                                                elements by default.
+                                            </p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">
+                                                <strong>Local user styles</strong>. These can come
+                                                from the operating system level, such as a base font
+                                                size, or a preference of reduced motion. They can
+                                                also come from browser extensions, such as a browser
+                                                extension that allows a user to write their own
+                                                custom CSS for a webpage.
+                                            </p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">
+                                                <strong>Authored CSS</strong>. The CSS that you
+                                                author.
+                                            </p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">
+                                                <strong>Authored !important</strong>. Any !important
+                                                that you add to your authored declarations.
+                                            </p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">
+                                                <strong>Local user styles !important</strong>. Any
+                                                !important that come from the operating system
+                                                level, or browser extension level CSS.
+                                            </p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">
+                                                <strong>User agent !important</strong>. Any
+                                                !important that are defined in the default CSS,
+                                                provided by the browser.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="list__item">
+                                    <p class="text">
+                                        Importance: some CSS rules are weighted more heavily than
+                                        others, especially with the !important rule type
+                                    </p>
+                                </li>
+                            </ol>
+                            <p class="text">
+                                Not all CSS rules are calculated the same as each other, or given
+                                the same specificity as each other.
+                            </p>
+                            <p class="text">
+                                The order of importance, from least important, to most important is
+                                as follows:
+                            </p>
+                            <ol class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        normal rule type, such as <strong>font-size</strong>,
+                                        <strong>background</strong> or <strong>color</strong>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text"><strong>animation</strong> rule type</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>!important</strong> rule type (following the same
+                                        order as origin)
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text"><strong>transition</strong> rule type</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="css-inheritance">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Inheritance</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                Properties that can be inherited cascade downwards, and child
+                                elements will get a computed value which represents its parent's
+                                value.
+                            </p>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Inheritance control</h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">The <strong>inherit</strong> keyword</p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                Make any property inherit its parent's computed
+                                                value with the inherit keyword. A useful way to use
+                                                this keyword is to create exceptions.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <pre class="code">
+                                    <code class="code-el">
 strong {
-font-weight: inherit;
+  font-weight: inherit;
 }
-                                        </code>
-                                    </pre>
-                            </li>
+                                    </code>
+                                </pre>
 
-                            <li class="list__item">
-                                <p class="text">The <strong>initial</strong> keyword</p>
-                                <ul class="list">
-                                    <li class="list__item">
-                                        <p class="text">
-                                            Inheritance can cause problems with elements and initial
-                                            provides a powerful reset option
-                                        </p>
-                                    </li>
-                                </ul>
-                                <pre class="code">
-                                        <code class="code-el">
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">The <strong>initial</strong> keyword</p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                Inheritance can cause problems with elements and
+                                                initial provides a powerful reset option
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <pre class="code">
+                                    <code class="code-el">
 strong {
-font-weight: initial;
+  font-weight: initial;
 }
-                                        </code>
-                                    </pre>
-                            </li>
+                                    </code>
+                                </pre>
 
-                            <li class="list__item">
-                                <p class="text">The <strong>unset</strong> keyword</p>
-                                <ul class="list">
-                                    <li class="list__item">
-                                        <p class="text">
-                                            The unset property behaves differently if a property is
-                                            inheritable or not. If a property is inheritable, the
-                                            unset keyword will be the same as
-                                            <strong>inherit</strong>. If the property is not
-                                            inheritable, the unset keyword is equal to
-                                            <strong>initial</strong>.
-                                        </p>
-                                    </li>
-                                </ul>
-                                <pre class="code">
-                                        <code class="code-el">
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">The <strong>unset</strong> keyword</p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                The unset property behaves differently if a property
+                                                is inheritable or not. If a property is inheritable,
+                                                the unset keyword will be the same as
+                                                <strong>inherit</strong>. If the property is not
+                                                inheritable, the unset keyword is equal to
+                                                <strong>initial</strong>.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <pre class="code">
+                                <code class="code-el">
 /* Global color styles for paragraph in authored CSS */
 
 p {
-margin-top: 2em;
-color: goldenrod;
+  margin-top: 2em;
+  color: goldenrod;
 }
 
 /* The p needs to be reset in asides, so you can use unset */
 
 aside p {
-margin: unset;
-color: unset;
+  margin: unset;
+  color: unset;
 }
-                                        </code>
-                                    </pre>
-                            </li>
-                        </ul>
+                                </code>
+                            </pre>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="page-css__section-css-sizing-units" id="css-sizing-units">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Sizing units</h2>
-                </header>
-                <div class="section-container">
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">
-                            Numbers can also be used in the following places
-                        </h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">
-                                    When setting values for filters: filter: sepia(0.5) applies a
-                                    50% sepia filter to the element
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    When setting opacity: opacity: 0.5 applies a 50% opacity
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">In color channels: rgb(50, 50, 50)</p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    To transform an element: transform: scale(1.2) scales the
-                                    element by 120% of its initial size.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Percentages</h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">
-                                    Set margin or padding as a percentage, they will be a portion of
-                                    the parent element's width, regardless of direction
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <p class="text">
-                                    Set a transform value as a percentage, it is based on the
-                                    element with the transform set.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Absolute lenghths</h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">
-                                    All absolute lengths resolve against the same base, making them
-                                    predictable wherever they're used in your CSS
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <a
-                                    class="text-link"
-                                    href="https://web.dev/learn/css/sizing/#absolute_lengths"
-                                    rel="noopener external"
-                                >
-                                    Absolute lenghts</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Relative lengths</h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">
-                                    A relative length is calculated against a base value, much like
-                                    a percentage. The difference between these and percentages is
-                                    that you can contextually size elements. This means that CSS has
-                                    units such as ch that use the text size as a basis, and vw which
-                                    is based on the width of the viewport (your browser window).
-                                    Relative lengths are particularly useful on the web due to its
-                                    responsive nature.
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <a
-                                    class="text-link"
-                                    href="https://web.dev/learn/css/sizing/#relative_lengths"
-                                    rel="noopener external"
-                                >
-                                    Fonts size relative units</a
-                                >
-                            </li>
-                            <li class="list__item">
-                                <a
-                                    class="text-link"
-                                    href="https://web.dev/learn/css/sizing/#viewport-relative-units"
-                                    rel="noopener external"
-                                >
-                                    Viewport-relative units</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Miscellaneous units</h3>
-                        <ul class="list">
-                            <li class="list__item">
-                                <p class="text">
-                                    There are some other units which have been specified to deal
-                                    with particular types of values.
-                                </p>
-                            </li>
-                            <li class="list__item">
-                                <a
-                                    class="text-link"
-                                    href="https://web.dev/learn/css/sizing/#angle-units"
-                                    rel="noopener external"
-                                >
-                                    Angle units</a
-                                >
-                            </li>
-                            <li class="list__item">
-                                <a
-                                    class="text-link"
-                                    href="https://web.dev/learn/css/sizing/#resolution-units"
-                                    rel="noopener external"
-                                >
-                                    Resolution units</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="page-css__section-css-pseudo-classes" id="css-pseudo-classes">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Pseudo-classes</h2>
-                </header>
-                <div class="section-container">
-                    <ul class="list">
-                        <li class="list__item">
-                            <p class="text">
-                                <strong>li:first-child</strong>,
-                                <strong>li:last-child</strong>
-                            </p>
+                <section class="section" id="css-sizing-units">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Sizing units</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                Numbers can also be used in the following places
+                            </h3>
                             <ul class="list">
                                 <li class="list__item">
                                     <p class="text">
-                                        Only works later if the element is literally the first. The
-                                        best use case is when all elements (children) are tightened.
-                                        Assuming as in lists - li.
-                                    </p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="list__item">
-                            <p class="text"><strong>li:nth-child(n/odd/even)</strong></p>
-                            <p class="text">n can be used in the following two ways:</p>
-                            <ul class="list">
-                                <li class="list__item">
-                                    <p class="text">
-                                        As an integer, for example :nth-child(2), which will result
-                                        in the selection of the second element
+                                        When setting values for filters: filter: sepia(0.5) applies
+                                        a 50% sepia filter to the element
                                     </p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        As a numeric expression, e.g. :nth-child(3n+1), so that the
-                                        selection starts with the first element and continues with
-                                        every third element.
+                                        When setting opacity: opacity: 0.5 applies a 50% opacity
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">In color channels: rgb(50, 50, 50)</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        To transform an element: transform: scale(1.2) scales the
+                                        element by 120% of its initial size.
                                     </p>
                                 </li>
                             </ul>
-                        </li>
+                        </div>
 
-                        <li class="list__item">
-                            <p class="text"><strong>:nth-last-child(-n+3)</strong>,</p>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Percentages</h3>
                             <ul class="list">
                                 <li class="list__item">
                                     <p class="text">
-                                        Selects the third element from the end, and after that then
-                                        every element after that
+                                        Set margin or padding as a percentage, they will be a
+                                        portion of the parent element's width, regardless of
+                                        direction
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Set a transform value as a percentage, it is based on the
+                                        element with the transform set.
                                     </p>
                                 </li>
                             </ul>
-                        </li>
+                        </div>
 
-                        <li class="list__item">
-                            <p class="text"><strong>:nth-of-type(n + 4)</strong>,</p>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Absolute lenghths</h3>
                             <ul class="list">
                                 <li class="list__item">
-                                    <p class="text">starting with the fourth, each successive</p>
+                                    <p class="text">
+                                        All absolute lengths resolve against the same base, making
+                                        them predictable wherever they're used in your CSS
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <a
+                                        class="text-link"
+                                        href="https://web.dev/learn/css/sizing/#absolute_lengths"
+                                        rel="noopener external"
+                                    >
+                                        Absolute lenghts</a
+                                    >
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                        </div>
 
-            <section class="page-css__section-css-pseudo-elements" id="css-pseudo-elements">
-                <header class="section-header">
-                    <h2 class="heading-h2">CSS Pseudo-elements</h2>
-                </header>
-                <div class="section-container">
-                    <ul class="list">
-                        <li class="list__item">
-                            <p class="text">
-                                With CSS: <strong>p::after</strong>, <strong>p::before</strong>,
-                                <strong>p::first-letter</strong>, <strong>p::first-line</strong>,
-                                <strong>::selection</strong>, <strong>::cue</strong>,
-                                <strong>::marker</strong>
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">
-                                It is better to use the css display property with the value
-                                inline-block to set indents, because by standard it is an
-                                <strong>inline</strong>
-                                element.
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">Position using position:absolute, top, etc.</p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">
-                                <strong>p::after</strong> - last child element of p, need content=""
-                                property
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">
-                                <strong>p::before</strong> - first child element of p, need
-                                content="" property
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Relative lengths</h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        A relative length is calculated against a base value, much
+                                        like a percentage. The difference between these and
+                                        percentages is that you can contextually size elements. This
+                                        means that CSS has units such as ch that use the text size
+                                        as a basis, and vw which is based on the width of the
+                                        viewport (your browser window). Relative lengths are
+                                        particularly useful on the web due to its responsive nature.
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <a
+                                        class="text-link"
+                                        href="https://web.dev/learn/css/sizing/#relative_lengths"
+                                        rel="noopener external"
+                                    >
+                                        Fonts size relative units</a
+                                    >
+                                </li>
+                                <li class="list__item">
+                                    <a
+                                        class="text-link"
+                                        href="https://web.dev/learn/css/sizing/#viewport-relative-units"
+                                        rel="noopener external"
+                                    >
+                                        Viewport-relative units</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Miscellaneous units</h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        There are some other units which have been specified to deal
+                                        with particular types of values.
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <a
+                                        class="text-link"
+                                        href="https://web.dev/learn/css/sizing/#angle-units"
+                                        rel="noopener external"
+                                    >
+                                        Angle units</a
+                                    >
+                                </li>
+                                <li class="list__item">
+                                    <a
+                                        class="text-link"
+                                        href="https://web.dev/learn/css/sizing/#resolution-units"
+                                        rel="noopener external"
+                                    >
+                                        Resolution units</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="css-pseudo-classes">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Pseudo-classes</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>li:first-child</strong>,
+                                        <strong>li:last-child</strong>
+                                    </p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                Only works later if the element is literally the
+                                                first. The best use case is when all elements
+                                                (children) are tightened. Assuming as in lists - li.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text"><strong>li:nth-child(n/odd/even)</strong></p>
+                                    <p class="text">n can be used in the following two ways:</p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                As an integer, for example :nth-child(2), which will
+                                                result in the selection of the second element
+                                            </p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">
+                                                As a numeric expression, e.g. :nth-child(3n+1), so
+                                                that the selection starts with the first element and
+                                                continues with every third element.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="list__item">
+                                    <p class="text"><strong>:nth-last-child(-n+3)</strong>,</p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                Selects the third element from the end, and after
+                                                that then every element after that
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="list__item">
+                                    <p class="text"><strong>:nth-of-type(n + 4)</strong>,</p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                starting with the fourth, each successive
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="css-pseudo-elements">
+                    <h2 class="heading-h2 u-margin-bottom-sm">CSS Pseudo-elements</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        With CSS: <strong>p::after</strong>,
+                                        <strong>p::before</strong>,
+                                        <strong>p::first-letter</strong>,
+                                        <strong>p::first-line</strong>,
+                                        <strong>::selection</strong>, <strong>::cue</strong>,
+                                        <strong>::marker</strong>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        It is better to use the css display property with the value
+                                        inline-block to set indents, because by standard it is an
+                                        <strong>inline</strong>
+                                        element.
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Position using position:absolute, top, etc.</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>p::after</strong> - last child element of p, need
+                                        content="" property
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>p::before</strong> - first child element of p, need
+                                        content="" property
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
-        <a class="btn-back-to-top" href="#">&uarr;</a>
+
+        <a class="top-btn" href="#">&uarr;</a>
+
+        <script src="../../js/index.js" defer></script>
     </body>
 </html>

@@ -75,248 +75,278 @@
     </head>
     <body>
         <header class="header">
-            <div class="header-container">
-                <div class="header-container-inner">
-                    <div class="header-box">
-                        <h1 class="heading-h1">
-                            <a class="author-link" href="https://github.com/miezaru">@miezaru</a>
-                            resources
-                            <span class="accent-symbol">/</span>
-                            <span>CSS: Colors</span>
-                        </h1>
-                        <a class="header__home-link" href="../../index.html">Back home</a>
-                    </div>
-                    <p class="header__description">
-                        CSS Color property is used to set the color of HTML elements. This property
-                        is used to set font color, background color, etc. The color of an element
-                        can be defined in the following ways: built-in color, RGB, HEX and HSL
-                        format.
-                    </p>
-                </div>
-                <div class="main-nav__container">
-                    <span class="main-nav__text" id="main-nav-text">jump to:</span>
-                    <nav class="main-nav" aria-labelledby="main-nav-text">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#links">Links</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#about-colors">About colors</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#define-colors">Defining colors</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#greys-colors">Greys colors</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <a class="logo" href="../../index.html">
+                <picture>
+                    <source srcset="../../assets/img/header/header-icon.avif" type="image/avif" />
+                    <source srcset="../../assets/img/header/header-icon.webp" type="image/webp" />
+                    <img
+                        class="logo__img"
+                        src="../../assets/img/header/header-icon.png"
+                        srcset="../../assets/img/header/header-icon.png"
+                        alt="miezaru-dev logo"
+                    />
+                </picture>
+
+                <p class="logo__text">miezaru-dev</p>
+            </a>
         </header>
-        <main class="main grid-page">
-            <section class="page-html__section-links" id="links">
-                <header class="section-header">
-                    <h2 class="heading-h2">Links</h2>
+
+        <section class="section-hero">
+            <nav class="page-nav" aria-labelledby="page-nav-description">
+                <header class="page-nav__header">
+                    <p class="page-nav__description" id="page-nav-description">On this page:</p>
+                    <button class="page-nav__btn" type="button">X</button>
                 </header>
-                <div class="section-container section-container--links">
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Websites</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://yeun.github.io/open-color/"
-                                rel="noopener external"
-                            >
-                                open color</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://tailwindcss.com/docs/customizing-colors"
-                                rel="noopener external"
-                            >
-                                tailwind colors</a
-                            >
-                            <a
-                                class="resources-box__item"
-                                href="https://colorhunt.co/"
-                                rel="noopener external"
-                            >
-                                colorhunt</a
-                            >
-                        </div>
-                    </div>
-                    <div class="resources">
-                        <h3 class="heading-h3 u-margin-bottom-sm">Tools</h3>
-                        <div class="resources-box">
-                            <a
-                                class="resources-box__item"
-                                href="https://maketintsandshades.com/"
-                                rel="noopener external"
-                            >
-                                tints and shades</a
-                            >
-                        </div>
-                    </div>
+                <div class="page-nav__links">
+                    <ul class="page-nav__list">
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#links">Links</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#about-colors">About colors</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#define-colors">Defining colors</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#greys-colors">Greys colors</a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
+            </nav>
+
+            <h1 class="header-description">
+                CSS Color property is used to set the color of HTML elements. This property is used
+                to set font color, background color, etc. The color of an element can be defined in
+                the following ways: built-in color, RGB, HEX and HSL format.
+            </h1>
+        </section>
+
+        <main class="main container-page">
+            <div class="container-page-links">
+                <section class="section" id="links">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Links</h2>
+                    <div class="container-section">
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Websites</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://yeun.github.io/open-color/"
+                                    rel="noopener external"
+                                >
+                                    open color</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://tailwindcss.com/docs/customizing-colors"
+                                    rel="noopener external"
+                                >
+                                    tailwind colors</a
+                                >
+                                <a
+                                    class="resources-box__item"
+                                    href="https://colorhunt.co/"
+                                    rel="noopener external"
+                                >
+                                    colorhunt</a
+                                >
+                            </div>
+                        </div>
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Tools</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://maketintsandshades.com/"
+                                    rel="noopener external"
+                                >
+                                    tints and shades</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
             <div class="line">&nbsp;</div>
 
-            <section class="page-css__section-about-colors" id="about-colors">
-                <header class="section-header">
-                    <h2 class="heading-h2">About colors</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">
-                        RGB Model: Every color can be represented by a combination of
-                        <strong>red</strong>, <strong>green</strong> and <strong>blue</strong>.
-                    </p>
-
-                    <p class="text">
-                        Each of the 3 base colors can take a value between 0 and 255, which leads to
-                        16.8 million different colors
-                    </p>
-
-                    <p class="text u-text-align-c">«Young guys can be messy rascals»</p>
-                    <picture>
-                        <source type="image/avif" srcset="../../assets/img/rgb-model-wheel.avif" />
-                        <source type="image/webp" srcset="../../assets/img/rgb-model-wheel.webp" />
-                        <img
-                            class="image-half"
-                            src="../../assets/img/rgb-model-wheel.png"
-                            alt="RGB model wheel"
-                            height="917"
-                            width="918"
-                            srcset="../../assets/img/rgb-model-wheel.png"
-                        />
-                    </picture>
-
-                    <p class="text">Color keywords:</p>
-                    <ul class="list">
-                        <li class="list__item">
-                            <a
-                                class="text-link"
-                                href="https://austingil.com/css-named-colors/"
-                                rel="noopener external"
-                            >
-                                148 named colors in CSS</a
-                            >
-                        </li>
-                        <li class="list__item">
+            <div class="container-page-sections">
+                <section class="section" id="about-colors">
+                    <h2 class="heading-h2 u-margin-bottom-sm">About colors</h2>
+                    <div class="container-section">
+                        <div class="content-box">
                             <p class="text">
-                                <strong>transparent</strong> is a fully transparent color. It is
-                                also the initial value of background-color
+                                RGB Model: Every color can be represented by a combination of
+                                <strong>red</strong>, <strong>green</strong> and
+                                <strong>blue</strong>.
                             </p>
-                        </li>
-                        <li class="list__item">
+
                             <p class="text">
-                                <strong>currentColor</strong> is the contextual computed dynamic
-                                value of the color property. If you have a text color of red and
-                                then set the border-color to be currentColor, it will also be red.
-                                If the element that you define currentColor on doesn't have a value
-                                for color defined, currentColor will be computed by the cascade
-                                instead
+                                Each of the 3 base colors can take a value between 0 and 255, which
+                                leads to 16.8 million different colors
                             </p>
-                        </li>
-                        <li class="list__item">
-                            <a
-                                class="text-link"
-                                href="https://www.w3.org/wiki/CSS/Properties/color/keywords#System_Colors"
-                                rel="noopener external"
-                            >
-                                System colors</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </section>
 
-            <section class="page-css__section-define-colors" id="define-colors">
-                <header class="section-header">
-                    <h2 class="heading-h2">Defining colors in CSS</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">RGB/RGBA Notation</p>
+                            <p class="text u-text-align-c">«Young guys can be messy rascals»</p>
+                            <picture class="u-flex-center">
+                                <source
+                                    srcset="../../assets/img/css/rgb-model-wheel.avif"
+                                    type="image/avif"
+                                />
+                                <source
+                                    srcset="../../assets/img/css/rgb-model-wheel.webp"
+                                    type="image/webp"
+                                />
+                                <img
+                                    class="u-image-half"
+                                    src="../../assets/img/css/rgb-model-wheel.png"
+                                    srcset="../../assets/img/css/rgb-model-wheel.png"
+                                    alt="RGB model wheel"
+                                    height="917"
+                                    width="918"
+                                />
+                            </picture>
+                        </div>
+                        <div class="content-box">
+                            <p class="text">Color keywords:</p>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <a
+                                        class="text-link"
+                                        href="https://austingil.com/css-named-colors/"
+                                        rel="noopener external"
+                                    >
+                                        148 named colors in CSS</a
+                                    >
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>transparent</strong> is a fully transparent color.
+                                        It is also the initial value of background-color
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>currentColor</strong> is the contextual computed
+                                        dynamic value of the color property. If you have a text
+                                        color of red and then set the border-color to be
+                                        currentColor, it will also be red. If the element that you
+                                        define currentColor on doesn't have a value for color
+                                        defined, currentColor will be computed by the cascade
+                                        instead
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <a
+                                        class="text-link"
+                                        href="https://www.w3.org/wiki/CSS/Properties/color/keywords#System_Colors"
+                                        rel="noopener external"
+                                    >
+                                        System colors</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
 
-                    <ul class="list">
-                        <li class="list__item">
-                            <p class="text">Regular RGB model, and with transparency</p>
+                <section class="section" id="define-colors">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Defining colors in CSS</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">RGB/RGBA Notation</h3>
+
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">Regular RGB model, and with transparency</p>
+                                </li>
+                            </ul>
                             <pre class="code">
-                                    <code class="code-el">
+                                <code class="code-el">
 color: rgb(0 255 255);
 color: rgba(0 255 255 / 0.3)
-                                    </code>
-                                </pre>
-                        </li>
-                    </ul>
+                                </code>
+                            </pre>
+                        </div>
 
-                    <p class="text">HEXADECIMAL Notation</p>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">HEXADECIMAL Notation</h3>
 
-                    <ul class="list">
-                        <li class="list__item">
-                            <p class="text">
-                                Instead of using scale from 0 to 255, we go from 0 to ff (255 in
-                                hexadecimal numbers)
-                            </p>
-
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        Instead of using scale from 0 to 255, we go from 0 to ff
+                                        (255 in hexadecimal numbers)
+                                    </p>
+                                </li>
+                            </ul>
                             <pre class="code">
-                                    <code class="code-el">
+                                <code class="code-el">
 color: #00ffff;
-                                    </code>
-                                </pre>
-                        </li>
-                        <li class="list__item">
-                            <p class="text">Shorthand, when all colors are identical pairs</p>
+                                </code>
+                            </pre>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        Shorthand, when all colors are identical pairs
+                                    </p>
+                                </li>
+                            </ul>
                             <pre class="code">
-                                    <code class="code-el">
+                                <code class="code-el">
 color: #0ff;
-                                    </code>
-                                </pre>
-                        </li>
+                                </code>
+                            </pre>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        Also have
+                                        <a
+                                            class="text-link"
+                                            href="https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4"
+                                            rel="noopener external"
+                                        >
+                                            transparency</a
+                                        >
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
 
-                        <li class="list__item">
-                            <p class="text">
-                                Also have
-                                <a
-                                    class="text-link"
-                                    href="https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4"
-                                    rel="noopener external"
-                                >
-                                    transparency</a
-                                >
-                            </p>
-                        </li>
-                    </ul>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">HSL</h3>
 
-                    <p class="text">HSL</p>
-
-                    <ul class="list">
-                        <li class="list__item">
-                            <p class="text">Hue saturation lightness / alpha</p>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">Hue saturation lightness / alpha</p>
+                                </li>
+                            </ul>
                             <pre class="code">
-                                    <code class="code-el">
+                                <code class="code-el">
 color: hsl(315deg 40% 60%);
 color: hsla(359deg 70% 50% / 0.5);
-                                    </code>
-                                </pre>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
 
-            <section class="page-css__section-greys-colors" id="greys-colors">
-                <header class="section-header">
-                    <h2 class="heading-h2">Shades of grey</h2>
-                </header>
-                <div class="section-container">
-                    <p class="text">
-                        When colors in all 3 channels are the same, we get a grey color
-                    </p>
-                    <p class="text">There are 256 pure grays to choose from</p>
-                </div>
-            </section>
+                <section class="section" id="greys-colors">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Shades of grey</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                When colors in all 3 channels are the same, we get a grey color
+                            </p>
+                            <p class="text">There are 256 pure grays to choose from</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
-        <a class="btn-back-to-top" href="#">&uarr;</a>
+
+        <a class="top-btn" href="#">&uarr;</a>
+
+        <script src="../../js/index.js" defer></script>
     </body>
 </html>
