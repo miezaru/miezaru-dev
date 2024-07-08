@@ -2,6 +2,7 @@
     position: fixed;
     inset-block-start: 20%;
     inset-inline-end: 0;
+    z-index: 20;
     display: inline-block;
     inline-size: 20rem;
     overflow: hidden;
@@ -10,7 +11,8 @@
     border-inline-end: 0 solid transparent;
     border-start-start-radius: var(--br-radius-3);
     border-end-start-radius: var(--br-radius-3);
-    box-shadow: 0 0.2rem 2rem var(--grey-dark);
+    transition: var(--tr-medium);
+    transform: translateX(100%);
 
     &__header {
         display: flex;
@@ -31,8 +33,10 @@
         block-size: 2.4rem;
         color: inherit;
         cursor: pointer;
-        background-color: transparent;
+        background-color: var(--accent-dark);
+        border: none;
         border-radius: var(--br-radius-3);
+        box-shadow: 0 0 0.3rem var(--accent);
         transition: var(--tr-small);
 
         &:hover {
@@ -67,4 +71,30 @@
             border-color: var(--grey-dark);
         }
     }
+}
+
+.open-page-menu-btn {
+    position: fixed;
+    inset-block-start: 20%;
+    inset-inline-end: 0;
+    z-index: 10;
+    inline-size: 3.6rem;
+    block-size: 3.6rem;
+    color: var(--accent-grey-light);
+    cursor: pointer;
+    background-color: var(--accent-soft);
+    border: none;
+    border-start-start-radius: 50%;
+    border-end-start-radius: 50%;
+    transition: var(--tr-small);
+
+    &:hover,
+    &:active {
+        background-color: var(--accent);
+    }
+}
+
+.page-menu-open .page-nav {
+    box-shadow: 0 0.2rem 2rem var(--grey-dark);
+    transform: translateX(0);
 }

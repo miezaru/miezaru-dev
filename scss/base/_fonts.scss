@@ -26,7 +26,7 @@ $dankmono-font-path: '#{$font-path}/DankMono' !default;
 );
 @include font-face(
     'Rubik',
-    '#{$rubik-font-path}/ORubikRegularItalic/RubikRegularItalic',
+    '#{$rubik-font-path}/RubikItalic/RubikItalic',
     400,
     italic,
     $exts: woff2 woff ttf eot

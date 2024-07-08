@@ -3,6 +3,8 @@
     inset-block-start: 0;
     inset-inline-start: 0;
     z-index: 999;
+    display: flex;
+    justify-content: space-between;
     block-size: 6rem;
     background-image: linear-gradient(to right bottom, var(--black-90), var(--black-90)),
         image-set(
