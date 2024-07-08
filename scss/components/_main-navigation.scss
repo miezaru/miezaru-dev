@@ -1,10 +1,10 @@
 .main-nav {
     position: absolute;
     inset-block-start: -12px;
-    inset-inline-start: calc(-35vw + 60px);
+    inset-inline-start: calc(-35vw + 62px);
     z-index: 999;
     inline-size: 35vw;
-    block-size: 100vh;
+    block-size: calc(100vh + 10px);
     padding: 2.4rem;
     overflow: hidden;
     color: var(--accent-grey-light);
@@ -18,13 +18,13 @@
     transform: translateX(35vw) translateY(-1.8rem);
 
     @include res-tab-port {
-        inset-inline-start: calc(-70vw + 60px);
+        inset-inline-start: calc(-70vw + 54px);
         inline-size: 70vw;
         transform: translateX(70vw) translateY(-1.8rem);
     }
 
     @include res-phone {
-        inset-inline-start: calc(-100vw + 60px);
+        inset-inline-start: calc(-100vw + 48px);
         inline-size: 100vw;
         transform: translateX(100vw) translateY(-1.8rem);
     }

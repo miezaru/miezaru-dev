@@ -14,18 +14,6 @@
         );
     background-position: top;
     background-size: cover;
-
-    &::after {
-        position: absolute;
-        inset-block-end: 0;
-        inset-inline-start: 0;
-        z-index: -1;
-        display: block;
-        inline-size: 100%;
-        block-size: 3px;
-        content: '';
-        box-shadow: 0 0 1rem var(--accent-dark-black);
-    }
 }
 
 .header-description {

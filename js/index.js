@@ -81,11 +81,9 @@ const pageNavBtn = document.querySelector('.page-nav__btn');
 const openPageMenuBtn = document.querySelector('.open-page-menu-btn');
 
 pageNavBtn.addEventListener('click', () => {
-  console.log('helo');
   sectionHeroEl.classList.remove('page-menu-open');
 });
 
 openPageMenuBtn.addEventListener('click', () => {
-  console.log('hellllllo');
   sectionHeroEl.classList.add('page-menu-open');
 });

@@ -1,3 +1,9 @@
+* {
+    &:focus-visible {
+        outline: 8px solid var(--accent);
+    }
+}
+
 html {
     overflow-x: clip;
 }

@@ -7,10 +7,13 @@
     inline-size: 20rem;
     overflow: hidden;
     color: var(--grey-dark);
+    pointer-events: none;
+    visibility: hidden;
     background-color: var(--accent-soft-light);
     border-inline-end: 0 solid transparent;
     border-start-start-radius: var(--br-radius-3);
     border-end-start-radius: var(--br-radius-3);
+    opacity: 0;
     transition: var(--tr-medium);
     transform: translateX(100%);
 
@@ -82,7 +85,7 @@
     block-size: 3.6rem;
     color: var(--accent-grey-light);
     cursor: pointer;
-    background-color: var(--accent-soft);
+    background-color: var(--accent-dark);
     border: none;
     border-start-start-radius: 50%;
     border-end-start-radius: 50%;
@@ -90,11 +93,14 @@
 
     &:hover,
     &:active {
-        background-color: var(--accent);
+        background-color: var(--accent-soft);
     }
 }
 
 .page-menu-open .page-nav {
+    pointer-events: all;
+    visibility: visible;
     box-shadow: 0 0.2rem 2rem var(--grey-dark);
+    opacity: 1;
     transform: translateX(0);
 }
