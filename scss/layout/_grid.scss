@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
     gap: 5.6rem;
+
+    @include res-tab-land {
+        gap: 3.2rem;
+    }
 }
 
 .container-home {
@@ -16,6 +20,37 @@
 
     & .container-section {
         padding: 2.4rem;
+    }
+
+    @include res-tab-land {
+        grid-template-areas:
+            '. html  tools  .'
+            '. css tools  .'
+            '. sass  git  .'
+            '. js  react  . ';
+        grid-template-columns: minmax(1.6rem, 1fr) repeat(2, minmax(auto, 69.6rem)) minmax(
+                1.6rem,
+                1fr
+            );
+        gap: 3.2rem 2.4rem;
+    }
+
+    @include res-tab-port {
+        grid-template-areas:
+            '. html .'
+            '. css .'
+            '. tools .'
+            '. sass .'
+            '. git .'
+            '. js .'
+            '. react .';
+        grid-template-columns: 1.6rem 1fr 1.6rem;
+        gap: 3.2rem 2.4rem;
+    }
+
+    @include res-small-phone {
+        grid-template-columns: 0.8rem 1fr 0.8rem;
+        gap: 3.2rem 1.2rem;
     }
 }
 
@@ -76,6 +111,14 @@
     }
 }
 
+.main {
+    padding-block: 12.8rem;
+
+    @include res-tab-land {
+        padding-block: 6.4rem;
+    }
+}
+
 .container-page {
     display: grid;
     grid-template-columns:
@@ -84,6 +127,25 @@
         [full-end];
     grid-auto-flow: dense;
     gap: 6.4rem 4.8rem;
+
+    @include res-tab-land {
+        gap: 3.2rem 2.4rem;
+    }
+
+    @include res-tab-port {
+        grid-template-columns:
+            [full-start] 1.6rem [mid-start] 1fr
+            [mid-end] 1.6rem
+            [full-end];
+    }
+
+    @include res-phone {
+        grid-template-columns:
+            [full-start] 0.8rem [mid-start] 1fr
+            [mid-end] 0.8rem
+            [full-end];
+        gap: 0.8em 0.6rem;
+    }
 }
 
 .container-page-links {
@@ -101,6 +163,13 @@
         [mid-end];
     grid-column: mid-start / mid-end;
     gap: 6.4rem 4.8rem;
+
+    @include res-tab-port {
+        grid-template-columns:
+            [mid-start] 1fr
+            [mid-end];
+        gap: 3.2rem 0;
+    }
 }
 
 .line {

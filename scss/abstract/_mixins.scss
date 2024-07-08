@@ -54,3 +54,46 @@
         font-display: swap;
     }
 }
+
+// media queries
+@mixin res-small-phone {
+    @media (max-width: 22.5em) {
+        // 360px
+        @content;
+    }
+}
+
+@mixin res-phone {
+    @media (max-width: 37.5em) {
+        // 600px
+        @content;
+    }
+}
+
+@mixin res-tab-port {
+    @media (max-width: 56.25em) {
+        // 900px
+        @content;
+    }
+}
+
+@mixin res-tab-land {
+    @media (max-width: 75em) {
+        // 1200px
+        @content;
+    }
+}
+
+@mixin res-desktop {
+    @media (max-width: 81.25em) {
+        // 1300px
+        @content;
+    }
+}
+
+@mixin res-big-desktop {
+    @media (max-width: 118.75em) {
+        // 1900px
+        @content;
+    }
+}

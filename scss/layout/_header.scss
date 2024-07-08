@@ -14,6 +14,18 @@
         );
     background-position: top;
     background-size: cover;
+
+    &::after {
+        position: absolute;
+        inset-block-end: 0;
+        inset-inline-start: 0;
+        z-index: -1;
+        display: block;
+        inline-size: 100%;
+        block-size: 3px;
+        content: '';
+        box-shadow: 0 0 1rem var(--accent-dark-black);
+    }
 }
 
 .header-description {
@@ -24,6 +36,11 @@
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--accent-grey-light);
+
+    @include res-tab-port {
+        inset-inline-start: 2.4rem;
+        inline-size: 60%;
+    }
 }
 
 .section-hero {
@@ -37,4 +54,8 @@
         );
     background-position: center;
     background-size: cover;
+
+    @include res-tab-port {
+        block-size: calc(100vh - 6rem);
+    }
 }

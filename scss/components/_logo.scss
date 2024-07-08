@@ -17,6 +17,10 @@
         border: 3px solid var(--accent-soft);
         border-radius: var(--br-radius-3);
         transition: var(--tr-medium);
+
+        @include res-tab-port {
+            inset-inline-start: 2.4rem;
+        }
     }
 
     &:hover,
