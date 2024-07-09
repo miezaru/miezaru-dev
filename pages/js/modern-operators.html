@@ -1,0 +1,1082 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript - Modern Operators | Miezaru</title>
+
+        <!--! meta -->
+        <meta name="author" content="Artem 'Miezaru' Usatyi | miezaruexpr@gmail.com" />
+        <meta
+            name="description"
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Modern Operators."
+        />
+
+        <!--! Open Graph |  -->
+        <!--* Facebook Meta Tags -->
+        <meta
+            content="https://miezaru-dev.netlify.app/pages/js/modern-operators"
+            property="og:url"
+        />
+        <meta content="website" property="og:type" />
+        <meta content="JavaScript - Modern Operators | Miezaru.dev" property="og:title" />
+        <meta
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Modern Operators."
+            property="og:description"
+        />
+        <meta content="../../assets/og/waves.jpeg" property="og:image:url" />
+        <meta content="../../assets/og/waves.jpeg" property="og:image" />
+        <meta content="Waves in dark colours" property="og:image:alt" />
+        <meta content="image/jpeg" property="og:image:type" />
+        <meta content="800" property="og:image:width" />
+        <meta content="418" property="og:image:height" />
+
+        <!--* Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            content="https://miezaru-dev.netlify.app/pages/js/modern-operators"
+            property="twitter:url"
+        />
+        <meta name="twitter:title" content="JavaScript - Modern Operators | Miezaru.dev" />
+        <meta
+            name="twitter:description"
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Modern Operators."
+        />
+        <meta name="twitter:image:src" content="../../assets/og/waves.jpeg" />
+        <meta name="twitter:image" content="../../assets/og/waves.jpeg" />
+        <meta name="twitter:image:alt" content="Waves in dark colours" />
+        <meta name="twitter:creator" content="@miezaruexpr" />
+        <!-- <meta content="miezaru.dev" property="twitter:domain" /> -->
+        <!-- <meta name="twitter:site" content="@miezaruexpr"> -->
+
+        <!--! manifest  -->
+        <link href="../../site.webmanifest" rel="manifest" />
+
+        <!--! icons -->
+        <link
+            href="../../assets/manifest/apple-touch-icon.png"
+            rel="apple-touch-icon"
+            sizes="180x180"
+        />
+        <link
+            type="image/png"
+            href="../../assets/manifest/favicon-32x32.png"
+            rel="icon"
+            sizes="32x32"
+        />
+        <link
+            type="image/png"
+            href="../../assets/manifest/favicon-16x16.png"
+            rel="icon"
+            sizes="16x16"
+        />
+        <link href="../../assets/manifest/favicon.ico" rel="shortcut icon" />
+        <meta name="apple-mobile-web-app-title" content="miezaru-dev" />
+        <meta name="application-name" content="miezaru-dev" />
+        <meta name="msapplication-TileColor" content="#333333" />
+        <meta name="msapplication-config" content="../../browserconfig.xml" />
+        <meta name="theme-color" content="#333333" />
+
+        <link href="../../css/min/main-min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="header">
+            <a class="logo" href="../../index.html">
+                <picture>
+                    <source srcset="../../assets/img/header/header-icon.avif" type="image/avif" />
+                    <source srcset="../../assets/img/header/header-icon.webp" type="image/webp" />
+                    <img
+                        class="logo__img"
+                        src="../../assets/img/header/header-icon.png"
+                        srcset="../../assets/img/header/header-icon.png"
+                        alt="miezaru-dev logo"
+                    />
+                </picture>
+
+                <p class="logo__text">miezaru-dev</p>
+            </a>
+
+            <span>&nbsp;</span>
+
+            <div class="main-nav__container">
+                <button class="main-nav__btn" type="button" aria-labelledby="main-nav-heading">
+                    <span class="main-nav__symbol">&nbsp;</span>
+                </button>
+
+                <nav class="main-nav">
+                    <p class="main-nav__heading" id="main-nav-heading">Main menu</p>
+                    <p class="main-nav__description">On this page:</p>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#links">Links</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#destructuring">Destructuring</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#spread-and-rest-operators">
+                                Spread and rest operators</a
+                            >
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#short-circuiting">Short circuiting</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#nullish-coalescing">
+                                Nullish coalescing</a
+                            >
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#logical-assignment">
+                                Logical assignment</a
+                            >
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#enhanced-object-literals">
+                                Enhanced object literals</a
+                            >
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#optional-chaining">
+                                Optional chaining</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="section-hero">
+            <nav class="page-nav" aria-labelledby="page-nav-description">
+                <header class="page-nav__header">
+                    <p class="page-nav__description" id="page-nav-description">On this page:</p>
+                    <button class="page-nav__btn" type="button">X</button>
+                </header>
+                <div class="page-nav__links">
+                    <ul class="page-nav__list">
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#links">Links</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#destructuring">Destructuring</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#spread-and-rest-operators">
+                                Spread and rest operators</a
+                            >
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#short-circuiting">Short circuiting</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#nullish-coalescing">
+                                Nullish coalescing</a
+                            >
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#logical-assignment">
+                                Logical assignment</a
+                            >
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#enhanced-object-literals">
+                                Enhanced object literals</a
+                            >
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#optional-chaining">
+                                Optional chaining</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <button class="open-page-menu-btn" type="button"><<</button>
+
+            <h1 class="header-description">
+                Javascript operators are used to perform different types of mathematical and logical
+                computations.
+            </h1>
+        </section>
+
+        <main class="main container-page">
+            <div class="container-page-links">
+                <section class="section" id="links">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Links</h2>
+                    <div class="container-section">
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Wiki</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators"
+                                    rel="noopener external"
+                                >
+                                    mdn operators</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="line">&nbsp;</div>
+
+            <div class="container-page-sections">
+                <section class="section" id="destructuring">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Destructuring</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                The destructuring assignment syntax is a JavaScript expression that
+                                makes it possible to unpack values from arrays, or properties from
+                                objects, into distinct variables.
+                            </p>
+                        </div>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Destructuring arrays</h3>
+                            <p class="text">
+                                <a
+                                    class="text-link"
+                                    href="https://jsfiddle.net/Miezaru/aq1z0ug2/6/"
+                                    rel="noopener external"
+                                >
+                                    Destructuring arrays fiddle</a
+                                >
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+const arr = [2, 3, 4];
+const a = arr[0];
+const b = arr[1];
+const c = arr[2];
+
+const [x, y, z] = arr;
+console.log(x, y, z); // 2 3 4
+console.log(arr); // [2, 3, 4] - do nothing to original array
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                Skip element in the middle
+                            </h4>
+                            <pre class="code">
+                                <code class="code-el">
+const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+};
+
+let [first, , third] = restaurant.categories;
+console.log(first, third); // Italian Vegetarian
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Destruction trick</h4>
+                            <pre class="code">
+                                <code class="code-el">
+[first, third] = [third, first];
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                Receive 2 return values from a function
+                            </h4>
+                            <pre class="code">
+                                <code class="code-el">
+console.log(restaurant.order(2, 0)); // ['Garlic Bread', 'Pizza']
+const [starter, main] = restaurant.order(2, 0);
+console.log(starter, main);
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Nested destructuring</h4>
+                            <pre class="code">
+                                <code class="code-el">
+const nested = [2, 4, [5, 6]];
+
+const [i, , j] = nested;
+console.log(i, j); //2 [5, 6]
+
+const [l, , [n, k]] = nested;
+console.log(l, n, k); // 2 5 6
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Default values</h4>
+                            <pre class="code">
+                                <code class="code-el">
+const [p, q, r] = [8, 9];
+console.log(p, q, r); // 8 9 undefined
+
+const [d = 1, s = 1, v = 1] = [8, 9];
+console.log(d, s, v); // 8 9 1
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Destructuring objects</h3>
+                            <p class="text">
+                                <a
+                                    class="text-link"
+                                    href="https://jsfiddle.net/Miezaru/Ldz7vpfm/1/"
+                                    rel="noopener external"
+                                >
+                                    Destructuring objects fiddle</a
+                                >
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+
+  openingHours: {
+  thu: {
+    open: 12,
+    close: 22,
+  },
+  fri: {
+    open: 11,
+    close: 23,
+  },
+  sat: {
+    open: 0, // Open 24 hours
+    close: 24,
+  },
+},
+
+order: function (starterIndex, mainIndex) {
+  return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+},
+
+//_ Destracturing function parameters
+orderDelivery: function ({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
+  console.log(starterIndex, mainIndex, time, address);
+  console.log(
+    `Order received: ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+    );
+  },
+};
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                The order of the elements in objects does not matter
+                            </h4>
+                            <pre class="code">
+                                <code class="code-el">
+const { name, openingHours, categories } = restaurant;
+console.log(name, openingHours, categories);
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                Get objects properties in variables
+                            </h4>
+                            <pre class="code">
+                                <code class="code-el">
+let { name: restaurantName, openingHours: hours, categories: tags } = restaurant;
+console.log(restaurantName, hours, tags);
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Default values</h4>
+                            <pre class="code">
+                                <code class="code-el">
+const { menu = [], starterMenu: starters = [] } = restaurant;
+console.log(menu, starters);
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                Mutating variables when destructuring objects
+                            </h4>
+                            <pre class="code">
+                                <code class="code-el">
+let a = 111;
+let b = 999;
+const obj = { a: 23, b: 7, c: 14 };
+
+// {a, b} = obj; // syntax error, unexpected token =
+({ a, b } = obj);
+console.log(a, b); // 23 7
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Nested objects</h4>
+                            <pre class="code">
+                                <code class="code-el">
+/*
+const { fri } = openingHours;
+console.log(fri); */ { close: 23, open: 11 }
+
+/*
+const {
+  fri: { open, close },
+} = openingHours;
+console.log(open, close); */ // 11 23
+
+const {
+  fri: { open: o, close: c },
+} = openingHours;
+console.log(o, c); // 11 23
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                Object in a function like a parameter (watch function with its
+                                default parameters)
+                            </h4>
+                            <pre class="code">
+                                <code class="code-el">
+restaurant.orderDelivery({
+  time: '22:30',
+  address: 'Via del Sole, 21',
+  mainIndex: 2,
+  starterIndex: 2,
+});
+
+restaurant.orderDelivery({
+  address: 'Via del Sole, 21',
+  starterIndex: 2,
+});
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="spread-and-rest-operators">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Spread and rest operators</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                In modern JavaScript, the spread and rest operators are
+                                indispensable tools for simplifying array manipulation and function
+                                parameters. These operators provide elegant solutions for tasks like
+                                array expansion and function arguments handling.
+                            </p>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Spread operator</h3>
+                            <p class="text">
+                                <a
+                                    class="text-link"
+                                    href="https://jsfiddle.net/Miezaru/w8gefh2q/"
+                                    rel="noopener external"
+                                >
+                                    Spead operator fiddle</a
+                                >
+                            </p>
+                            <h4 class="heading-h4 u-margin-bottom-sm">Make new array (bad way)</h4>
+                            <pre class="code">
+                                <code class="code-el">
+const arr = [7, 8, 8];
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Make new array (good way)</h4>
+                            <pre class="code">
+                                <code class="code-el">
+const newArr = [1, 2, ...arr];
+console.log(newArr);
+console.log(...newArr); // 1 2 7 8 9
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
+                                </code>
+                            </pre>
+
+                            <p class="text">
+                                Spread operator takes all elements of the array and doesn't create
+                                new variables
+                            </p>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Shallow copy of an array</h4>
+                            <p class="text">
+                                Shallow copy means that it will copy only the top values inside an
+                                array. So if you had an object as an value in your array, that
+                                object will be the same object in both arrays. It will copy just
+                                it's reference.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+const mainMenuCopy = [...restaurant.mainMenu];
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Join 2 arrays</h4>
+                            <pre class="code">
+                                <code class="code-el">
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(menu);
+                                </code>
+                            </pre>
+
+                            <p class="text">
+                                Spead operator works not only on arrays, but on all iterables
+                            </p>
+
+                            <p class="text">Iterables: arrays, strings, maps, sets. NOT objects</p>
+                            <pre class="code">
+                                <code class="code-el">
+const str = 'Artem';
+const letters = [...str, '', 'U.'];
+console.log(letters);
+console.log(...str);
+                                </code>
+                            </pre>
+
+                            <p class="text">
+                                Always works when we past arguments in to the function or when we
+                                build a new array
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+// console.log(`${...str} Usatyi`); // Error
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                Real world example, spreated by coma igredients as a parameters
+                            </h4>
+
+                            <pre class="code">
+                                <code class="code-el">
+const ingredients = [
+  prompt("Let's, make pasta! Ingredient 1?"),
+  prompt("Let's, make pasta! Ingredient 2?"),
+  prompt("Let's, make pasta! Ingredient 3?"),
+];
+console.log(ingredients);
+restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2], ingredients[3]);
+restaurant.orderPasta(...ingredients);
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Copy objects (top level)</h4>
+                            <p class="text">
+                                Objects (object.assign() - old way to copy objects (top level
+                                properties))
+                            </p>
+
+                            <pre class="code">
+                                <code class="code-el">
+const newRestourant = { foundedIn: 1998, ...restaurant, founder: 'Guiseppe' };
+console.log(newRestourant);
+
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name = 'Ristorante Roma';
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
+
+restaurantCopy.mainMenu.push('Riskard');
+console.log(restaurantCopy);
+console.log(restaurant);
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Rest operator</h3>
+
+                            <p class="text">
+                                <a
+                                    class="text-link"
+                                    href="https://jsfiddle.net/Miezaru/mzpoLvua/"
+                                    rel="noopener external"
+                                >
+                                    Rest operator fiddle</a
+                                >
+                            </p>
+
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        Spread operator using when we write values or variable names
+                                        separated by commas
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Rest of the elements, not including skipping</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Rest is opposite of spread</p>
+                                </li>
+                            </ul>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                SPREAD, because on RIGHT side of =
+                            </h4>
+                            <pre class="code">
+                                <code class="code-el">
+const arr = [1, 2, ...[3, 4]];
+console.log(arr);
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                REST, because on LEFT side of =
+                            </h4>
+                            <pre class="code">
+                                <code class="code-el">
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Rest must be last</h4>
+                            <pre class="code">
+                                <code class="code-el">
+// const [pizza, , risotto, ...otherFood, bread] // error
+const [pizza, , risotto, ...otherFood] = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(pizza, risotto, ...otherFood);
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Objects</h4>
+                            <pre class="code">
+                                <code class="code-el">
+const { sat, ...weekDays } = restaurant.openingHours;
+console.log(sat, weekDays);
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Functions</h4>
+                            <p class="text">
+                                We can pass different number of arguments with rest operator
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+const add = function (...numbers) {
+  let sum = 0;
+  numbers.forEach(function (i) {
+    sum += i;
+  });
+  console.log(sum);
+};
+
+add(2, 3);
+add(5, 3, 7, 2);
+add(2, 3, 3, 56, 743, 2, 32, 56);
+
+const x = [23, 5, 7];
+add(...x);
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Call method</h4>
+                            <p class="text">
+                                We can pass different number of arguments with rest operator
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+//_ Method with rest operator
+orderPizza: function (mainIngerient, ...otherIngredients) {
+  console.log(mainIngerient, otherIngredients);
+},
+
+// call method
+restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
+restaurant.orderPizza('mushrooms');
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="short-circuiting">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Short circuiting && and ||</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                In JavaScript, understanding truthy and falsy values is fundamental
+                                to writing efficient and concise code. Combined with the concept of
+                                short-circuiting, developers can write elegant solutions to common
+                                programming challenges.
+                            </p>
+
+                            <p class="text">
+                                Short-circuiting - Use <strong>ANY</strong> data type, return
+                                <strong>ANY</strong> type
+                            </p>
+
+                            <p class="text">
+                                <a
+                                    class="text-link"
+                                    href="https://jsfiddle.net/Miezaru/59xfv7wn/7/"
+                                    rel="noopener external"
+                                >
+                                    Short circuiting fiddle</a
+                                >
+                            </p>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">OR ||</h3>
+
+                            <p class="text">
+                                OR || - first true or (if all false) last false values
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+console.log(3 || 'Artem'); // 3
+console.log('' || 'Artem'); // 'Artem'
+console.log(true || 0); // true
+console.log(undefined || null); // null
+
+console.log(undefined || 0 || '' || 'Hello' || 33 || null); // 'Hello'
+
+let guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
+
+guests1 = restaurant.numGuests = 23;
+console.log(guests1);
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">AND &&</h3>
+
+                            <p class="text">AND && - last true or first false returs</p>
+                            <pre class="code">
+                                <code class="code-el">
+console.log(0 && 'Artem'); // 0
+console.log(7 && 'Artem'); // 'Artem'
+
+console.log('Hello' && 23 && null && 'Artem'); // null
+
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushrooms', 'spinach');
+}
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="nullish-coalescing">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Nullish coalescing</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                The nullish coalescing (??) operator is a logical operator that
+                                returns its right-hand side operand when its left-hand side operand
+                                is null or undefined, and otherwise returns its left-hand side
+                                operand.
+                            </p>
+
+                            <p class="text">
+                                <a
+                                    class="text-link"
+                                    href="https://jsfiddle.net/Miezaru/qb0hudyv/11/"
+                                    rel="noopener external"
+                                >
+                                    Nullish coalescing fiddle</a
+                                >
+                            </p>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Nullish coalescing (??)</h3>
+
+                            <pre class="code">
+                                <code class="code-el">
+restaurant.numGuests = 0;
+const guest = restaurant.numGests || 10;
+console.log(guest);
+                                </code>
+                            </pre>
+
+                            <p class="text">
+                                Nullish values: <strong>null</strong> and
+                                <strong>undefined</strong> (NOT 0 or '')
+                            </p>
+
+                            <pre class="code">
+                                <code class="code-el">
+const guestCorrect = restaurant.numGuests ?? 10;
+console.log(guestCorrect);
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="logical-assignment">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Logical assignment</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                ES2021 introduces three logical assignment operators including:
+                            </p>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">Logical OR assignment operator (||=)</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Logical AND assignment operator (&&=)</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Nullish coalescing assignment operator (??=)</p>
+                                </li>
+                            </ul>
+
+                            <p class="text">
+                                <a
+                                    class="text-link"
+                                    href="https://jsfiddle.net/Miezaru/9k6p7zug/2/"
+                                    rel="noopener external"
+                                >
+                                    Logical assignment fiddle</a
+                                >
+                            </p>
+                        </div>
+
+                        <div class="content-box">
+                            <pre class="code">
+                                <code class="code-el">
+const rest1 = {
+  name: 'Capri',
+  // numGuests: 20,
+  numGuests: 0,
+};
+
+const rest2 = {
+  name: 'La Piazza',
+  owner: 'Giovanni Rossi',
+};
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                OR assignment operator (||=)
+                            </h3>
+                            <pre class="code">
+                                <code class="code-el">
+rest1.numGuests = rest1.numGuests || 10; // if 0 = 10
+rest2.numGuests = rest2.numGuests || 10; // if undefined = 10
+console.log(rest1, rest2);
+
+// this one better then top one
+rest1.numGuests ||= 10;
+rest2.numGuests ||= 10;
+console.log(rest1, rest2);
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                AND assignment operator (&&=)
+                            </h3>
+                            <pre class="code">
+                                <code class="code-el">
+rest1.owner = rest1.owner && '&lt;ANONYMOUS&gt;';
+rest2.owner = rest2.owner && '&lt;ANONYMOUS&gt;';
+console.log(rest1, rest2);
+
+// this one better then top one
+rest1.owner &&= '&lt;ANONYMOUS&gt;';
+rest2.owner &&= '&lt;ANONYMOUS&gt;';
+console.log(rest1, rest2);
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                Nullish assignment operator (null or undefined) (??=)
+                            </h3>
+                            <pre class="code">
+                                <code class="code-el">
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
+console.log(rest1, rest2);
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="enhanced-object-literals">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Enhanced object literals</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                ES6 enhanced object literals is a JavaScript shortcut syntax for
+                                constructing objects. You can create an object with a simplified
+                                syntax and avoid the requirement for repetitive code by using
+                                enhanced object literals.
+                            </p>
+
+                            <p class="text">
+                                <a
+                                    class="text-link"
+                                    href="https://jsfiddle.net/Miezaru/c9yjn5xt/"
+                                    rel="noopener external"
+                                >
+                                    Enhanced object literals fiddle</a
+                                >
+                            </p>
+                        </div>
+
+                        <div class="content-box">
+                            <pre class="code">
+                                <code class="code-el">
+const pages = 880;
+
+const newBook2 = {
+  title: 'The C Programming Language',
+  author: ['Brian W. Kernighan', 'Dennis M. Ritchie'],
+  pages, // no need to write pages: pages if variable have the same name
+};
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="optional-chaining">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Optional chaining</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                The optional chaining (?.) operator accesses an object's property or
+                                calls a function. If the object accessed or function called using
+                                this operator is undefined or null, the expression short circuits
+                                and evaluates to <strong>undefined</strong> instead of throwing an
+                                error.
+                            </p>
+
+                            <p class="text">
+                                <a
+                                    class="text-link"
+                                    href="https://jsfiddle.net/Miezaru/kv3mdyub/2/"
+                                    rel="noopener external"
+                                >
+                                    Optional chaining fiddle</a
+                                >
+                            </p>
+                        </div>
+
+                        <div class="content-box">
+                            <pre class="code">
+                                <code class="code-el">
+const openingHours = {
+  thu: {
+    open: 12,
+    close: 22,
+  },
+  fri: {
+    open: 11,
+    close: 23,
+  },
+  sat: {
+    open: 0, // Open 24 hours
+    close: 24,
+  },
+};
+
+const restaurant = {
+  name: 'Capri',
+  openingHours,
+};
+
+if (restaurant.openingHourse && restaurant.openingHours.mon) {
+  console.log(restaurant.openingHours.mon.open);
+}
+// we got an error because we have no access to a monday
+// console.log(restaurant.openingHours.mon.open); // undefined.open
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">With optional chaining</h3>
+                            <p class="text">
+                                "open" will read if all chain before exist and not
+                                <strong>undefined</strong>/<strong>null</strong>
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+console.log(restaurant.openingHours.mon?.open);   //undefined
+console.log(restaurant?.openingHours?.mon?.open); // undefined
+console.log(restaurant?.openingHours?.fri?.open); // 11
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Example</h3>
+                            <pre class="code">
+                                <code class="code-el">
+const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+
+for (const day of days) {
+  const open = restaurant.openingHours[day]?.open ?? 'closed';
+  console.log(`On ${day} we open at ${open}`);
+}
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Methods</h3>
+                            <pre class="code">
+                                <code class="code-el">
+console.log(restaurant.order?.(0, 1) || 'Method does not exist');
+console.log(restaurant.orderRisotto?.(0, 1) || 'Method does not exist');
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Arrays</h3>
+                            <pre class="code">
+                                <code class="code-el">
+const users = [
+  {
+    name: 'Artem',
+    email: 'hello@example.com',
+  },
+];
+
+console.log(users[0]?.name ?? 'User array is empty'); // Artem
+console.log(users[1]?.name ?? 'User array is empty'); // 'User array is empty'
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <a class="top-btn" href="#">&uarr;</a>
+
+        <script src="../../js/index.js" defer></script>
+    </body>
+</html>

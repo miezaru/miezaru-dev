@@ -16,7 +16,7 @@
         <!--* Facebook Meta Tags -->
         <meta content="https://miezaru-dev.netlify.app/pages/js/arrays" property="og:url" />
         <meta content="website" property="og:type" />
-        <meta content="Miezaru-dev" property="og:title" />
+        <meta content="JavaScript - Arrays | Miezaru.dev" property="og:title" />
         <meta
             content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Arrays."
             property="og:description"
@@ -221,6 +221,18 @@ const friends = new Array('Nika', 'Anna', 'Eva')
                             <pre class="code">
                                 <code class="code-el">
 friends[2] // 'Eva'
+
+const bookData = [
+  ['title', 'Computer Networking: A Top-Down Approach'],
+  ['author', ['James F. Kurose', 'Keith W. Ross']],
+  ['publisher', 'Addison Wesley'],
+];
+
+const newBook = {
+  [bookData[0][0]]: [bookData[0][1]],
+  [bookData[1][0]]: [bookData[1][1]],
+  [bookData[2][0]]: [bookData[2][1]],
+};
                                 </code>
                             </pre>
                         </div>
@@ -259,7 +271,7 @@ friends = ['Olga', 'Olivia', 'Sophia']
 
                         <div class="content-box">
                             <p class="text">All items in an array is expressions</p>
-                            <pre class="code u-margin-bottom-bg">
+                            <pre class="code">
                                 <code class="code-el">
 const artem = ['Artem', 'Usatyi', 2024 - 1997, 'programmer', friends]
                                 </code>
@@ -345,7 +357,7 @@ const artem = ['Artem', 'Usatyi', 2024 - 1997, 'programmer', friends]
                                     <p class="text">returns the new length of the array</p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 let newLength = friends.push('Mia') // return new length
                                 </code>
@@ -365,7 +377,7 @@ let newLength = friends.push('Mia') // return new length
                                     <p class="text">returns the removed element</p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const lastElement = friends.pop() // return removed (last) item of the array
                                 </code>
@@ -387,7 +399,7 @@ const lastElement = friends.pop() // return removed (last) item of the array
                                     <p class="text">returns the new length of the array</p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const newLength = friends.unshift('Kate') // return new length
                                 </code>
@@ -409,7 +421,7 @@ const newLength = friends.unshift('Kate') // return new length
                                     <p class="text">returns the removed element</p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const firstElement = friends.shift() // return removed (first) item of the array
                                 </code>
@@ -436,7 +448,7 @@ const firstElement = friends.shift() // return removed (first) item of the array
                                     <p class="text">returns the modified array</p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                         <code class="code-el">
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -469,7 +481,7 @@ console.log(array.fill(0, 2, 4)) // [1, 2, 0, 0]
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const beasts = ['ant', 'bison', 'camel', 'duck', 'bison']
 beasts.indexOf('bison')    // 1
@@ -497,7 +509,7 @@ beasts.indexOf('lion')     // -1;
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo']
 animals.lastIndexOf('Dodo') // 3
@@ -523,7 +535,7 @@ animals.lastIndexOf('Dodo') // 3
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array = [5, 12, 8, 130, 44]
 const isLargeNumber = element => element > 11
@@ -550,7 +562,7 @@ array.findIndex(isLargeNumber) // 1
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array = [5, 12, 8, 130, 44]
 const isLargeNumber = element => element > 11
@@ -572,7 +584,7 @@ array.findLastIndex(isLargeNumber) // 4
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array = ['a', 'b', 'c']
 console.log(array.keys()) // Array Iterator
@@ -600,7 +612,7 @@ console.log(myKeys) // [0, 1, 2]
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 let homies = ['Nika', 'Anna', 'Eva', 'Mia']
 console.log(homies.entries()) // array Iterator
@@ -637,7 +649,7 @@ for (const element of homies.entries()) {
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 array = ['a', 'b', 'c']
 const iterator = array.values()
@@ -668,7 +680,7 @@ for (const value of iterator2) {
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 let homies = ['Nika', 'Anna', 'Eva', 'Mia']
 for (const homie of homies) {
@@ -700,7 +712,7 @@ for (const letter of iterator1) {
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 let homies = ['Nika', 'Anna', 'Eva', 'Mia']
 console.log(homies.at(1))    // Anna;
@@ -732,7 +744,7 @@ console.log(homies.at(-1))   // Mia;
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array = [1, 2, 3, 4, 5]
 console.log(array.includes(3)) // true
@@ -760,7 +772,7 @@ console.log(array.includes(3, 3)) // false
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array = [5, 12, 8, 130, 44]
 const found = array.find(element => element > 10) // 12
@@ -786,7 +798,7 @@ const found = array.find(element => element > 10) // 12
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array3 = [5, 12, 8, 130, 44]
 const found2 = array3.findLast(element => element > 45) // 130
@@ -818,7 +830,7 @@ const found3 = array3.findLast(element => element > 10) // 44
                                 </li>
                                 <li class="list__item"><p class="text">returns undefined</p></li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array = ['a', 'b', 'c']
 array.forEach(element => console.log(element)) // a, b, c
@@ -866,7 +878,7 @@ console.log(copyItems2)
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array = [1, 4, 9, 16]
 // Pass a function to map
@@ -897,7 +909,7 @@ console.log(map1) // [2, 8, 18, 32]
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array = [1, 2, 1, 34, 2, 45]
 const result = array.flatMap(n => (n === 2 ? [2, 2] : 1))
@@ -932,7 +944,7 @@ console.log(result2) // [1, 3, 2, 2, 4, 4, 1, 3, 2, 34, 36, 68, 2, 4, 4, 45, 47,
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const words = ['spray', 'elite', 'exuberant', 'destruction', 'present']
 const result = words.filter(word => word.length > 6)
@@ -969,7 +981,7 @@ console.log(result) // ['exuberant', 'destruction', 'present']
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array = [1, 2, 3, 4]
 const initialValue = 3
@@ -1009,7 +1021,7 @@ const result2 = array3.reduceRight((accumulator, currentValue) => accumulator.co
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                             <code class="code-el">
 const array1 = [3, 1, 2, 5, 4]
 array1.sort()          // [1, 2, 3, 4, 5]
@@ -1048,7 +1060,7 @@ console.log(array3)    // [3, 1, 2, 5, 4]
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const numbers = [1, 2, 3, 4, 5]
 const isEven = num => num % 2 === 0
@@ -1087,7 +1099,7 @@ isSubset([1, 2, 3, 4, 5, 6, 7], [5, 7, 6]) // true
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array = [1, 2, 3, 4, 5]
 const even = element => element % 2 === 0
@@ -1118,7 +1130,7 @@ console.log(array.some(even)) // true
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 let homies = ['Nika', 'Anna', 'Eva', 'Mia']
 homies = homies.concat(['Ben', 'Tailor']) // ['Nika', 'Anna', 'Eva', 'Mia', 'Ben', 'Tailor']
@@ -1141,7 +1153,7 @@ homies = homies.concat(['Ben', 'Tailor']) // ['Nika', 'Anna', 'Eva', 'Mia', 'Ben
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array6 = [0, 1, [2, [3, [4, 5]]]]
 console.log(array6.flat())            // [0, 1, 2, Array(2)]
@@ -1174,7 +1186,7 @@ console.log(array6.flat(Infinity))    // [0, 1, 2, 3, 4, 5]
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 // first value is target (where start), second value is what element to put in target, third value is where to end copying (not included)
 const array = ['q', 'w', 'e', 'r', 't', 'y']
@@ -1214,7 +1226,7 @@ array.copyWithin(0, 3, 3)
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const animals1 = ['ant', 'bison', 'camel', 'duck', 'elephant']
 
@@ -1257,7 +1269,7 @@ animals1.slice()        // ['ant', 'bison', 'camel', 'duck', 'elephant']
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const months = ['Jan', 'March', 'April', 'June']
 months.splice(1, 0, 'Feb') // inserts at index 1
@@ -1293,7 +1305,7 @@ console.log(months1) // not changed
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array = [1, 2, 3, 4, 5]
 const newArray = array.with(2, 6)    // [1, 2, 6, 4, 5]
@@ -1324,7 +1336,7 @@ const newArray = array.with(2, 6)    // [1, 2, 6, 4, 5]
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array1 = ['one', 'two', 'three']
 array1.reverse()            // ['three', 'two', 'one']
@@ -1353,7 +1365,7 @@ array2                      // [1, 2, 3, 4, 5]
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const elements = ['Fire', 'Air', 'Water']
 elements.join()                     // Fire,Air,Water
@@ -1373,7 +1385,7 @@ elements.join(' ').toLowerCase()    // fire air water
                                     <p class="text">returns a string representation of the array</p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array = [1, 'a', 23, [1, 2, 3], { name: 'John' }]
 array21.toString()    // "1,a,23,1,2,3,[object Object]"
@@ -1398,7 +1410,7 @@ array21.toString()    // "1,a,23,1,2,3,[object Object]"
                                     </p>
                                 </li>
                             </ul>
-                            <pre class="code u-margin-bottom-md">
+                            <pre class="code">
                                 <code class="code-el">
 const array = [1, 'a', new Date('21 Dec 1997 14:12:00 UTC')]
 const localeString = array.toLocaleString('en', { timeZone: 'UTC' })

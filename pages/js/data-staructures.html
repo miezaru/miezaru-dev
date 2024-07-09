@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript - Data Structures | Miezaru</title>
+
+        <!--! meta -->
+        <meta name="author" content="Artem 'Miezaru' Usatyi | miezaruexpr@gmail.com" />
+        <meta
+            name="description"
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Data Structures."
+        />
+
+        <!--! Open Graph |  -->
+        <!--* Facebook Meta Tags -->
+        <meta
+            content="https://miezaru-dev.netlify.app/pages/js/data-structures"
+            property="og:url"
+        />
+        <meta content="website" property="og:type" />
+        <meta content="JavaScript - Data Structures | Miezaru.dev" property="og:title" />
+        <meta
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Data Structures."
+            property="og:description"
+        />
+        <meta content="../../assets/og/waves.jpeg" property="og:image:url" />
+        <meta content="../../assets/og/waves.jpeg" property="og:image" />
+        <meta content="Waves in dark colours" property="og:image:alt" />
+        <meta content="image/jpeg" property="og:image:type" />
+        <meta content="800" property="og:image:width" />
+        <meta content="418" property="og:image:height" />
+
+        <!--* Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            content="https://miezaru-dev.netlify.app/pages/js/data-structures"
+            property="twitter:url"
+        />
+        <meta name="twitter:title" content="JavaScript - Data Structures | Miezaru.dev" />
+        <meta
+            name="twitter:description"
+            content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Data Structures."
+        />
+        <meta name="twitter:image:src" content="../../assets/og/waves.jpeg" />
+        <meta name="twitter:image" content="../../assets/og/waves.jpeg" />
+        <meta name="twitter:image:alt" content="Waves in dark colours" />
+        <meta name="twitter:creator" content="@miezaruexpr" />
+        <!-- <meta content="miezaru.dev" property="twitter:domain" /> -->
+        <!-- <meta name="twitter:site" content="@miezaruexpr"> -->
+
+        <!--! manifest  -->
+        <link href="../../site.webmanifest" rel="manifest" />
+
+        <!--! icons -->
+        <link
+            href="../../assets/manifest/apple-touch-icon.png"
+            rel="apple-touch-icon"
+            sizes="180x180"
+        />
+        <link
+            type="image/png"
+            href="../../assets/manifest/favicon-32x32.png"
+            rel="icon"
+            sizes="32x32"
+        />
+        <link
+            type="image/png"
+            href="../../assets/manifest/favicon-16x16.png"
+            rel="icon"
+            sizes="16x16"
+        />
+        <link href="../../assets/manifest/favicon.ico" rel="shortcut icon" />
+        <meta name="apple-mobile-web-app-title" content="miezaru-dev" />
+        <meta name="application-name" content="miezaru-dev" />
+        <meta name="msapplication-TileColor" content="#333333" />
+        <meta name="msapplication-config" content="../../browserconfig.xml" />
+        <meta name="theme-color" content="#333333" />
+
+        <link href="../../css/min/main-min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="header">
+            <a class="logo" href="../../index.html">
+                <picture>
+                    <source srcset="../../assets/img/header/header-icon.avif" type="image/avif" />
+                    <source srcset="../../assets/img/header/header-icon.webp" type="image/webp" />
+                    <img
+                        class="logo__img"
+                        src="../../assets/img/header/header-icon.png"
+                        srcset="../../assets/img/header/header-icon.png"
+                        alt="miezaru-dev logo"
+                    />
+                </picture>
+
+                <p class="logo__text">miezaru-dev</p>
+            </a>
+
+            <span>&nbsp;</span>
+
+            <div class="main-nav__container">
+                <button class="main-nav__btn" type="button" aria-labelledby="main-nav-heading">
+                    <span class="main-nav__symbol">&nbsp;</span>
+                </button>
+
+                <nav class="main-nav">
+                    <p class="main-nav__heading" id="main-nav-heading">Main menu</p>
+                    <p class="main-nav__description">On this page:</p>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#links">Links</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#sets">Sets</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#maps">Maps</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#maps-iteration">Maps iteration</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#data-structures-summary">
+                                Data structures summary</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="section-hero">
+            <nav class="page-nav" aria-labelledby="page-nav-description">
+                <header class="page-nav__header">
+                    <p class="page-nav__description" id="page-nav-description">On this page:</p>
+                    <button class="page-nav__btn" type="button">X</button>
+                </header>
+                <div class="page-nav__links">
+                    <ul class="page-nav__list">
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#links">Links</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#sets">Sets</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#maps">Maps</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#maps-iteration">Maps iteration</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#data-structures-summary">
+                                Data structures summary</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <button class="open-page-menu-btn" type="button"><<</button>
+
+            <h1 class="header-description">
+                In JavaScript, data types are split in two categories, and the computer treats each
+                one differently. We have primitive data types and reference data types.
+            </h1>
+        </section>
+
+        <main class="main container-page">
+            <div class="container-page-links">
+                <section class="section" id="links">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Links</h2>
+                    <div class="container-section">
+                        <div class="resources">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Wiki</h3>
+                            <div class="resources-box">
+                                <a
+                                    class="resources-box__item"
+                                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"
+                                    rel="noopener external"
+                                >
+                                    mdn data types and data structures</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="line">&nbsp;</div>
+
+            <div class="container-page-sections">
+                <section class="section" id="sets">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Sets</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                The Set object lets you store unique values of any type, whether
+                                primitive values or object references.
+                            </p>
+
+                            <p class="text">
+                                <a
+                                    class="text-link"
+                                    href="https://jsfiddle.net/Miezaru/r86so9jh/1/"
+                                    rel="noopener external"
+                                >
+                                    Sets fiddle</a
+                                >
+                            </p>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Set properties</h3>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                Defining Set data structure
+                            </h4>
+                            <pre class="code">
+                                <code class="code-el">
+const ordersSet = new Set(['Pasta', 'Pizza', 'Pizza', 'Risotto', 'Pasta', 'Pizza']);
+console.log(ordersSet); // {'Pasta', 'Pizza', 'Risotto'}
+
+console.log(new Set('Artem')); // {'A', 'r', 't', 'e', 'm'}
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Set size</h4>
+                            <pre class="code">
+                                <code class="code-el">
+console.log(ordersSet.size); // 3
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Set has</h4>
+                            <pre class="code">
+                                <code class="code-el">
+console.log(ordersSet.has('Pizza')); // true
+console.log(ordersSet.has('Bread')); // false
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Set add and remove</h4>
+                            <pre class="code">
+                                <code class="code-el">
+ordersSet.add('Garlic Bread');
+ordersSet.add('Garlic Bread');
+ordersSet.delete('Risotto');
+console.log(ordersSet); // {'Pasta', 'Pizza', 'Garlic Bread'}
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                Set has no indexes (no way to get item from the set)
+                            </h4>
+                            <pre class="code">
+                                <code class="code-el">
+console.log(ordersSet[0]); // undefined,
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                Looping like other iterables
+                            </h4>
+                            <pre class="code">
+                                <code class="code-el">
+for (const order of ordersSet) {
+  console.log(order);
+}
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Clear set</h4>
+                            <pre class="code">
+                                <code class="code-el">
+ordersSet.clear();
+console.log(ordersSet);
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Example</h3>
+
+                            <pre class="code">
+                                <code class="code-el">
+const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
+
+// how many unique positions
+console.log(new Set(staff).size); // 3
+console.log(new Set('Artem').size); // 5
+console.log(new Set('Halloween').size); // 7
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="maps">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Maps</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                The Map object holds key-value pairs and remembers the original
+                                insertion order of the keys. Any value (both objects and primitive
+                                values) may be used as either a key or a value.
+                            </p>
+
+                            <p class="text">
+                                <a
+                                    class="text-link"
+                                    href="https://jsfiddle.net/Miezaru/g9pq30a1/1/"
+                                    rel="noopener external"
+                                >
+                                    Maps fiddle</a
+                                >
+                            </p>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Map properties</h3>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                Defining Map and set properties
+                            </h4>
+                            <pre class="code">
+                                <code class="code-el">
+const rest = new Map();
+rest.set('name', 'Classico Italiano');
+rest.set(1, 'Firenze, Italy');
+rest.set(2, 'Lisbon, Portugal');
+console.log(rest); // {'name' => 'Classico Italiano', 1 => 'Firenze, Italy', 2 => 'Lisbon, Portugal'}
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Map set</h4>
+                            <pre class="code">
+                                <code class="code-el">
+rest
+  .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+  .set('open', 11)
+  .set('close', 23)
+  .set(true, 'We are open')
+  .set(false, 'We are closed');
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Map get</h4>
+                            <pre class="code">
+                                <code class="code-el">
+console.log(rest.get('name')); // Classico Italiano
+console.log(rest.get(true)); // We are open
+
+console.log(rest.get('1')); // undefined
+console.log(rest.get(1)); // Firenze, Italy
+
+const time = 8;
+console.log(rest.get(time > rest.get('open') && time < rest.get('close'))); // We are closed
+
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Map has</h4>
+                            <pre class="code">
+                                <code class="code-el">
+console.log(rest.has('categories')); // true
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Map delete</h4>
+                            <pre class="code">
+                                <code class="code-el">
+rest.delete(2);
+console.log(rest);
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Map size</h4>
+                            <pre class="code">
+                                <code class="code-el">
+console.log(rest.size);
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Clear map</h4>
+                            <pre class="code">
+                                <code class="code-el">
+rest.clear();
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Example</h3>
+                            <pre class="code">
+                            <code class="code-el">
+rest.set([1, 2], 'Test');
+console.log(rest.get([1, 2])); // undefined (because it`s different array in the heap, calling function is an expression)
+
+const arr = [1, 2];
+rest.set(arr, 'Test2');
+console.log(rest.get(arr)); // Test2 (because it`s the same array in the heap)
+
+rest.set(document.querySelector('h1'), 'heading');
+console.log(rest.has(document.querySelector('h1')));
+console.log(rest);
+                            </code>
+                        </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="maps-iteration">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Maps: iteration</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                <a
+                                    class="text-link"
+                                    href="https://jsfiddle.net/Miezaru/9bgqL5dy/1/"
+                                    rel="noopener external"
+                                >
+                                    Maps iteration fiddle</a
+                                >
+                            </p>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Iterating maps</h3>
+
+                            <pre class="code">
+                                <code class="code-el">
+const question = new Map([
+  ['question', 'What is the best programming language in the world?'],
+  [1, 'C'],
+  [2, 'Java'],
+  [3, 'JavaScript'],
+  [4, 'Python'],
+  [5, 'C++'],
+  ['correct', 3],
+  [true, 'Correct 🎉'],
+  [false, 'Try again...'],
+]);
+                                </code>
+                            </pre>
+
+                            <p class="text">
+                                Map structure is the same as Object.entries() returns
+                            </p>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Convert object to map</h4>
+                            <pre class="code">
+                                <code class="code-el">
+const hoursMap = new Map(Object.entries(openingHours));
+console.log(hoursMap);
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Looping through map</h4>
+                            <pre class="code">
+                                <code class="code-el">
+console.log(question.get('question'));
+for (const [key, value] of question) {
+  if (typeof key === 'number') console.log(`Answer ${key}: ${value}`);
+}
+
+const answer = Number(prompt('Your answer'));
+console.log(answer);
+
+// if (answer === question.get('correct')) console.log(question.get(true));
+console.log(question.get(answer === question.get('correct')));
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Map to array</h4>
+                            <pre class="code">
+                                <code class="code-el">
+console.log([...question]); [[Array(2)], [Array(2)], etc.]
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Keys, values, entries</h4>
+                            <pre class="code">
+                                <code class="code-el">
+console.log([...question.keys()]);
+console.log([...question.values()]);
+console.log([...question.entries()]);
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="data-structures-summary">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Data structures summary</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                Summary: which data structure to use?
+                            </h3>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Sources of data</h4>
+                            <ol class="list">
+                                <li class="list__item">
+                                    <p class="text">From the <strong>program</strong> itself:</p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                data written directly in source code (e.g.
+                                                <strong>status messages</strong>)
+                                            </p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">
+                                                data what will be displayed on webpage on
+                                                <strong>user actions</strong>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">From the <strong>UI</strong>:</p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                data <strong>input</strong> from the user or data
+                                                written in <strong>DOM</strong>
+                                                (e.g. tasks in todo app, expanses in budget app)
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">From <strong>external sources</strong>:</p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                data fetched for example from web
+                                                <strong>API</strong> (Application Programming
+                                                Interface) (e.g. recipe objects)
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+
+                            <p class="text">
+                                Collection data structures: <strong>array</strong>,
+                                <strong>object</strong>, <strong>set</strong>, <strong>map</strong>,
+                                <strong>weakset</strong>,
+                                <strong>weakmap</strong>
+                            </p>
+                            <p class="text">
+                                Collection data structures that JS does not have:
+                                <strong>stacks</strong>, <strong>queues</strong>,
+                                <strong>linked lists</strong>, <strong>trees</strong>,
+                                <strong>hash tables</strong>
+                            </p>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">How to choose one?</h4>
+
+                            <ol class="list">
+                                <li class="list__item">
+                                    <p class="text">Simple list?</p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">array</p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">set</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Key value pairs?</p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">keys allow us to describe values</p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">object</p>
+                                        </li>
+                                        <li class="list__item">
+                                            <p class="text">map</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Sets vs Arrays</h3>
+                            <h4 class="heading-h4 u-margin-bottom-sm">Arrays</h4>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        use when you need ordered list of values (might
+                                        <strong>contain duplicates</strong>)
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        use when you need to <strong>manipulate data</strong>
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Sets</h4>
+
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        use when you need to work with
+                                        <strong>unique values</strong>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        use when <strong>high-performance</strong> is really
+                                        important
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        use to <strong>remove duplicates</strong> from arrays
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Objects vs Maps</h3>
+                            <h4 class="heading-h4 u-margin-bottom-sm">Objects</h4>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        more "traditional" key/value store ("abused" objects)
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        easier to write and access values with
+                                        <strong>.</strong> and <strong>[]</strong>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        use when you need to include functions
+                                        (<strong>methods</strong>)
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        use when working with <strong>JSON</strong> (can convert to
+                                        map)
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Maps</h4>
+
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">better <strong>performance</strong></p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">keys can have <strong>any data type</strong></p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text"><strong>easy to iterate</strong></p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text"><strong>easy to compute size</strong></p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        use when you simply need to <strong>map key</strong> to
+                                        <strong>values</strong>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        use when you need <strong>keys</strong> that are
+                                        <strong>not strings</strong>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <a class="top-btn" href="#">&uarr;</a>
+
+        <script src="../../js/index.js" defer></script>
+    </body>
+</html>
