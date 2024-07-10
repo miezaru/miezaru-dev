@@ -199,6 +199,26 @@
                                 primitive values or object references.
                             </p>
 
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                Set has no indexes (no way to get item from the set)
+                            </h4>
+                            <pre class="code">
+                                <code class="code-el">
+setto[0]; // undefined,
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                Looping like other iterables
+                            </h4>
+                            <pre class="code">
+                                <code class="code-el">
+for (const order of setto) {
+  console.log(order);
+}
+                                </code>
+                            </pre>
+
                             <p class="text">
                                 <a
                                     class="text-link"
@@ -211,87 +231,279 @@
                         </div>
 
                         <div class="content-box">
-                            <h3 class="heading-h3 u-margin-bottom-sm">Set properties</h3>
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                Set properties - writeable
+                            </h3>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">
-                                Defining Set data structure
+                                Defining Set and set properties
                             </h4>
                             <pre class="code">
                                 <code class="code-el">
-const ordersSet = new Set(['Pasta', 'Pizza', 'Pizza', 'Risotto', 'Pasta', 'Pizza']);
-console.log(ordersSet); // {'Pasta', 'Pizza', 'Risotto'}
+const setto = new Set(['Pasta', 'Pizza', 'Pizza', 'Risotto', 'Pasta', 'Pizza']);
+console.log(setto); // {'Pasta', 'Pizza', 'Risotto'}
 
-console.log(new Set('Artem')); // {'A', 'r', 't', 'e', 'm'}
+new Set('Artem'); // {'A', 'r', 't', 'e', 'm'}; // strings also iterable
                                 </code>
                             </pre>
 
-                            <h4 class="heading-h4 u-margin-bottom-sm">Set size</h4>
+                            <h4 class="heading-h4 u-margin-bottom-sm">add()</h4>
+                            <p class="text">
+                                <strong>Inserts</strong> a new element with a specified
+                                <strong>value</strong> in to a Set object, if there isn't an element
+                                with the same value already in the Set.
+                            </p>
+                            <p class="text">
+                                <strong>Returns</strong> the <strong>Set object</strong> with added
+                                value.
+                            </p>
                             <pre class="code">
                                 <code class="code-el">
-console.log(ordersSet.size); // 3
+add(value);
+
+setto.add('Garlic Bread');
                                 </code>
                             </pre>
 
-                            <h4 class="heading-h4 u-margin-bottom-sm">Set has</h4>
+                            <h4 class="heading-h4 u-margin-bottom-sm">delete()</h4>
+                            <p class="text">
+                                <strong>Removes</strong> a specified value from this set, if it is
+                                in the set.
+                            </p>
+                            <p class="text">
+                                <strong>Returns</strong> <strong>true</strong> if value was already
+                                in Set; otherwise <strong>false</strong>.
+                            </p>
                             <pre class="code">
                                 <code class="code-el">
-console.log(ordersSet.has('Pizza')); // true
-console.log(ordersSet.has('Bread')); // false
+delete(value);
+
+setto.delete('Risotto');
                                 </code>
                             </pre>
 
-                            <h4 class="heading-h4 u-margin-bottom-sm">Set add and remove</h4>
+                            <h4 class="heading-h4 u-margin-bottom-sm">clear()</h4>
+                            <p class="text">
+                                <strong>Removes</strong> <strong>all</strong> elements from the Set
+                                object.
+                            </p>
                             <pre class="code">
                                 <code class="code-el">
-ordersSet.add('Garlic Bread');
-ordersSet.add('Garlic Bread');
-ordersSet.delete('Risotto');
-console.log(ordersSet); // {'Pasta', 'Pizza', 'Garlic Bread'}
-                                </code>
-                            </pre>
-
-                            <h4 class="heading-h4 u-margin-bottom-sm">
-                                Set has no indexes (no way to get item from the set)
-                            </h4>
-                            <pre class="code">
-                                <code class="code-el">
-console.log(ordersSet[0]); // undefined,
-                                </code>
-                            </pre>
-
-                            <h4 class="heading-h4 u-margin-bottom-sm">
-                                Looping like other iterables
-                            </h4>
-                            <pre class="code">
-                                <code class="code-el">
-for (const order of ordersSet) {
-  console.log(order);
-}
-                                </code>
-                            </pre>
-
-                            <h4 class="heading-h4 u-margin-bottom-sm">Clear set</h4>
-                            <pre class="code">
-                                <code class="code-el">
-ordersSet.clear();
-console.log(ordersSet);
+setto.clear(); // none (undefined)
                                 </code>
                             </pre>
                         </div>
 
                         <div class="content-box">
-                            <h3 class="heading-h3 u-margin-bottom-sm">Example</h3>
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                Set properties - read-only
+                            </h3>
+                            <h4 class="heading-h4 u-margin-bottom-sm">size</h4>
+                            <pre class="code">
+                                <code class="code-el">
+setto.size; // 3
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">has()</h4>
+                            <p class="text">
+                                <strong></strong> a <strong>boolean</strong> asserting whether an
+                                element is present with the given value in the Set object or not.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+setto.has('Pizza'); // true
+setto.has('Bread'); // false
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">keys()</h4>
+                            <p class="text">An alias for the values() method.</p>
+                            <p class="text">
+                                <strong>Return</strong> a new iterable iterator object.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+setto.keys();
+
+setto.next().value;
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">values()</h4>
+                            <p class="text">
+                                <strong>Returns</strong> a <strong>new iterator object</strong> that
+                                yields the values for each element in the Set object in insertion
+                                order.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+setto.values();
+
+setto.next().value;
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">entries()</h4>
+                            <p class="text">
+                                <strong>Returns</strong> a <strong>new iterator object</strong> that
+                                contains an <strong>array of [value, value]</strong> for each
+                                element in the Set object, in insertion order. This is similar to
+                                the Map object, so that each entry's key is the same as its value
+                                for a Set.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+setto.entries();
+
+setto.next().value;
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">forEach()</h4>
+                            <p class="text">
+                                Calls <strong>callbackFn</strong> once for each value present in the
+                                Set object, in insertion order. If a thisArg parameter is provided,
+                                it will be used as the this value for each invocation of callbackFn.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+forEach(callbackFn, thisArg)
+
+setto.forEach((key, value, set) => console.log(key, value, set)); // key and value are the same in Sets
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">"New" methods</h3>
+                            <h4 class="heading-h4 u-margin-bottom-sm">union()</h4>
+                            <p class="text">
+                                Takes a set and <strong>returns</strong> a new set containing
+                                elements which are in either or both of this set and the given set.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+union(other)
+
+const evens = new Set([2, 4, 6, 8]);
+const squares = new Set([1, 4, 9]);
+evens.union(squares); // Set(6) { 2, 4, 6, 8, 1, 9 }
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">difference()</h4>
+                            <p class="text">
+                                Takes a set and <strong>returns</strong> a new set containing
+                                elements in this set but not in the given set.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+difference(other)
+
+const odds = new Set([1, 3, 5, 7, 9]);
+const squares = new Set([1, 4, 9]);
+odds.difference(squares); // Set(3) { 3, 5, 7 }
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">intersection()</h4>
+                            <p class="text">
+                                Takes a set and <strong>returns</strong> a new set containing
+                                elements in both this set and the given set.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+intersection(other)
+
+const odds = new Set([1, 3, 5, 7, 9]);
+const squares = new Set([1, 4, 9]);
+odds.intersection(squares); // Set(2) { 1, 9 }
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">isSubsetOf()</h4>
+                            <p class="text">
+                                Takes a set and <strong>returns</strong> a boolean indicating
+                                <strong>if all elements of this set are in the given set</strong>.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+isSubsetOf(other)
+
+const fours = new Set([4, 8, 12, 16]);
+const evens = new Set([2, 4, 6, 8, 10, 12, 14, 16, 18]);
+fours.isSubsetOf(evens);    // true
+
+const odds = new Set([3, 5, 7, 9, 11, 13, 15, 17, 19]);
+const primes = new Set([2, 3, 5, 7, 11, 13, 17, 19]);
+odds.isSupersetOf(primes);  // false (primes not contains 9, 15)
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">isSupersetOf()</h4>
+                            <p class="text">
+                                Takes a set and <strong>returns</strong> a boolean indicating
+                                <strong>if all elements of the given set are in this set</strong>.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+isSubsetOf(other)
+
+const evens = new Set([2, 4, 6, 8, 10, 12, 14, 16, 18]);
+const fours = new Set([4, 8, 12, 16]);
+evens.isSupersetOf(fours);             // true (all elements in this contains in given set)
+
+const odds = new Set([3, 5, 7, 9, 11, 13, 15, 17, 19]);
+const primes = new Set([2, 3, 5, 7, 11, 13, 17, 19]);
+odds.isSupersetOf(primes);             // false (odds not contains 2)
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">symmetricDifference()</h4>
+                            <p class="text">
+                                Takes a set and <strong>returns</strong> a new set containing
+                                elements which are in either this set or the given set, but
+                                <strong>not in both</strong>.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+symmetricDifference(other)
+
+const evens = new Set([2, 4, 6, 8]);
+const squares = new Set([1, 4, 9]);
+evens.symmetricDifference(squares); // Set(5) { 2, 6, 8, 1, 9 }
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">isDisjointFrom()</h4>
+                            <p class="text">
+                                Takes a set and <strong>returns</strong> a boolean indicating if
+                                this set has no elements in common with the given set.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+isDisjointFrom(other)
+
+const primes = new Set([2, 3, 5, 7, 11, 13, 17, 19]);
+const squares = new Set([1, 4, 9, 16]);
+primes.isDisjointFrom(squares); // true
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Some examples</h3>
 
                             <pre class="code">
                                 <code class="code-el">
 const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
-const staffUnique = [...new Set(staff)];
-console.log(staffUnique);
+const staffUnique = [...new Set(staff)]; // ['Waiter', 'Chef', 'Manager']
 
 // how many unique positions
-console.log(new Set(staff).size); // 3
-console.log(new Set('Artem').size); // 5
-console.log(new Set('Halloween').size); // 7
+new Set(staff).size;        // 3
+new Set('Artem').size;      // 5
+new Set('Halloween').size;  // 7
                                 </code>
                             </pre>
                         </div>
@@ -320,25 +532,35 @@ console.log(new Set('Halloween').size); // 7
                         </div>
 
                         <div class="content-box">
-                            <h3 class="heading-h3 u-margin-bottom-sm">Map properties</h3>
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                Map properties - writeable
+                            </h3>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">
                                 Defining Map and set properties
                             </h4>
                             <pre class="code">
                                 <code class="code-el">
-const rest = new Map();
-rest.set('name', 'Classico Italiano');
-rest.set(1, 'Firenze, Italy');
-rest.set(2, 'Lisbon, Portugal');
-console.log(rest); // {'name' => 'Classico Italiano', 1 => 'Firenze, Italy', 2 => 'Lisbon, Portugal'}
+const mappo = new Map([[key, value], [key, value]]);
+
+const mappi = new Map();
+mappi.set('name', 'Classico Italiano');
+mappi.set(1, 'Firenze, Italy');
+mappi.set(2, 'Lisbon, Portugal');
+console.log(mappi); // {'name' => 'Classico Italiano', 1 => 'Firenze, Italy', 2 => 'Lisbon, Portugal'}
                                 </code>
                             </pre>
 
-                            <h4 class="heading-h4 u-margin-bottom-sm">Map set</h4>
+                            <h4 class="heading-h4 u-margin-bottom-sm">set()</h4>
+                            <p class="text">
+                                Sets the value for the passed key in the Map object. Returns the Map
+                                object.
+                            </p>
                             <pre class="code">
                                 <code class="code-el">
-rest
+mappi.set(key, value);
+
+mappi
   .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
   .set('open', 11)
   .set('close', 23)
@@ -347,65 +569,145 @@ rest
                                 </code>
                             </pre>
 
-                            <h4 class="heading-h4 u-margin-bottom-sm">Map get</h4>
+                            <h4 class="heading-h4 u-margin-bottom-sm">delete()</h4>
+                            <p class="text">
+                                Returns <strong>true</strong> if an element in the Map object
+                                existed and has been removed, or <strong>false</strong> if the
+                                element does not exist. map.has(key) will return false afterwards.
+                            </p>
                             <pre class="code">
                                 <code class="code-el">
-console.log(rest.get('name')); // Classico Italiano
-console.log(rest.get(true)); // We are open
-
-console.log(rest.get('1')); // undefined
-console.log(rest.get(1)); // Firenze, Italy
-
-const time = 8;
-console.log(rest.get(time > rest.get('open') && time < rest.get('close'))); // We are closed
-
+mappi.delete(key); // true or false
                                 </code>
                             </pre>
 
-                            <h4 class="heading-h4 u-margin-bottom-sm">Map has</h4>
+                            <h4 class="heading-h4 u-margin-bottom-sm">clear()</h4>
+                            <p class="text">Removes all key-value pairs from the Map object.</p>
                             <pre class="code">
                                 <code class="code-el">
-console.log(rest.has('categories')); // true
-                                </code>
-                            </pre>
-
-                            <h4 class="heading-h4 u-margin-bottom-sm">Map delete</h4>
-                            <pre class="code">
-                                <code class="code-el">
-rest.delete(2);
-console.log(rest);
-                                </code>
-                            </pre>
-
-                            <h4 class="heading-h4 u-margin-bottom-sm">Map size</h4>
-                            <pre class="code">
-                                <code class="code-el">
-console.log(rest.size);
-                                </code>
-                            </pre>
-
-                            <h4 class="heading-h4 u-margin-bottom-sm">Clear map</h4>
-                            <pre class="code">
-                                <code class="code-el">
-rest.clear();
+mappi.clear(); // none (undefined)
                                 </code>
                             </pre>
                         </div>
 
                         <div class="content-box">
-                            <h3 class="heading-h3 u-margin-bottom-sm">Example</h3>
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                Maps properties - read-only
+                            </h3>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">size</h4>
+                            <p class="text">
+                                Returns the number of key/value pairs in the Map object.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+mappi.size; // 3
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">get()</h4>
+                            <pre class="code">
+                                <code class="code-el">
+mappi.get('name');  // Classico Italiano
+mappi.get(true);    // We are open
+
+mappi.get('1');     // undefined
+mappi.get(1);       // Firenze, Italy
+
+const time = 8;
+mappi.get(time > mappi.get('open') && time < mappi.get('close')); // We are closed
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">has()</h4>
+                            <p class="text">
+                                <strong>Returns</strong> a <strong>boolean</strong> indicating
+                                whether a value has been associated with the passed key in the Map
+                                object or not.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+mappi.has(key)
+[...mappi.values()].includes('value')           // check for values
+[...mappo.entries()].flat().includes('Artem')   // check for values
+
+mappi.has('categories'); // true
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">keys()</h4>
+                            <p class="text">
+                                <strong>Returns</strong> a
+                                <strong>new map iterator object</strong>
+                                that contains the <strong>keys</strong> for each element in this map
+                                in insertion order.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+mappi.keys(); // { key, key, key, key }
+
+mappi.next().value;
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">values()</h4>
+                            <p class="text">
+                                <strong>Returns</strong> a
+                                <strong>new map iterator object</strong> that contains the
+                                <strong>values</strong> for each element in this map in insertion
+                                order.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+mappi.values(); // { value, value, value, value }
+
+mappi.next().value;
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">entries()</h4>
+                            <p class="text">
+                                <strong>Returns</strong> a
+                                <strong>new map iterator object</strong> that contains the
+                                <strong>[key, value]</strong> pairs for each element in this map in
+                                insertion order.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+mappi.entries(); { key => value, key => value }
+
+mappi.next().value;
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">forEach()</h4>
+                            <p class="text">
+                                Executes a <strong>provided function</strong> once per each
+                                <strong>key/value pair</strong> in this map, in insertion order.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+forEach(callbackFn, thisArg)
+
+mappi.forEach((value, key, map) => console.log(`${key} : ${value}`))
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Don`t forgot about HEAP</h3>
                             <pre class="code">
                             <code class="code-el">
-rest.set([1, 2], 'Test');
-console.log(rest.get([1, 2])); // undefined (because it`s different array in the heap, calling function is an expression)
+mappi.set([1, 2], 'Test');
+mappi.get([1, 2]); // undefined (because it`s different array in the heap, calling function is an expression)
 
 const arr = [1, 2];
-rest.set(arr, 'Test2');
-console.log(rest.get(arr)); // Test2 (because it`s the same array in the heap)
+mappi.set(arr, 'Test2');
+mappi.get(arr); // Test2 (because it`s the same array in the heap)
 
-rest.set(document.querySelector('h1'), 'heading');
-console.log(rest.has(document.querySelector('h1')));
-console.log(rest);
+// DOM elements also can be keys
+mappi.set(document.querySelector('h1'), 'heading');
+mappi.has(document.querySelector('h1')); // true
                             </code>
                         </pre>
                         </div>
@@ -413,7 +715,7 @@ console.log(rest);
                 </section>
 
                 <section class="section" id="maps-iteration">
-                    <h2 class="heading-h2 u-margin-bottom-sm">Maps: iteration</h2>
+                    <h2 class="heading-h2 u-margin-bottom-sm">Maps: iteration, map converting</h2>
                     <div class="container-section">
                         <div class="content-box">
                             <p class="text">
@@ -443,27 +745,11 @@ const question = new Map([
   [true, 'Correct 🎉'],
   [false, 'Try again...'],
 ]);
-                                </code>
-                            </pre>
 
-                            <p class="text">
-                                Map structure is the same as Object.entries() returns
-                            </p>
-
-                            <h4 class="heading-h4 u-margin-bottom-sm">Convert object to map</h4>
-                            <pre class="code">
-                                <code class="code-el">
-const hoursMap = new Map(Object.entries(openingHours));
-console.log(hoursMap);
-                                </code>
-                            </pre>
-
-                            <h4 class="heading-h4 u-margin-bottom-sm">Looping through map</h4>
-                            <pre class="code">
-                                <code class="code-el">
-console.log(question.get('question'));
 for (const [key, value] of question) {
-  if (typeof key === 'number') console.log(`Answer ${key}: ${value}`);
+  if (typeof key === 'number') {
+    console.log(`Answer ${key}: ${value}`)
+  };
 }
 
 const answer = Number(prompt('Your answer'));
@@ -473,20 +759,57 @@ console.log(answer);
 console.log(question.get(answer === question.get('correct')));
                                 </code>
                             </pre>
+                        </div>
 
-                            <h4 class="heading-h4 u-margin-bottom-sm">Map to array</h4>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Converting</h3>
+                            <h4 class="heading-h4 u-margin-bottom-sm">Object to map</h4>
+
+                            <p class="text">
+                                Map structure is the same as Object.entries() returns for iterating
+                            </p>
+
                             <pre class="code">
                                 <code class="code-el">
-console.log([...question]); [[Array(2)], [Array(2)], etc.]
+const openingHours = {
+  thu: {
+    open: 12,
+    close: 22,
+  },
+  fri: {
+    open: 11,
+    close: 23,
+  },
+  sat: {
+    open: 0, // Open 24 hours
+    close: 24,
+  },
+};
+
+const hoursMap = new Map(Object.entries(openingHours)); { thu => {open, close}, fri => {open, close}, sat => {open, close} }
+const hoursFromObject = Object.entries(openingHours); // [ Array(2), Array(2), Array(2) ]
                                 </code>
                             </pre>
 
-                            <h4 class="heading-h4 u-margin-bottom-sm">Keys, values, entries</h4>
+                            <h4 class="heading-h4 u-margin-bottom-sm">Map to object</h4>
+
                             <pre class="code">
                                 <code class="code-el">
-console.log([...question.keys()]);
-console.log([...question.values()]);
-console.log([...question.entries()]);
+const objectFromMap = Object.fromEntries(mappo.entries());
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Array to map</h4>
+                            <pre class="code">
+                                <code class="code-el">
+const mappo = new Map([[key, value], [key, value]])
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">Convert map to array</h4>
+                            <pre class="code">
+                                <code class="code-el">
+[...question]; // [[Array(2)], [Array(2)], etc.]
                                 </code>
                             </pre>
                         </div>
