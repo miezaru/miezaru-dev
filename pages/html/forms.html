@@ -37,7 +37,7 @@
             content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about HTML Forms."
         />
         <meta name="twitter:image:src" content="../../assets/og/waves.jpeg" />
-        <meta name="twitter:image" content="../../assets/og/waves.jpeg" />
+        <meta name="twitter:image" content="https://i.ibb.co/MnJcQSZ/waves.jpg" />
         <meta name="twitter:image:alt" content="Waves in dark colours" />
         <meta name="twitter:creator" content="@miezaruexpr" />
         <!-- <meta content="miezaru.dev" property="twitter:domain" /> -->
@@ -84,6 +84,8 @@
                         src="../../assets/img/header/header-icon.png"
                         srcset="../../assets/img/header/header-icon.png"
                         alt="miezaru-dev logo"
+                        height="512"
+                        width="512"
                     />
                 </picture>
 
@@ -326,10 +328,12 @@
                         <div class="content-box">
                             <h3 class="heading-h3 u-margin-bottom-sm">Get & Post</h3>
                             <ul class="list">
-                                <li class="list__item"><p class="text">GET - URL</p></li>
+                                <li class="list__item">
+                                    <p class="text"><strong>GET</strong> - URL</p>
+                                </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        POST - data is included in the
+                                        <strong>POST</strong> - data is included in the
                                         <a
                                             class="text-link"
                                             href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST#example"
@@ -469,10 +473,10 @@
 
                             <p class="text">
                                 Based on this information, browsers can offer the option to autofill
-                                a field with previously entered data of the same type. Browsers can
-                                even offer to autofill an entire form.
+                                a field with <strong>previously entered data</strong> of the same
+                                type. Browsers can even offer to autofill an entire form.
                             </p>
-                            <p class="text">Use sensible attribute values</p>
+                            <p class="text">Use sensible attribute values.</p>
                             <p class="text">
                                 Use <strong>email</strong> as a value for the <strong>name</strong>,
                                 <strong>id</strong>, and <strong>type</strong> attribute. Three
@@ -539,27 +543,6 @@
                                 <strong>max</strong> to achieve the same result.
                             </p>
                         </div>
-
-                        <div class="content-box">
-                            <h3 class="heading-h3 u-margin-bottom-sm">Advanced validation rules</h3>
-                            <p class="text">
-                                Sometimes you want to define more advanced validation rules. Use
-                                HTML
-                                <strong>pattern attribute</strong>, and you can define a regular
-                                expression as the value.
-                            </p>
-
-                            <pre class="code">
-                                <code class="code-el">
-&lt;label for="animal"&gt;What is your favorite animal? (required)&lt;/label&gt;
-&lt;input required pattern="[a-z]{2,20}" type="text" id="animal" name="animal"&gt;
-                                </code>
-                            </pre>
-                            <p class="text">
-                                Here, only lowercase letters are allowed; the user has to enter at
-                                least two characters, and not more than twenty
-                            </p>
-                        </div>
                     </div>
                 </section>
 
@@ -582,6 +565,27 @@
                                 </code>
                             </pre>
                         </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Advanced validation rules</h3>
+                            <p class="text">
+                                Sometimes you want to define more advanced validation rules. Use
+                                HTML
+                                <strong>pattern attribute</strong>, and you can define a
+                                <strong>regular expression</strong> as the value.
+                            </p>
+
+                            <pre class="code">
+                                <code class="code-el">
+&lt;label for="animal"&gt;What is your favorite animal? (required)&lt;/label&gt;
+&lt;input required pattern="[a-z]{2,20}" type="text" id="animal" name="animal"&gt;
+                                </code>
+                            </pre>
+                            <p class="text">
+                                Here, only lowercase letters are allowed; the user has to enter at
+                                least two characters, and not more than twenty.
+                            </p>
+                        </div>
                     </div>
                 </section>
 
@@ -592,7 +596,7 @@
                             <p class="text">
                                 <strong>:invalid</strong> pseudo-class to add styles to invalid form
                                 controls. Also the <strong>:valid</strong> pseudo-class for styling
-                                valid form elements
+                                valid form elements.
                             </p>
                             <pre class="code">
                                 <code class="code-el">
@@ -603,7 +607,7 @@ input:user-invalid {}  // user-invalid
                             </pre>
                             <p class="text">
                                 Radio buttons <strong>:default</strong> (checked)
-                                <strong>:checked</strong> (selected)
+                                <strong>:checked</strong> (selected).
                             </p>
 
                             <p class="text">
@@ -630,11 +634,11 @@ input:user-invalid {}  // user-invalid
                     <h2 class="heading-h2 u-margin-bottom-sm">Validation with JavaScript</h2>
                     <div class="container-section">
                         <div class="content-box">
-                            <p class="text">Provide meaningful error messages</p>
+                            <p class="text">Provide meaningful error messages.</p>
                             <p class="text">
-                                Error messages are not identical in every browser. To achieve same
-                                message to everyone, use the setCustomValidity() method of the
-                                Constraint Validation API.
+                                Error messages are <strong>not identical</strong> in every browser.
+                                To achieve same message to everyone, use the setCustomValidity()
+                                method of the Constraint Validation API.
                             </p>
 
                             <pre class="code">
@@ -642,12 +646,13 @@ input:user-invalid {}  // user-invalid
 const nameInput = document.querySelector('[name="name"]');
 
 nameInput.addEventListener('invalid', () => {
-    nameInput.setCustomValidity('Please enter your name.');
+  nameInput.setCustomValidity('Please enter your name.');
 });
                                 </code>
                             </pre>
                             <p class="text">
-                                Add real-time validation in JavaScript by listening to the
+                                Add <strong>real-time validation in JavaScript</strong> by listening
+                                to the
                                 <a
                                     class="text-link"
                                     href="https://codepen.io/web-dot-dev/pen/qBmgPrB"
@@ -666,23 +671,21 @@ nameInput.addEventListener('invalid', () => {
                     <h2 class="heading-h2 u-margin-bottom-sm">Design recommendation</h2>
                     <div class="container-section">
                         <div class="content-box">
-                            <p class="text">Use a label for every form control</p>
-                            <p class="text">Label wording</p>
-
+                            <p class="text">Use a label for every form control (label wording).</p>
                             <pre class="code">
                                 <code class="code-el">
 &lt;label for="email"&gt;Enter your email address&lt;/label&gt;
 &lt;label for="email"&gt;Email address&lt;/label&gt; // better
                                 </code>
                             </pre>
-                            <p class="text">Best label position - TOP</p>
+                            <p class="text">Best label position - TOP.</p>
                             <p class="text">
                                 Make forms big enought. The recommended tap target size of a button
                                 is at least 48px.
                             </p>
-                            <p class="text">Show errors where they happen</p>
+                            <p class="text">Show errors where they happen.</p>
 
-                            <p class="text">Make it clear to users what data to enter</p>
+                            <p class="text">Make it clear to users what data to enter.</p>
                             <pre class="code">
                                 <code class="code-el">
 &lt;label for="password"&gt;Password (required)&lt;/label&gt;
@@ -691,7 +694,7 @@ nameInput.addEventListener('invalid', () => {
                                 </code>
                             </pre>
 
-                            <p class="text">Make it clear to users which fields are required</p>
+                            <p class="text">Make it clear to users which fields are required.</p>
                             <pre class="code">
                                 <code class="code-el">
 &lt;label for="name"&gt;Name (required)&lt;/label&gt;

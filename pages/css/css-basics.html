@@ -40,7 +40,7 @@
             content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about CSS Basics."
         />
         <meta name="twitter:image:src" content="../../assets/og/waves.jpeg" />
-        <meta name="twitter:image" content="../../assets/og/waves.jpeg" />
+        <meta name="twitter:image" content="https://i.ibb.co/MnJcQSZ/waves.jpg" />
         <meta name="twitter:image:alt" content="Waves in dark colours" />
         <meta name="twitter:creator" content="@miezaruexpr" />
         <!-- <meta content="miezaru.dev" property="twitter:domain" /> -->
@@ -87,6 +87,8 @@
                         src="../../assets/img/header/header-icon.png"
                         srcset="../../assets/img/header/header-icon.png"
                         alt="miezaru-dev logo"
+                        height="512"
+                        width="512"
                     />
                 </picture>
 
@@ -253,7 +255,7 @@
                         <div class="content-box">
                             <p class="text">
                                 CSS describes the visual style and presentation of the content
-                                written in HTML
+                                written in HTML.
                             </p>
 
                             <p class="text">
@@ -282,9 +284,10 @@
                         <div class="content-box">
                             <h3 class="heading-h3 u-margin-bottom-sm">Visual formatting model</h3>
                             <p class="text">
-                                Visual formatting model - algorithm that calculates boxes and
-                                determines the layout of these boxes, for each element in the render
-                                tree, in order to determine the final layout of the page
+                                <strong> Visual formatting model</strong> - algorithm that
+                                calculates boxes and determines the layout of these boxes, for each
+                                element in the render tree, in order to determine the final layout
+                                of the page.
                             </p>
                             <ol class="list">
                                 <li class="list__item">
@@ -320,24 +323,37 @@
                     <h2 class="heading-h2 u-margin-bottom-sm">CSS Types</h2>
                     <div class="container-section">
                         <div class="content-box">
-                            <p class="text">
-                                Inline CSS - inside the element with
-                                <strong>style attribute</strong>.
-                            </p>
-
-                            <p class="text">
-                                Internal CSS - write CSS code in
-                                <strong>style element</strong> which is inside <strong>head</strong>
-                                element.
-                            </p>
-
-                            <p class="text">Separation of concerns - разделение интересов</p>
-
-                            <p class="text">
-                                External CSS - write CSS in <strong>external file .css</strong> and
-                                <strong>link it with link</strong>
-                                element.
-                            </p>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        Inline CSS - inside the element with
+                                        <strong>style attribute</strong>.
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Internal CSS - write CSS code in
+                                        <strong>style element</strong> which is inside
+                                        <strong>head</strong>
+                                        element.
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        External CSS - write CSS in
+                                        <strong>external file .css</strong> and
+                                        <strong>link it with link</strong>
+                                        element.
+                                    </p>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <p class="text">
+                                                Separation of concerns - разделение интересов.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -388,7 +404,7 @@ article footer p {}
                                 <li class="list__item">
                                     <p class="text">
                                         Cannot select if it starts with a number, but this can be
-                                        easily bypassed using the attribute selector [id="10"]
+                                        easily bypassed using the attribute selector [id="10"].
                                     </p>
                                 </li>
                             </ul>
@@ -537,14 +553,15 @@ img[alt=""] {}
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        <strong>Classes</strong> and <strong>pseudo-classes</strong>
+                                        <strong>Classes</strong> and
+                                        <strong>pseudo-classes</strong>
                                     </p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text"><strong>Element</strong> selector</p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text"><strong>Universal</strong> selector</p>
+                                    <p class="text"><strong>Universal</strong> selector.</p>
                                 </li>
                             </ol>
                         </div>
@@ -600,7 +617,7 @@ img[alt=""] {}
                                 <li class="list__item">
                                     <p class="text">
                                         <strong>Fill area</strong> - area that gets filled with
-                                        background color or background image
+                                        background color or background image.
                                     </p>
                                 </li>
                             </ul>
@@ -624,7 +641,7 @@ img[alt=""] {}
                                     </p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">With CSS: box-sizing: content-box;</p>
+                                    <p class="text">With CSS: box-sizing: content-box.</p>
                                 </li>
                             </ul>
                         </div>
@@ -639,7 +656,7 @@ img[alt=""] {}
                                     <p class="text">Final element height: height</p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">With CSS: box-sizing: border-box;</p>
+                                    <p class="text">With CSS: box-sizing: border-box.</p>
                                 </li>
                             </ul>
                         </div>
@@ -672,7 +689,7 @@ img[alt=""] {}
                                         rel="noopener external"
                                     >
                                         Webkit</a
-                                    >
+                                    >.
                                 </li>
                             </ul>
                         </div>
@@ -706,11 +723,11 @@ img[alt=""] {}
                                 <li class="list__item">
                                     <p class="text">
                                         Default elements: body, main, header, footer, section, nav,
-                                        aside, div, h1-h6, p, ul, ol, li, etc.
+                                        aside, div, h1-h6, p, ul, ol, li, etc
                                     </p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">With CSS: display: block;</p>
+                                    <p class="text">With CSS: display: block.</p>
                                 </li>
                             </ul>
                         </div>
@@ -758,7 +775,7 @@ img[alt=""] {}
                                     </p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">With CSS: display: inline;</p>
+                                    <p class="text">With CSS: display: inline.</p>
                                 </li>
                             </ul>
                         </div>
@@ -803,7 +820,7 @@ img[alt=""] {}
                                     </p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">With CSS: display: inline-block;</p>
+                                    <p class="text">With CSS: display: inline-block.</p>
                                 </li>
                             </ul>
                         </div>
@@ -825,7 +842,7 @@ img[alt=""] {}
                                 <li class="list__item">
                                     <p class="text">
                                         Elements are simply laid out according to their order in the
-                                        HTML code
+                                        HTML code.
                                     </p>
                                 </li>
                             </ul>
@@ -835,17 +852,17 @@ img[alt=""] {}
                             <h3 class="heading-h3 u-margin-bottom-sm">Relative positioning</h3>
                             <ul class="list">
                                 <li class="list__item">
-                                    <p class="text">Relative positioning: position: relative;</p>
+                                    <p class="text">Relative positioning: position: relative</p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
                                         An element with position: relative will maintain its place
                                         in the document flow, even when you set these values. They
-                                        will be relative to your element's position too.
+                                        will be relative to your element's position too
                                     </p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">Need for z-index</p>
+                                    <p class="text">Need for z-index.</p>
                                 </li>
                             </ul>
                         </div>
@@ -854,7 +871,7 @@ img[alt=""] {}
                             <h3 class="heading-h3 u-margin-bottom-sm">Absolute positioning</h3>
                             <ul class="list">
                                 <li class="list__item">
-                                    <p class="text">Absolute positioning: position: absolute;</p>
+                                    <p class="text">Absolute positioning: position: absolute,</p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
@@ -864,7 +881,7 @@ img[alt=""] {}
                                 <li class="list__item">
                                     <p class="text">
                                         Will base the directional values from the relative parent's
-                                        position.
+                                        position
                                     </p>
                                 </li>
                                 <li class="list__item">
@@ -879,7 +896,7 @@ img[alt=""] {}
                                     </p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">By default relation to viewport</p>
+                                    <p class="text">By default relation to viewport.</p>
                                 </li>
                             </ul>
                         </div>
@@ -888,7 +905,7 @@ img[alt=""] {}
                             <h3 class="heading-h3 u-margin-bottom-sm">Fixed positioning</h3>
                             <ul class="list">
                                 <li class="list__item">
-                                    <p class="text">Fixed positioning: position: fixed;</p>
+                                    <p class="text">Fixed positioning: position: fixed</p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
@@ -904,7 +921,7 @@ img[alt=""] {}
                             <h3 class="heading-h3 u-margin-bottom-sm">Sticky positioning</h3>
                             <ul class="list">
                                 <li class="list__item">
-                                    <p class="text">Sticky positioning: position: sticky;</p>
+                                    <p class="text">Sticky positioning: position: sticky</p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
@@ -951,14 +968,14 @@ img[alt=""] {}
                                     <p class="text">
                                         Origin: the order of when CSS appears and where it comes
                                         from, whether that is a browser style, CSS from a browser
-                                        extension, or your authored CSS
+                                        extension, or your authored CSS:
                                     </p>
                                     <ul class="list">
                                         <li class="list__item">
                                             <p class="text">
                                                 <strong>User agent base styles</strong>. These are
                                                 the styles that your browser applies to HTML
-                                                elements by default.
+                                                elements by default
                                             </p>
                                         </li>
                                         <li class="list__item">
@@ -968,26 +985,26 @@ img[alt=""] {}
                                                 size, or a preference of reduced motion. They can
                                                 also come from browser extensions, such as a browser
                                                 extension that allows a user to write their own
-                                                custom CSS for a webpage.
+                                                custom CSS for a webpage
                                             </p>
                                         </li>
                                         <li class="list__item">
                                             <p class="text">
                                                 <strong>Authored CSS</strong>. The CSS that you
-                                                author.
+                                                author
                                             </p>
                                         </li>
                                         <li class="list__item">
                                             <p class="text">
                                                 <strong>Authored !important</strong>. Any !important
-                                                that you add to your authored declarations.
+                                                that you add to your authored declarations
                                             </p>
                                         </li>
                                         <li class="list__item">
                                             <p class="text">
                                                 <strong>Local user styles !important</strong>. Any
                                                 !important that come from the operating system
-                                                level, or browser extension level CSS.
+                                                level, or browser extension level CSS
                                             </p>
                                         </li>
                                         <li class="list__item">
@@ -999,11 +1016,10 @@ img[alt=""] {}
                                         </li>
                                     </ul>
                                 </li>
-
                                 <li class="list__item">
                                     <p class="text">
                                         Importance: some CSS rules are weighted more heavily than
-                                        others, especially with the !important rule type
+                                        others, especially with the !important rule type.
                                     </p>
                                 </li>
                             </ol>
@@ -1032,7 +1048,7 @@ img[alt=""] {}
                                     </p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text"><strong>transition</strong> rule type</p>
+                                    <p class="text"><strong>transition</strong> rule type.</p>
                                 </li>
                             </ol>
                         </div>
@@ -1054,7 +1070,7 @@ img[alt=""] {}
                             <h3 class="heading-h3 u-margin-bottom-sm">Inheritance control</h3>
                             <ul class="list">
                                 <li class="list__item">
-                                    <p class="text">The <strong>inherit</strong> keyword</p>
+                                    <p class="text">The <strong>inherit</strong> keyword:</p>
                                     <ul class="list">
                                         <li class="list__item">
                                             <p class="text">
@@ -1076,12 +1092,12 @@ strong {
 
                             <ul class="list">
                                 <li class="list__item">
-                                    <p class="text">The <strong>initial</strong> keyword</p>
+                                    <p class="text">The <strong>initial</strong> keyword:</p>
                                     <ul class="list">
                                         <li class="list__item">
                                             <p class="text">
                                                 Inheritance can cause problems with elements and
-                                                initial provides a powerful reset option
+                                                initial provides a powerful reset option.
                                             </p>
                                         </li>
                                     </ul>
@@ -1098,7 +1114,7 @@ strong {
 
                             <ul class="list">
                                 <li class="list__item">
-                                    <p class="text">The <strong>unset</strong> keyword</p>
+                                    <p class="text">The <strong>unset</strong> keyword:</p>
                                     <ul class="list">
                                         <li class="list__item">
                                             <p class="text">
@@ -1200,7 +1216,7 @@ aside p {
                                         rel="noopener external"
                                     >
                                         Absolute lengths</a
-                                    >
+                                    >.
                                 </li>
                             </ul>
                         </div>
@@ -1216,7 +1232,7 @@ aside p {
                                         means that CSS has units such as ch that use the text size
                                         as a basis, and vw which is based on the width of the
                                         viewport (your browser window). Relative lengths are
-                                        particularly useful on the web due to its responsive nature.
+                                        particularly useful on the web due to its responsive nature
                                     </p>
                                 </li>
                                 <li class="list__item">
@@ -1235,7 +1251,7 @@ aside p {
                                         rel="noopener external"
                                     >
                                         Viewport-relative units</a
-                                    >
+                                    >.
                                 </li>
                             </ul>
                         </div>
@@ -1246,7 +1262,7 @@ aside p {
                                 <li class="list__item">
                                     <p class="text">
                                         There are some other units which have been specified to deal
-                                        with particular types of values.
+                                        with particular types of values
                                     </p>
                                 </li>
                                 <li class="list__item">
@@ -1265,7 +1281,7 @@ aside p {
                                         rel="noopener external"
                                     >
                                         Resolution units</a
-                                    >
+                                    >.
                                 </li>
                             </ul>
                         </div>
@@ -1280,7 +1296,7 @@ aside p {
                                 <li class="list__item">
                                     <p class="text">
                                         <strong>li:first-child</strong>,
-                                        <strong>li:last-child</strong>
+                                        <strong>li:last-child</strong>:
                                     </p>
                                     <ul class="list">
                                         <li class="list__item">
@@ -1294,7 +1310,9 @@ aside p {
                                 </li>
                                 <li class="list__item">
                                     <p class="text"><strong>li:nth-child(n/odd/even)</strong></p>
-                                    <p class="text">n can be used in the following two ways:</p>
+                                    <p class="text">
+                                        <strong>n</strong> can be used in the following two ways:
+                                    </p>
                                     <ul class="list">
                                         <li class="list__item">
                                             <p class="text">
@@ -1313,23 +1331,23 @@ aside p {
                                 </li>
 
                                 <li class="list__item">
-                                    <p class="text"><strong>:nth-last-child(-n+3)</strong>,</p>
+                                    <p class="text"><strong>:nth-last-child(-n+3)</strong>:</p>
                                     <ul class="list">
                                         <li class="list__item">
                                             <p class="text">
                                                 Selects the third element from the end, and after
-                                                that then every element after that
+                                                that then every element after that.
                                             </p>
                                         </li>
                                     </ul>
                                 </li>
 
                                 <li class="list__item">
-                                    <p class="text"><strong>:nth-of-type(n + 4)</strong>,</p>
+                                    <p class="text"><strong>:nth-of-type(n + 4)</strong>:</p>
                                     <ul class="list">
                                         <li class="list__item">
                                             <p class="text">
-                                                starting with the fourth, each successive
+                                                Starting with the fourth, each successive.
                                             </p>
                                         </li>
                                     </ul>
@@ -1359,11 +1377,11 @@ aside p {
                                         It is better to use the css display property with the value
                                         inline-block to set indents, because by standard it is an
                                         <strong>inline</strong>
-                                        element.
+                                        element
                                     </p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">Position using position:absolute, top, etc.</p>
+                                    <p class="text">Position using position:absolute, top, etc</p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
@@ -1374,7 +1392,7 @@ aside p {
                                 <li class="list__item">
                                     <p class="text">
                                         <strong>p::before</strong> - first child element of p, need
-                                        content="" property
+                                        content="" property.
                                     </p>
                                 </li>
                             </ul>

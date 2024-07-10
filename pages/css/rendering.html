@@ -40,7 +40,7 @@
             content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about CSS Rendering."
         />
         <meta name="twitter:image:src" content="../../assets/og/waves.jpeg" />
-        <meta name="twitter:image" content="../../assets/og/waves.jpeg" />
+        <meta name="twitter:image" content="https://i.ibb.co/MnJcQSZ/waves.jpg" />
         <meta name="twitter:image:alt" content="Waves in dark colours" />
         <meta name="twitter:creator" content="@miezaruexpr" />
         <!-- <meta content="miezaru.dev" property="twitter:domain" /> -->
@@ -86,6 +86,8 @@
                         src="../../assets/img/header/header-icon.png"
                         srcset="../../assets/img/header/header-icon.png"
                         alt="miezaru-dev logo"
+                        height="512"
+                        width="512"
                     />
                 </picture>
 
@@ -210,19 +212,19 @@
                         <div class="content-box">
                             <ul class="list">
                                 <li class="list__item">
-                                    <p class="text">Load HTML</p>
+                                    <p class="text">Load HTML;</p>
                                     <ul class="list">
                                         <li class="list__item">
-                                            <p class="text">Parse HTML</p>
+                                            <p class="text">Parse HTML;</p>
 
                                             <ul class="list">
                                                 <li class="list__item">
-                                                    <p class="text">Document Object Model (DOM)</p>
+                                                    <p class="text">Document Object Model (DOM).</p>
                                                 </li>
                                             </ul>
                                             <ul class="list">
                                                 <li class="list__item">
-                                                    <p class="text">Load CSS</p>
+                                                    <p class="text">Load CSS:</p>
 
                                                     <ul class="list">
                                                         <li class="list__item">
@@ -233,13 +235,13 @@
                                                         </li>
                                                         <li class="list__item">
                                                             <p class="text">
-                                                                Process final CSS values
+                                                                Process final CSS values:
                                                             </p>
 
                                                             <ul class="list">
                                                                 <li class="list__item">
                                                                     <p class="text">
-                                                                        CSS Object Model (CSSDOM)
+                                                                        CSS Object Model (CSSDOM).
                                                                     </p>
                                                                 </li>
                                                             </ul>
@@ -250,7 +252,7 @@
 
                                             <ul class="list">
                                                 <li class="list__item">
-                                                    <p class="text">Render tree</p>
+                                                    <p class="text">Render tree.</p>
                                                 </li>
                                             </ul>
 
@@ -258,14 +260,14 @@
                                                 <li class="list__item">
                                                     <p class="text">
                                                         Website rendering: the visual formatting
-                                                        model
+                                                        model.
                                                     </p>
                                                 </li>
                                             </ul>
 
                                             <ul class="list">
                                                 <li class="list__item">
-                                                    <p class="text">Final rendered website</p>
+                                                    <p class="text">Final rendered website.</p>
                                                 </li>
                                             </ul>
                                         </li>
@@ -291,13 +293,13 @@
                             <h3 class="heading-h3 u-margin-bottom-sm">Cascade order</h3>
                             <ol class="list">
                                 <li class="list__item">
-                                    <p class="text">Importance (weight)</p>
+                                    <p class="text"><strong>Importance</strong> (weight)</p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">Specificity</p>
+                                    <p class="text"><strong>Specificity</strong></p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">Source order</p>
+                                    <p class="text"><strong>Source order</strong>.</p>
                                 </li>
                             </ol>
                         </div>
@@ -307,7 +309,7 @@
                             <ol class="list">
                                 <li class="list__item">
                                     <p class="text">
-                                        <strong>User</strong> !important declarations.
+                                        <strong>User</strong> !important declarations
                                     </p>
                                 </li>
                                 <li class="list__item">
@@ -323,7 +325,7 @@
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        <strong>Default</strong> browser declarations
+                                        <strong>Default</strong> browser declarations.
                                     </p>
                                 </li>
                             </ol>
@@ -337,16 +339,18 @@
                             <h3 class="heading-h3 u-margin-bottom-sm">Specificity</h3>
                             <ol class="list">
                                 <li class="list__item">
-                                    <p class="text">Inline styles</p>
+                                    <p class="text"><strong>Inline styles</strong></p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">IDs</p>
+                                    <p class="text"><strong>IDs</strong></p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">Classes, pseudo-classes, attribute</p>
+                                    <p class="text">
+                                        <strong>Classes</strong>, pseudo-classes, attribute
+                                    </p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">Elements, pseudo-elements</p>
+                                    <p class="text"><strong>Elements</strong>, pseudo-elements.</p>
                                 </li>
                             </ol>
                         </div>
@@ -358,8 +362,9 @@
                         <div class="content-box">
                             <h3 class="heading-h3 u-margin-bottom-sm">Source order</h3>
                             <p class="text">
-                                The last declaration in the code will ovverride all other
-                                decllarations and will be applied
+                                The <strong>last declaration</strong> in the code will
+                                <strong>override all</strong> other declarations and
+                                <strong>will be applied</strong>.
                             </p>
                         </div>
                     </div>
@@ -436,30 +441,37 @@
                             </h3>
                             <ol class="list">
                                 <li class="list__item">
-                                    <p class="text">Declared value (author declarations)</p>
-                                </li>
-                                <li class="list__item">
-                                    <p class="text">Cascaded value (after the cascade)</p>
-                                </li>
-                                <li class="list__item">
                                     <p class="text">
-                                        Specified value (defaulting, if there is no cascaded value)
+                                        <strong>Declared value</strong> (author declarations)
                                     </p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        Compucted value (converting relative values to absolute
-                                        (px))
+                                        <strong>Cascaded value</strong> (after the cascade)
                                     </p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        Used value (final calculations, based on layout)
+                                        <strong>Specified value</strong> (defaulting, if there is no
+                                        cascaded value)
                                     </p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        Actual size (browser and device restrictions)
+                                        <strong>Compucted value </strong>(converting relative values
+                                        to absolute (px))
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Used value</strong> (final calculations, based on
+                                        layout)
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <strong>Actual size</strong> (browser and device
+                                        restrictions).
                                     </p>
                                 </li>
                             </ol>
@@ -498,7 +510,7 @@
                                     <p class="text">vh - x * 1% of vieport height</p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">vw - x * 1% of viewport width</p>
+                                    <p class="text">vw - x * 1% of viewport width.</p>
                                 </li>
                             </ul>
                         </div>
@@ -562,7 +574,7 @@
                                 <li class="list__item">
                                     <p class="text">
                                         vh and vw are simply percentage measurements of the
-                                        viewport`s height and width
+                                        viewport`s height and width.
                                     </p>
                                 </li>
                             </ul>
@@ -587,7 +599,7 @@
                                 <li class="list__item">
                                     <p class="text">
                                         Properties related to text are inheritaed: font-family,
-                                        font-size, color, etc.
+                                        font-size, color, etc
                                     </p>
                                 </li>
                                 <li class="list__item">
@@ -633,7 +645,7 @@
                             <p class="text">
                                 <strong>Visual formatting model</strong> - algorithm that calcualtes
                                 boxes and determines the layout of these boxes, for each element in
-                                render tree, in order to determine the final layout of the page
+                                render tree, in order to determine the final layout of the page.
                             </p>
                         </div>
                         <div class="content-box">
@@ -655,9 +667,7 @@
                                     </p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">
-                                        <strong>Stacking contexts</strong>
-                                    </p>
+                                    <p class="text"><strong>Stacking contexts</strong></p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">Other elements in the render tree</p>

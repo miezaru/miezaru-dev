@@ -37,7 +37,7 @@
             content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Arrays."
         />
         <meta name="twitter:image:src" content="../../assets/og/waves.jpeg" />
-        <meta name="twitter:image" content="../../assets/og/waves.jpeg" />
+        <meta name="twitter:image" content="https://i.ibb.co/MnJcQSZ/waves.jpg" />
         <meta name="twitter:image:alt" content="Waves in dark colours" />
         <meta name="twitter:creator" content="@miezaruexpr" />
         <!-- <meta content="miezaru.dev" property="twitter:domain" /> -->
@@ -84,6 +84,8 @@
                         src="../../assets/img/header/header-icon.png"
                         srcset="../../assets/img/header/header-icon.png"
                         alt="miezaru-dev logo"
+                        height="512"
+                        width="512"
                     />
                 </picture>
 
@@ -203,11 +205,11 @@
                         <div class="content-box">
                             <p class="text">
                                 Array is a data structure that stores multiple values in a single
-                                variable
+                                variable.
                             </p>
                         </div>
                         <div class="content-box">
-                            <p class="text">2 ways to create an array</p>
+                            <p class="text">2 ways to create an array.</p>
                             <pre class="code">
                                 <code class="code-el">
 const friends = ['Nika', 'Anna', 'Eva']
@@ -217,7 +219,7 @@ const friends = new Array('Nika', 'Anna', 'Eva')
                         </div>
 
                         <div class="content-box">
-                            <p class="text">Accessing elements in an array</p>
+                            <p class="text">Accessing elements in an array.</p>
                             <pre class="code">
                                 <code class="code-el">
 friends[2] // 'Eva'
@@ -239,7 +241,7 @@ const newBook = {
 
                         <div class="content-box">
                             <p class="text">
-                                Array length property gives us the number of elements in the array
+                                Array length property gives us the number of elements in the array.
                             </p>
                             <pre class="code">
                                 <code class="code-el">
@@ -251,16 +253,16 @@ friends.length // 3
                         <div class="content-box">
                             <p class="text">
                                 Only primitive data types cannot be changed in const variables
-                                (number, string, boolean, null, undefined)
+                                (number, string, boolean, null, undefined).
                             </p>
 
-                            <p class="text">We can change/mutate an element in an array</p>
+                            <p class="text">We can change/mutate an element in an array.</p>
                             <pre class="code">
                                 <code class="code-el">
 friends[2] = 'Emma'
                                 </code>
                             </pre>
-                            <p class="text">Illegal operation (because array is const variable)</p>
+                            <p class="text">Illegal operation (because array is const variable).</p>
                             <pre class="code">
                                 <code class="code-el">
 const friends = ['Nika', 'Anna', 'Eva']
@@ -270,7 +272,7 @@ friends = ['Olga', 'Olivia', 'Sophia']
                         </div>
 
                         <div class="content-box">
-                            <p class="text">All items in an array is expressions</p>
+                            <p class="text">All items in an array is expressions.</p>
                             <pre class="code">
                                 <code class="code-el">
 const artem = ['Artem', 'Usatyi', 2024 - 1997, 'programmer', friends]
@@ -333,7 +335,7 @@ const artem = ['Artem', 'Usatyi', 2024 - 1997, 'programmer', friends]
                                 <li class="list__item">
                                     <p class="text">
                                         <code>copyWithin</code>: copies part of the array to another
-                                        location in the same array
+                                        location in the same array.
                                     </p>
                                 </li>
                             </ul>
@@ -354,7 +356,7 @@ const artem = ['Artem', 'Usatyi', 2024 - 1997, 'programmer', friends]
                                     <p class="text"><code>push(element1, element2)</code></p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">returns the new length of the array</p>
+                                    <p class="text">returns the new length of the array.</p>
                                 </li>
                             </ul>
                             <pre class="code">
@@ -374,7 +376,7 @@ let newLength = friends.push('Mia') // return new length
                                     <p class="text"><code>pop()</code></p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">returns the removed element</p>
+                                    <p class="text">returns the removed element.</p>
                                 </li>
                             </ul>
                             <pre class="code">
@@ -396,7 +398,7 @@ const lastElement = friends.pop() // return removed (last) item of the array
                                     <p class="text"><code>unshift(element1, element2)</code></p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">returns the new length of the array</p>
+                                    <p class="text">returns the new length of the array.</p>
                                 </li>
                             </ul>
                             <pre class="code">
@@ -418,7 +420,7 @@ const newLength = friends.unshift('Kate') // return new length
                                     <p class="text"><code>shift()</code></p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">returns the removed element</p>
+                                    <p class="text">returns the removed element.</p>
                                 </li>
                             </ul>
                             <pre class="code">
@@ -445,7 +447,7 @@ const firstElement = friends.shift() // return removed (first) item of the array
                                     </p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">returns the modified array</p>
+                                    <p class="text">returns the modified array.</p>
                                 </li>
                             </ul>
                             <pre class="code">
@@ -477,7 +479,7 @@ console.log(array.fill(0, 2, 4)) // [1, 2, 0, 0]
                                 <li class="list__item">
                                     <p class="text">
                                         returns the first index at which a given element can be
-                                        found in the array, or -1 if not found
+                                        found in the array, or -1 if not found.
                                     </p>
                                 </li>
                             </ul>
@@ -505,7 +507,7 @@ beasts.indexOf('lion')     // -1;
                                 <li class="list__item">
                                     <p class="text">
                                         returns the last index at which a given element can be found
-                                        in the array, or -1 if not found
+                                        in the array, or -1 if not found.
                                     </p>
                                 </li>
                             </ul>
@@ -531,7 +533,7 @@ animals.lastIndexOf('Dodo') // 3
                                 <li class="list__item">
                                     <p class="text">
                                         returns the index of the FIRST element in the array that
-                                        satisfies the provided testing function
+                                        satisfies the provided testing function.
                                     </p>
                                 </li>
                             </ul>
@@ -558,7 +560,7 @@ array.findIndex(isLargeNumber) // 1
                                 <li class="list__item">
                                     <p class="text">
                                         returns the index of the LAST element in the array that
-                                        satisfies the provided testing function
+                                        satisfies the provided testing function.
                                     </p>
                                 </li>
                             </ul>
@@ -580,7 +582,7 @@ array.findLastIndex(isLargeNumber) // 4
                                 <li class="list__item">
                                     <p class="text">
                                         returns a new Array Iterator object that contains the keys
-                                        of an array
+                                        of an array.
                                     </p>
                                 </li>
                             </ul>
@@ -608,7 +610,7 @@ console.log(myKeys) // [0, 1, 2]
                                 <li class="list__item">
                                     <p class="text">
                                         returns a new Iterator object that contains the keys for
-                                        each element
+                                        each element.
                                     </p>
                                 </li>
                             </ul>
@@ -645,7 +647,7 @@ for (const element of homies.entries()) {
                                 <li class="list__item">
                                     <p class="text">
                                         returns a new Iterator object that contains the values for
-                                        each index in the array
+                                        each index in the array.
                                     </p>
                                 </li>
                             </ul>
@@ -676,7 +678,7 @@ for (const value of iterator2) {
                                 <li class="list__item">
                                     <p class="text">
                                         returns a new Iterator object that contains the keys for
-                                        each element
+                                        each element.
                                     </p>
                                 </li>
                             </ul>
@@ -710,6 +712,7 @@ for (const letter of iterator1) {
                                     <p class="text">
                                         returns the element at the specified index in the array
                                     </p>
+                                    .
                                 </li>
                             </ul>
                             <pre class="code">
@@ -740,7 +743,7 @@ console.log(homies.at(-1))   // Mia;
                                 <li class="list__item">
                                     <p class="text">
                                         returns true if the array contains the element, false
-                                        otherwise
+                                        otherwise.
                                     </p>
                                 </li>
                             </ul>
@@ -770,6 +773,7 @@ console.log(array.includes(3, 3)) // false
                                         returns the value of the FIRST element in the array that
                                         satisfies the provided testing function
                                     </p>
+                                    .
                                 </li>
                             </ul>
                             <pre class="code">
@@ -796,6 +800,7 @@ const found = array.find(element => element > 10) // 12
                                         returns the value of the LAST element in the array that
                                         satisfies the provided testing function
                                     </p>
+                                    .
                                 </li>
                             </ul>
                             <pre class="code">
@@ -828,7 +833,7 @@ const found3 = array3.findLast(element => element > 10) // 44
                                         >
                                     </p>
                                 </li>
-                                <li class="list__item"><p class="text">returns undefined</p></li>
+                                <li class="list__item"><p class="text">returns undefined.</p></li>
                             </ul>
                             <pre class="code">
                                 <code class="code-el">
@@ -874,7 +879,7 @@ console.log(copyItems2)
                                 <li class="list__item">
                                     <p class="text">
                                         returns a new array with the results of calling a provided
-                                        function on every element in the array
+                                        function on every element in the array.
                                     </p>
                                 </li>
                             </ul>
@@ -905,7 +910,7 @@ console.log(map1) // [2, 8, 18, 32]
                                     <p class="text">
                                         returns a new array with the results of calling a provided
                                         function on every element in the array and flattens the
-                                        result into a single array
+                                        result into a single array.
                                     </p>
                                 </li>
                             </ul>
@@ -940,7 +945,7 @@ console.log(result2) // [1, 3, 2, 2, 4, 4, 1, 3, 2, 34, 36, 68, 2, 4, 4, 45, 47,
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        returns a new array with all elements that pass the test
+                                        returns a new array with all elements that pass the test.
                                     </p>
                                 </li>
                             </ul>
@@ -977,7 +982,7 @@ console.log(result) // ['exuberant', 'destruction', 'present']
                                 <li class="list__item">
                                     <p class="text">
                                         returns the accumulated value after running the reduce
-                                        function on each element in the array
+                                        function on each element in the array.
                                     </p>
                                 </li>
                             </ul>
@@ -1017,7 +1022,7 @@ const result2 = array3.reduceRight((accumulator, currentValue) => accumulator.co
                                     <p class="text">
                                         returns the array, change the original array if using
                                         <code>.sort()</code> and not changing if used
-                                        <code>.toSorted</code>
+                                        <code>.toSorted</code>.
                                     </p>
                                 </li>
                             </ul>
@@ -1056,7 +1061,7 @@ console.log(array3)    // [3, 1, 2, 5, 4]
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        returns true if all elements pass the test, false otherwise
+                                        returns true if all elements pass the test, false otherwise.
                                     </p>
                                 </li>
                             </ul>
@@ -1095,7 +1100,7 @@ isSubset([1, 2, 3, 4, 5, 6, 7], [5, 7, 6]) // true
                                 <li class="list__item">
                                     <p class="text">
                                         returns true if at least one element in the array passes the
-                                        test implemented by the provided function
+                                        test implemented by the provided function.
                                     </p>
                                 </li>
                             </ul>
@@ -1126,7 +1131,7 @@ console.log(array.some(even)) // true
                                 <li class="list__item">
                                     <p class="text">
                                         returns a new array that is the result of concatenating all
-                                        the arrays in the arguments
+                                        the arrays in the arguments.
                                     </p>
                                 </li>
                             </ul>
@@ -1149,7 +1154,7 @@ homies = homies.concat(['Ben', 'Tailor']) // ['Nika', 'Anna', 'Eva', 'Mia', 'Ben
                                 <li class="list__item">
                                     <p class="text">
                                         returns a new array with all sub-array elements concatenated
-                                        into it
+                                        into it.
                                     </p>
                                 </li>
                             </ul>
@@ -1182,7 +1187,7 @@ console.log(array6.flat(Infinity))    // [0, 1, 2, 3, 4, 5]
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        returns the element at the specified index in the array
+                                        returns the element at the specified index in the array.
                                     </p>
                                 </li>
                             </ul>
@@ -1222,7 +1227,7 @@ array.copyWithin(0, 3, 3)
                                 <li class="list__item">
                                     <p class="text">
                                         returns a new array containing a shallow copy of a portion
-                                        of the array
+                                        of the array.
                                     </p>
                                 </li>
                             </ul>
@@ -1265,7 +1270,7 @@ animals1.slice()        // ['ant', 'bison', 'camel', 'duck', 'elephant']
                                     <p class="text">
                                         returns a new array containing the deleted elements,
                                         <code>.splice()</code> changing the original array and
-                                        <code>.toSpliced</code> not changing the original array
+                                        <code>.toSpliced</code> not changing the original array.
                                     </p>
                                 </li>
                             </ul>
@@ -1301,7 +1306,7 @@ console.log(months1) // not changed
                                 <li class="list__item">
                                     <p class="text">
                                         returns a shallow copy of an array with the provided items
-                                        appended to it
+                                        appended to it.
                                     </p>
                                 </li>
                             </ul>
@@ -1332,7 +1337,7 @@ const newArray = array.with(2, 6)    // [1, 2, 6, 4, 5]
                                     <p class="text">
                                         returns the array with its elements in reverse order,
                                         <code>.reverse()</code> changing the original array and
-                                        <code>.toReversed()</code> not changing the original array
+                                        <code>.toReversed()</code> not changing the original array.
                                     </p>
                                 </li>
                             </ul>
@@ -1361,7 +1366,7 @@ array2                      // [1, 2, 3, 4, 5]
                                 <li class="list__item">
                                     <p class="text">
                                         returns a string containing all the elements of the array,
-                                        separated by commas and/or a specified separator
+                                        separated by commas and/or a specified separator.
                                     </p>
                                 </li>
                             </ul>
@@ -1382,7 +1387,9 @@ elements.join(' ').toLowerCase()    // fire air water
                                     <p class="text"><code>toString()</code></p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">returns a string representation of the array</p>
+                                    <p class="text">
+                                        returns a string representation of the array.
+                                    </p>
                                 </li>
                             </ul>
                             <pre class="code">
@@ -1406,7 +1413,7 @@ array21.toString()    // "1,a,23,1,2,3,[object Object]"
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        returns a string representing the elements of the array
+                                        returns a string representing the elements of the array.
                                     </p>
                                 </li>
                             </ul>

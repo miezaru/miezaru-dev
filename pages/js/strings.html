@@ -37,7 +37,7 @@
             content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Strings."
         />
         <meta name="twitter:image:src" content="../../assets/og/waves.jpeg" />
-        <meta name="twitter:image" content="../../assets/og/waves.jpeg" />
+        <meta name="twitter:image" content="https://i.ibb.co/MnJcQSZ/waves.jpg" />
         <meta name="twitter:image:alt" content="Waves in dark colours" />
         <meta name="twitter:creator" content="@miezaruexpr" />
         <!-- <meta content="miezaru.dev" property="twitter:domain" /> -->
@@ -84,6 +84,8 @@
                         src="../../assets/img/header/header-icon.png"
                         srcset="../../assets/img/header/header-icon.png"
                         alt="miezaru-dev logo"
+                        height="512"
+                        width="512"
                     />
                 </picture>
 
@@ -218,7 +220,7 @@
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        <code class="code-el">new String(23).slice()</code>
+                                        <code class="code-el">new String(23).slice().</code>
                                     </p>
                                 </li>
                             </ul>
@@ -352,7 +354,7 @@ console.log(airline.indexOf('portugal'));   // -1
                                     <p class="text">
                                         at() returns a string consisting of the single UTF-16 code
                                         unit located at the specified position. Returns undefined if
-                                        the given index can not be found.
+                                        the given index can not be found
                                     </p>
                                 </li>
                                 <li class="list__item">
@@ -417,7 +419,7 @@ console.log(plane.includes('Boeing'));  // false
                                     <p class="text">
                                         Determines whether a string starts or ends with the
                                         characters of this string, returning true or false as
-                                        appropriate.
+                                        appropriate
                                     </p>
                                 </li>
                                 <li class="list__item">
@@ -466,7 +468,7 @@ if (plane.startsWith('Airbus') && plane.endsWith('neo')) {
                                     <p class="text">
                                         <code class="code-el">match()</code> return an array whose
                                         contents depend on the presence or absence of the global (g)
-                                        flag, or null if no matches are found.
+                                        flag, or null if no matches are found
                                     </p>
 
                                     <ul class="list">
@@ -474,7 +476,7 @@ if (plane.startsWith('Airbus') && plane.endsWith('neo')) {
                                             <p class="text">
                                                 if the <strong>g</strong> flag is used, all results
                                                 matching the complete regular expression will be
-                                                returned, but capturing groups are not included.
+                                                returned, but capturing groups are not included
                                             </p>
                                         </li>
                                         <li class="list__item">
@@ -606,7 +608,7 @@ console.log(`${str1} ${str2}`);         // "Hello World"
                                     <p class="text">
                                         constructs and returns a new string which contains the
                                         specified number of copies of this string, concatenated
-                                        together
+                                        together.
                                     </p>
                                 </li>
                             </ul>
@@ -637,7 +639,7 @@ planesInLine(5);
                                 <li class="list__item">
                                     <p class="text">
                                         returns a new string with (one, some, or all / all) matches
-                                        of a pattern replaced by a replacement
+                                        of a pattern replaced by a replacement.
                                     </p>
                                 </li>
                             </ul>
@@ -671,7 +673,7 @@ paragraph.replaceAll(regex, 'ferret'); "I think Ruth's ferret is cuter than your
                                 <li class="list__item">
                                     <p class="text">
                                         extracts a section of this string and returns it as a new
-                                        string, without modifying the original string.
+                                        string, without modifying the original string
                                     </p>
                                 </li>
                                 <li class="list__item">
@@ -734,7 +736,7 @@ checkMiddleSeat('3E');
                                     <p class="text">
                                         return new string representing the calling string converted
                                         to (lower case/upper case), according to any locale-specific
-                                        case mappings
+                                        case mappings.
                                     </p>
                                 </li>
                             </ul>
@@ -766,7 +768,7 @@ console.log(city.toLocaleUpperCase('TR'));      // "İSTANBUL"
                                 <li class="list__item">
                                     <p class="text">
                                         removes whitespace from both ends of this string and returns
-                                        a new string, without modifying the original string
+                                        a new string, without modifying the original string.
                                     </p>
                                 </li>
                             </ul>
@@ -802,7 +804,7 @@ console.log(email === normalizedEmail); // true
                                         return a string of the specified
                                         <code class="code-el">targetLength</code> with
                                         <code class="code-el">padString</code>
-                                        applied from the start
+                                        applied from the start.
                                     </p>
                                 </li>
                             </ul>
@@ -835,7 +837,7 @@ console.log(maskCreaditCard('8473748574091384'));
                                     <p class="text">
                                         takes a pattern and divides this string into an ordered list
                                         of substrings by searching for the pattern, puts these
-                                        substrings into an array, and returns the array
+                                        substrings into an array, and returns the array.
                                     </p>
                                 </li>
                             </ul>
@@ -854,12 +856,12 @@ console.log(firstName, lastName);               // 'Artem', 'Usatyi'
                             <h3 class="heading-h3 u-margin-bottom-sm">join()</h3>
                             <p class="text">
                                 Not a string method (array), but very useful when we working with
-                                split method
+                                split method.
                             </p>
                             <ul class="list">
                                 <li class="list__item">
                                     <p class="text">
-                                        <code class="code-el"> join(), join(separator) </code>
+                                        <code class="code-el">join(), join(separator)</code>
                                     </p>
                                 </li>
                                 <li class="list__item">
@@ -906,7 +908,7 @@ console.log(capitalizedName('artem usatyi'));   // "Artem Usatyi"
                                 <li class="list__item">
                                     <p class="text">
                                         returns a string where all lone surrogates of this string
-                                        are replaced with the Unicode replacement character U+FFFD
+                                        are replaced with the Unicode replacement character U+FFFD.
                                     </p>
                                 </li>
                             </ul>
@@ -952,16 +954,16 @@ for (const str of strings) {
                                         <li class="list__item">
                                             <p class="text">
                                                 "NFC" - Canonical Decomposition, followed by
-                                                Canonical Composition.
+                                                Canonical Composition
                                             </p>
                                         </li>
                                         <li class="list__item">
-                                            <p class="text">"NFD" - Canonical Decomposition.</p>
+                                            <p class="text">"NFD" - Canonical Decomposition</p>
                                         </li>
                                         <li class="list__item">
                                             <p class="text">
                                                 "NFKC" - Compatibility Decomposition, followed by
-                                                Canonical Composition.
+                                                Canonical Composition
                                             </p>
                                         </li>
                                         <li class="list__item">
@@ -973,7 +975,7 @@ for (const str of strings) {
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        returns the Unicode Normalization Form of this string
+                                        returns the Unicode Normalization Form of this string.
                                     </p>
                                 </li>
                             </ul>
@@ -1012,7 +1014,7 @@ console.log(name1NFC.length === name2NFC.length);   // true
                                     <p class="text">
                                         return a negative number if referenceStr occurs before
                                         compareString; positive if the referenceStr occurs after
-                                        compareString; 0 if they are equivalent.
+                                        compareString; 0 if they are equivalent
                                     </p>
                                     <p class="text">
                                         in implementations with Intl.Collator, this is equivalent to
@@ -1051,7 +1053,7 @@ console.log(a.localeCompare(b, 'en', { sensitivity: 'base' })); // 0
                                 <li class="list__item">
                                     <p class="text">
                                         return a string of length N consisting of the N specified
-                                        UTF-16 code units
+                                        UTF-16 code units.
                                     </p>
                                 </li>
                             </ul>
@@ -1075,7 +1077,7 @@ console.log(String.fromCharCode(189, 43, 190, 61)); // "½+¾="
                                 <li class="list__item">
                                     <p class="text">
                                         return a string created by using the specified sequence of
-                                        code points
+                                        code points.
                                     </p>
                                 </li>
                             </ul>
@@ -1129,14 +1131,14 @@ console.log(sentence.charCodeAt(4)); // 113
                                             <p class="text">
                                                 If index is out of the range of 0 – str.length - 1,
                                                 <code class="code-el">codePointAt()</code> returns
-                                                undefined.
+                                                undefined
                                             </p>
                                         </li>
                                         <li class="list__item">
                                             <p class="text">
                                                 If the element at index is a UTF-16 leading
                                                 surrogate, returns the code point of the surrogate
-                                                pair.
+                                                pair
                                             </p>
                                         </li>
                                         <li class="list__item">

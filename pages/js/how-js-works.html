@@ -40,7 +40,7 @@
             content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript 'How JavaScript works'."
         />
         <meta name="twitter:image:src" content="../../assets/og/waves.jpeg" />
-        <meta name="twitter:image" content="../../assets/og/waves.jpeg" />
+        <meta name="twitter:image" content="https://i.ibb.co/MnJcQSZ/waves.jpg" />
         <meta name="twitter:image:alt" content="Waves in dark colours" />
         <meta name="twitter:creator" content="@miezaruexpr" />
         <!-- <meta content="miezaru.dev" property="twitter:domain" /> -->
@@ -87,6 +87,8 @@
                         src="../../assets/img/header/header-icon.png"
                         srcset="../../assets/img/header/header-icon.png"
                         alt="miezaru-dev logo"
+                        height="512"
+                        width="512"
                     />
                 </picture>
 
@@ -257,7 +259,7 @@
                                     <p class="text">first-class functions</p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">non-blocking event loop concurrency model</p>
+                                    <p class="text">non-blocking event loop concurrency model.</p>
                                 </li>
                             </ul>
                         </div>
@@ -276,7 +278,7 @@
                                     <p class="text">
                                         <strong>high level</strong> language Pyhon or JavaScript -
                                         developer does NOT have to worry, everything happens
-                                        automatically
+                                        automatically.
                                     </p>
                                 </li>
                             </ul>
@@ -291,7 +293,7 @@
                                     </p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">cleaning the memory so we don`t have to</p>
+                                    <p class="text">cleaning the memory so we don`t have to.</p>
                                 </li>
                             </ul>
                         </div>
@@ -309,7 +311,7 @@
                                 <li class="list__item">
                                     <p class="text">
                                         compiling (convert to machine code) happens automatically
-                                        inside the JavaScript engine
+                                        inside the JavaScript engine.
                                     </p>
                                 </li>
                             </ul>
@@ -330,11 +332,11 @@
                                     <p class="text">object-oriented programming</p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">functional programming</p>
+                                    <p class="text">functional programming.</p>
                                 </li>
                             </ul>
 
-                            <p class="text">Paradigms is impertaive or declarative</p>
+                            <p class="text">Paradigms is impertaive or declarative.</p>
                             <p class="text">
                                 <strong> Imperative programming</strong> is a paradigm describing
                                 HOW the program should do something by explicitly specifying each
@@ -350,7 +352,7 @@
                             <p class="text">
                                 <strong>Procedal programming</strong> - is a programming paradigm
                                 built around the idea that programs are sequences of instructions to
-                                be executed
+                                be executed.
                             </p>
                             <p class="text">
                                 <strong>Object-oriented programming (OOP)</strong> - is a style of
@@ -363,7 +365,7 @@
                                 <strong>Functional programming</strong> - is a declarative
                                 programming paradigm style where one applies pure functions in
                                 sequence to solve complex problems. Functions take an input value
-                                and produce an output value without being affected by the program
+                                and produce an output value without being affected by the program.
                             </p>
                         </div>
 
@@ -373,11 +375,11 @@
                             </h4>
                             <p class="text">
                                 Everything in a JavaScript is an object, except for primitive values
-                                (numbers, strings etc.)
+                                (numbers, strings etc.).
                             </p>
                             <p class="text">
                                 JavaScript treats strings as objects when executing methods and
-                                properties
+                                properties.
                             </p>
                             <pre class="code">
                                 <code class="code-el">
@@ -387,7 +389,7 @@ arr.push(4) // arr.prototype.push(4)
                             </pre>
                             <p class="text">
                                 Our <code class="code-el">arr</code> inherits methods from the
-                                prototype
+                                prototype.
                             </p>
                         </div>
 
@@ -397,16 +399,16 @@ arr.push(4) // arr.prototype.push(4)
                                 In language with first-class functions, functions are simply treated
                                 as
                                 <strong>variables</strong>. We can pass them into other functions,
-                                and return them from functions
+                                and return them from functions.
                             </p>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">Dynamic</h4>
                             <p class="text">
-                                Dynamic language means dynamicly <strong>typed</strong> language
+                                Dynamic language means dynamicly <strong>typed</strong> language.
                             </p>
                             <p class="text">
                                 JavaScript has no data type definitions. Types becomes known at
-                                runtime
+                                runtime.
                             </p>
 
                             <pre class="code">
@@ -423,18 +425,18 @@ y = 'Artem' // data type of variable is automatically changed
                             </h4>
                             <p class="text">
                                 <strong>Concurency model</strong> - how the JavaScript engine
-                                handles multiple tasks happening at the same time
+                                handles multiple tasks happening at the same time.
                             </p>
 
                             <p class="text"><em class="text-ems">why do we need that?</em></p>
 
                             <p class="text">
                                 JavaScript runs in one single thread, so it can only do one thing at
-                                a time
+                                a time.
                             </p>
                             <p class="text">
                                 Thread is where our code is actually executed in a machines
-                                processor
+                                processor.
                             </p>
 
                             <p class="text">
@@ -442,14 +444,14 @@ y = 'Artem' // data type of variable is automatically changed
                             </p>
                             <p class="text">
                                 Sounds like it would block the single thread. However, we want
-                                non-blocking behavior
+                                non-blocking behavior.
                             </p>
 
                             <p class="text"><em class="text-ems">how do we achieve that?</em></p>
                             <p class="text">
                                 By using an event loop - takes long running tasks, executes them in
                                 the "background", and put them back in the main thread once they are
-                                finished
+                                finished.
                             </p>
                         </div>
                     </div>
@@ -463,7 +465,7 @@ y = 'Artem' // data type of variable is automatically changed
                                 What is JavaScript Engine?
                             </h3>
                             <p class="text">
-                                <strong>JS Engine</strong> - program that executes JavaScript code
+                                <strong>JS Engine</strong> - program that executes JavaScript code.
                             </p>
 
                             <ul class="list">
@@ -485,7 +487,7 @@ y = 'Artem' // data type of variable is automatically changed
                                     </p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">Heap - is where objects are stored</p>
+                                    <p class="text">Heap - is where objects are stored.</p>
                                 </li>
                             </ul>
                         </div>
@@ -499,14 +501,14 @@ y = 'Artem' // data type of variable is automatically changed
                             <p class="text">
                                 <strong>Compilation</strong> - entire code is converted into machine
                                 code at once, and written to a binary file that can be executed by a
-                                computer
+                                computer.
                             </p>
                             <ol class="list">
                                 <li class="list__item">
                                     <p class="text">source code</p>
                                     <ul class="list">
                                         <li class="list__item">
-                                            <p class="text">compilation</p>
+                                            <p class="text">compilation.</p>
                                         </li>
                                     </ul>
                                 </li>
@@ -517,18 +519,18 @@ y = 'Artem' // data type of variable is automatically changed
                                     </p>
                                     <ul class="list">
                                         <li class="list__item">
-                                            <p class="text">execution</p>
+                                            <p class="text">execution.</p>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">program running</p>
+                                    <p class="text">program running.</p>
                                 </li>
                             </ol>
 
                             <p class="text">
                                 <strong>Interpretation</strong> - interpreter runs through the
-                                source code and executes it line by line
+                                source code and executes it line by line.
                             </p>
                             <ol class="list">
                                 <li class="list__item">
@@ -537,32 +539,32 @@ y = 'Artem' // data type of variable is automatically changed
                                         <li class="list__item">
                                             <p class="text">
                                                 execution line by line (code still need to be
-                                                converted to machine code)
+                                                converted to machine code).
                                             </p>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">program running</p>
+                                    <p class="text">program running.</p>
                                 </li>
                             </ol>
 
                             <p class="text">
                                 Code still need to be converted to machine code, but it simply
-                                happens right before it executed and not ahead of time
+                                happens right before it executed and not ahead of time.
                             </p>
-                            <p class="text">JavaScript its purely interpreted language</p>
+                            <p class="text">JavaScript its purely interpreted language.</p>
                             <p class="text">
-                                Interpreted languages is much, much slower than compiled languages
+                                Interpreted languages is much, much slower than compiled languages.
                             </p>
 
                             <p class="text">
                                 <strong>Modern JavaScript</strong> using a
-                                <strong>mix</strong> between compilation and interpretation
+                                <strong>mix</strong> between compilation and interpretation.
                             </p>
                             <p class="text">
                                 <strong>Just-in-time (JIT)</strong> compilation - entire code is
-                                converted into machine code at once, then executed immediately
+                                converted into machine code at once, then executed immediately.
                             </p>
 
                             <ol class="list">
@@ -570,7 +572,7 @@ y = 'Artem' // data type of variable is automatically changed
                                     <p class="text">source code</p>
                                     <ul class="list">
                                         <li class="list__item">
-                                            <p class="text">compilation</p>
+                                            <p class="text">compilation.</p>
                                         </li>
                                     </ul>
                                 </li>
@@ -578,12 +580,12 @@ y = 'Artem' // data type of variable is automatically changed
                                     <p class="text">machine code (NOT a portable file)</p>
                                     <ul class="list">
                                         <li class="list__item">
-                                            <p class="text">execution (happens immediately)</p>
+                                            <p class="text">execution (happens immediately).</p>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">program running</p>
+                                    <p class="text">program running.</p>
                                 </li>
                             </ol>
                         </div>
@@ -608,19 +610,19 @@ y = 'Artem' // data type of variable is automatically changed
                                 there are any SyntaxError-s.
                             </p>
                             <p class="text">
-                                Resulting tree later be used to generate the machine code
+                                Resulting tree later be used to generate the machine code.
                             </p>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">2. Compilation</h4>
-                            <p class="text">Takes AST and compiles it into machine code</p>
+                            <p class="text">Takes AST and compiles it into machine code.</p>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">3. Execution</h4>
                             <p class="text">
                                 Executes right away (because modern JavaScript use JIT
-                                (Just-In-Type) compilation)
+                                (Just-In-Type) compilation).
                             </p>
 
-                            <p class="text">Execution happens in call stack</p>
+                            <p class="text">Execution happens in call stack.</p>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">4. Optimization</h4>
                             <ul class="list">
@@ -655,7 +657,7 @@ y = 'Artem' // data type of variable is automatically changed
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        different engines implement this in slightly different ways
+                                        different engines implement this in slightly different ways.
                                     </p>
                                 </li>
                             </ul>
@@ -672,7 +674,7 @@ y = 'Artem' // data type of variable is automatically changed
                             </h3>
                             <p class="text">
                                 <strong>JavaScript runtime</strong> - container including all the
-                                things that we need to use JavaScript (in this case in the browser)
+                                things that we need to use JavaScript (in this case in the browser).
                             </p>
 
                             <ul class="list">
@@ -683,31 +685,31 @@ y = 'Artem' // data type of variable is automatically changed
                                     <p class="text">Web APIs (DOM, Timers, Fetch API)</p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">Callback queue (click, timer, data, etc)</p>
+                                    <p class="text">Callback queue (click, timer, data, etc).</p>
                                 </li>
                             </ul>
 
                             <p class="text">
                                 <strong>Web APIs</strong> - functionalities provided to the engine,
-                                accessible on window object
+                                accessible on window object.
                             </p>
                             <p class="text">
                                 <strong>Calback queue example</strong> - callback function from DOM
-                                event listener
+                                event listener.
                             </p>
                             <p class="text">
                                 <strong>Event Loop</strong> - takes functions from the callback
                                 queue and puts them into call stack (if its empty) so they can be
-                                executed
+                                executed.
                             </p>
                             <p class="text">
                                 <strong>Event Loop</strong> - essential for non-blocking concurrency
-                                model
+                                model.
                             </p>
 
                             <p class="text">
                                 In <strong>nodejs</strong> we have no access to WEB APIs, but
-                                instead we have C++ Bindings & Thread Pool
+                                instead we have C++ Bindings & Thread Pool.
                             </p>
                         </div>
                     </div>
@@ -727,17 +729,17 @@ y = 'Artem' // data type of variable is automatically changed
                                     rel="noopener external"
                                 >
                                     Scoping fiddle</a
-                                >
+                                >.
                             </p>
                             <p class="text">
                                 <strong>Execution context</strong> - (abstract concept) enviroment
                                 in which a piece of JavaScript is executed. Stores all the necessary
-                                information for some code to be executed
+                                information for some code to be executed.
                             </p>
                             <p class="text">
                                 Exactly <strong>ONE</strong> global execution context (EC) - default
                                 context, created for code that is not inside any function (top
-                                level)
+                                level).
                             </p>
 
                             <ol class="list">
@@ -750,23 +752,23 @@ y = 'Artem' // data type of variable is automatically changed
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        Execution of top-level code (inside global EC)
+                                        Execution of top-level code (inside global EC).
                                     </p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
                                         Execution of functions and waiting for callbacks (click
-                                        event is a callback)
+                                        event is a callback).
                                     </p>
                                 </li>
                             </ol>
 
                             <p class="text">
                                 One execution context per function - for each function call, a new
-                                execution context is created
+                                execution context is created.
                             </p>
 
-                            <p class="text">All these EC-s make the call stack</p>
+                            <p class="text">All these EC-s make the call stack.</p>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">
                                 What inside execution context?
@@ -791,7 +793,7 @@ y = 'Artem' // data type of variable is automatically changed
                                             <p class="text">functions</p>
                                         </li>
                                         <li class="list__item">
-                                            <p class="text">arguments object</p>
+                                            <p class="text">arguments object.</p>
                                         </li>
                                     </ul>
                                 </li>
@@ -805,7 +807,7 @@ y = 'Artem' // data type of variable is automatically changed
                                         <li class="list__item">
                                             <p class="text">
                                                 to keep truck of the scope chain it is stored in
-                                                each executon context
+                                                each executon context.
                                             </p>
                                         </li>
                                     </ul>
@@ -825,7 +827,7 @@ y = 'Artem' // data type of variable is automatically changed
                                                 <strong>this keyword</strong>, instead they can use
                                                 the arguments object and their this keyword from
                                                 their closest regular function
-                                                <strong>parent</strong>
+                                                <strong>parent</strong>.
                                             </p>
                                         </li>
                                     </ul>
@@ -838,28 +840,30 @@ y = 'Artem' // data type of variable is automatically changed
                             <p class="text">
                                 <strong>Call stack</strong> - "place" where execution contexts get
                                 stacked on top of each other, to keep track of where we are in the
-                                execution
+                                execution.
                             </p>
 
                             <p class="text">
                                 Global execution context pop off from the stack when we close the
-                                tab or browser
+                                tab or browser.
                             </p>
 
-                            <h4 class="heading-h4 u-margin-bottom-sm">Scope and the scope chain</h4>
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                Scope and the scope chain.
+                            </h4>
                             <p class="text">
                                 <strong>Scoping</strong> - controls how our programs variables are
-                                organized and accesed by the JavaScript engine
+                                organized and accesed by the JavaScript engine.
                             </p>
                             <p class="text">
                                 Scoping asking question: where our variables live, where we can
-                                access a certain variable and where not
+                                access a certain variable and where not.
                             </p>
 
                             <p class="text">
                                 <strong>Lexical scoping</strong> - means that the way variables
                                 organized and accessed is entirely controls by the placement of
-                                functions and of blocks in the program scope
+                                functions and of blocks in the program scope.
                             </p>
                             <p class="text">
                                 Lexical scoping: scoping is controlled by placement of functions and
@@ -874,12 +878,12 @@ y = 'Artem' // data type of variable is automatically changed
                             </p>
                             <p class="text">
                                 Scope chain and varible enviroment in the case of functions it`s
-                                basically the same
+                                basically the same.
                             </p>
 
                             <p class="text">
                                 <strong>Scope of variable</strong> - region of our code where a
-                                certain variable can be accessed
+                                certain variable can be accessed.
                             </p>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">The 3 types of scope</h4>
@@ -893,7 +897,7 @@ y = 'Artem' // data type of variable is automatically changed
                                         <li class="list__item">
                                             <p class="text">
                                                 variables declared in global scope are accessible
-                                                everywhere
+                                                everywhere.
                                             </p>
                                         </li>
                                     </ul>
@@ -908,7 +912,7 @@ y = 'Artem' // data type of variable is automatically changed
                                             </p>
                                         </li>
                                         <li class="list__item">
-                                            <p class="text">also called local scope</p>
+                                            <p class="text">also called local scope.</p>
                                         </li>
                                     </ul>
                                 </li>
@@ -930,7 +934,7 @@ y = 'Artem' // data type of variable is automatically changed
                                         <li class="list__item">
                                             <p class="text">
                                                 functions are also block scoped (only in strict
-                                                mode)
+                                                mode).
                                             </p>
                                         </li>
                                     </ul>
@@ -939,19 +943,19 @@ y = 'Artem' // data type of variable is automatically changed
 
                             <p class="text">
                                 var, let, const - function scope <br />
-                                let, const - block scope
+                                let, const - block scope.
                             </p>
 
                             <p class="text">
                                 Scope has access to variables from all outer scopes but outer scope
-                                has no access to inner scope variables
+                                has no access to inner scope variables.
                             </p>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">Scope chain vs call stack</h4>
 
                             <p class="text">
                                 Scope chain - order in which functions are written and has nothing
-                                to do with order in which functions were called
+                                to do with order in which functions were called.
                             </p>
 
                             <pre class="code">
@@ -998,7 +1002,7 @@ function third() {
                                             <p class="text">scopes defined by functions</p>
                                         </li>
                                         <li class="list__item">
-                                            <p class="text">scopes defined by blocks (ES6)</p>
+                                            <p class="text">scopes defined by blocks (ES6).</p>
                                         </li>
                                     </ul>
                                 </li>
@@ -1060,22 +1064,22 @@ function third() {
                                     rel="noopener external"
                                 >
                                     Hoisting and the TDZ fiddle</a
-                                >
+                                >.
                             </p>
 
                             <p class="text">
                                 <strong>Hoisting</strong> - makes some types of variables
                                 accessible/usable in the code before they are actually declared.
-                                "Variables lifted to the top of their scope"
+                                "Variables lifted to the top of their scope".
                             </p>
                             <p class="text">
                                 Before execution, code is scanned for variable declarations, and for
                                 each variable, a new property is created in the
-                                <strong>variable enviroment object</strong>
+                                <strong>variable enviroment object</strong>.
                             </p>
 
                             <p class="text">
-                                Hoisting does not works the same for all variable types
+                                Hoisting does not works the same for all variable types.
                             </p>
 
                             <table class="u-margin-bottom-md">
@@ -1136,7 +1140,7 @@ function third() {
                             </table>
                             <p class="text">
                                 Function declaration scope - block in <strong>strict mode</strong>,
-                                otherwise function
+                                otherwise function.
                             </p>
 
                             <p class="text">
@@ -1148,7 +1152,7 @@ function third() {
                                 <strong>TDZ</strong> (ES6) - <strong>Temporal Dead Zone</strong> -
                                 each and every let and const variable has their own temporal dead
                                 zone that starts at the beginning of the scope untile the line where
-                                it is defined, and a varible only safe to use after the TDZ
+                                it is defined, and a varible only safe to use after the TDZ.
                             </p>
 
                             <p class="text">
@@ -1159,16 +1163,16 @@ function third() {
                             <h4 class="heading-h4 u-margin-bottom-sm">WHY TDZ?</h4>
                             <p class="text">
                                 Makes it easier to avoid and catch errors - accessing variables
-                                before declaration is bad practice and should be avoided
+                                before declaration is bad practice and should be avoided.
                             </p>
-                            <p class="text">Makes const variabes actually work</p>
+                            <p class="text">Makes const variabes actually work.</p>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">WHY HOISTING?</h4>
                             <p class="text">
                                 Using functions before actual declaration (need for some programming
-                                techniques such as mutual recursion)
+                                techniques such as mutual recursion).
                             </p>
-                            <p class="text">var hoisting is just a byproduct</p>
+                            <p class="text">var hoisting is just a byproduct.</p>
                         </div>
                     </div>
                 </section>
@@ -1187,7 +1191,7 @@ function third() {
                                     rel="noopener external"
                                 >
                                     This keyword codepen</a
-                                >
+                                >.
                             </p>
                             <p class="text">
                                 <strong>this keyword/variable</strong> - special variable that is
@@ -1199,7 +1203,7 @@ function third() {
                             <p class="text">
                                 this is <strong>NOT</strong> static. It depends on how the function
                                 is called, and its value is only assigned when the function is
-                                actually called
+                                actually called.
                             </p>
 
                             <p class="text">Different function call types:</p>
@@ -1233,14 +1237,14 @@ function third() {
                                 <li class="list__item">
                                     <p class="text">
                                         <strong>new</strong>, <strong>apply</strong>,
-                                        <strong>call</strong>, <strong>bind</strong>
+                                        <strong>call</strong>, <strong>bind</strong>.
                                     </p>
                                 </li>
                             </ul>
 
                             <p class="text">
                                 this does <strong>NOT</strong> point to the function itself, and
-                                also <strong>NOT</strong> to its variable environment
+                                also <strong>NOT</strong> to its variable environment.
                             </p>
 
                             <p class="text">
@@ -1255,7 +1259,7 @@ function third() {
                             </p>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">
-                                Arguments keyword (only available in regular functions)
+                                Arguments keyword (only available in regular functions).
                             </h4>
 
                             <pre class="code">
@@ -1301,7 +1305,7 @@ console.log(window)
                                     rel="noopener external"
                                 >
                                     Primitive vs reference types fiddle</a
-                                >
+                                >.
                             </p>
                             <pre class="code">
                                 <code class="code-el">
@@ -1331,31 +1335,31 @@ console.log(me.age) // 30
                             </h4>
                             <p class="text">
                                 <strong>Primitives</strong>: Number, String, Boolean, undefined,
-                                null, symbol, bigInt - primitive types
+                                null, symbol, bigInt - primitive types.
                             </p>
                             <p class="text">
                                 <strong>Objects</strong>: Object literal, Array, Function, many
-                                more.. - reference types
+                                more.. - reference types.
                             </p>
 
                             <p class="text">
                                 Primitives are stored in the JavaScript engine call stack (primitive
                                 types are stored in the execution contexts in which they are
-                                declared)
+                                declared).
                             </p>
 
                             <p class="text">
                                 When we create a primitive variable, it hase an
                                 <strong>identifier</strong>, <strong>address</strong> and
-                                <strong>value</strong>
+                                <strong>value</strong>.
                             </p>
 
                             <p class="text">
-                                Identifier looks on address <strong>not</strong> a value
+                                Identifier looks on address <strong>not</strong> a value.
                             </p>
 
                             <p class="text">
-                                Objects are strored in the JavaScript engine <strong>heap</strong>
+                                Objects are strored in the JavaScript engine <strong>heap</strong>.
                             </p>
 
                             <p class="text">
@@ -1365,7 +1369,7 @@ console.log(me.age) // 30
                                     rel="noopener external"
                                 >
                                     img primitive vs refernece values</a
-                                >
+                                >.
                             </p>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">Copying objects</h4>
@@ -1396,7 +1400,7 @@ console.log(marriedJessica2) // family has 4 members
                             </code>
                         </pre>
 
-                            <p class="text">Use lodash for deep clonning</p>
+                            <p class="text">Use lodash for deep clonning.</p>
                         </div>
                     </div>
                 </section>

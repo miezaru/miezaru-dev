@@ -37,7 +37,7 @@
             content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about HTML Icons."
         />
         <meta name="twitter:image:src" content="../../assets/og/waves.jpeg" />
-        <meta name="twitter:image" content="../../assets/og/waves.jpeg" />
+        <meta name="twitter:image" content="https://i.ibb.co/MnJcQSZ/waves.jpg" />
         <meta name="twitter:image:alt" content="Waves in dark colours" />
         <meta name="twitter:creator" content="@miezaruexpr" />
         <!-- <meta content="miezaru.dev" property="twitter:domain" /> -->
@@ -84,6 +84,8 @@
                         src="../../assets/img/header/header-icon.png"
                         srcset="../../assets/img/header/header-icon.png"
                         alt="miezaru-dev logo"
+                        height="512"
+                        width="512"
                     />
                 </picture>
 
@@ -181,13 +183,6 @@
                                 >
                                 <a
                                     class="resources-box__item"
-                                    href="https://realfavicongenerator.net/"
-                                    rel="noopener external"
-                                >
-                                    favicon generator</a
-                                >
-                                <a
-                                    class="resources-box__item"
                                     href="https://stackdiary.com/svg-pattern-generators/"
                                     rel="noopener external"
                                 >
@@ -262,16 +257,18 @@
                     <div class="container-section">
                         <div class="content-box">
                             <p class="text">
-                                Use a good icon pack, there are tons of free and paid icons packs
+                                Use a <strong>good</strong> icon pack, there are tons of free and
+                                paid icons packs.
                             </p>
 
                             <p class="text">
-                                Use only one icon pack. Don`t mix icons from different icon packs
+                                Use only <strong>one</strong> icon pack. Don`t mix icons from
+                                different icon packs.
                             </p>
 
                             <p class="text">
-                                Use SVG icons or icon fonts. Don`t use bitmap image formats (.jpg
-                                and .png)!
+                                Use <strong>SVG icons</strong> or <strong>icon fonts</strong>. Don`t
+                                use bitmap image formats (.jpg and .png)!
                             </p>
                         </div>
                     </div>
@@ -281,25 +278,27 @@
                     <h2 class="heading-h2 u-margin-bottom-sm">Icon types</h2>
                     <div class="container-section">
                         <div class="content-box">
-                            <p class="text">Vector-based</p>
+                            <p class="text"><strong>Vector-based</strong>:</p>
                             <ul class="list">
                                 <li class="list__item">
                                     <p class="text">SVG images and icon fonts</p>
                                 </li>
                                 <li class="list__item"><p class="text">Scale indefinitely.</p></li>
                             </ul>
-                            <p class="text">Bitmap</p>
+                            <p class="text"><strong>Bitmap</strong>:</p>
                             <ul class="list">
                                 <li class="list__item">
                                     <p class="text">"Regular images": JPG, PNG, GIF</p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">Do not scale, become unsharp.</p>
+                                    <p class="text">
+                                        Do <strong>not scale</strong>, become unsharp.
+                                    </p>
                                 </li>
                             </ul>
                             <p class="text">
                                 Adjust to website personality! Roundness, weight and filled/outlined
-                                depend on typography
+                                depend on typography.
                             </p>
                         </div>
                     </div>
@@ -309,14 +308,18 @@
                     <h2 class="heading-h2 u-margin-bottom-sm">When to use icons</h2>
                     <div class="container-section">
                         <div class="content-box">
-                            <p class="text">Use icons to provide visual assistance to text</p>
-                            <p class="text">Use icons for product feature blocks</p>
                             <p class="text">
-                                Use icons associated with actions, and label them (unless no space
-                                or icon is 100% clear)
+                                Use icons to provide <strong>visual assistance</strong> to text.
+                            </p>
+                            <p class="text">
+                                Use icons for product <strong>feature blocks</strong>.
+                            </p>
+                            <p class="text">
+                                Use icons associated <strong>with actions</strong>, and label them
+                                (unless no space or icon is 100% clear).
                             </p>
 
-                            <p class="text">Use icons as bullet points</p>
+                            <p class="text">Use icons as <strong>bullet points</strong>.</p>
                         </div>
                     </div>
                 </section>
@@ -326,16 +329,17 @@
                     <div class="container-section">
                         <div class="content-box">
                             <p class="text">
-                                To keep icons neutral, use same color as text. To draw more
-                                attention, use different color
+                                To <strong>keep icons neutral</strong>, use same color as text. To
+                                draw more attention, use different color.
                             </p>
                             <p class="text">
-                                Don`t confuse users: icons need to make sense and fit the text or
-                                action!
+                                <strong>Don`t confuse users</strong>: icons need to make sense and
+                                fit the text or action!
                             </p>
                             <p class="text">
-                                Don`t make icons larger than what they were designed for. If needed,
-                                enclose them in a shape
+                                Don`t make
+                                <strong>icons larger than what they were designed for</strong>. If
+                                needed, enclose them in a shape.
                             </p>
                         </div>
                     </div>
@@ -345,15 +349,15 @@
                     <h2 class="heading-h2 u-margin-bottom-sm">SVG sprite</h2>
                     <div class="container-section">
                         <div class="content-box">
-                            <p class="text">Create file sprites.svg</p>
+                            <p class="text">Create sprite.svg:</p>
 
                             <pre class="code">
                             <code class="code-el">
 &lt;svg xmlns="http://www.w3.org/2000/svg"&gt;
-    &lt;symbol id="science" viewBox="0 0 24 24" fill="none"&gt;
-        &lt;path stroke-linecap="round" stroke-linejoin="round"
-        d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /&gt;
-    &lt;/symbol&gt;
+  &lt;symbol id="science" viewBox="0 0 24 24" fill="none"&gt;
+    &lt;path stroke-linecap="round" stroke-linejoin="round"
+    d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8     15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.    611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /&gt;
+  &lt;/symbol&gt;
 &lt;/svg&gt;
                             </code>
                         </pre>
@@ -361,13 +365,17 @@
                             <p class="text">
                                 Need to take symbol from svg icon, if symbol more than 1 for 1 icon,
                                 use
-                                <strong>&lt;g&gt;</strong> tag to group them
+                                <strong>&lt;g&gt;</strong> tag to group them.
                             </p>
-                            <p class="text">Add viewBox attribute to symbol tag, from svg icon</p>
-                            <p class="text">Use id to link sprite to embedded svg</p>
+                            <p class="text">
+                                Add <strong>viewBox</strong> attribute to symbol tag, from svg icon.
+                            </p>
+                            <p class="text">
+                                Use <strong>id</strong> to link sprite to embedded svg.
+                            </p>
                             <p class="text">
                                 Sometimes, svg icons need more than viewBox, the might be need
-                                stroke or fill="none" properties
+                                stroke or fill="none" properties.
                             </p>
                         </div>
                     </div>

@@ -43,7 +43,7 @@
             content="A collection of useful links and useful tips and reminders about web technologies. The focus is mainly on HTML, CSS, JavaScript and many complementary aspects of these technologies. Current page about JavaScript Modern Operators."
         />
         <meta name="twitter:image:src" content="../../assets/og/waves.jpeg" />
-        <meta name="twitter:image" content="../../assets/og/waves.jpeg" />
+        <meta name="twitter:image" content="https://i.ibb.co/MnJcQSZ/waves.jpg" />
         <meta name="twitter:image:alt" content="Waves in dark colours" />
         <meta name="twitter:creator" content="@miezaruexpr" />
         <!-- <meta content="miezaru.dev" property="twitter:domain" /> -->
@@ -90,6 +90,8 @@
                         src="../../assets/img/header/header-icon.png"
                         srcset="../../assets/img/header/header-icon.png"
                         alt="miezaru-dev logo"
+                        height="512"
+                        width="512"
                     />
                 </picture>
 
@@ -243,7 +245,7 @@
                                     rel="noopener external"
                                 >
                                     Destructuring arrays fiddle</a
-                                >
+                                >.
                             </p>
                             <pre class="code">
                                 <code class="code-el">
@@ -332,7 +334,7 @@ console.log(d, s, v); // 8 9 1
                                     rel="noopener external"
                                 >
                                     Destructuring objects fiddle</a
-                                >
+                                >.
                             </p>
                             <pre class="code">
                                 <code class="code-el">
@@ -480,7 +482,7 @@ restaurant.orderDelivery({
                                     rel="noopener external"
                                 >
                                     Spead operator fiddle</a
-                                >
+                                >.
                             </p>
                             <h4 class="heading-h4 u-margin-bottom-sm">Make new array (bad way)</h4>
                             <pre class="code">
@@ -505,7 +507,7 @@ console.log(newMenu);
 
                             <p class="text">
                                 Spread operator takes all elements of the array and doesn't create
-                                new variables
+                                new variables.
                             </p>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">Shallow copy of an array</h4>
@@ -530,10 +532,10 @@ console.log(menu);
                             </pre>
 
                             <p class="text">
-                                Spead operator works not only on arrays, but on all iterables
+                                Spead operator works not only on arrays, but on all iterables.
                             </p>
 
-                            <p class="text">Iterables: arrays, strings, maps, sets. NOT objects</p>
+                            <p class="text">Iterables: arrays, strings, maps, sets. NOT objects.</p>
                             <pre class="code">
                                 <code class="code-el">
 const str = 'Artem';
@@ -545,7 +547,7 @@ console.log(...str);
 
                             <p class="text">
                                 Always works when we past arguments in to the function or when we
-                                build a new array
+                                build a new array.
                             </p>
                             <pre class="code">
                                 <code class="code-el">
@@ -573,7 +575,7 @@ restaurant.orderPasta(...ingredients);
                             <h4 class="heading-h4 u-margin-bottom-sm">Copy objects (top level)</h4>
                             <p class="text">
                                 Objects (object.assign() - old way to copy objects (top level
-                                properties))
+                                properties)).
                             </p>
 
                             <pre class="code">
@@ -603,7 +605,7 @@ console.log(restaurant);
                                     rel="noopener external"
                                 >
                                     Rest operator fiddle</a
-                                >
+                                >.
                             </p>
 
                             <ul class="list">
@@ -617,7 +619,7 @@ console.log(restaurant);
                                     <p class="text">Rest of the elements, not including skipping</p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">Rest is opposite of spread</p>
+                                    <p class="text">Rest is opposite of spread.</p>
                                 </li>
                             </ul>
 
@@ -660,7 +662,7 @@ console.log(sat, weekDays);
 
                             <h4 class="heading-h4 u-margin-bottom-sm">Functions</h4>
                             <p class="text">
-                                We can pass different number of arguments with rest operator
+                                We can pass different number of arguments with rest operator.
                             </p>
                             <pre class="code">
                                 <code class="code-el">
@@ -683,7 +685,7 @@ add(...x);
 
                             <h4 class="heading-h4 u-margin-bottom-sm">Call method</h4>
                             <p class="text">
-                                We can pass different number of arguments with rest operator
+                                We can pass different number of arguments with rest operator.
                             </p>
                             <pre class="code">
                                 <code class="code-el">
@@ -714,7 +716,7 @@ restaurant.orderPizza('mushrooms');
 
                             <p class="text">
                                 Short-circuiting - Use <strong>ANY</strong> data type, return
-                                <strong>ANY</strong> type
+                                <strong>ANY</strong> type.
                             </p>
 
                             <p class="text">
@@ -724,7 +726,7 @@ restaurant.orderPizza('mushrooms');
                                     rel="noopener external"
                                 >
                                     Short circuiting fiddle</a
-                                >
+                                >.
                             </p>
                         </div>
 
@@ -732,7 +734,7 @@ restaurant.orderPizza('mushrooms');
                             <h3 class="heading-h3 u-margin-bottom-sm">OR ||</h3>
 
                             <p class="text">
-                                OR || - first true or (if all false) last false values
+                                OR || - first true or (if all false) last false values.
                             </p>
                             <pre class="code">
                                 <code class="code-el">
@@ -758,7 +760,7 @@ console.log(guests2);
                         <div class="content-box">
                             <h3 class="heading-h3 u-margin-bottom-sm">AND &&</h3>
 
-                            <p class="text">AND && - last true or first false returs</p>
+                            <p class="text">AND && - last true or first false returs.</p>
                             <pre class="code">
                                 <code class="code-el">
 console.log(0 && 'Artem'); // 0
@@ -794,7 +796,7 @@ restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
                                     rel="noopener external"
                                 >
                                     Nullish coalescing fiddle</a
-                                >
+                                >.
                             </p>
                         </div>
 
@@ -811,7 +813,7 @@ console.log(guest);
 
                             <p class="text">
                                 Nullish values: <strong>null</strong> and
-                                <strong>undefined</strong> (NOT 0 or '')
+                                <strong>undefined</strong> (NOT 0 or '').
                             </p>
 
                             <pre class="code">
@@ -839,7 +841,9 @@ console.log(guestCorrect);
                                     <p class="text">Logical AND assignment operator (&&=)</p>
                                 </li>
                                 <li class="list__item">
-                                    <p class="text">Nullish coalescing assignment operator (??=)</p>
+                                    <p class="text">
+                                        Nullish coalescing assignment operator (??=).
+                                    </p>
                                 </li>
                             </ul>
 
@@ -850,7 +854,7 @@ console.log(guestCorrect);
                                     rel="noopener external"
                                 >
                                     Logical assignment fiddle</a
-                                >
+                                >.
                             </p>
                         </div>
 
@@ -940,7 +944,7 @@ console.log(rest1, rest2);
                                     rel="noopener external"
                                 >
                                     Enhanced object literals fiddle</a
-                                >
+                                >.
                             </p>
                         </div>
 
@@ -979,7 +983,7 @@ const newBook2 = {
                                     rel="noopener external"
                                 >
                                     Optional chaining fiddle</a
-                                >
+                                >.
                             </p>
                         </div>
 
@@ -1019,7 +1023,7 @@ if (restaurant.openingHourse && restaurant.openingHours.mon) {
                             <h3 class="heading-h3 u-margin-bottom-sm">With optional chaining</h3>
                             <p class="text">
                                 "open" will read if all chain before exist and not
-                                <strong>undefined</strong>/<strong>null</strong>
+                                <strong>undefined</strong>/<strong>null</strong>.
                             </p>
                             <pre class="code">
                                 <code class="code-el">
