@@ -16,7 +16,7 @@ const observerLogo = new IntersectionObserver(
     root: null,
     // as soon as 0% sectionHeroEl in viewport (moves out completely)
     threshold: 0,
-    rootMargin: window.innerWidth <= 900 ? '-100%' : '-80%',
+    rootMargin: '-30%',
   }
 );
 observerLogo.observe(sectionHeroEl);
@@ -35,7 +35,7 @@ const observerMenuBtn = new IntersectionObserver(
     root: null,
     // as soon as 0% sectionHeroEl in viewport (moves out completely)
     threshold: 0,
-    rootMargin: window.innerWidth <= 900 ? '-100%' : '-80%',
+    rootMargin: '-30%',
   }
 );
 observerMenuBtn.observe(sectionHeroEl);

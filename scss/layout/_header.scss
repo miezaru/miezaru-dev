@@ -5,7 +5,7 @@
     z-index: 999;
     display: flex;
     justify-content: space-between;
-    block-size: 6rem;
+    block-size: 0;
     background-image: linear-gradient(to right bottom, var(--black-90), var(--black-90)),
         image-set(
             url('../../assets/img/header/pilinger-point.avif') type('image/avif'),
@@ -33,7 +33,7 @@
 
 .section-hero {
     position: relative;
-    block-size: 80vh;
+    block-size: calc(85vh + 6rem);
     background-image: linear-gradient(to right bottom, var(--black-90), var(--black-90)),
         image-set(
             url('../../assets/img/header/pilinger-point.avif') type('image/avif'),
@@ -42,8 +42,19 @@
         );
     background-position: center;
     background-size: cover;
+    backface-visibility: hidden;
 
     @include res-tab-port {
-        block-size: calc(100vh - 6rem);
+        block-size: calc(100vh);
     }
+}
+
+.menu-bottom.section-hero {
+    @include res-tab-port {
+        block-size: calc(100vh + -6rem);
+    }
+}
+
+.menu-bottom.header {
+    block-size: 6rem;
 }
