@@ -112,7 +112,32 @@
                             <a class="main-nav__link" href="#links">Links</a>
                         </li>
                         <li class="main-nav__list-item">
-                            <a class="main-nav__link" href="#basics"> Basics</a>
+                            <a class="main-nav__link" href="#basics">Basics</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#parameters">Parameters</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#first-class-and-higher-order">
+                                First-class and higher-order</a
+                            >
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#callback">Callback</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#call-and-apply">
+                                Call and apply methods</a
+                            >
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#bind">Bind method</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#iife">IIFE</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#closures">Closures</a>
                         </li>
                     </ul>
                 </nav>
@@ -132,6 +157,31 @@
                         </li>
                         <li class="page-nav__list-item">
                             <a class="page-nav__link" href="#basics"> Basics</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#parameters">Parameters</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#first-class-and-higher-order">
+                                First-class and higher-order</a
+                            >
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#callback">Callback</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#call-and-apply">
+                                Call and apply methods</a
+                            >
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#bind">Bind method</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#iife">IIFE</a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__link" href="#closures">Closures</a>
                         </li>
                     </ul>
                 </div>
@@ -212,11 +262,6 @@ logger()
                                 Function declaration can be used before they are defined, this
                                 process called hoisting.
                             </p>
-                            <pre class="code">
-                                <code class="code-el">
-const age = calcAge(1997)
-                                </code>
-                            </pre>
 
                             <p class="text">
                                 Function exits immediately after returning the result.
@@ -226,7 +271,8 @@ const age = calcAge(1997)
 function calcAge(birthYear) {
   return 2024 - birthYear
 }
-console.log(age)
+
+const age = calcAge(1997)
                                 </code>
                             </pre>
 
@@ -338,6 +384,586 @@ const yearsUntilRetirement = (birthYear, firstName) => {
                                     </p>
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="parameters">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Parameters</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Default parameters</h3>
+
+                            <p class="text">
+                                We can pass into function values that are predifined in function
+                                parameters. Also we can change values (if nothing is passed) with
+                                default values.
+                            </p>
+
+                            <p class="text">
+                                Default values are expressions. We can use parameters that are
+                                declared <strong>before</strong> they called.
+                            </p>
+
+                            <pre class="code">
+                                <code class="code-el">
+const createBooking = function (flightNum, numPassangers = 1, price = 199 * numPassangers) {
+  // ES5 (old way to define default parameters)
+  // numPassangers = numPassangers || 1;
+  // price = price || 199;
+
+  const booking = {
+    flightNum,
+    numPassangers,
+    price,
+  };
+};
+                                </code>
+                            </pre>
+
+                            <p class="text">
+                                Specify undefined, when we have no values for parameter or want to
+                                skip, it gonna be changed to default value.
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+createBooking('LH123', undefined, 1000);
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                Passing arguments into function: value vs refference
+                            </h3>
+
+                            <p class="text">
+                                <strong>Value</strong> - just <strong>copy</strong> of original
+                                value.
+                            </p>
+                            <p class="text">
+                                <strong>Refference</strong> - just
+                                <strong>original object</strong> (refferenced to the
+                                <strong>heap</strong>).
+                            </p>
+
+                            <pre class="code">
+                                <code class="code-el">
+const flight = 'LH234';
+const artem = {
+  name: 'Artem Usatyi',
+  passport: 2834747828,
+};
+
+// flightNum - COPY of original value
+// passanger - ORIGINAL object
+
+const checkIn = function (flightNum, passenger) {
+  flightNum = 'LH999';
+  passenger.name = 'Mr. ' + passenger.name;
+
+  if (passenger.passport === 2834747828) {
+    console.log('Check in');
+  } else {
+    console.log('Wrong password');
+  }
+};
+                                </code>
+                            </pre>
+
+                            <p class="text">
+                                Passing by reference (not works in JavaScript). So when we pass
+                                object - we pass it like value with a refference.
+                            </p>
+
+                            <pre class="code">
+                                <code class="code-el">
+const newPassport = function (person) {
+  person.passport = Math.trunc(Math.random() * 100000000);
+};
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="first-class-and-higher-order">
+                    <h2 class="heading-h2 u-margin-bottom-sm">
+                        First class and higher-order functions
+                    </h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                First-class functions is just a feature, that means all functions
+                                are values. That`s it. That`s just a concept.
+                            </p>
+                            <p class="text">
+                                Higher-order are possible because the language supports first-class
+                                functions.
+                            </p>
+                        </div>
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">First-class functions</h3>
+
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        JavaScript treats functions as first-class citizens
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">This means that functions are simply values</p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Functions are just another "type" of object.</p>
+                                </li>
+                            </ul>
+
+                            <p class="text">Store functions in variables or properties:</p>
+
+                            <pre class="code">
+                                <code class="code-el">
+const add = (a, b) => a + b;
+
+const counter = {
+  value: 23,
+  inc: function () {
+    this.value++;
+  },
+};
+                                </code>
+                            </pre>
+
+                            <p class="text">
+                                Pass functions as arguments to <strong>other</strong> functions:
+                            </p>
+
+                            <pre class="code">
+                                <code class="code-el">
+const greet = () => console.log('Hey Artem');
+document.querySelector('.buy').addEventListener('click', greet);
+
+                                </code>
+                            </pre>
+
+                            <p class="text">Also we can:</p>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        Return functions <strong>from</strong> functions, and call
+                                        methods on function
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Call <strong>methods</strong> on functions</p>
+                                </li>
+                            </ul>
+
+                            <pre class="code">
+                                <code class="code-el">
+counter.inc.bind(someOtherObject);
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Higher-order functions</h3>
+
+                            <p class="text">
+                                Higher-order functions - its a function that recieves another
+                                function as an argument, that returns a new function, or both. This
+                                is only possible because of first-class functions.
+                            </p>
+
+                            <p class="text">
+                                addEventListener - higher-order function, callback function - greet:
+                            </p>
+                            <pre class="code">
+                                <code class="code-el">
+document.querySelector('.buy').addEventListener('click', greet);
+                                </code>
+                            </pre>
+
+                            <p class="text">Function that return new function:</p>
+
+                            <pre class="code">
+                                <code class="code-el">
+function count() {
+  let counter = 0;
+
+  return function () {
+    counter++;
+  };
+};
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="callback">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Callback functions</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                Callback functions help us write more absctract code (level of
+                                abstraction).
+                            </p>
+
+                            <pre class="code">
+                                <code class="code-el">
+const oneWord = function (str) {
+  return str.replace(/ /g, '').toLowerCase();
+};
+
+const upperFirstWord = function (str) {
+  const [first, ...others] = str.split(' ');
+  return [first.toUpperCase(), ...others].join(' ');
+};
+                                </code>
+                            </pre>
+
+                            <p class="text">
+                                Higher-order function - operating on a higher-level of abstraction,
+                                leaving the low-level details to other low-level functions.
+                            </p>
+                            <p class="text">
+                                Deligating the string transform to other lower-level functions witch
+                                are oneWord and upperFirstWord.
+                            </p>
+
+                            <pre class="code">
+                                <code class="code-el">
+const transfromer = function (str, fn) {
+  console.log(`Transformed string: ${fn(str)}`);
+  console.log(`Transformed by: ${fn.name}`);
+};
+
+transfromer('JavaScript is the best!', upperFirstWord);
+transfromer('JavaScript is the best!', oneWord);
+                                </code>
+                            </pre>
+
+                            <p class="text">JavaScript uses callbacks all the time:</p>
+                            <pre class="code">
+                                <code class="code-el">
+const high5 = function () {
+  console.log('👋');
+};
+document.body.addEventListener('click', high5);
+                                </code>
+                            </pre>
+
+                            <p class="text">Array callback function:</p>
+
+                            <pre class="code">
+                                <code class="code-el">
+['Artem', 'Nika', 'Malta', 'Toki'].forEach(high5);
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="call-and-apply">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Call and apply methods</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                Call and apply methods do the same, calling functions in a different
+                                <strong>this</strong> context. But call method waiting for arguments
+                                passed in string and apply in array. But from ES6 we can use spread
+                                operator to pass values from array like a string in call method. So
+                                apply not used anymore.
+                            </p>
+
+                            <p class="text">
+                                <a
+                                    class="text-link"
+                                    href="https://jsfiddle.net/Miezaru/qjgezvty/2/"
+                                    rel="noopener external"
+                                >
+                                    Call and apply fiddle</a
+                                >
+                            </p>
+
+                            <p class="text">Using call and apply:</p>
+
+                            <pre class="code">
+                                <code class="code-el">
+book.call(this, value, value);
+book.call(swiss, 406, 'Tom Willer');
+
+book.apply(this, [value, value])
+book.apply(swiss, [flightData]);
+
+book.call(swiss, ...flightData);
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="bind">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Bind method</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                Bind method is like a call method, but we not calling
+                                <strong>now</strong>, but waiting for the execution.
+                            </p>
+
+                            <p class="text">Where to use call and bind:</p>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        Do I need to store this function in a variable for later
+                                        use? If so, use bind()
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Do I need to pass this function as an argument? If so, use
+                                        bind()
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Do I need to call this function right now? If so, use
+                                        call().
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Even listeners:</h3>
+
+                            <pre class="code">
+                                <code class="code-el">
+const lufthansa = {
+  airline: 'Lufthansa'
+}
+
+lufthansa.planes = 300;
+lufthansa.buyPlane = function () {
+  this.planes++;
+};
+
+// error, this keyword looks at button with .buy class
+document.querySelector('.buy').addEventListener('click', lufthansa.buyPlane);
+
+// right this keyword, that looks at luftsansa object
+document.querySelector('.buy').addEventListener('click', lufthansa.buyPlane.bind(lufthansa));
+
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Partial application:</h3>
+
+                            <p class="text">
+                                It allows us to create new functions by fixing some of the arguments
+                                of an existing function, while leaving others open for later use.
+                            </p>
+
+                            <pre class="code">
+                                <code class="code-el">
+const addTax = (rate, value) => value + value * rate;
+console.log(addTax(0.1, 200));
+
+const addVAT = addTax.bind(null, 0.23); // skip 1 parameter (this value) and set tax-rate to 0.23
+console.log(addVAT(100));
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="iife">
+                    <h2 class="heading-h2 u-margin-bottom-sm">
+                        Immediately invoked function expressions (IIFE)
+                    </h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                IIFE - a JavaScript function that runs as soon as it is defined.
+                            </p>
+                            <p class="text">
+                                We have no access to variables in function scope (execution context
+                                / incapsulated). So IIFE help us to write isolated variables for
+                                functions.
+                            </p>
+                            <p class="text">
+                                We can also use <code class="code-el">{bracket notation}</code>,
+                                because it`s also create an isolated scope in ES6, unless we want to
+                                use var 🥲.
+                            </p>
+
+                            <p class="text">
+                                But if we need to execute function just once, then the IIFE a good
+                                choice.
+                            </p>
+
+                            <p class="text">IIFE example:</p>
+                            <pre class="code">
+                                <code class="code-el">
+(function () {
+  console.log('This will never run again');
+  const isPrivateFunc = 21;
+})();
+
+(() => console.log('This will never run again'))();
+                                </code>
+                            </pre>
+
+                            <p class="text">Block scope example:</p>
+                            <pre class="code">
+                                <code class="code-el">
+{
+  const isPrivateBlock = 21;
+  var notPrivate = 44;
+}
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="closures">
+                    <h2 class="heading-h2 u-margin-bottom-sm">Closures</h2>
+                    <div class="container-section">
+                        <div class="content-box">
+                            <p class="text">
+                                A closure is the combination of a function bundled together
+                                (enclosed) with references to its surrounding state (the lexical
+                                environment). In other words, a closure gives you
+                                <strong>access</strong> to an outer function's scope from an
+                                <strong>inner function</strong>. In JavaScript, closures are created
+                                every time a function is created, at function creation time.
+                            </p>
+
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        Any function always has access to the variable enviroment of
+                                        the execution context in which the function was created
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        A function has access to the variable enviroment (VE) of the
+                                        execution context in which it was created
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Closure: VE attached to the function, exactly as it was at
+                                        the time and place the function was created
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        When execution context was destroyed, VE still living
+                                        somewhere in the JS Engine
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">Closure priority > scope chain priority.</p>
+                                </li>
+                            </ul>
+
+                            <pre class="code">
+                                <code class="code-el">
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passengers}`);
+  };
+};
+
+const booker = secureBooking(); // store returned function to a variable booker
+
+booker(); // 1 passangers
+booker(); // 2 passangers
+booker(); // 3 passangers
+                                </code>
+                            </pre>
+
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        A closure is the closed over variable enviroment of the
+                                        execution context in which a function was created, even
+                                        after that execution context is gone
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Less formal: A closure gives a function access to all the
+                                        variables of its parent function, even after that parent
+                                        function has returned. The function keeps a reference to its
+                                        outer scope, which preserves the scope chain throughout time
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Less formal: A closure makes sure that a function doesn't
+                                        loose connection to variables that existed at the function's
+                                        birth place
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        Less formal: A closure is like a backpack that a function
+                                        carries around wherever it goes. This backpack has all the
+                                        variables that were present in the enviroment where the
+                                        function was created
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        The main advantage of closures is that they help us create
+                                        private variables and methods, preventing other parts of the
+                                        code from accidentally modifying or accessing them.
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <p class="text">
+                                We do <strong>not</strong> have to manually create closures, this is
+                                a JavaScript feature that happens automatically. We can't even
+                                access closed-over variables explicitly. A closure is
+                                <strong>not</strong> a tangible JavaScript object.
+                            </p>
+
+                            <p class="text">
+                                <code class="code-el">console.dir()</code> - static method displays
+                                a list of the properties of the specified JavaScript object.
+                            </p>
+                            <p class="text">
+                                <code class="code-el">[[Scopes]], [[Prototype]]</code> - internal
+                                properties that we can not access from the code.
+                            </p>
+
+                            <pre class="code">
+                                <code class="code-el">
+console.dir(booker);
+                                </code>
+                            </pre>
+
+                            <p class="text">
+                                <a
+                                    class="text-link"
+                                    href="https://jsfiddle.net/Miezaru/0jzkqemh/"
+                                    rel="noopener external"
+                                >
+                                    More closure examples</a
+                                >
+                            </p>
                         </div>
                     </div>
                 </section>
