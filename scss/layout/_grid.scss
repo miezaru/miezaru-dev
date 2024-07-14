@@ -1,7 +1,9 @@
 .container-section {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 5.6rem;
+    overflow: clip;
 
     @include res-tab-land {
         gap: 3.2rem;
@@ -116,6 +118,10 @@
 
     @include res-tab-land {
         padding-block: 6.4rem;
+    }
+
+    @include res-phone {
+        padding-block: 3.2rem;
     }
 }
 

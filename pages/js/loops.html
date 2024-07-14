@@ -296,8 +296,9 @@ while (dice !== 6) {
                             </pre>
 
                             <p class="text">
-                                We can use const variables inside lopps beacuse they are
-                                <strong>not reassigned</strong>.
+                                We can use const variables inside lopps because they are
+                                <strong>not reassigned</strong>, but creates a new variable for each
+                                loop.
                             </p>
                         </div>
                     </div>
@@ -318,8 +319,8 @@ while (dice !== 6) {
                                 >.
                             </p>
                             <p class="text">
-                                The <code class="code-el">for...of</code> statement executes a loop
-                                that operates on a sequence of values sourced from an
+                                The <strong>for...of</strong> statement executes a loop that
+                                operates on a sequence of values sourced from an
                                 <strong>iterable object</strong>. Iterable objects include instances
                                 of built-ins such as <strong>Array</strong>,
                                 <strong>String</strong>, <strong>TypedArray</strong>,
@@ -328,6 +329,13 @@ while (dice !== 6) {
                                 <strong>arguments object</strong>,
                                 <strong>generators</strong> produced by generator functions, and
                                 <strong>user-defined iterables</strong>.
+                            </p>
+
+                            <p class="text">
+                                We can use <strong>forEach</strong> loop on most iterables, but we
+                                have no access to <strong>continue</strong> and
+                                <strong>break</strong> statements, that's only accessible on while
+                                and for loops.
                             </p>
                             <pre class="code">
                                 <code class="code-el">
@@ -387,29 +395,22 @@ for (const day of properties) {
                             </pre>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">
-                                Properties values (Object values)
+                                Looping values (Object values)
                             </h4>
                             <pre class="code">
                                 <code class="code-el">
-const values = Object.values(openingHours);
+for (const value of Object.values(openingHours)) {
+  console.log(value)
+}
                                 </code>
                             </pre>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">
-                                Properties names and values (Object entries)
+                                Looping names and values (Object entries)
                             </h4>
                             <pre class="code">
                                 <code class="code-el">
-const entries = Object.entries(openingHours);
-                                </code>
-                            </pre>
-
-                            <h4 class="heading-h4 u-margin-bottom-sm">
-                                Looping through (Object entries)
-                            </h4>
-                            <pre class="code">
-                                <code class="code-el">
-for (const [day, { open, close }] of entries) {
+for (const [day, { open, close }] of Object.entries(openingHours)) {
   console.log(`On ${day} we open at ${open} and close at ${close}`);
 }
                                 </code>

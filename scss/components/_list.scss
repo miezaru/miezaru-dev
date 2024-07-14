@@ -1,19 +1,31 @@
 .list {
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
-    margin-inline-start: 2.4rem;
+    gap: 1.2rem;
+    margin-inline-start: 1.8rem;
 
     &:not(:last-child) {
         margin-block-end: 2.4rem;
     }
 
+    & .text {
+        margin-block-end: 1rem;
+    }
+
     & .list {
         gap: 1.2rem;
-        margin-inline-start: 1.2rem;
+        margin-inline-start: 2rem;
+
+        &::before {
+            border: none;
+        }
 
         &:not(:last-child) {
             margin-block-end: 2rem;
+        }
+
+        & .text {
+            margin-block-end: 0.5rem;
         }
     }
 }

@@ -361,18 +361,18 @@ const restaurant = {
     sat: {
       open: 0, // Open 24 hours
       close: 24,
+    },
   },
-},
 
-order: function (starterIndex, mainIndex) {
-  return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-},
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
 
-//_ Destracturing function parameters
-orderDelivery: function ({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
-  console.log(starterIndex, mainIndex, time, address);
-  console.log(
-    `Order received: ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+  //_ Destracturing function parameters
+  orderDelivery: function ({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
+    console.log(starterIndex, mainIndex, time, address);
+    console.log(
+      `Order received: ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
   },
 };
@@ -385,7 +385,6 @@ orderDelivery: function ({ starterIndex = 1, mainIndex = 0, time = '20:00', addr
                             <pre class="code">
                                 <code class="code-el">
 const { name, openingHours, categories } = restaurant;
-console.log(name, openingHours, categories);
                                 </code>
                             </pre>
 
@@ -395,7 +394,6 @@ console.log(name, openingHours, categories);
                             <pre class="code">
                                 <code class="code-el">
 let { name: restaurantName, openingHours: hours, categories: tags } = restaurant;
-console.log(restaurantName, hours, tags);
                                 </code>
                             </pre>
 
@@ -403,7 +401,6 @@ console.log(restaurantName, hours, tags);
                             <pre class="code">
                                 <code class="code-el">
 const { menu = [], starterMenu: starters = [] } = restaurant;
-console.log(menu, starters);
                                 </code>
                             </pre>
 
@@ -417,6 +414,7 @@ let b = 999;
 const obj = { a: 23, b: 7, c: 14 };
 
 // {a, b} = obj; // syntax error, unexpected token =
+
 ({ a, b } = obj);
 console.log(a, b); // 23 7
                                 </code>
@@ -425,15 +423,13 @@ console.log(a, b); // 23 7
                             <h4 class="heading-h4 u-margin-bottom-sm">Nested objects</h4>
                             <pre class="code">
                                 <code class="code-el">
-/*
 const { fri } = openingHours;
-console.log(fri); */ { close: 23, open: 11 }
+console.log(fri); { close: 23, open: 11 }
 
-/*
 const {
   fri: { open, close },
 } = openingHours;
-console.log(open, close); */ // 11 23
+console.log(open, close); // 11 23
 
 const {
   fri: { open: o, close: c },
@@ -493,7 +489,6 @@ restaurant.orderDelivery({
                                 <code class="code-el">
 const arr = [7, 8, 8];
 const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
-console.log(badNewArr);
                                 </code>
                             </pre>
 
@@ -501,11 +496,9 @@ console.log(badNewArr);
                             <pre class="code">
                                 <code class="code-el">
 const newArr = [1, 2, ...arr];
-console.log(newArr);
 console.log(...newArr); // 1 2 7 8 9
 
 const newMenu = [...restaurant.mainMenu, 'Gnocci'];
-console.log(newMenu);
                                 </code>
                             </pre>
 
@@ -531,12 +524,13 @@ const mainMenuCopy = [...restaurant.mainMenu];
                             <pre class="code">
                                 <code class="code-el">
 const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
-console.log(menu);
                                 </code>
                             </pre>
 
                             <p class="text">
-                                Spead operator works not only on arrays, but on all iterables.
+                                Spead operator works not only on arrays, but on all iterables:
+                                arrays, strings, maps, sets, but not objects. But we can use spread
+                                opearator to copy objects.
                             </p>
 
                             <p class="text">Iterables: arrays, strings, maps, sets. NOT objects.</p>
@@ -584,15 +578,16 @@ restaurant.orderPasta(...ingredients);
 
                             <pre class="code">
                                 <code class="code-el">
-const newRestourant = { foundedIn: 1998, ...restaurant, founder: 'Guiseppe' };
-console.log(newRestourant);
-
 const restaurantCopy = { ...restaurant };
 restaurantCopy.name = 'Ristorante Roma';
+
+// Different names, no refferences (top-level values)
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
 
 restaurantCopy.mainMenu.push('Riskard');
+
+// Same value, because mainMenu array (refference type)
 console.log(restaurantCopy);
 console.log(restaurant);
                                 </code>
@@ -628,22 +623,20 @@ console.log(restaurant);
                             </ul>
 
                             <h4 class="heading-h4 u-margin-bottom-sm">
-                                SPREAD, because on RIGHT side of =
-                            </h4>
-                            <pre class="code">
-                                <code class="code-el">
-const arr = [1, 2, ...[3, 4]];
-console.log(arr);
-                                </code>
-                            </pre>
-
-                            <h4 class="heading-h4 u-margin-bottom-sm">
-                                REST, because on LEFT side of =
+                                <strong>REST</strong>, because on LEFT side of =
                             </h4>
                             <pre class="code">
                                 <code class="code-el">
 const [a, b, ...others] = [1, 2, 3, 4, 5];
-console.log(a, b, others);
+                                </code>
+                            </pre>
+
+                            <h4 class="heading-h4 u-margin-bottom-sm">
+                                <strong>SPREAD</strong>, because on RIGHT side of =
+                            </h4>
+                            <pre class="code">
+                                <code class="code-el">
+const arr = [1, 2, ...[3, 4]];
                                 </code>
                             </pre>
 
@@ -651,8 +644,8 @@ console.log(a, b, others);
                             <pre class="code">
                                 <code class="code-el">
 // const [pizza, , risotto, ...otherFood, bread] // error
+
 const [pizza, , risotto, ...otherFood] = [...restaurant.mainMenu, ...restaurant.starterMenu];
-console.log(pizza, risotto, ...otherFood);
                                 </code>
                             </pre>
 
@@ -660,7 +653,18 @@ console.log(pizza, risotto, ...otherFood);
                             <pre class="code">
                                 <code class="code-el">
 const { sat, ...weekDays } = restaurant.openingHours;
-console.log(sat, weekDays);
+                                </code>
+                            </pre>
+
+                            <p class="text">
+                                When we already got variables <code class="code-el">sat</code> and
+                                <code class="code-el">weekDays</code>, we can
+                                <strong>mutate</strong> them.
+                            </p>
+
+                            <pre class="code">
+                                <code class="code-el">
+({ sat, ...weekDays } = restaurant.openingHours);
                                 </code>
                             </pre>
 

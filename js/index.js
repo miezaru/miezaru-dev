@@ -64,13 +64,16 @@ const relativeLinks = document.querySelectorAll("a[href^='#']");
 
 relativeLinks.forEach(link => {
   link.addEventListener('click', function (e) {
+    const path = window.location.protocol + '//' + window.location.host + window.location.pathname;
     if (link.getAttribute('href') === '#' || link.getAttribute('href') === '#top') {
+      window.location.href = path + '#';
       return;
     }
     e.preventDefault();
     const targetId = this.getAttribute('href');
     const targetEl = document.querySelector(targetId);
     const topOfElement = targetEl.offsetTop - headerEl.offsetHeight - 10;
+    window.location.href = path + targetId;
 
     window.scroll({ top: topOfElement, behavior: 'smooth' });
   });
