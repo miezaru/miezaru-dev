@@ -1,4 +1,4 @@
-// fixed navigation
+//~ fixed navigation
 const headerEl = document.querySelector('.header');
 const sectionHeroEl = document.querySelector('.section-hero');
 
@@ -40,7 +40,7 @@ const observerMenuBtn = new IntersectionObserver(
 );
 observerMenuBtn.observe(sectionHeroEl);
 
-// main-menu
+//~ main-menu
 const mainMenuBtn = document.querySelector('.main-nav__btn');
 const mainMenuLinks = document.querySelectorAll('.main-nav__link');
 
@@ -59,14 +59,16 @@ mainMenuBtn.addEventListener('click', () => {
   });
 });
 
-// fix links #
+//~ fix links #
 const relativeLinks = document.querySelectorAll("a[href^='#']");
 
+//~FIXME scrolling not working properly
 relativeLinks.forEach(link => {
   link.addEventListener('click', function (e) {
     const path = window.location.protocol + '//' + window.location.host + window.location.pathname;
     if (link.getAttribute('href') === '#' || link.getAttribute('href') === '#top') {
       window.location.href = path + '#';
+      window.scroll({ top: 0, behavior: 'smooth' });
       return;
     }
     e.preventDefault();
@@ -79,7 +81,7 @@ relativeLinks.forEach(link => {
   });
 });
 
-// page menu
+//~ page menu
 const pageNavBtn = document.querySelector('.page-nav__btn');
 const openPageMenuBtn = document.querySelector('.open-page-menu-btn');
 
@@ -89,4 +91,37 @@ pageNavBtn.addEventListener('click', () => {
 
 openPageMenuBtn.addEventListener('click', () => {
   sectionHeroEl.classList.add('page-menu-open');
+});
+
+//~ zoom-in images
+const bodyEl = document.querySelector('body');
+const zoomedImgs = document.querySelectorAll('.zoomed');
+
+zoomedImgs.forEach(function (img) {
+  img.addEventListener('click', function () {
+    const html = `
+<div class="zoom-in">
+    <div class="zoom-in__container">
+        <img class="zoom-in__img" src="${this.currentSrc}" alt="${this.alt}" />
+        <button class="zoom-in__btn" type="button">X</button>
+    </div>
+    <div class="zoom-in__container-outer">&nbsp;</div>
+</div>
+    `;
+    bodyEl.insertAdjacentHTML('beforeend', html);
+
+    //_ Close
+    const zoomInEl = document.querySelector('.zoom-in');
+    const zoomInContainerInnerEl = document.querySelector('.zoom-in__container-outer');
+    const zoomInCloseBtn = document.querySelector('.zoom-in__btn');
+
+    const close = function (e) {
+      e.preventDefault();
+
+      bodyEl.removeChild(zoomInEl);
+    };
+
+    zoomInCloseBtn.addEventListener('click', close);
+    zoomInContainerInnerEl.addEventListener('click', close);
+  });
 });

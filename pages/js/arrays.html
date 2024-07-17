@@ -224,6 +224,37 @@ const friends = new Array('Nika', 'Anna', 'Eva')
                         </div>
 
                         <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">Array.from()</h3>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <p class="text">
+                                        create arrays from iteralbe data structures, and map them
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">
+                                        <code>Array.from(arrayLike, mapFn, thisArg)</code>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <p class="text">returns a new array instance.</p>
+                                </li>
+                            </ul>
+                            <pre class="code">
+                                <code class="code-el">
+const friends = Array.from(['Nika', 'Anna', 'Eva'], name => name.toLowerCase())
+                                </code>
+                            </pre>
+
+                            <p class="text">Also can create empty arrays:</p>
+                            <pre class="code">
+                                <code class="code-el">
+const emptyArray = Array.from({ length: 5 })
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="content-box">
                             <p class="text">Accessing elements in an array.</p>
                             <pre class="code">
                                 <code class="code-el">
@@ -292,58 +323,84 @@ const artem = ['Artem', 'Usatyi', 2024 - 1997, 'programmer', friends]
                             <ul class="list">
                                 <li class="list__item">
                                     <p class="text">
-                                        <code>push</code>: adds the specified elements to the end of
-                                        an array
+                                        <strong>push</strong>: adds the specified elements to the
+                                        end of an array
                                     </p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        <code>pop</code>: removes the last element from an array
+                                        <strong>pop</strong>: removes the last element from an array
                                     </p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        <code>unshift</code>: adds the specified elements to the
+                                        <strong>unshift</strong>: adds the specified elements to the
                                         beginning of an array
                                     </p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        <code>shift</code>: removes the first element from an array
+                                        <strong>shift</strong>: removes the first element from an
+                                        array
                                     </p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        <code>fill</code>: changes all elements within a range in an
-                                        array to a static value
+                                        <strong>fill</strong>: changes all elements within a range
+                                        in an array to a static value
                                     </p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        <code>sort</code>: sorts an array, use
-                                        <code>toSorted</code> method w/o mutating
+                                        <strong>sort</strong>: sorts an array, use
+                                        <strong>toSorted</strong> method w/o mutating
                                     </p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        <code>reverse</code>: reverses an array, use
-                                        <code>toReversed</code> method w/o mutating
+                                        <strong>reverse</strong>: reverses an array, use
+                                        <strong>toReversed</strong> method w/o mutating
                                     </p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        <code>splice</code>: removes or replaces existing elements
-                                        and/or adds new elements, use <code>toSpliced</code> method
-                                        w/o mutating
+                                        <strong>splice</strong>: removes or replaces existing
+                                        elements and/or adds new elements, use
+                                        <strong>toSpliced</strong> method w/o mutating
                                     </p>
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        <code>copyWithin</code>: copies part of the array to another
-                                        location in the same array.
+                                        <strong>copyWithin</strong>: copies part of the array to
+                                        another location in the same array.
                                     </p>
                                 </li>
                             </ul>
+                        </div>
+
+                        <div class="content-box">
+                            <h3 class="heading-h3 u-margin-bottom-sm">
+                                Which array method to use?
+                            </h3>
+
+                            <picture>
+                                <source
+                                    srcset="../../assets/img/js/array-methods.avif"
+                                    type="image/avif"
+                                />
+                                <source
+                                    srcset="../../assets/img/js/array-methods.webp"
+                                    type="image/webp"
+                                />
+                                <img
+                                    class="zoomed"
+                                    src="../../assets/img/js/array-methods.png"
+                                    srcset="../../assets/img/js/array-methods.png"
+                                    alt="Which array method to use list"
+                                    height="1079"
+                                    width="1919"
+                                />
+                            </picture>
                         </div>
                     </div>
                 </section>
@@ -715,9 +772,8 @@ for (const letter of iterator1) {
                                 </li>
                                 <li class="list__item">
                                     <p class="text">
-                                        returns the element at the specified index in the array
+                                        returns the element at the specified index in the array.
                                     </p>
-                                    .
                                 </li>
                             </ul>
                             <pre class="code">
@@ -776,9 +832,8 @@ console.log(array.includes(3, 3)) // false
                                 <li class="list__item">
                                     <p class="text">
                                         returns the value of the FIRST element in the array that
-                                        satisfies the provided testing function
+                                        satisfies the provided testing function.
                                     </p>
-                                    .
                                 </li>
                             </ul>
                             <pre class="code">
@@ -803,9 +858,8 @@ const found = array.find(element => element > 10) // 12
                                 <li class="list__item">
                                     <p class="text">
                                         returns the value of the LAST element in the array that
-                                        satisfies the provided testing function
+                                        satisfies the provided testing function.
                                     </p>
-                                    .
                                 </li>
                             </ul>
                             <pre class="code">

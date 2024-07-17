@@ -2,3 +2,4 @@
 @use 'colors';
 
 $black-90: color.change(colors.$black, $alpha: 0.88);
+$accent-grey-light-94: color.change(colors.$accent-grey-light, $alpha: 0.94);

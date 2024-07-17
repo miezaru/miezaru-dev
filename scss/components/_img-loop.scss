@@ -1,0 +1,66 @@
+.zoomed {
+    cursor: zoom-in;
+}
+
+.zoom-in {
+    position: fixed;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    z-index: 9995;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 100vw;
+    block-size: calc(100vh - 9.6rem);
+    background-color: var(--accent-grey-light-94);
+    backdrop-filter: blur(3px);
+    transition: var(--tr-small);
+
+    &__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        inline-size: auto;
+        block-size: 70%;
+    }
+
+    &__btn {
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-end: -4rem;
+        z-index: 9999;
+        inline-size: 3.2rem;
+        block-size: 3.2rem;
+        color: var(--accent-grey-light);
+        cursor: pointer;
+        background-color: var(--accent-dark);
+        border: none;
+        border-radius: var(--br-radius-3);
+        box-shadow: 0 0 0.4rem var(--accent-dark-black);
+        transition: var(--tr-small);
+
+        &:hover {
+            color: var(--accent);
+        }
+    }
+
+    &__img {
+        z-index: 9990;
+        inline-size: 100%;
+        block-size: 100%;
+    }
+
+    &__container-outer {
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        z-index: 9980;
+        inline-size: 100vw;
+        block-size: calc(100vh - 6rem);
+    }
+}
+
+.logo-bottom ~ .zoom-in {
+    block-size: calc(100vh - 6rem);
+}
