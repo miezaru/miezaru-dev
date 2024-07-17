@@ -23,6 +23,18 @@
         justify-content: center;
         inline-size: auto;
         block-size: 70%;
+        margin-inline: 2.4rem 6.4rem;
+
+        @include res-tab-port {
+            inline-size: 100%;
+            block-size: auto;
+        }
+
+        @include res-phone {
+            inline-size: 100%;
+            block-size: auto;
+            margin-inline: 1.2rem;
+        }
     }
 
     &__btn {
@@ -42,6 +54,11 @@
 
         &:hover {
             color: var(--accent);
+        }
+
+        @include res-phone {
+            inset-block-start: -4rem;
+            inset-inline-end: 1.2rem;
         }
     }
 
